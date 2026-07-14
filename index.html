@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaCart — AI-Powered Dropshipping Store</title>
+  <meta name="description" content="NovaCart is an AI-powered dropshipping storefront with smart product curation, live trend rotation, and a built-in AI shopping assistant." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <span class="brand-icon">◆</span> Nova<span class="brand-accent">Cart</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#products">Shop</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#ai-features">AI Engine</a>
+        <a href="#testimonials">Reviews</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn-icon" id="cart-btn" aria-label="Open cart">
+          🛍️ <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="btn btn-primary btn-sm" id="nav-cta">Shop AI Picks</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="pill">✨ AI-Curated Catalog · Refreshed Live</div>
+        <h1>Trending products,<br /><span class="gradient-text">picked by AI.</span></h1>
+        <p class="hero-sub">
+          NovaCart's AI engine scans global demand signals and rotates our storefront
+          automatically — so every visit surfaces the hottest dropshipping products
+          before they go mainstream.
+        </p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">Browse the Live Catalog</a>
+          <a href="#ai-features" class="btn btn-ghost">See the AI Engine →</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>24/7</strong><span>Auto-rotation</span></div>
+          <div><strong>4.9★</strong><span>Avg. rating</span></div>
+          <div><strong>60k+</strong><span>Orders shipped</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="float-card fc-1"><span>🔥</span> Trending now</div>
+        <div class="float-card fc-2"><span>🤖</span> AI re-ranked 12s ago</div>
+        <div class="float-card fc-3"><span>🚚</span> Free worldwide shipping</div>
+        <div class="hero-emoji">🛒</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marquee-track">
+      <span>⚡ Flash rotation active</span><span>🤖 AI trend engine online</span>
+      <span>🚚 Free shipping over $50</span><span>🔒 Secure checkout</span>
+      <span>↩️ 30-day returns</span><span>🌍 Ships to 90+ countries</span>
+    </div>
+  </div>
+
+  <!-- ============ PRODUCTS ============ -->
+  <main>
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Live AI-Curated Catalog</h2>
+            <p class="section-sub">
+              The grid below reshuffles itself automatically as our AI re-ranks demand —
+              watch it rotate in real time.
+            </p>
+          </div>
+          <div class="shuffle-controls">
+            <div class="shuffle-status">
+              <span class="pulse-dot"></span>
+              Next AI rotation in <strong id="shuffle-countdown">8</strong>s
+            </div>
+            <button class="btn btn-ghost btn-sm" id="shuffle-now">🔀 Shuffle now</button>
+            <button class="btn btn-ghost btn-sm" id="shuffle-toggle" aria-pressed="true">⏸ Pause</button>
+          </div>
+        </div>
+
+        <div class="filters" id="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="tech">Tech</button>
+          <button class="chip" data-filter="home">Home</button>
+          <button class="chip" data-filter="fitness">Fitness</button>
+          <button class="chip" data-filter="beauty">Beauty</button>
+          <button class="chip" data-filter="pets">Pets</button>
+        </div>
+
+        <div class="product-grid" id="product-grid"><!-- rendered by app.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head center">
+          <h2>How NovaCart Works</h2>
+          <p class="section-sub">Zero inventory. Zero hassle. Products ship directly from vetted suppliers.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><h3>AI finds winners</h3><p>Our engine scores thousands of products daily on demand, margin, and shipping speed.</p></div>
+          <div class="step"><div class="step-num">2</div><h3>You order in one click</h3><p>Secure checkout with buyer protection. No account required.</p></div>
+          <div class="step"><div class="step-num">3</div><h3>Supplier ships direct</h3><p>Orders route automatically to the fastest supplier warehouse near you.</p></div>
+          <div class="step"><div class="step-num">4</div><h3>Track to your door</h3><p>Real-time tracking and 30-day money-back guarantee on everything.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI FEATURES ============ -->
+    <section class="section" id="ai-features">
+      <div class="container">
+        <div class="section-head center">
+          <h2>The AI Engine Under the Hood</h2>
+          <p class="section-sub">More than a buzzword — here's what the AI actually does on this storefront.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🔀</div>
+            <h3>Auto-Shuffling Grid</h3>
+            <p>The catalog re-ranks and animates into a new order on a live timer, weighted by each product's trending score — so top movers surface first.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h3>Trend Scoring</h3>
+            <p>Every product carries an AI trend score. Watch the 🔥 badges — they mark items the engine currently predicts will sell out.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>AI Shopping Assistant</h3>
+            <p>Ask Nova (bottom-right) for gift ideas, shipping info, or product recommendations — it knows the whole catalog.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">✍️</div>
+            <h3>AI-Written Copy</h3>
+            <p>Product titles and descriptions are generated and A/B-refined by AI for clarity and conversion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <div class="section-head center">
+          <h2>Loved by Shoppers</h2>
+          <p class="section-sub">Real feedback from recent orders.</p>
+        </div>
+        <div class="testimonial-grid">
+          <figure class="testimonial"><div class="stars">★★★★★</div><blockquote>"Ordered the galaxy projector on a Tuesday, it arrived Friday. The AI chat actually helped me pick a gift for my sister."</blockquote><figcaption>— Maya R., Oslo</figcaption></figure>
+          <figure class="testimonial"><div class="stars">★★★★★</div><blockquote>"The rotating catalog is addictive — I check back daily to see what's trending. Quality has been great so far."</blockquote><figcaption>— Daniel K., Berlin</figcaption></figure>
+          <figure class="testimonial"><div class="stars">★★★★☆</div><blockquote>"Fast shipping and the return process was painless. The trend badges are surprisingly accurate."</blockquote><figcaption>— Sofia L., Austin</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="newsletter">
+          <h2>Get AI trend alerts</h2>
+          <p>One email a week with the products our engine predicts will blow up next.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="you@email.com" required aria-label="Email address" />
+            <button class="btn btn-primary" type="submit">Notify me</button>
+          </form>
+          <p class="newsletter-note" id="newsletter-note"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#" class="brand"><span class="brand-icon">◆</span> Nova<span class="brand-accent">Cart</span></a>
+        <p class="footer-tag">AI-powered dropshipping, done right.</p>
+      </div>
+      <div class="footer-cols">
+        <div><h4>Shop</h4><a href="#products">All products</a><a href="#products">Trending</a><a href="#products">New arrivals</a></div>
+        <div><h4>Support</h4><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Contact</a></div>
+        <div><h4>Company</h4><a href="#ai-features">AI Engine</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 NovaCart. Demo storefront — connect a real supplier API before going live.</span>
+    </div>
+  </footer>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart">
+    <div class="drawer-head">
+      <h3>Your Cart</h3>
+      <button class="btn-icon" id="cart-close" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="drawer-foot">
+      <div class="cart-total-row"><span>Total</span><strong id="cart-total">$0.00</strong></div>
+      <button class="btn btn-primary btn-block" id="checkout-btn">Checkout →</button>
+    </div>
+  </aside>
+
+  <!-- ============ AI CHAT WIDGET ============ -->
+  <button class="chat-fab" id="chat-fab" aria-label="Open AI assistant">🤖</button>
+  <div class="chat-panel" id="chat-panel" aria-label="AI shopping assistant">
+    <div class="chat-head">
+      <div><strong>Nova</strong><span class="chat-status">AI Shopping Assistant · online</span></div>
+      <button class="btn-icon" id="chat-close" aria-label="Close chat">✕</button>
+    </div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="chat-suggestions" id="chat-suggestions"></div>
+    <form class="chat-input-row" id="chat-form">
+      <input type="text" id="chat-input" placeholder="Ask Nova anything…" autocomplete="off" />
+      <button class="btn btn-primary btn-sm" type="submit">Send</button>
+    </form>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
