@@ -5,8 +5,11 @@
  * Runs on a schedule via .github/workflows/refresh-catalog.yml.
  *
  * Env vars:
- *   CJ_EMAIL       CJdropshipping account email        (repo secret)
- *   CJ_API_KEY     CJdropshipping API key              (repo secret)
+ *   CJ_API_KEY     CJdropshipping API key (repo secret). Generate it at
+ *                  https://www.cjdropshipping.com/my.html#/authorize/API
+ *                  (API tab -> Add API -> Type "API Key") and copy the full
+ *                  value from the "API Key & MCP Token" column; it looks
+ *                  like "1234567@api@xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx".
  *   ROTATION       "weekly" (default) or "daily" — how often the product
  *                  *selection* changes. The job can run daily either way;
  *                  with weekly rotation, daily runs only refresh prices/stock.
@@ -94,10 +97,10 @@ async function cjRequest(path, { method = "GET", token, body } = {}) {
   return json.data;
 }
 
-async function getAccessToken(email, apiKey) {
+async function getAccessToken(apiKey) {
   const data = await cjRequest("/authentication/getAccessToken", {
     method: "POST",
-    body: { email, password: apiKey },
+    body: { apiKey },
   });
   return data.accessToken;
 }
@@ -139,19 +142,18 @@ function normalize(raw, category) {
 /* ---------- main ---------- */
 
 async function main() {
-  const email = process.env.CJ_EMAIL;
   const apiKey = process.env.CJ_API_KEY;
 
-  if (!email || !apiKey) {
+  if (!apiKey) {
     console.log(
-      "CJ_EMAIL / CJ_API_KEY not set — keeping existing catalog.\n" +
-        "Add them as GitHub repo secrets (Settings → Secrets → Actions) to enable live product rotation."
+      "CJ_API_KEY not set — keeping existing catalog.\n" +
+        "Add it as a GitHub repo secret (Settings → Secrets → Actions) to enable live product rotation."
     );
     return;
   }
 
   console.log(`Rotation mode: ${ROTATION} (seed: ${rotationSeed()})`);
-  const token = await getAccessToken(email, apiKey);
+  const token = await getAccessToken(apiKey);
 
   const rand = seededRandom(rotationSeed());
   const selected = [];

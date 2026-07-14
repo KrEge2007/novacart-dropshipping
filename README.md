@@ -25,13 +25,11 @@ commits data/products.json  →  GitHub Pages redeploys  →  live site shows th
 ## Setup: connect CJdropshipping (one-time, ~5 min)
 
 1. Create a free account at [cjdropshipping.com](https://cjdropshipping.com).
-2. Generate an API key: CJ dashboard → **My CJ → Authorization → API** (or [developers.cjdropshipping.com](https://developers.cjdropshipping.com)).
-3. In this GitHub repo: **Settings → Secrets and variables → Actions → New repository secret**, add:
-   - `CJ_EMAIL` — your CJ account email
-   - `CJ_API_KEY` — the API key
+2. Generate an API key: while logged in, open <https://www.cjdropshipping.com/my.html#/authorize/API> (Personal center → Authorization → API). On the **API** tab click **Add API**, give it a name, choose Type **API Key**, and confirm. Then copy the full key from the **API Key & MCP Token** column (it looks like `1234567@api@xxxxxxxx…`).
+3. In this GitHub repo: **Settings → Secrets and variables → Actions → New repository secret**, add `CJ_API_KEY` with that value.
 4. Trigger the first run: **Actions → Refresh product catalog → Run workflow** (or wait for the nightly cron).
 
-To test locally: `CJ_EMAIL=... CJ_API_KEY=... node scripts/fetch-products.mjs`
+To test locally: `CJ_API_KEY=... node scripts/fetch-products.mjs`
 
 ## Run locally
 

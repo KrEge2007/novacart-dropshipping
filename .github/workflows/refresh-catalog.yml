@@ -24,7 +24,6 @@ jobs:
       - name: Fetch products from supplier
         run: node scripts/fetch-products.mjs
         env:
-          CJ_EMAIL: ${{ secrets.CJ_EMAIL }}
           CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
           ROTATION: weekly
           PRODUCT_COUNT: "16"
