@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T13:01:15.718Z",
+    "updatedAt": "2026-07-14T13:04:15.200Z",
     "source": "cjdropshipping",
     "rotation": "weekly",
     "rotationSeed": "2026-W29"
@@ -66,7 +66,7 @@
         {
           "id": "2605260336231605700",
           "sku": "CJYD290390202BY",
-          "name": "Dark Gray-With acupressure point",
+          "name": "With acupressure point",
           "price": 19.95,
           "compareAt": 25.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2026/05/26/03/9b823003-2845-44a8-a515-177398184c4b_trans.jpeg"
@@ -74,7 +74,7 @@
         {
           "id": "2605260336231606100",
           "sku": "CJYD290390203CX",
-          "name": "Dark Gray-Without acupressure point",
+          "name": "Without acupressure point",
           "price": 17.95,
           "compareAt": 23.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2026/05/26/03/6a3fec94-1d3c-45c0-9d04-fc4fa1a0911f_trans.jpeg"
@@ -159,7 +159,7 @@
         {
           "id": "2073718061133357057",
           "sku": "CJJM296887401AZ",
-          "name": "003-185cm 61cm 15mm-Pink",
+          "name": "15mm-Pink",
           "price": 21.95,
           "compareAt": 28.95,
           "image": "https://cf.cjdropshipping.com/817dc42b-3946-4539-b057-ab6d81921680.png"
@@ -167,7 +167,7 @@
         {
           "id": "2073718061133357058",
           "sku": "CJJM296887402BY",
-          "name": "003-185cm 61cm 15mm-Black",
+          "name": "15mm-Black",
           "price": 21.95,
           "compareAt": 28.95,
           "image": "https://cf.cjdropshipping.com/fe719299-1acf-4edf-a14a-98e66bc9804a.png"
@@ -175,7 +175,7 @@
         {
           "id": "2073718061133357059",
           "sku": "CJJM296887403CX",
-          "name": "003-185cm 61cm 15mm-Blue",
+          "name": "15mm-Blue",
           "price": 21.95,
           "compareAt": 28.95,
           "image": "https://cf.cjdropshipping.com/123cba0a-3696-451c-a451-f22d7a09a7c4.png"
@@ -183,7 +183,7 @@
         {
           "id": "2073718061133357060",
           "sku": "CJJM296887404DW",
-          "name": "003-185cm 61cm 15mm-Purple",
+          "name": "15mm-Purple",
           "price": 21.95,
           "compareAt": 28.95,
           "image": "https://cf.cjdropshipping.com/cf004f54-0718-489a-9cb0-3a88bbadff01.png"
@@ -191,7 +191,7 @@
         {
           "id": "2073718061133357061",
           "sku": "CJJM296887405EV",
-          "name": "003-185cm 61cm 20mm-Pink",
+          "name": "20mm-Pink",
           "price": 23.95,
           "compareAt": 31.95,
           "image": "https://cf.cjdropshipping.com/817dc42b-3946-4539-b057-ab6d81921680.png"
@@ -199,7 +199,7 @@
         {
           "id": "2073718061133357062",
           "sku": "CJJM296887406FU",
-          "name": "003-185cm 61cm 20mm-Black",
+          "name": "20mm-Black",
           "price": 23.95,
           "compareAt": 31.95,
           "image": "https://cf.cjdropshipping.com/fe719299-1acf-4edf-a14a-98e66bc9804a.png"
@@ -207,7 +207,7 @@
         {
           "id": "2073718061133357063",
           "sku": "CJJM296887407GT",
-          "name": "003-185cm 61cm 20mm-Blue",
+          "name": "20mm-Blue",
           "price": 23.95,
           "compareAt": 31.95,
           "image": "https://cf.cjdropshipping.com/123cba0a-3696-451c-a451-f22d7a09a7c4.png"
@@ -215,7 +215,7 @@
         {
           "id": "2073718061133357064",
           "sku": "CJJM296887408HS",
-          "name": "003-185cm 61cm 20mm-Purple",
+          "name": "20mm-Purple",
           "price": 23.95,
           "compareAt": 31.95,
           "image": "https://cf.cjdropshipping.com/cf004f54-0718-489a-9cb0-3a88bbadff01.png"
@@ -244,7 +244,7 @@
         {
           "id": "2605070643081629800",
           "sku": "CJYD287276101AZ",
-          "name": "1.5kg-Black",
+          "name": "Black",
           "price": 15.95,
           "compareAt": 20.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/d122e01e-caa5-4c11-9a9b-26f63ce38030.jpg"
@@ -252,7 +252,7 @@
         {
           "id": "2605070643091620300",
           "sku": "CJYD287276102BY",
-          "name": "1.5kg-Meat Pink",
+          "name": "Meat Pink",
           "price": 15.95,
           "compareAt": 20.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/f1f8da90-badc-497e-8119-838999ddf221.jpg"
@@ -260,7 +260,7 @@
         {
           "id": "2605070643091620800",
           "sku": "CJYD287276103CX",
-          "name": "1.5kg-Pink",
+          "name": "Pink",
           "price": 15.95,
           "compareAt": 20.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/cc9d2032-9d6d-44ad-949a-a262bde7d8da.jpg"
@@ -268,7 +268,7 @@
         {
           "id": "2605070643091621200",
           "sku": "CJYD287276104DW",
-          "name": "1.5kg-Gray Green",
+          "name": "Gray Green",
           "price": 15.95,
           "compareAt": 20.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/89f2aead-6d0d-43b0-924a-26d379e4ff92.jpg"
@@ -276,7 +276,7 @@
         {
           "id": "2605070643091621700",
           "sku": "CJYD287276105EV",
-          "name": "1.5kg-Milk Tea",
+          "name": "Milk Tea",
           "price": 15.95,
           "compareAt": 20.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/50e8dd52-afff-4b5f-a39c-e16dd9f9d246.jpg"
@@ -284,7 +284,7 @@
         {
           "id": "2605070643091622200",
           "sku": "CJYD287276106FU",
-          "name": "1.5kg-Beige",
+          "name": "Beige",
           "price": 15.95,
           "compareAt": 20.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/c0270525-367f-42cc-93e0-e9ae0a158f2e.jpg"
