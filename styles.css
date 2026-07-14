@@ -167,6 +167,9 @@ button { font: inherit; cursor: pointer; }
 }
 .anim-ready .reveal.in { opacity: 1; transform: none; filter: none; }
 
+/* default motion for any revealed element without a category personality */
+.anim-ready .reveal:not(.in) { transform: translateY(30px); }
+
 /* chapter headers: number slides from the left, text rises */
 .anim-ready .chapter-num.reveal:not(.in) { transform: translateX(-40px); }
 .anim-ready .chapter-head-text .reveal:not(.in),
@@ -295,11 +298,20 @@ button { font: inherit; cursor: pointer; }
 }
 .faq summary::-webkit-details-marker { display: none; }
 .faq summary::after {
-  content: "+"; position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  content: "+"; position: absolute; right: 8px; top: 50%;
+  transform: translateY(-50%) rotate(0deg);
   font-family: var(--serif); font-size: 22px; color: var(--ink-soft);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.faq details[open] summary::after { content: "−"; }
+.faq details[open] summary::after { transform: translateY(-50%) rotate(135deg); }
 .faq details p { color: var(--ink-soft); padding: 0 2px 22px; max-width: 62ch; }
+.faq details[open] p, .product-meta-notes details[open] p {
+  animation: acc-in 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@keyframes acc-in {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: none; }
+}
 
 /* ---------- newsletter ---------- */
 
@@ -408,7 +420,8 @@ button { font: inherit; cursor: pointer; }
 }
 
 /* varied sizes/placements as you scroll */
-.pd-img--hero .pd-img-frame { height: clamp(300px, 34vw, 440px); }
+.pd-img--hero .pd-img-frame { height: clamp(420px, 46vw, 580px); }
+.pd-img--hero .pd-img-frame img { padding: 4%; }
 .pd-img--left { width: min(72%, 460px); align-self: flex-start; }
 .pd-img--left .pd-img-frame { aspect-ratio: 4 / 5; }
 .pd-img--right { width: min(80%, 520px); align-self: flex-end; }
@@ -485,7 +498,15 @@ button { font: inherit; cursor: pointer; }
 .product-meta-notes details:last-of-type { border-bottom: 1px solid var(--line); }
 .product-meta-notes summary {
   list-style: none; cursor: pointer; padding: 16px 2px; font-weight: 500; font-size: 14.5px;
+  position: relative;
 }
+.product-meta-notes summary::after {
+  content: "+"; position: absolute; right: 4px; top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  font-family: var(--serif); font-size: 18px; color: var(--ink-soft);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.product-meta-notes details[open] summary::after { transform: translateY(-50%) rotate(135deg); }
 .product-meta-notes summary::-webkit-details-marker { display: none; }
 .product-meta-notes details p { color: var(--ink-soft); font-size: 14px; padding: 0 2px 18px; }
 

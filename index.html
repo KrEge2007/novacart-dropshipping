@@ -60,11 +60,11 @@
   <main>
     <section class="section" id="shop">
       <div class="section-head">
-        <div>
+        <div class="reveal">
           <h2>This week's edit</h2>
           <p class="refresh-note" id="refresh-note">Loading catalog…</p>
         </div>
-        <p class="explore-hint" aria-hidden="true">Scroll to explore ↓</p>
+        <p class="explore-hint reveal" style="--d:150ms" aria-hidden="true">Scroll to explore ↓</p>
       </div>
       <div id="chapters"></div>
     </section>
@@ -72,15 +72,15 @@
     <!-- ============ CATEGORIES ============ -->
     <section class="section" id="categories">
       <div class="tile-row">
-        <a class="tile" href="#chapter-training">
+        <a class="tile reveal" href="#chapter-training">
           <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=900&q=80" alt="Barbell training" loading="lazy" />
           <span>Training</span>
         </a>
-        <a class="tile" href="#chapter-yoga">
+        <a class="tile reveal" style="--d:130ms" href="#chapter-yoga">
           <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=900&q=80" alt="Yoga studio class" loading="lazy" />
           <span>Yoga &amp; mobility</span>
         </a>
-        <a class="tile" href="#chapter-recovery">
+        <a class="tile reveal" style="--d:260ms" href="#chapter-recovery">
           <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=900&q=80" alt="Morning meditation" loading="lazy" />
           <span>Recovery &amp; wellness</span>
         </a>
@@ -89,26 +89,26 @@
 
     <!-- ============ VALUE PROPS ============ -->
     <section class="props">
-      <div><h3>Free shipping over $60</h3><p>Tracked delivery to 40+ countries, typically 5–9 business days.</p></div>
-      <div><h3>30-day returns</h3><p>Changed your mind? Send it back within 30 days for a full refund.</p></div>
-      <div><h3>Curated, not crowded</h3><p>Sixteen products at a time. If it's in the catalog, it earned its place.</p></div>
+      <div class="reveal"><h3>Free shipping over $60</h3><p>Tracked delivery to 40+ countries, typically 5–9 business days.</p></div>
+      <div class="reveal" style="--d:130ms"><h3>30-day returns</h3><p>Changed your mind? Send it back within 30 days for a full refund.</p></div>
+      <div class="reveal" style="--d:260ms"><h3>Curated, not crowded</h3><p>Sixteen products at a time. If it's in the catalog, it earned its place.</p></div>
     </section>
 
     <!-- ============ STORY ============ -->
     <section class="section story" id="story">
-      <figure class="story-media">
+      <figure class="story-media reveal">
         <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1100&q=80" alt="Yoga practice in the studio" loading="lazy" />
       </figure>
       <div class="story-copy">
-        <p class="eyebrow">Our story</p>
-        <h2>A catalog that stays small on purpose</h2>
-        <p>
+        <p class="eyebrow reveal" style="--d:100ms">Our story</p>
+        <h2 class="reveal" style="--d:200ms">A catalog that stays small on purpose</h2>
+        <p class="reveal" style="--d:300ms">
           Most fitness shops list ten thousand products and hope you'll dig.
           We do the opposite: each week we review what's available from our
           suppliers and publish a short edit of gear worth owning — for
           strength, mobility, and the slow work of recovery.
         </p>
-        <p>
+        <p class="reveal" style="--d:400ms">
           When the week ends, the catalog rotates. What stays is the standard:
           simple tools, honest prices, and nothing we wouldn't use ourselves.
         </p>
@@ -117,20 +117,20 @@
 
     <!-- ============ FAQ ============ -->
     <section class="section faq" id="faq">
-      <h2>Questions, answered</h2>
-      <details>
+      <h2 class="reveal">Questions, answered</h2>
+      <details class="reveal" style="--d:100ms">
         <summary>How does shipping work?</summary>
         <p>Orders ship directly from our supplier warehouses. Standard delivery is 5–9 business days with tracking, free on orders over $60.</p>
       </details>
-      <details>
+      <details class="reveal" style="--d:190ms">
         <summary>Why does the catalog change every week?</summary>
         <p>We publish a small edit rather than an endless catalog. Every Monday the selection rotates based on what's in stock and worth recommending. If you see something you like, don't wait too long.</p>
       </details>
-      <details>
+      <details class="reveal" style="--d:280ms">
         <summary>What if my order arrives damaged?</summary>
         <p>Photograph it and reply to your order confirmation within 30 days — we'll replace it or refund you in full, no return postage needed.</p>
       </details>
-      <details>
+      <details class="reveal" style="--d:370ms">
         <summary>Where are you based?</summary>
         <p>We're a small team in Norway. Products ship from supplier warehouses in Europe, the US, and Asia depending on stock.</p>
       </details>
@@ -138,9 +138,9 @@
 
     <!-- ============ NEWSLETTER ============ -->
     <section class="section newsletter">
-      <h2>Monday, in your inbox</h2>
-      <p>One short email when the new edit goes live. No noise.</p>
-      <form id="newsletter-form">
+      <h2 class="reveal">Monday, in your inbox</h2>
+      <p class="reveal" style="--d:110ms">One short email when the new edit goes live. No noise.</p>
+      <form id="newsletter-form" class="reveal" style="--d:220ms">
         <input type="email" placeholder="Email address" required aria-label="Email address" />
         <button class="button" type="submit">Subscribe</button>
       </form>

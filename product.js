@@ -99,7 +99,7 @@ function renderProduct(p) {
   }
 
   $("#product-page").innerHTML = `
-    <nav class="crumbs" aria-label="Breadcrumb">
+    <nav class="crumbs reveal" aria-label="Breadcrumb">
       <a href="index.html#shop">Shop</a> <span>/</span>
       <a href="index.html#chapter-${esc(p.category)}" class="crumb-cat">${esc(p.category)}</a> <span>/</span>
       <span>${esc(p.name)}</span>
