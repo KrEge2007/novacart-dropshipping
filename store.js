@@ -125,16 +125,33 @@ function addToCart(id, qty = 1) {
   toast("Added to cart");
 }
 
+// Cart keys are "pid" or "pid::vid" (product variant).
+function resolveCartKey(key) {
+  const [pid, vid] = String(key).split("::");
+  const product = store.products.find((p) => p.id === pid);
+  if (!product) return null;
+  const variant = vid ? (product.variants || []).find((v) => v.id === vid) : null;
+  if (vid && !variant) return null;
+  return {
+    key,
+    product,
+    variant,
+    price: variant?.price ?? product.price,
+    image: variant?.image ?? product.image,
+    label: variant ? `${product.name} · ${variant.name}` : product.name,
+  };
+}
+
 function cartEntries() {
   return Object.entries(store.cart)
-    .map(([id, qty]) => ({ product: store.products.find((p) => p.id === id), qty }))
+    .map(([key, qty]) => ({ ...resolveCartKey(key), qty }))
     .filter((e) => e.product && e.qty > 0);
 }
 
 function renderCart() {
   const entries = cartEntries();
   const count = entries.reduce((n, e) => n + e.qty, 0);
-  const total = entries.reduce((n, e) => n + e.product.price * e.qty, 0);
+  const total = entries.reduce((n, e) => n + e.price * e.qty, 0);
 
   $("#cart-count").textContent = count;
   $("#cart-total").textContent = money(total);
@@ -151,19 +168,19 @@ function renderCart() {
   }
   body.innerHTML = entries
     .map(
-      ({ product: p, qty }, i) => `
+      ({ key, label, image, price, qty }, i) => `
     <div class="cart-line" style="--i:${i}">
-      <img src="${esc(p.image)}" alt="" />
+      <img src="${esc(image)}" alt="" />
       <div class="cart-line-info">
-        <strong>${esc(p.name)}</strong>
-        <span class="muted">${money(p.price)}</span>
+        <strong>${esc(label)}</strong>
+        <span class="muted">${money(price)}</span>
         <div class="qty">
-          <button data-id="${esc(p.id)}" data-d="-1" aria-label="Decrease quantity">−</button>
+          <button data-id="${esc(key)}" data-d="-1" aria-label="Decrease quantity">−</button>
           <span>${qty}</span>
-          <button data-id="${esc(p.id)}" data-d="1" aria-label="Increase quantity">+</button>
+          <button data-id="${esc(key)}" data-d="1" aria-label="Increase quantity">+</button>
         </div>
       </div>
-      <span class="cart-line-price">${money(p.price * qty)}</span>
+      <span class="cart-line-price">${money(price * qty)}</span>
     </div>`
     )
     .join("");

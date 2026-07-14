@@ -110,11 +110,27 @@ function renderProduct(p) {
         <div class="pd-side-inner reveal">
           <p class="eyebrow">${esc(CATEGORY_LABELS[p.category] ?? p.category)}</p>
           <h1>${esc(p.name)}</h1>
-          <p class="product-price">
+          <p class="product-price" id="pd-price">
             ${money(p.price)}
             ${p.compareAt > p.price ? `<s>${money(p.compareAt)}</s>` : ""}
           </p>
           ${story.lead ? `<p class="product-desc">${esc(story.lead)}</p>` : ""}
+          ${
+            p.variants?.length
+              ? `<div class="variants">
+                   <p class="variants-label">Options <span id="variant-name"></span></p>
+                   <div class="variant-chips" id="variant-chips">
+                     ${p.variants
+                       .map(
+                         (v, i) =>
+                           `<button type="button" class="variant-chip${i === 0 ? " active" : ""}"
+                              data-vid="${esc(v.id)}" title="${esc(v.name)}">${esc(v.name)}</button>`
+                       )
+                       .join("")}
+                   </div>
+                 </div>`
+              : ""
+          }
           <div class="buy-row">
             <div class="qty qty-lg">
               <button id="qty-minus" aria-label="Decrease quantity">−</button>
@@ -142,6 +158,45 @@ function renderProduct(p) {
       </aside>
     </div>`;
 
+  // variant selection: crossfade the hero to the variant photo, update price
+  let selected = p.variants?.[0] ?? null;
+  const heroImg = document.querySelector(".pd-img--hero img");
+  const baseHero = heroImg?.src;
+
+  function swapHero(src) {
+    if (!heroImg || !src || heroImg.src === src) return;
+    heroImg.classList.add("swapping");
+    setTimeout(() => {
+      heroImg.onload = () => heroImg.classList.remove("swapping");
+      heroImg.onerror = () => heroImg.classList.remove("swapping");
+      heroImg.src = src;
+    }, 200);
+  }
+
+  function applyVariant(v) {
+    selected = v;
+    $("#variant-name").textContent = `— ${v.name}`;
+    const price = $("#pd-price");
+    price.classList.add("bump");
+    price.innerHTML = `${money(v.price)}${
+      v.compareAt > v.price ? `<s>${money(v.compareAt)}</s>` : ""
+    }`;
+    setTimeout(() => price.classList.remove("bump"), 350);
+    swapHero(v.image || baseHero);
+  }
+
+  if (p.variants?.length) {
+    $("#variant-chips").addEventListener("click", (e) => {
+      const chip = e.target.closest(".variant-chip");
+      if (!chip) return;
+      document.querySelectorAll(".variant-chip").forEach((c) => c.classList.remove("active"));
+      chip.classList.add("active");
+      const v = p.variants.find((x) => x.id === chip.dataset.vid);
+      if (v) applyVariant(v);
+    });
+    applyVariant(selected);
+  }
+
   // quantity + add
   let qty = 1;
   $("#qty-minus").addEventListener("click", () => {
@@ -152,7 +207,9 @@ function renderProduct(p) {
     qty += 1;
     $("#qty-value").textContent = qty;
   });
-  $("#add-btn").addEventListener("click", () => addToCart(p.id, qty));
+  $("#add-btn").addEventListener("click", () =>
+    addToCart(selected ? `${p.id}::${selected.id}` : p.id, qty)
+  );
 }
 
 function renderRelated(current) {

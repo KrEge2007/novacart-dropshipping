@@ -282,8 +282,36 @@ async function orderImagesByQuality(images) {
   return scored.map((s) => s.url);
 }
 
-// Enrich a selected product with gallery images + description for its
-// product page. Failures are non-fatal — the card image alone still works.
+// Variants (colors/sizes) with their own price and photo. Only kept when
+// there is a real choice (2+), capped to keep the picker sane.
+function normalizeVariants(data) {
+  const list = Array.isArray(data?.variants) ? data.variants : [];
+  const out = [];
+  const seen = new Set();
+  for (const v of list) {
+    const name = String(v.variantNameEn ?? v.variantKey ?? "").trim();
+    const cost = parseCost(v.variantSellPrice);
+    if (!v.vid || !name || name.length > 80 || !(cost > 0)) continue;
+    const dedupe = name.toLowerCase();
+    if (seen.has(dedupe)) continue;
+    seen.add(dedupe);
+    const image = String(v.variantImage ?? "").trim();
+    out.push({
+      id: String(v.vid),
+      sku: v.variantSku ?? null,
+      name,
+      price: retailPrice(cost),
+      compareAt: compareAtPrice(retailPrice(cost)),
+      image: image.startsWith("http") ? image : null,
+    });
+    if (out.length >= 12) break;
+  }
+  return out.length > 1 ? out : null;
+}
+
+// Enrich a selected product with gallery images, description, and
+// variants for its product page. Failures are non-fatal — the card
+// image alone still works.
 async function fetchDetails(token, product) {
   try {
     const data = await cjRequest(`/product/query?pid=${encodeURIComponent(product.id)}`, { token });
@@ -291,12 +319,20 @@ async function fetchDetails(token, product) {
     if (!images.length) images = [product.image];
     images = await orderImagesByQuality(images);
     const description = stripHtml(data?.description);
-    return {
+    const variants = normalizeVariants(data);
+    const enriched = {
       ...product,
       image: images[0], // cleanest image fronts the card and hero
       images,
       description: description || null,
     };
+    if (variants) {
+      enriched.variants = variants;
+      // The card price should be the real entry price of the options.
+      enriched.price = Math.min(...variants.map((v) => v.price));
+      enriched.compareAt = compareAtPrice(enriched.price);
+    }
+    return enriched;
   } catch (err) {
     console.warn(`  details for ${product.id} failed: ${err.message}`);
     return { ...product, images: [product.image], description: null };
