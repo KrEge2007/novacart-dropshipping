@@ -3,7 +3,7 @@
     "updatedAt": "2026-07-14T00:00:00.000Z",
     "source": "seed",
     "rotation": "weekly",
-    "note": "Seed catalog. Once CJ_EMAIL and CJ_API_KEY repo secrets are set, the refresh-catalog workflow replaces this file with live CJdropshipping products."
+    "note": "Seed catalog. Once the CJ_API_KEY repo secret is set, the refresh-catalog workflow replaces this file with live CJdropshipping products."
   },
   "products": [
     {
@@ -12,7 +12,9 @@
       "category": "hydration",
       "price": 34.0,
       "compareAt": 44.0,
-      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=900&q=80"
+      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=900&q=80",
+      "images": ["https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=1200&q=80"],
+      "description": "Double-walled stainless steel keeps drinks cold for 24 hours or hot for 12. Powder-coated matte finish, leak-proof cap, and a mouth wide enough for ice cubes. Fits standard bottle cages and car cup holders."
     },
     {
       "id": "seed-studio-mat",
@@ -20,7 +22,9 @@
       "category": "yoga",
       "price": 58.0,
       "compareAt": 72.0,
-      "image": "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=900&q=80"
+      "image": "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=900&q=80",
+      "images": ["https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=1200&q=80"],
+      "description": "A 4.5mm natural rubber mat with a grippy polyurethane top layer that holds through sweaty sessions. Dense enough to protect knees and wrists, firm enough for balance work. Includes a cotton carry strap."
     },
     {
       "id": "seed-yoga-set",
@@ -28,7 +32,9 @@
       "category": "yoga",
       "price": 72.0,
       "compareAt": 89.0,
-      "image": "https://images.unsplash.com/photo-1591291621164-2c6367723315?w=900&q=80"
+      "image": "https://images.unsplash.com/photo-1591291621164-2c6367723315?w=900&q=80",
+      "images": ["https://images.unsplash.com/photo-1591291621164-2c6367723315?w=1200&q=80"],
+      "description": "Everything for a home practice in one box: a 6mm cushioned mat, a high-density foam block, a microfiber towel, and a pair of 1kg hand weights. A considered starter kit — or a complete refresh."
     },
     {
       "id": "seed-strength-kit",
@@ -36,7 +42,9 @@
       "category": "training",
       "price": 64.0,
       "compareAt": 79.0,
-      "image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&q=80"
+      "image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&q=80",
+      "images": ["https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=1200&q=80"],
+      "description": "A pair of 5kg rubber-coated dumbbells and a heavy resistance band with padded handles. Covers presses, rows, curls, and full-body circuits without a rack — the compact home gym that actually gets used."
     },
     {
       "id": "seed-hand-weights",
@@ -44,7 +52,9 @@
       "category": "training",
       "price": 42.0,
       "compareAt": 52.0,
-      "image": "https://images.unsplash.com/photo-1558017487-06bf9f82613a?w=900&q=80"
+      "image": "https://images.unsplash.com/photo-1558017487-06bf9f82613a?w=900&q=80",
+      "images": ["https://images.unsplash.com/photo-1558017487-06bf9f82613a?w=1200&q=80"],
+      "description": "Soft-grip neoprene dumbbells in 2kg and 3kg pairs. Non-slip, non-marking, and flat-edged so they don't roll away mid-set. Ideal for pilates, barre, and high-rep conditioning."
     },
     {
       "id": "seed-kettlebell",
@@ -52,7 +62,9 @@
       "category": "training",
       "price": 49.0,
       "compareAt": 62.0,
-      "image": "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=900&q=80"
+      "image": "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=900&q=80",
+      "images": ["https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=1200&q=80"],
+      "description": "Single-cast iron with a smooth, wide handle for two-handed swings and a flat base for renegade rows. Color-coded weight band and a rust-resistant matte coating. The one piece of kit that covers strength and conditioning alike."
     },
     {
       "id": "seed-exercise-mat",
@@ -60,7 +72,9 @@
       "category": "training",
       "price": 46.0,
       "compareAt": 58.0,
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80"
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80",
+      "images": ["https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80"],
+      "description": "An 8mm high-density mat built for floor work: sit-ups, planks, stretching, and bodyweight circuits. Textured on both sides so it stays put on hardwood, with sealed edges that won't peel."
     },
     {
       "id": "seed-grip-mat",
@@ -68,7 +82,9 @@
       "category": "yoga",
       "price": 54.0,
       "compareAt": 68.0,
-      "image": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=900&q=80"
+      "image": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=900&q=80",
+      "images": ["https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1200&q=80"],
+      "description": "Made for heat: an absorbent suede-feel top layer that grips harder the more you sweat, bonded to a natural rubber base. Machine-washable and free of PVC and silicone."
     },
     {
       "id": "seed-training-bra",
@@ -76,7 +92,9 @@
       "category": "apparel",
       "price": 38.0,
       "compareAt": 48.0,
-      "image": "https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=900&q=80"
+      "image": "https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=900&q=80",
+      "images": ["https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=1200&q=80"],
+      "description": "Medium-support racerback in a seamless knit that moves with you. Sweat-wicking, quick-drying, and cut to stay put through inversions and intervals. Sizes XS–XL."
     },
     {
       "id": "seed-barbell",
@@ -84,7 +102,9 @@
       "category": "training",
       "price": 189.0,
       "compareAt": 229.0,
-      "image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=900&q=80"
+      "image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=900&q=80",
+      "images": ["https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=1200&q=80"],
+      "description": "A 20kg, 2.2m bar with dual knurl marks, smooth-spinning bushings, and a 190k PSI shaft that flexes where it should and nowhere else. Standard 50mm sleeves fit any Olympic plates."
     }
   ]
 }

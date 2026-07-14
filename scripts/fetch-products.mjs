@@ -119,6 +119,56 @@ function parseCost(sellPrice) {
   return m ? Number(m[0]) : NaN;
 }
 
+// productImageSet may be an array, a JSON-encoded string, or absent.
+function parseImages(value) {
+  const clean = (arr) =>
+    arr.filter((u) => typeof u === "string" && u.startsWith("http"));
+  if (Array.isArray(value)) return clean(value);
+  if (typeof value === "string") {
+    try {
+      const parsed = JSON.parse(value);
+      if (Array.isArray(parsed)) return clean(parsed);
+    } catch {
+      /* not JSON */
+    }
+    if (value.startsWith("http")) return [value];
+  }
+  return [];
+}
+
+// CJ descriptions are HTML; the storefront wants plain text.
+function stripHtml(html) {
+  return String(html ?? "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#\d+;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 900);
+}
+
+// Enrich a selected product with gallery images + description for its
+// product page. Failures are non-fatal — the card image alone still works.
+async function fetchDetails(token, product) {
+  try {
+    const data = await cjRequest(`/product/query?pid=${encodeURIComponent(product.id)}`, { token });
+    const images = parseImages(data?.productImageSet).slice(0, 5);
+    const description = stripHtml(data?.description);
+    return {
+      ...product,
+      images: images.length ? images : [product.image],
+      description: description || null,
+    };
+  } catch (err) {
+    console.warn(`  details for ${product.id} failed: ${err.message}`);
+    return { ...product, images: [product.image], description: null };
+  }
+}
+
 function normalize(raw, category) {
   const cost = parseCost(raw.sellPrice);
   const name = String(raw.productNameEn ?? "").trim();
@@ -182,13 +232,21 @@ async function main() {
     selected.push(...picks);
   }
 
-  const catalog = selected.slice(0, PRODUCT_COUNT);
+  let catalog = selected.slice(0, PRODUCT_COUNT);
 
   // Safety valve: never publish a broken/empty catalog.
   if (catalog.length < 8) {
     console.error(`Only ${catalog.length} valid products fetched — keeping existing catalog.`);
     process.exit(1);
   }
+
+  console.log("Fetching product details (description + gallery)...");
+  const enriched = [];
+  for (const product of catalog) {
+    enriched.push(await fetchDetails(token, product));
+    await new Promise((r) => setTimeout(r, 1100));
+  }
+  catalog = enriched;
 
   const out = {
     meta: {
