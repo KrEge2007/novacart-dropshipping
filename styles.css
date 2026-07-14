@@ -226,6 +226,7 @@ button { font: inherit; cursor: pointer; }
 }
 .card-media img {
   width: 100%; height: 100%; object-fit: contain; padding: 7%;
+  mix-blend-mode: multiply;
   transition: transform 0.5s ease;
 }
 .card:hover .card-media img { transform: scale(1.035); }
@@ -412,6 +413,7 @@ button { font: inherit; cursor: pointer; }
 }
 .pd-img-frame img {
   width: 100%; height: 100%; object-fit: contain; padding: 6%;
+  mix-blend-mode: multiply;
   display: block;
 }
 .pd-cap {
@@ -558,6 +560,48 @@ button { font: inherit; cursor: pointer; }
 }
 .chapter-head.in::after { transform: scaleX(1); }
 
+/* ---------- section signature animations ---------- */
+
+/* category tiles: a paper curtain lifts off each tile, then the label rises */
+.tile::after {
+  content: ""; position: absolute; inset: 0; background: var(--paper);
+  transform: scaleY(0); transform-origin: top; z-index: 2; pointer-events: none;
+  transition: transform 0.95s cubic-bezier(0.16, 1, 0.3, 1) var(--d, 0ms);
+}
+.anim-ready .tile.reveal:not(.in) { transform: none; opacity: 1; }
+.anim-ready .tile.reveal:not(.in)::after { transform: scaleY(1); }
+.tile span {
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) calc(var(--d, 0ms) + 320ms),
+    opacity 0.7s ease calc(var(--d, 0ms) + 320ms);
+}
+.anim-ready .tile.reveal:not(.in) span { opacity: 0; transform: translateY(18px); }
+
+/* FAQ items: cascade in from the left */
+.anim-ready .faq details.reveal:not(.in) { transform: translateX(-40px); }
+
+/* value props: a green hairline draws itself above each */
+.props > div { position: relative; padding-top: 18px; }
+.props > div::before {
+  content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 1px;
+  background: var(--green); opacity: 0.5;
+  transition: transform 1.1s cubic-bezier(0.16, 1, 0.3, 1) calc(var(--d, 0ms) + 150ms);
+  transform-origin: left;
+}
+.anim-ready .props > div.reveal:not(.in)::before { transform: scaleX(0); }
+
+/* story image: wipes open left-to-right under the copy reveal */
+.story-media { position: relative; }
+.story-media::after {
+  content: ""; position: absolute; inset: 0; background: var(--paper);
+  transform: scaleX(0); transform-origin: right; z-index: 2; pointer-events: none;
+  transition: transform 1.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-ready .story-media.reveal:not(.in) { transform: none; opacity: 1; }
+.anim-ready .story-media.reveal:not(.in)::after { transform: scaleX(1); }
+
+/* newsletter form: settles in with a soft scale */
+.anim-ready .newsletter form.reveal:not(.in) { transform: translateY(24px) scale(0.965); }
+
 /* ---------- scroll-driven parallax (progressive enhancement) ----------
    Where supported, these run on the compositor tied to scroll position:
    chapter numerals drift against the scroll; lifestyle photos pan
@@ -678,5 +722,8 @@ button { font: inherit; cursor: pointer; }
     opacity: 1 !important; transform: none !important;
   }
   .chapter-head::after { transform: scaleX(1) !important; }
+  .tile::after, .story-media::after { display: none !important; }
+  .props > div::before { transform: scaleX(1) !important; }
+  .anim-ready .tile.reveal:not(.in) span { opacity: 1 !important; transform: none !important; }
   @view-transition { navigation: none; }
 }

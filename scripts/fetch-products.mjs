@@ -202,16 +202,99 @@ function stripHtml(html) {
   return text.trim().slice(0, 900);
 }
 
+/* ---------- image quality scoring ----------
+   Supplier photos range from clean studio shots to loud marketing
+   collages with banner text. We download each candidate, sample its
+   border pixels, and score: bright + unsaturated + uniform borders =
+   clean product-on-white shot; colorful busy borders = collage.
+   The gallery is reordered best-first so cards/heroes get the
+   cleanest image. Decoders are optional deps — without them, scoring
+   is skipped and the original order kept. */
+
+async function importOptional(name) {
+  try {
+    const mod = await import(name);
+    return mod.default ?? mod;
+  } catch {
+    return null;
+  }
+}
+
+async function scoreImage(url) {
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
+    if (!res.ok) return null;
+    const buf = Buffer.from(await res.arrayBuffer());
+    if (buf.length < 1000 || buf.length > 15_000_000) return null;
+
+    let px, w, h;
+    if (buf[0] === 0xff && buf[1] === 0xd8) {
+      const jpeg = await importOptional("jpeg-js");
+      if (!jpeg) return null;
+      ({ data: px, width: w, height: h } = jpeg.decode(buf, {
+        maxMemoryUsageInMB: 256,
+        formatAsRGBA: true,
+      }));
+    } else if (buf[0] === 0x89 && buf[1] === 0x50) {
+      const pngjs = await importOptional("pngjs");
+      if (!pngjs?.PNG) return null;
+      const png = pngjs.PNG.sync.read(buf);
+      ({ data: px, width: w, height: h } = png);
+    } else {
+      return null; // webp/other: no decoder, skip
+    }
+
+    // Sample a ring of border pixels.
+    const pts = [];
+    const sx = Math.max(1, Math.floor(w / 32));
+    for (let x = 0; x < w; x += sx) pts.push([x, 0], [x, h - 1]);
+    const sy = Math.max(1, Math.floor(h / 32));
+    for (let y = 0; y < h; y += sy) pts.push([0, y], [w - 1, y]);
+
+    let sumL = 0;
+    let sumS = 0;
+    const lums = [];
+    for (const [x, y] of pts) {
+      const i = (y * w + x) * 4;
+      const r = px[i], g = px[i + 1], b = px[i + 2];
+      const mx = Math.max(r, g, b), mn = Math.min(r, g, b);
+      const lum = (mx + mn) / 510; // 0..1 lightness
+      sumL += lum;
+      sumS += mx === 0 ? 0 : (mx - mn) / mx; // 0..1 saturation
+      lums.push(lum);
+    }
+    const n = pts.length;
+    const meanL = sumL / n;
+    const meanS = sumS / n;
+    const stdL = Math.sqrt(lums.reduce((a, l) => a + (l - meanL) ** 2, 0) / n);
+    return meanL * 2 - meanS * 1.6 - stdL * 2.2;
+  } catch {
+    return null;
+  }
+}
+
+async function orderImagesByQuality(images) {
+  const scored = await Promise.all(
+    images.map(async (url) => ({ url, score: await scoreImage(url) }))
+  );
+  if (!scored.some((s) => s.score !== null)) return images; // no decoders/all failed
+  scored.sort((a, b) => (b.score ?? -99) - (a.score ?? -99));
+  return scored.map((s) => s.url);
+}
+
 // Enrich a selected product with gallery images + description for its
 // product page. Failures are non-fatal — the card image alone still works.
 async function fetchDetails(token, product) {
   try {
     const data = await cjRequest(`/product/query?pid=${encodeURIComponent(product.id)}`, { token });
-    const images = parseImages(data?.productImageSet).slice(0, 5);
+    let images = parseImages(data?.productImageSet).slice(0, 5);
+    if (!images.length) images = [product.image];
+    images = await orderImagesByQuality(images);
     const description = stripHtml(data?.description);
     return {
       ...product,
-      images: images.length ? images : [product.image],
+      image: images[0], // cleanest image fronts the card and hero
+      images,
       description: description || null,
     };
   } catch (err) {

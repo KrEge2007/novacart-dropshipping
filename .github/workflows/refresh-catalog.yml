@@ -26,6 +26,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install image decoders for quality scoring
+        run: npm install --no-audit --no-fund
+
       - name: Fetch products from supplier
         run: |
           if [ "${{ github.event.inputs.mode }}" = "categories" ]; then

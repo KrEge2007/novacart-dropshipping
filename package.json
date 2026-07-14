@@ -1,0 +1,9 @@
+{
+  "name": "kinetic-store",
+  "private": true,
+  "description": "Static storefront; deps are only used by the catalog refresh pipeline (image quality scoring).",
+  "devDependencies": {
+    "jpeg-js": "^0.4.4",
+    "pngjs": "^7.0.0"
+  }
+}
