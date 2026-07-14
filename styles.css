@@ -112,30 +112,117 @@ button { font: inherit; cursor: pointer; }
 .section-head h2 { font-size: clamp(28px, 3.4vw, 42px); }
 .refresh-note { color: var(--ink-soft); font-size: 13.5px; margin-top: 10px; }
 
-.filter-nav { display: flex; gap: 4px; flex-wrap: wrap; }
-.filter-nav button {
-  background: none; border: none; padding: 8px 14px;
-  font-size: 13.5px; letter-spacing: 0.04em; color: var(--ink-soft);
-  border-bottom: 1px solid transparent; text-transform: capitalize;
-  transition: color 0.15s;
-}
-.filter-nav button:hover { color: var(--ink); }
-.filter-nav button.active { color: var(--ink); border-bottom-color: var(--ink); }
+.explore-hint { color: var(--ink-soft); font-size: 13px; letter-spacing: 0.08em; }
 
 .grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 36px 24px;
 }
 
+/* ---------- chapters ---------- */
+
+.chapter { padding: clamp(40px, 6vw, 80px) 0; scroll-margin-top: 96px; }
+.chapter + .chapter { border-top: 1px solid var(--line); }
+
+.chapter-head {
+  display: flex; align-items: baseline; gap: clamp(16px, 3vw, 36px);
+  flex-wrap: wrap; margin-bottom: clamp(28px, 4vw, 48px);
+}
+.chapter-num {
+  font-family: var(--serif); font-size: clamp(56px, 8vw, 112px); line-height: 0.9;
+  color: transparent; -webkit-text-stroke: 1.2px var(--green);
+}
+.chapter-head-text h3 { font-size: clamp(26px, 3.4vw, 40px); }
+.chapter-head-text p { color: var(--ink-soft); font-size: 15px; margin-top: 6px; max-width: 50ch; }
+.chapter-count {
+  margin-left: auto; font-size: 12px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.chapter-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 40px 24px;
+}
+.card--feature { grid-column: span 2; }
+.card--feature .card-media { aspect-ratio: 16 / 10; }
+.card--feature .card-name { font-size: 19px; }
+@media (max-width: 560px) {
+  .card--feature { grid-column: auto; }
+  .card--feature .card-media { aspect-ratio: 1 / 1; }
+}
+
+/* ---------- scroll reveals (per-category personality) ----------
+   Elements carry .reveal and animate to .in when scrolled into view.
+   Hidden states only apply once JS adds body.anim-ready, so the page
+   never blanks without JS. --d staggers siblings. */
+
+.anim-ready .reveal {
+  opacity: 0;
+  transition:
+    opacity 0.8s ease var(--d, 0ms),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1) var(--d, 0ms),
+    filter 0.9s ease var(--d, 0ms),
+    clip-path 0.9s cubic-bezier(0.33, 1, 0.68, 1) var(--d, 0ms);
+}
+.anim-ready .reveal.in { opacity: 1; transform: none; filter: none; }
+
+/* chapter headers: number slides from the left, text rises */
+.anim-ready .chapter-num.reveal:not(.in) { transform: translateX(-40px); }
+.anim-ready .chapter-head-text .reveal:not(.in),
+.anim-ready .chapter-count.reveal:not(.in) { transform: translateY(22px); }
+
+/* 01 training — rises with weight: heavy lift up, settles hard */
+.anim-ready .chapter--training .card.reveal {
+  transition-duration: 0.65s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim-ready .chapter--training .card.reveal:not(.in) {
+  transform: translateY(72px) scale(0.96);
+}
+
+/* 02 yoga — sways in: soft rise with a gentle tilt, slow exhale */
+.anim-ready .chapter--yoga .card.reveal {
+  transform-origin: bottom left;
+  transition-duration: 1.05s;
+  transition-timing-function: cubic-bezier(0.34, 1.3, 0.5, 1);
+}
+.anim-ready .chapter--yoga .card.reveal:not(.in) {
+  transform: translateY(40px) rotate(2.2deg);
+}
+.anim-ready .chapter--yoga .card.reveal:nth-child(even) { transform-origin: bottom right; }
+.anim-ready .chapter--yoga .card.reveal:nth-child(even):not(.in) {
+  transform: translateY(40px) rotate(-2.2deg);
+}
+
+/* 03 recovery — blurs into focus, like eyes opening after savasana */
+.anim-ready .chapter--recovery .card.reveal { transition-duration: 1.1s; }
+.anim-ready .chapter--recovery .card.reveal:not(.in) {
+  filter: blur(16px);
+  transform: scale(1.04);
+}
+
+/* 04 hydration — pours in: liquid circle reveal from the base.
+   The clip lives on .card-media (not the observed card) so the tiny
+   initial clip region can't suppress IntersectionObserver visibility. */
+.anim-ready .chapter--hydration .card.reveal:not(.in) { transform: translateY(28px); }
+.anim-ready .chapter--hydration .card.reveal .card-media {
+  transition: clip-path 1s cubic-bezier(0.33, 1, 0.68, 1) var(--d, 0ms);
+  clip-path: circle(135% at 50% 50%);
+}
+.anim-ready .chapter--hydration .card.reveal:not(.in) .card-media {
+  clip-path: circle(10% at 50% 92%);
+}
+
 .card { display: flex; flex-direction: column; position: relative; }
 .card-link { position: absolute; inset: 0; z-index: 1; }
 .card-add { z-index: 2; }
 .card-media {
-  position: relative; aspect-ratio: 4 / 5; overflow: hidden;
-  border-radius: 2px; background: var(--paper-2);
+  position: relative; aspect-ratio: 1 / 1; overflow: hidden;
+  border-radius: 2px; background: #fff; border: 1px solid var(--line);
 }
 .card-media img {
-  width: 100%; height: 100%; object-fit: cover;
+  width: 100%; height: 100%; object-fit: contain; padding: 7%;
   transition: transform 0.5s ease;
 }
 .card:hover .card-media img { transform: scale(1.035); }
@@ -276,7 +363,7 @@ button { font: inherit; cursor: pointer; }
 .cart-empty { color: var(--ink-soft); text-align: center; margin-top: 48px; font-size: 14.5px; }
 
 .cart-line { display: flex; gap: 16px; margin-bottom: 22px; }
-.cart-line img { width: 72px; height: 90px; object-fit: cover; border-radius: 2px; background: var(--paper-2); }
+.cart-line img { width: 72px; height: 72px; object-fit: contain; padding: 5px; border-radius: 2px; background: #fff; border: 1px solid var(--line); }
 .cart-line-info { flex: 1; font-size: 14px; }
 .cart-line-info strong { display: block; font-weight: 500; margin-bottom: 2px; }
 .cart-line-info .muted { color: var(--ink-soft); font-size: 13px; }
@@ -303,15 +390,15 @@ button { font: inherit; cursor: pointer; }
   gap: clamp(32px, 5vw, 72px); align-items: start;
 }
 
-.gallery-main { aspect-ratio: 4 / 5; overflow: hidden; border-radius: 2px; background: var(--paper-2); }
-.gallery-main img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-main { aspect-ratio: 1 / 1; overflow: hidden; border-radius: 2px; background: #fff; border: 1px solid var(--line); }
+.gallery-main img { width: 100%; height: 100%; object-fit: contain; padding: 5%; }
 .gallery-thumbs { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
 .thumb {
-  width: 72px; height: 88px; padding: 0; overflow: hidden; border-radius: 2px;
-  border: 1px solid var(--line); background: var(--paper-2); opacity: 0.7;
+  width: 76px; height: 76px; padding: 0; overflow: hidden; border-radius: 2px;
+  border: 1px solid var(--line); background: #fff; opacity: 0.7;
   transition: opacity 0.15s, border-color 0.15s;
 }
-.thumb img { width: 100%; height: 100%; object-fit: cover; }
+.thumb img { width: 100%; height: 100%; object-fit: contain; padding: 6px; }
 .thumb:hover { opacity: 1; }
 .thumb.active { opacity: 1; border-color: var(--ink); }
 
@@ -368,4 +455,8 @@ button { font: inherit; cursor: pointer; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; }
   html { scroll-behavior: auto; }
+  .anim-ready .reveal, .anim-ready .reveal .card-media {
+    opacity: 1 !important; transform: none !important;
+    filter: none !important; clip-path: none !important;
+  }
 }

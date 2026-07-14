@@ -1,11 +1,42 @@
 /* ============================================================
-   Kinetic — home page (catalog grid, filters, newsletter)
+   Kinetic — home page
+   Renders the weekly edit as numbered category "chapters", each
+   with its own scroll-reveal animation (see styles.css):
+     training  — rises with weight
+     yoga      — sways in softly
+     recovery  — blurs into focus
+     hydration — pours in (liquid clip reveal)
    Requires store.js to be loaded first.
    ============================================================ */
 
 "use strict";
 
-let activeFilter = "all";
+const CHAPTERS = [
+  {
+    key: "training",
+    num: "01",
+    title: "Training",
+    tag: "Iron, tension, repetition — strength you can keep at home.",
+  },
+  {
+    key: "yoga",
+    num: "02",
+    title: "Yoga & Mobility",
+    tag: "Slow strength. Balance, breath, and range of motion.",
+  },
+  {
+    key: "recovery",
+    num: "03",
+    title: "Recovery",
+    tag: "The work between workouts: release, restore, repeat.",
+  },
+  {
+    key: "hydration",
+    num: "04",
+    title: "Hydration",
+    tag: "Cold water within reach, from first set to last stretch.",
+  },
+];
 
 function renderRefreshNote() {
   const note = $("#refresh-note");
@@ -21,26 +52,9 @@ function renderRefreshNote() {
   note.textContent = `${store.products.length} products · refreshed ${date} · rotates ${cadence}`;
 }
 
-function renderFilters() {
-  const cats = [...new Set(store.products.map((p) => p.category))];
-  $("#filters").innerHTML =
-    `<button class="active" data-filter="all">All</button>` +
-    cats.map((c) => `<button data-filter="${esc(c)}">${esc(c)}</button>`).join("");
-}
-
-function renderGrid() {
-  const items = store.products.filter(
-    (p) => activeFilter === "all" || p.category === activeFilter
-  );
-  const grid = $("#product-grid");
-  if (!items.length) {
-    grid.innerHTML = `<p class="grid-empty">Nothing in this category this week — check back Monday.</p>`;
-    return;
-  }
-  grid.innerHTML = items
-    .map(
-      (p) => `
-    <article class="card">
+function cardHTML(p, i, feature) {
+  return `
+    <article class="card reveal${feature ? " card--feature" : ""}" style="--d:${i * 110}ms">
       <a class="card-link" href="product.html?id=${encodeURIComponent(p.id)}" aria-label="${esc(p.name)}"></a>
       <div class="card-media">
         <img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" />
@@ -50,31 +64,75 @@ function renderGrid() {
         <p class="card-cat">${esc(p.category)}</p>
         <h3 class="card-name">${esc(p.name)}</h3>
         <p class="card-price">${money(p.price)}${
-        p.compareAt > p.price ? `<s>${money(p.compareAt)}</s>` : ""
-      }</p>
+    p.compareAt > p.price ? `<s>${money(p.compareAt)}</s>` : ""
+  }</p>
       </div>
-    </article>`
-    )
-    .join("");
+    </article>`;
 }
 
-$("#filters").addEventListener("click", (e) => {
-  const btn = e.target.closest("button");
-  if (!btn) return;
-  activeFilter = btn.dataset.filter;
-  document.querySelectorAll("#filters button").forEach((b) => b.classList.remove("active"));
-  btn.classList.add("active");
-  renderGrid();
-});
+function renderChapters() {
+  const wrap = $("#chapters");
+  const sections = [];
+  for (const ch of CHAPTERS) {
+    const items = store.products.filter((p) => p.category === ch.key);
+    if (!items.length) continue;
+    sections.push(`
+      <section class="chapter chapter--${ch.key}" id="chapter-${ch.key}">
+        <header class="chapter-head">
+          <span class="chapter-num reveal" aria-hidden="true">${ch.num}</span>
+          <div class="chapter-head-text">
+            <h3 class="reveal" style="--d:90ms">${esc(ch.title)}</h3>
+            <p class="reveal" style="--d:180ms">${esc(ch.tag)}</p>
+          </div>
+          <span class="chapter-count reveal" style="--d:270ms">
+            ${items.length} ${items.length === 1 ? "piece" : "pieces"} this week
+          </span>
+        </header>
+        <div class="chapter-grid">
+          ${items.map((p, i) => cardHTML(p, i, i === 0)).join("")}
+        </div>
+      </section>`);
+  }
 
-// Category tiles double as filters
-document.querySelectorAll(".tile[data-filter]").forEach((tile) => {
-  tile.addEventListener("click", () => {
-    const target = tile.dataset.filter;
-    const btn = document.querySelector(`#filters button[data-filter="${target}"]`);
-    (btn || document.querySelector('#filters button[data-filter="all"]'))?.click();
-  });
-});
+  // Anything in a category we don't have a chapter for still gets shown.
+  const known = new Set(CHAPTERS.map((c) => c.key));
+  const rest = store.products.filter((p) => !known.has(p.category));
+  if (rest.length) {
+    sections.push(`
+      <section class="chapter chapter--training" id="chapter-more">
+        <header class="chapter-head">
+          <span class="chapter-num reveal" aria-hidden="true">+</span>
+          <div class="chapter-head-text"><h3 class="reveal" style="--d:90ms">Also this week</h3></div>
+        </header>
+        <div class="chapter-grid">${rest.map((p, i) => cardHTML(p, i, false)).join("")}</div>
+      </section>`);
+  }
+
+  wrap.innerHTML = sections.length
+    ? sections.join("")
+    : `<p class="grid-empty">The catalog is being refreshed — check back shortly.</p>`;
+
+  observeReveals();
+}
+
+function observeReveals() {
+  if (!("IntersectionObserver" in window)) {
+    document.querySelectorAll(".reveal").forEach((el) => el.classList.add("in"));
+    return;
+  }
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        }
+      }
+    },
+    { threshold: 0.05, rootMargin: "0px 0px -6% 0px" }
+  );
+  document.querySelectorAll(".reveal:not(.in)").forEach((el) => io.observe(el));
+}
 
 document.addEventListener("click", (e) => {
   const add = e.target.closest(".card-add");
@@ -92,9 +150,11 @@ $("#newsletter-form").addEventListener("submit", (e) => {
 (async () => {
   try {
     await loadCatalog();
+    // Only hide/animate content once we know JS is running and the
+    // catalog is loaded — without JS the page never blanks out.
+    document.body.classList.add("anim-ready");
     renderRefreshNote();
-    renderFilters();
-    renderGrid();
+    renderChapters();
     renderCart();
   } catch (err) {
     $("#refresh-note").textContent = "Couldn't load the catalog. Please refresh the page.";
