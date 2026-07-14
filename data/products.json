@@ -1,110 +1,298 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T00:00:00.000Z",
-    "source": "seed",
+    "updatedAt": "2026-07-14T06:44:03.649Z",
+    "source": "cjdropshipping",
     "rotation": "weekly",
-    "note": "Seed catalog. Once the CJ_API_KEY repo secret is set, the refresh-catalog workflow replaces this file with live CJdropshipping products."
+    "rotationSeed": "2026-W29"
   },
   "products": [
     {
-      "id": "seed-steel-bottle",
-      "name": "Insulated Steel Bottle · 750ml",
+      "id": "2003099090895654913",
+      "sku": "CJCJ2669202",
+      "name": "SPORTNOW 2 X 10kg Soft Kettlebell, Kettle Bell With Non-Slip Handle, For Home Gym, Strength Training, Cardio - Grey And Green",
+      "category": "training",
+      "price": 115.95,
+      "compareAt": 150.95,
+      "supplierCost": 48.04,
+      "image": "https://cf.cjdropshipping.com/17663616/7514dd88-67e5-4cda-bcbe-a166028ed151.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/17663616/133450e7-e0fc-47cc-ad16-2eb9e484affd.jpg",
+        "https://cf.cjdropshipping.com/17663616/56112a51-089b-4a13-b7cf-b252fd1c7120.jpg",
+        "https://cf.cjdropshipping.com/17663616/7514dd88-67e5-4cda-bcbe-a166028ed151.jpg",
+        "https://cf.cjdropshipping.com/17663616/0907833a-c69c-4fad-9755-8e35a31f2977.jpg",
+        "https://cf.cjdropshipping.com/17663616/3e189918-3e71-4a49-a4a1-f4978d8ae594.jpg"
+      ],
+      "description": "Improve home workouts with the SPORTNOW kettlebell set. Deadlifts, lunges, kettlebell presses and more, you'll enjoy a full body workout. A wide, non-slip handle gives you a comfortable grip, so you can confidently exercise without worrying about dropping it. Even if you drop it, its soft body and base greatly reduce the risk of injury or damage to your floor. Filled with metal sand, it brings efficiency and effectiveness to your fitness routine, making every lift a step towards your goals. Features: Set includes 2x 10kg Kettlebell Soft body and base ensure safe handling Wide, ergonomic and non-slip handle, giving you complete control when handling the kettlebell Designed with a flat base, it stays upright when you place it down Helps build muscle and improve cardio Specification: Colour: Grey and green Material: Plastic and metal sand Weight: 2 x 10kg Overall dimensions: 21W x 21D x 30H"
+    },
+    {
+      "id": "2607130150241607000",
+      "sku": "CJTZ2981299",
+      "name": "Summer Womens Shirt Set With A Digital-print Collar",
+      "category": "training",
+      "price": 19.95,
+      "compareAt": 25.95,
+      "supplierCost": 7.96,
+      "image": "https://oss-cf.cjdropshipping.com/product/2026/07/13/01/8dbd14cf-dd10-4b97-9565-62a39c6ae410.jpg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2026/07/14/06/dd0c082e-5e75-4764-90f1-3d3a7177eb97.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/13/01/b4d8d7dc-bc77-4ad7-90c4-2ee8d621b0c5.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/14/06/7e88d63c-4353-4474-8258-a4a72594d8ba.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/13/01/8dbd14cf-dd10-4b97-9565-62a39c6ae410.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/13/01/d7dadb0f-18c8-4796-97a1-cbc4b05d3efb.jpg"
+      ],
+      "description": "Product information: Color:ORANGE Size: S, M, L, XL, XXL Fit: Relaxed fit Style Type: Artistic and Retro Composition: Single piece Trendy Element: 3D pattern Style: Pullover Thickness: Regular Fabric: Polyester (Terylene) Sleeve Style: Raglan sleeve Note: 1. Asian sizes are 1 to 2 sizes smaller than European and American people. Choose the larger size if your size between two sizes. Please allow 2-3cm differences due to manual measurement. 2. Please check the size chart carefully before you buy the item, if you don't know how to choose size, please contact our customer service. 3.As you know, the different computers display colors differently, the color of the actual item may vary slightly from the following images. Packing list: TOP*1+PANTS*1 Product Image:"
+    },
+    {
+      "id": "2075041983951990785",
+      "sku": "CJFU2974719",
+      "name": "Foldable Pull Up Bar Standing Power Tower - Multi-Function Dip Station, 6-Level Adjustable Height Strength Training Fitness Equipment For Home Gym, 440lbs Max",
+      "category": "training",
+      "price": 191.95,
+      "compareAt": 249.95,
+      "supplierCost": 79.81,
+      "image": "https://cf.cjdropshipping.com/17835552/d87f526d-b7de-45b7-8104-86c245c90816.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/17835552/f78d7c5d-8c70-46c4-896c-4c326253106f.jpg",
+        "https://cf.cjdropshipping.com/17835552/82380dcc-1faf-4d0c-80b3-cf5ab5a5088a.jpg",
+        "https://cf.cjdropshipping.com/17835552/d87f526d-b7de-45b7-8104-86c245c90816.jpg",
+        "https://cf.cjdropshipping.com/17835552/58852a1a-1b05-43e3-b875-bd76bf75ed80.jpg",
+        "https://cf.cjdropshipping.com/17835552/4564d0bc-10bb-4692-9b4e-89819b45b6e3.jpg"
+      ],
+      "description": "Specification Product Information Product Type :Single Box Product Product Name:Foldable Pull Up Bar Standing Power Tower - Multi-Function Dip Station, 6-Level Adjustable Height Strength Training Fitness Equipment for Home Gym, 440lbs Max Main Color:Black+Red Main Material:ABS+Rubber+Steel (Q235) Product Dimensions Assembled Length (in.):33.46 Assembled Width (in.):51.18 Assembled Height (in.):82.68 Product Weight (lbs.):30.20 Package Size Length (in.):46.46 Width (in.):13.00 Height (in.):3.54 Weight (lbs.):32.41 Product Features These images contains AI-generated human models. Some figures in this lifestyle photo are created using artificial intelligence. MULTI-FUNCTIONAL STRENGTH STATION: Combined pull up bar, dip station, and power tower configuration allows for targeted upper and core exercises within a single standing unit. Living room workout station; spare room or home office gym;"
+    },
+    {
+      "id": "2075490015169863681",
+      "sku": "CJYL2978670",
+      "name": "2Pcs G3/8 DN10 Adjustable High Pressure Sprayer Nozzle Atomizing Spray Head Irrigation Tools",
+      "category": "training",
+      "price": 57.95,
+      "compareAt": 75.95,
+      "supplierCost": 24,
+      "image": "https://cf.cjdropshipping.com/17836416/5bec45f1-77f8-4c44-aa52-dd5847671d3b.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/17836416/e4605cf5-676c-4cc7-a221-73212164af4d.jpg",
+        "https://cf.cjdropshipping.com/17836416/0c4a3e52-e10d-43ae-a890-ed45852afd7b.jpg",
+        "https://cf.cjdropshipping.com/17836416/a0d9f735-d0e3-4720-8b10-56410046f2da.jpg",
+        "https://cf.cjdropshipping.com/17836416/96475b82-e6da-47b5-a25b-a74e3f49e634.jpg",
+        "https://cf.cjdropshipping.com/17836416/5bec45f1-77f8-4c44-aa52-dd5847671d3b.jpg"
+      ],
+      "description": "1、Fine spray, wide irrigation range, good atomization effect, can be used for large area irrigation. 2、Suitable for courtyard, garden, vegetable garden, lawn, green belt irrigation, industrial roof cooling, etc. 3、Electric sprayer nozzle, adopts high‑hardness stainless steel material, sturdy and durable, corrosion‑resistant. 4、Adopt G3/8 DN10 thread connection, good sealing, no water leakage, easy to install and disassemble. 5、The high‑pressure sprayer nozzle can be adjusted by rotation, with a long range and watering for fruit trees.Condition: 100% Brand NewItem Type: Sprayer NozzleMaterial: Stainless Steel Thread: G3/8 DN10Weight: Approx. 85g / 3ozProduct Size: Approx. 4x1.6x1.6cm / 1.6x0.6x0.6in 2 x Sprayer Nozzle 1.Please allow 0‑1 inch error due to manual measurement. Thanks for your understanding. 2.Monitors are not calibrated same, item color displayed in photos may be showing sli"
+    },
+    {
+      "id": "2607071003531639400",
+      "sku": "CJYD2972487",
+      "name": "Womens Yoga Fitness Short Dance Culottes",
+      "category": "training",
+      "price": 15.95,
+      "compareAt": 20.95,
+      "supplierCost": 6.57,
+      "image": "https://oss-cf.cjdropshipping.com/product/2026/07/07/10/1a8de29f-d56b-427b-8d50-7a79ad27393b_fine.jpeg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2026/07/07/10/1a8de29f-d56b-427b-8d50-7a79ad27393b_fine.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/07/10/f3998619-2d33-4437-8562-64f5728029c2_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/07/10/a3f94b19-488c-4b67-a498-23e6dbd7cfee_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/07/10/8467924f-f441-47fc-b2d2-d2edf7c7e8d1_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/07/10/68f5e294-c53f-44a8-add2-65859a203751_trans.jpeg"
+      ],
+      "description": "Product information: Material: Lycra, Spandex, Nylon Style: Sporty Fashion Features: Quick-drying, Sun protection, No built-in shorts, Pleated design, Naked feeling comfort Colour: Red, Black, Merlot Red, Grey Size Information: Available Sizes: S, M, L, XL Note: 1. Asian sizes are 1 to 2 sizes smaller than European and American people. Choose the larger size if your size between two sizes. Please allow 2-3cm differences due to manual measurement. 2. Please check the size chart carefully before you buy the item, if you don't know how to choose size, please contact our customer service. 3.As you know, the different computers display colors differently, the color of the actual item may vary slightly from the following images. Packing list: Skirt * 1 Product Image:"
+    },
+    {
+      "id": "2075770373020880898",
+      "sku": "CJQT2979523",
+      "name": "Gray Carpet Dash Mat Compatible W- T Oyota Prius C 2012-2019 Dash Cover MADE",
+      "category": "yoga",
+      "price": 159.95,
+      "compareAt": 207.95,
+      "supplierCost": 66.48,
+      "image": "https://cf.cjdropshipping.com/fde8f2ee-1957-4bd1-8a9b-45ea73a1e2c8.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/a427cd9f-514b-44ee-84f6-5498849bd0c1.jpg",
+        "https://cf.cjdropshipping.com/fde8f2ee-1957-4bd1-8a9b-45ea73a1e2c8.jpg",
+        "https://cf.cjdropshipping.com/7da09d76-8685-4bab-be9c-cfa336b8b3d2.jpg",
+        "https://cf.cjdropshipping.com/9fb228f7-471d-42c6-9043-63da4a50fc1e.jpg",
+        "https://cf.cjdropshipping.com/45a40a22-237e-4e43-b89b-32fe88cbbdee.jpg"
+      ],
+      "description": "Brand CS DASH COVERS Country/Region of Manufacture United States Manufacturer Part Number TO114-0 Warranty No Warranty Color Gray Year Make Model 2012 - 2019 Toyota Prius C Gray Carpet Dash Mat Compatible w/ Toyota Prius C 2012-2019 Dash Cover USA MADE · Carpet Dash cover for Toyota Prius C 2012-2019 · Custom made for your vehicle · This listing is for one dash cover · The listing is for a Gray dash cover if you would like to change the color to one of the other colors pictured please put it as a note at check out or you can send us a message to notify us of a color change · Please note as these dash covers are made when ordered any color changes must be immediate · Protect your dash board from the sun’s harmful UV rays · Proudly Made in the USA · Easy Installation · Please note that we do cover any speakers grills that are located on dash board as we feel that the speakers need to be pr"
+    },
+    {
+      "id": "2075770528759582722",
+      "sku": "CJQT2979531",
+      "name": "Gray Carpet Dash Mat Compatible With 1991-1994 Sentra Dash Cover",
+      "category": "yoga",
+      "price": 159.95,
+      "compareAt": 207.95,
+      "supplierCost": 66.48,
+      "image": "https://cf.cjdropshipping.com/d86f522d-dc17-4304-bd40-272e5a83dad6.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/0148d6b6-cc5b-405b-b754-219a436fc07b.jpg",
+        "https://cf.cjdropshipping.com/d86f522d-dc17-4304-bd40-272e5a83dad6.jpg",
+        "https://cf.cjdropshipping.com/b000fcb9-d8b1-4ee3-8089-33bd7ca7c4ac.jpg",
+        "https://cf.cjdropshipping.com/ea3c5f16-0326-448b-b042-94563f6ab444.jpg",
+        "https://cf.cjdropshipping.com/ea0aa692-6db7-49dd-bfe8-6a760a6b5048.jpg"
+      ],
+      "description": "Brand CS DASH COVERS Country/Region of Manufacture United States Manufacturer Part Number DA43-0 Color Gray Warranty No Warranty Year Make Model 1991 - 1994 Nissan Sentra Gray Carpet Dash Mat Compatible with 1991-1994 Sentra Dash Cover Made in USA · Carpet Dash cover for 1991-1994 Sentra · Custom made for your vehicle · This listing is for one dash cover · The listing is for a Gray dash cover if you would like to change the color to one of the other colors pictured please put it as a note at check out or you can send us a message to notify us of a color change · Please note as these dash covers are made when ordered any color changes must be immediate · Protect your dash board from the sun’s harmful UV rays · Proudly Made in the USA · Easy Installation · Please note that we do cover any speakers grills that are located on dash board as we feel that the speakers need to be protected from "
+    },
+    {
+      "id": "2076145651136106498",
+      "sku": "CJCS2980582",
+      "name": "All-in-One Portable Outdoor Sunshade, Mosquito Net, And Nap Mat",
+      "category": "yoga",
+      "price": 26.95,
+      "compareAt": 35.95,
+      "supplierCost": 10.9,
+      "image": "https://cf.cjdropshipping.com/e507b245-d856-48ff-b343-894a9a6914bf.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/3ce4bfb2-42bf-4cc2-ba09-82ca2585d4bf.jpg",
+        "https://cf.cjdropshipping.com/6cf86886-d8bf-40a6-aa04-e7096d1eab9d.jpg",
+        "https://cf.cjdropshipping.com/0e8ef894-7121-4e1c-8b76-c76671b6b6d1.jpg",
+        "https://cf.cjdropshipping.com/275e28cd-4395-47dd-8ff5-7594b77b99e9.jpg",
+        "https://cf.cjdropshipping.com/e63d282b-6af6-4e7a-88d6-ee8f87632cf3.jpg"
+      ],
+      "description": "The fully enclosed zipper design features a spacious, curved interior that doesn’t press on your hair or constrict your body, allowing you to lie down and roll over without restriction; the widened bottom flap fits snugly against the bed surface, preventing insects from entering through gaps. Suitable for multiple scenarios: single beds, children’s beds, temporary beds in rental units, living room nap beds, temporary accommodations while traveling, and hospital room companion beds. Colors: Orange, Shark, Desert Camo, Jungle Camo For: One person Uses: Outdoors, Indoors, Business Trips, Travel, Camping Weight: 458"
+    },
+    {
+      "id": "2607100557461624800",
+      "sku": "CJYD2978402",
+      "name": "Non-slip Quick-drying Drain Mat For Kitchen And Bathroom Faucets",
+      "category": "yoga",
+      "price": 9.95,
+      "compareAt": 12.95,
+      "supplierCost": 0.52,
+      "image": "https://oss-cf.cjdropshipping.com/product/2026/07/10/05/dc803957-c812-462d-8f04-05f19d1e38f5_water.jpeg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2026/07/10/05/dc803957-c812-462d-8f04-05f19d1e38f5_water.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/10/05/2d1bc5e3-f4b2-4d4c-ac6e-bf2d7cad198d_water.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/10/05/da32255e-0db6-4447-9852-47345293e9a3_water.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/10/05/b2570c01-dba3-42a8-bf7b-2cbc01b2893c_water.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/10/05/99b527de-7ace-410a-affb-65a014f48648_water.jpeg"
+      ],
+      "description": "Product information: Pattern: Cartoon/Anime, Color Blocks, Geometric Abstraction, Other Color: Plaid – Black and White – Right-Angled Squares Washing Method: Machine Washable Material: Diatomaceous Earth Dimensions: 10 * 40 cm (per piece), 10 * 60 cm (per piece), 14 * 40 cm (per piece), 14 * 60 cm (per piece) Craftsmanship: Printing Shape: Rectangular Strip Packing list: Drain Mat *1PC Product Image:"
+    },
+    {
+      "id": "2607080654571631700",
+      "sku": "CJYD2973517",
+      "name": "Simulation Colorful Small Mushroom Foam Ornament Bonsai Accessories",
+      "category": "recovery",
+      "price": 9.95,
+      "compareAt": 12.95,
+      "supplierCost": 0.9,
+      "image": "https://cf.cjdropshipping.com/quick/product/98b67ba9-e308-4c51-91c5-cb82e5afd244.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/quick/product/70892855-25ef-4e89-9038-32c124a2ed0a.jpg",
+        "https://cf.cjdropshipping.com/quick/product/94ef55ed-8846-4fc2-8c9e-2c8cd18cb4ba.jpg",
+        "https://cf.cjdropshipping.com/quick/product/4334083c-1402-43c6-9419-9ac6c997b97c.jpg",
+        "https://cf.cjdropshipping.com/quick/product/3d6dd724-8ad7-426a-89f2-8bfda373e83c.jpg",
+        "https://cf.cjdropshipping.com/quick/product/12ddb0f2-e5a3-4a9e-b5c7-a502cfb471cb.jpg"
+      ],
+      "description": "Product information: Color: Mixed color - 50 pieces per package; Blue - 50 pieces per pack; Pink - 50 pieces per package; Orange - 50 pieces per pack; Yellow - 50 pieces per pack; Bright pink - 50 pieces per package; Green - 50 pieces per pack; Rose red - 50 pieces per pack. Series: Mushrooms Shape: Simulated mushroom Type: Decorative ornaments Material: Foam + iron wire Process: Semi-handmade and semi-machine-made Packing list: Artificial Mushroom* 1 Bag（50pcs） Product Image:"
+    },
+    {
+      "id": "2607090601431608200",
+      "sku": "CJYD2975598",
+      "name": "Back Traction Lifting And Massage Device",
+      "category": "recovery",
+      "price": 71.95,
+      "compareAt": 93.95,
+      "supplierCost": 29.62,
+      "image": "https://cf.cjdropshipping.com/quick/product/3d0ada11-fdc3-4316-9282-b2eba4d04fe2.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/quick/product/3d0ada11-fdc3-4316-9282-b2eba4d04fe2.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/09/06/baecc847-36bd-48f6-82fc-ddfec9149a0b.jpg",
+        "https://cf.cjdropshipping.com/quick/product/82708573-5bd1-48ea-a77e-7226c6625a60.jpg",
+        "https://cf.cjdropshipping.com/quick/product/0a3f5de7-23dc-441d-942d-7f7cc8312dc3.jpg",
+        "https://cf.cjdropshipping.com/quick/product/2344267b-29ab-4b93-a016-882ee50efdee.jpg"
+      ],
+      "description": "Product information: Power: 10W Size: One size fits all Rated voltage: 7.4V Color options: Green, Blue, Gray Packing list: Massage instrument *1 Product Image:"
+    },
+    {
+      "id": "2074369118582759425",
+      "sku": "CJST2971501",
+      "name": "Soothing Massage Gel",
+      "category": "recovery",
+      "price": 9.95,
+      "compareAt": 12.95,
+      "supplierCost": 2.77,
+      "image": "https://cf.cjdropshipping.com/13c504a0-4fb3-48d1-ae9b-75273d4a40f4.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/13c504a0-4fb3-48d1-ae9b-75273d4a40f4.jpg",
+        "https://cf.cjdropshipping.com/e5946042-8be4-474e-8c33-631ea1a06831.jpg",
+        "https://cf.cjdropshipping.com/3486afe9-d188-4f58-8cdf-093154508414.jpg",
+        "https://cf.cjdropshipping.com/319697c2-32e9-4db2-8cfd-50762de4454b.jpg",
+        "https://cf.cjdropshipping.com/e63ef69a-0543-43e1-aa9f-6a78bd22648c.jpg"
+      ],
+      "description": null
+    },
+    {
+      "id": "2607080246521616600",
+      "sku": "CJYD2972974",
+      "name": "Solid-color Coral Fleece Floor Mat For Home Use",
+      "category": "recovery",
+      "price": 9.95,
+      "compareAt": 12.95,
+      "supplierCost": 0.62,
+      "image": "https://oss-cf.cjdropshipping.com/product/2026/07/08/02/6f56075c-03be-47b1-a4f7-5518d72c6bb7_water.jpeg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2026/07/08/02/e19978ae-3892-4594-8933-d0d0093b2903_water.jpeg",
+        "https://cf.cjdropshipping.com/quick/product/ac8e233d-9648-4eb7-99dc-2e0949b06c01.jpg",
+        "https://cf.cjdropshipping.com/quick/product/9ffc945a-d91f-47be-98f7-4f282851b464.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/08/02/6f56075c-03be-47b1-a4f7-5518d72c6bb7_water.jpeg",
+        "https://cf.cjdropshipping.com/quick/product/b5cd1142-ba34-4fac-9a01-bfedd8991c3f.jpg"
+      ],
+      "description": "Product information: Product Overview This solid-color coral fleece bath mat features a thickened sponge backing, offering superior softness and anti-slip performance. It is ideal for bathrooms, home offices, or any area requiring comfortable footing. The modern minimalist style and diverse color options seamlessly integrate into various home decor themes. Specifications Material: Coral Fleece Style: Modern Minimalist Shape: Rectangular Pattern: Solid Color Craft: Printed/Embossed Washing Instructions: Machine Washable Color Options: Light Gray, Black, Dark Gray, Coffee Brown, Camel, Cyan, Navy Blue, Wine Red, Pink Size Options: - 40 x 60 cm (Thickness: 0.8cm Flat Coral Fleece / 0.6cm Dot Print Bottom Coral Fleece) - 50 x 80 cm (Thickness: 0.8cm Flat Coral Fleece) - 60 x 90 cm (Thickness: 0.8cm Flat Coral Fleece) - 80 x 120 cm (Thickness: 0.8cm Flat Coral Fleece) - 40 x 120 cm (Thickness"
+    },
+    {
+      "id": "2075764376674402306",
+      "sku": "CJYS2979482",
+      "name": "Jakehoe Fabric Rust Remover, Clothing Cleaning And Rust Removal, Oil Stain, Water Stain, Coffee Stain, Daily Cleaning And Rust Removal Agent",
       "category": "hydration",
-      "price": 34.0,
-      "compareAt": 44.0,
-      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=900&q=80",
-      "images": ["https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=1200&q=80"],
-      "description": "Double-walled stainless steel keeps drinks cold for 24 hours or hot for 12. Powder-coated matte finish, leak-proof cap, and a mouth wide enough for ice cubes. Fits standard bottle cages and car cup holders."
+      "price": 9.95,
+      "compareAt": 12.95,
+      "supplierCost": 4.09,
+      "image": "https://cf.cjdropshipping.com/e2a6f0be-5bc6-49e9-8802-15490d2af6df.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/a80f6e81-eb62-4ff7-8381-0cfe74338d10.jpg",
+        "https://cf.cjdropshipping.com/e2a6f0be-5bc6-49e9-8802-15490d2af6df.jpg",
+        "https://cf.cjdropshipping.com/8f46f4d9-ad4d-4a60-b28e-dc4e62b2c7a3.jpg",
+        "https://cf.cjdropshipping.com/e947149a-2a0a-4f21-b94a-f7a9b6ae9a84.jpg",
+        "https://cf.cjdropshipping.com/9b7a7617-88d4-4f66-8fb0-7a613685b02e.jpg"
+      ],
+      "description": null
     },
     {
-      "id": "seed-studio-mat",
-      "name": "Studio Yoga Mat · Natural Rubber",
-      "category": "yoga",
-      "price": 58.0,
-      "compareAt": 72.0,
-      "image": "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=900&q=80",
-      "images": ["https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=1200&q=80"],
-      "description": "A 4.5mm natural rubber mat with a grippy polyurethane top layer that holds through sweaty sessions. Dense enough to protect knees and wrists, firm enough for balance work. Includes a cotton carry strap."
+      "id": "2607010352251607900",
+      "sku": "CJJT2962136",
+      "name": "64-oz Space Bottle 304 Stainless Steel Insulated Cup",
+      "category": "hydration",
+      "price": 13.95,
+      "compareAt": 18.95,
+      "supplierCost": 5.47,
+      "image": "https://cf.cjdropshipping.com/quick/product/72c7acf1-c6fc-471e-92ca-268ebb6597ac.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/quick/product/6b396f59-fac3-4087-9d8c-8bd5a290d76b.jpg",
+        "https://cf.cjdropshipping.com/quick/product/72c7acf1-c6fc-471e-92ca-268ebb6597ac.jpg",
+        "https://cf.cjdropshipping.com/quick/product/c9573ab5-ea6c-4d7a-8f5d-c3944061080c.jpg",
+        "https://cf.cjdropshipping.com/quick/product/0dace1a4-0ae7-465f-8a3a-f37ca0e530de.jpg",
+        "https://cf.cjdropshipping.com/quick/product/b0abb9c5-ad98-443f-9597-c2214cd6e932.jpg"
+      ],
+      "description": "Product information: Colors: Black, white, grass green, deep pink, blue, army green, pink, navy blue, dark blue Lining Material: 304 stainless steel Insulation Performance: 12–24 hours Material: Inner layer 304, outer layer 201 Outer Shell Material: 304 stainless steel Capacity: 64 oz / 1920 ml Packing list: 1*Insulated Cup Product Image:"
     },
     {
-      "id": "seed-yoga-set",
-      "name": "Yoga Essentials Set · Mat, Block & Towel",
-      "category": "yoga",
-      "price": 72.0,
-      "compareAt": 89.0,
-      "image": "https://images.unsplash.com/photo-1591291621164-2c6367723315?w=900&q=80",
-      "images": ["https://images.unsplash.com/photo-1591291621164-2c6367723315?w=1200&q=80"],
-      "description": "Everything for a home practice in one box: a 6mm cushioned mat, a high-density foam block, a microfiber towel, and a pair of 1kg hand weights. A considered starter kit — or a complete refresh."
-    },
-    {
-      "id": "seed-strength-kit",
-      "name": "Home Strength Kit · Dumbbells & Band",
-      "category": "training",
-      "price": 64.0,
-      "compareAt": 79.0,
-      "image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&q=80",
-      "images": ["https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=1200&q=80"],
-      "description": "A pair of 5kg rubber-coated dumbbells and a heavy resistance band with padded handles. Covers presses, rows, curls, and full-body circuits without a rack — the compact home gym that actually gets used."
-    },
-    {
-      "id": "seed-hand-weights",
-      "name": "Neoprene Hand Weights · Pair",
-      "category": "training",
-      "price": 42.0,
-      "compareAt": 52.0,
-      "image": "https://images.unsplash.com/photo-1558017487-06bf9f82613a?w=900&q=80",
-      "images": ["https://images.unsplash.com/photo-1558017487-06bf9f82613a?w=1200&q=80"],
-      "description": "Soft-grip neoprene dumbbells in 2kg and 3kg pairs. Non-slip, non-marking, and flat-edged so they don't roll away mid-set. Ideal for pilates, barre, and high-rep conditioning."
-    },
-    {
-      "id": "seed-kettlebell",
-      "name": "Cast-Iron Kettlebell · 12kg",
-      "category": "training",
-      "price": 49.0,
-      "compareAt": 62.0,
-      "image": "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=900&q=80",
-      "images": ["https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=1200&q=80"],
-      "description": "Single-cast iron with a smooth, wide handle for two-handed swings and a flat base for renegade rows. Color-coded weight band and a rust-resistant matte coating. The one piece of kit that covers strength and conditioning alike."
-    },
-    {
-      "id": "seed-exercise-mat",
-      "name": "Non-Slip Exercise Mat · 8mm",
-      "category": "training",
-      "price": 46.0,
-      "compareAt": 58.0,
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80",
-      "images": ["https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80"],
-      "description": "An 8mm high-density mat built for floor work: sit-ups, planks, stretching, and bodyweight circuits. Textured on both sides so it stays put on hardwood, with sealed edges that won't peel."
-    },
-    {
-      "id": "seed-grip-mat",
-      "name": "Grip Pro Hot Yoga Mat",
-      "category": "yoga",
-      "price": 54.0,
-      "compareAt": 68.0,
-      "image": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=900&q=80",
-      "images": ["https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1200&q=80"],
-      "description": "Made for heat: an absorbent suede-feel top layer that grips harder the more you sweat, bonded to a natural rubber base. Machine-washable and free of PVC and silicone."
-    },
-    {
-      "id": "seed-training-bra",
-      "name": "Seamless Training Bra",
-      "category": "apparel",
-      "price": 38.0,
-      "compareAt": 48.0,
-      "image": "https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=900&q=80",
-      "images": ["https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=1200&q=80"],
-      "description": "Medium-support racerback in a seamless knit that moves with you. Sweat-wicking, quick-drying, and cut to stay put through inversions and intervals. Sizes XS–XL."
-    },
-    {
-      "id": "seed-barbell",
-      "name": "Olympic Barbell · 20kg",
-      "category": "training",
-      "price": 189.0,
-      "compareAt": 229.0,
-      "image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=900&q=80",
-      "images": ["https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=1200&q=80"],
-      "description": "A 20kg, 2.2m bar with dual knurl marks, smooth-spinning bushings, and a 190k PSI shaft that flexes where it should and nowhere else. Standard 50mm sleeves fit any Olympic plates."
+      "id": "2075113547728465921",
+      "sku": "CJJY2976051",
+      "name": "Automatic Drinking Water Bottle Pump Compact Lightweight Smart Highly Efficient Electric Water Dispenser For Home White",
+      "category": "hydration",
+      "price": 72.95,
+      "compareAt": 94.95,
+      "supplierCost": 30.27,
+      "image": "https://cf.cjdropshipping.com/17835552/35cfdf4a-135e-4681-aa74-2f39bbc248fb.jpg",
+      "images": [
+        "https://cf.cjdropshipping.com/17835552/0fe1f2bf-2f12-45f2-947c-eeb20fa201e3.jpg",
+        "https://cf.cjdropshipping.com/17835552/aa48a3b1-fed8-4c15-b5d6-38ae43c735d8.jpg",
+        "https://cf.cjdropshipping.com/17835552/35cfdf4a-135e-4681-aa74-2f39bbc248fb.jpg",
+        "https://cf.cjdropshipping.com/17835552/33dd1456-1bcd-43c3-8442-42da96b3e9d0.jpg",
+        "https://cf.cjdropshipping.com/17835552/502173b9-ce6f-4349-9c21-f98086339065.jpg"
+      ],
+      "description": "1、Suitable for Various Bottled Water: Electric water dispenser can be used for all kinds of bottled water, such as mineral water, purified water, etc. 2、Smart Design: Automatic drinking water bottles pump is operated by one button, and the water is automatically pressed for easy drinking. 3、Efficient Water Suction: Smart drinking water pump has a powerful pumping function to quickly meet the drinking water demand. 4、Health and Safety: Desktop water dispenser is made of premium material, which is safe and reliable, sturdy and durable and has a long service life. 5、Home Convenience: Automatic drinking water bottle pump is compact and lightweight for easy use at home.Item Type: Electric Water DispenserMaterial: ABSWeight: Approx. 500.00g/1.1lb 1 x Electric Water Dispenser 1 x USB Charging CableWith built in battery"
     }
   ]
 }
