@@ -272,6 +272,21 @@ function pickDiverse(pool, quota, rand) {
 
 /* ---------- main ---------- */
 
+// One-off helper: `node fetch-products.mjs --categories` prints CJ's
+// category tree (id + name) so CATEGORY_PLAN can target real categoryIds.
+async function dumpCategories(token) {
+  const data = await cjRequest("/product/getCategory", { token });
+  for (const first of data ?? []) {
+    console.log(`# ${first.categoryFirstName}`);
+    for (const second of first.categoryFirstList ?? []) {
+      console.log(`  ## ${second.categorySecondName}`);
+      for (const third of second.categorySecondList ?? []) {
+        console.log(`    ${third.categoryId}  ${third.categoryName}`);
+      }
+    }
+  }
+}
+
 async function main() {
   const apiKey = process.env.CJ_API_KEY;
 
@@ -283,8 +298,14 @@ async function main() {
     return;
   }
 
-  console.log(`Rotation mode: ${ROTATION} (seed: ${rotationSeed()})`);
   const token = await getAccessToken(apiKey);
+
+  if (process.argv.includes("--categories")) {
+    await dumpCategories(token);
+    return;
+  }
+
+  console.log(`Rotation mode: ${ROTATION} (seed: ${rotationSeed()})`);
 
   const rand = seededRandom(rotationSeed());
   const selected = [];

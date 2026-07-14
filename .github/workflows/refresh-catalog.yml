@@ -6,7 +6,12 @@ on:
     # the product *selection* rotates per the ROTATION setting below
     # (weekly = new selection every ISO week, daily = every day).
     - cron: "0 5 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run mode: refresh (default) or categories (debug: print CJ category tree)"
+        required: false
+        default: refresh
 
 permissions:
   contents: write
@@ -22,7 +27,12 @@ jobs:
           node-version: 20
 
       - name: Fetch products from supplier
-        run: node scripts/fetch-products.mjs
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "categories" ]; then
+            node scripts/fetch-products.mjs --categories
+          else
+            node scripts/fetch-products.mjs
+          fi
         env:
           CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
           ROTATION: weekly
