@@ -48,8 +48,8 @@ const CATEGORY_PLAN = [
     category: "yoga",
     quota: 4,
     searches: [
-      { keyword: "yoga mat non slip", require: ["yoga mat"] },
-      { keyword: "yoga block", require: ["yoga block", "yoga brick", "yoga strap"] },
+      { keyword: "yoga mat", require: ["yoga mat"] },
+      { keyword: "yoga", require: ["yoga mat", "yoga block", "yoga brick", "yoga wheel", "yoga strap", "yoga ball", "yoga bag"] },
       { keyword: "pilates ring", require: ["pilates"] },
     ],
   },
@@ -76,7 +76,7 @@ const CATEGORY_PLAN = [
 const NAME_BLOCKLIST = [
   "car ", " dash", "dashboard", "kitchen", "bathroom", "rust", "ornament",
   "bonsai", "sunshade", "mosquito", "curtain", "wallpaper", "sticker",
-  "mop", "floor cleaning", "cleaning", "pet ", "dog ", "cat ",
+  "mop", "floor cleaning", "cleaning", "pet ", "dog ", "cat ", "cocktail",
   // non-English listings look broken next to the rest of the catalog
   "hanteln", "kurzhantel", "langhantel",
 ];
@@ -232,7 +232,8 @@ function normalize(raw, category, requirePhrases) {
     return null;
   }
   const lower = name.toLowerCase();
-  if (!requirePhrases.some((phrase) => lower.includes(phrase))) return null;
+  const kind = requirePhrases.find((phrase) => lower.includes(phrase));
+  if (!kind) return null;
   if (NAME_BLOCKLIST.some((term) => lower.includes(term))) return null;
   if (cost < MIN_COST || cost > MAX_COST) return null;
   const price = retailPrice(cost);
@@ -241,11 +242,32 @@ function normalize(raw, category, requirePhrases) {
     sku: raw.productSku ?? null,
     name,
     category,
+    kind,
     price,
     compareAt: compareAtPrice(price),
     supplierCost: cost,
     image,
   };
+}
+
+// Round-robin across product kinds so one dominant search (e.g. kettlebells)
+// can't fill a whole category's quota by itself.
+function pickDiverse(pool, quota, rand) {
+  const groups = new Map();
+  for (const p of pool) {
+    if (!groups.has(p.kind)) groups.set(p.kind, []);
+    groups.get(p.kind).push(p);
+  }
+  const shuffledGroups = [...groups.values()].map((g) => seededShuffle(g, rand));
+  const picks = [];
+  while (picks.length < quota && shuffledGroups.some((g) => g.length)) {
+    for (const g of shuffledGroups) {
+      if (picks.length >= quota) break;
+      const p = g.shift();
+      if (p) picks.push(p);
+    }
+  }
+  return picks;
 }
 
 /* ---------- main ---------- */
@@ -286,7 +308,7 @@ async function main() {
         console.warn(`  search "${keyword}" failed: ${err.message}`);
       }
     }
-    const picks = seededShuffle(pool, rand).slice(0, plan.quota);
+    const picks = pickDiverse(pool, plan.quota, rand);
     console.log(`  ${plan.category}: pool ${pool.length}, publishing ${picks.length}`);
     selected.push(...picks);
   }
