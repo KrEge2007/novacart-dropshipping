@@ -158,8 +158,9 @@ function renderProduct(p) {
       </aside>
     </div>`;
 
-  // variant selection: crossfade the hero to the variant photo, update price
+  // variant selection + quantity drive one live price readout
   let selected = p.variants?.[0] ?? null;
+  let qty = 1;
   const heroImg = document.querySelector(".pd-img--hero img");
   const baseHero = heroImg?.src;
 
@@ -173,16 +174,28 @@ function renderProduct(p) {
     }, 200);
   }
 
+  // The big price shows the total for the chosen quantity; a small note
+  // keeps the per-item price visible once qty > 1.
+  function updatePrice() {
+    const unit = selected ?? p;
+    const total = unit.price * qty;
+    const compare = (unit.compareAt ?? 0) * qty;
+    const el = $("#pd-price");
+    el.classList.remove("bump");
+    void el.offsetWidth;
+    el.classList.add("bump");
+    el.innerHTML =
+      money(total) +
+      (compare > total ? `<s>${money(compare)}</s>` : "") +
+      (qty > 1 ? `<span class="unit-note">${money(unit.price)} each</span>` : "");
+    $("#add-btn").textContent = `Add to cart · ${money(total)}`;
+  }
+
   function applyVariant(v) {
     selected = v;
     $("#variant-name").textContent = `— ${v.name}`;
-    const price = $("#pd-price");
-    price.classList.add("bump");
-    price.innerHTML = `${money(v.price)}${
-      v.compareAt > v.price ? `<s>${money(v.compareAt)}</s>` : ""
-    }`;
-    setTimeout(() => price.classList.remove("bump"), 350);
     swapHero(v.image || baseHero);
+    updatePrice();
   }
 
   if (p.variants?.length) {
@@ -194,22 +207,24 @@ function renderProduct(p) {
       const v = p.variants.find((x) => x.id === chip.dataset.vid);
       if (v) applyVariant(v);
     });
-    applyVariant(selected);
   }
 
-  // quantity + add
-  let qty = 1;
   $("#qty-minus").addEventListener("click", () => {
     qty = Math.max(1, qty - 1);
     $("#qty-value").textContent = qty;
+    updatePrice();
   });
   $("#qty-plus").addEventListener("click", () => {
     qty += 1;
     $("#qty-value").textContent = qty;
+    updatePrice();
   });
   $("#add-btn").addEventListener("click", () =>
     addToCart(selected ? `${p.id}::${selected.id}` : p.id, qty)
   );
+
+  if (selected) applyVariant(selected);
+  else updatePrice();
 }
 
 function renderRelated(current) {
