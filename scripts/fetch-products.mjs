@@ -318,7 +318,21 @@ function normalizeVariants(data) {
     });
     if (out.length >= 12) break;
   }
-  return out.length > 1 ? out : null;
+  if (out.length < 2) return null;
+
+  // Labels often share a long common prefix ("003-185cm 61cm 15mm-Pink")
+  // that hides the distinguishing part. Strip it at a separator boundary.
+  let prefix = out[0].name;
+  for (const v of out) {
+    while (prefix && !v.name.startsWith(prefix)) prefix = prefix.slice(0, -1);
+  }
+  const cut = Math.max(prefix.lastIndexOf("-"), prefix.lastIndexOf(" ")) + 1;
+  if (cut >= 6 && out.every((v) => v.name.length > cut)) {
+    for (const v of out) {
+      v.name = v.name.slice(cut).replace(/^[\s\-–—_:·,]+/, "").trim() || v.name;
+    }
+  }
+  return out;
 }
 
 // Enrich a selected product with gallery images, description, and
