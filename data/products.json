@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T06:50:06.492Z",
+    "updatedAt": "2026-07-14T06:52:28.857Z",
     "source": "cjdropshipping",
     "rotation": "weekly",
     "rotationSeed": "2026-W29"
@@ -11,6 +11,7 @@
       "sku": "CJCJ2671870",
       "name": "SPORTNOW 4KG Soft Kettlebell, Kettlebell With Non-Slip Handle For Home Gym, Weight Lifting, Strength Training, Light Blue/Grey",
       "category": "training",
+      "kind": "kettlebell",
       "price": 38.95,
       "compareAt": 50.95,
       "supplierCost": 16,
@@ -29,6 +30,7 @@
       "sku": "CJCJ2677978",
       "name": "SPORTNOW 10KG Soft Kettlebell, Kettlebell With Non-Slip Handle For Home Gym, Weight Lifting, Strength Training, Green/Grey",
       "category": "training",
+      "kind": "kettlebell",
       "price": 63.95,
       "compareAt": 83.95,
       "supplierCost": 26.3,
@@ -47,6 +49,7 @@
       "sku": "CJCJ2669743",
       "name": "SPORTNOW Kettlebell, 12kg Kettle Bells With Handle For Home Gym Weight Lifting And Strength Training, Dark Blue And Grey",
       "category": "training",
+      "kind": "kettlebell",
       "price": 60.95,
       "compareAt": 79.95,
       "supplierCost": 25.16,
@@ -65,6 +68,7 @@
       "sku": "CJCJ2669202",
       "name": "SPORTNOW 2 X 10kg Soft Kettlebell, Kettle Bell With Non-Slip Handle, For Home Gym, Strength Training, Cardio - Grey And Green",
       "category": "training",
+      "kind": "kettlebell",
       "price": 115.95,
       "compareAt": 150.95,
       "supplierCost": 48.04,
@@ -83,6 +87,7 @@
       "sku": "CJCJ2671377",
       "name": "SPORTNOW 20kg 6-In-One Adjustable Weight Dumbbells Set, Barbell, Kettlebell, Push Up Stand - Green",
       "category": "training",
+      "kind": "kettlebell",
       "price": 112.95,
       "compareAt": 146.95,
       "supplierCost": 46.89,
@@ -101,6 +106,7 @@
       "sku": "CJYD2981996",
       "name": "Womens Shock-Absorbing Pilates Workout Fitness Apparel",
       "category": "yoga",
+      "kind": "pilates",
       "price": 37.95,
       "compareAt": 49.95,
       "supplierCost": 15.56,
@@ -115,10 +121,44 @@
       "description": "Colors: Beige with black polka dots, black base with white polka dots, black stripes, navy blue with white polka dots, navy blue stripes, brown base with white polka dots, brown stripes Wearing Style: Pullover Sizes: S, M, L, XL Material Composition: 78% nylon, 22% spandex"
     },
     {
+      "id": "2075935139286781954",
+      "sku": "CJJM2980360",
+      "name": "22 Head Fascia Gun High Frequency Vibration Body Massage Gun Back And Waist Massager Neck Shoulder Massager Muscle Masajeador",
+      "category": "recovery",
+      "kind": "massage gun",
+      "price": 93.95,
+      "compareAt": 122.95,
+      "supplierCost": 38.99,
+      "image": "https://cf.cjdropshipping.com/78d248a2-9641-4d67-9844-a580ea3e8bf4.png",
+      "images": [
+        "https://cf.cjdropshipping.com/8bb95f7a-085f-47fb-8f51-dec48351b628.png",
+        "https://cf.cjdropshipping.com/faadb510-4f63-47f9-a2b5-72247a7d4e13.png",
+        "https://cf.cjdropshipping.com/78d248a2-9641-4d67-9844-a580ea3e8bf4.png"
+      ],
+      "description": "Deep Tissue Electric Body Massager – 4-Motor Back & Shoulder Massager with 35mm Depth, 50kg Thrust & Smart Control Panel Powerful 4-Motor System: Features a 16-link transmission system with a 4-unit motor delivering up to 50kg of strong thrust for professional-grade relief. Deep Tissue Relief: Reaches up to 35mm deep into muscles using an innovative up-and-down hammering method without causing muscle damage. Adjustable Intensity: Equipped with an LED smart display showing 30 speed levels up to 85,000 max beats per minute for customizable comfort. Ergonomic Dual Handles: Designed with double non-slip handles to easily apply targeted pressure on the back, waist, thighs, and shoulders."
+    },
+    {
+      "id": "2607090204081604900",
+      "sku": "CJAM2974633",
+      "name": "New Mini Massager Muscle Relax Fascia Gun",
+      "category": "recovery",
+      "kind": "fascia gun",
+      "price": 24.95,
+      "compareAt": 32.95,
+      "supplierCost": 10.12,
+      "image": "https://oss-cf.cjdropshipping.com/product/2026/07/09/02/8924c252-6d85-4b17-9045-2d73f8b4bca3.jpg",
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2026/07/09/02/8924c252-6d85-4b17-9045-2d73f8b4bca3.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/09/02/4f87dbc8-b116-439e-a629-49fbc744feda.jpg"
+      ],
+      "description": "Power type: USB Color: white, pink, black Function: Mini convenient fascia instrument Size: Packing list: Mini massager * 1"
+    },
+    {
       "id": "2607100607441625400",
       "sku": "CJYD2978436",
       "name": "EPP Material Camouflage Muscle Relaxation Foam Roller",
       "category": "recovery",
+      "kind": "foam roller",
       "price": 10.95,
       "compareAt": 14.95,
       "supplierCost": 4.19,
@@ -133,25 +173,11 @@
       "description": "Suitable gender: Unisex Applicable scenarios: Other, massage, health‑care massage Specifications: 30 cm / black and blue / hollow‑out D set, 30 cm / black / hollow‑out D set, 30 cm / black and red / hollow‑out D set, 30 cm / black and green / hollow‑out D set Category: Yoga accessories"
     },
     {
-      "id": "2607090204081604900",
-      "sku": "CJAM2974633",
-      "name": "New Mini Massager Muscle Relax Fascia Gun",
-      "category": "recovery",
-      "price": 24.95,
-      "compareAt": 32.95,
-      "supplierCost": 10.12,
-      "image": "https://oss-cf.cjdropshipping.com/product/2026/07/09/02/8924c252-6d85-4b17-9045-2d73f8b4bca3.jpg",
-      "images": [
-        "https://oss-cf.cjdropshipping.com/product/2026/07/09/02/8924c252-6d85-4b17-9045-2d73f8b4bca3.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2026/07/09/02/4f87dbc8-b116-439e-a629-49fbc744feda.jpg"
-      ],
-      "description": "Power type: USB Color: white, pink, black Function: Mini convenient fascia instrument Size: Packing list: Mini massager * 1"
-    },
-    {
       "id": "2075955243850825729",
       "sku": "CJJM2980410",
       "name": "24 Head Professional Fascia Gun Deep Tissue Electric Muscle Massager With 21mm Depth, 2000mAh Battery And Dual Handles For Full Body Relief",
       "category": "recovery",
+      "kind": "fascia gun",
       "price": 95.95,
       "compareAt": 124.95,
       "supplierCost": 39.99,
@@ -166,74 +192,61 @@
       "description": "24-Head Professional Fascia Gun – Deep Tissue Electric Muscle Massager with 21mm Depth, 2000mAh Battery & Dual Handles for Full Body Relief 24-Head Multi-Point Massage: Equipped with 24 specialized massage heads covering a massive 85,000mm² relaxation area for fast and comprehensive muscle recovery. Deep Tissue Percussion: Penetrates up to 21mm deep into muscles with a 50-60kg strong thrust to eliminate stiffness, lactic acid, and deep soreness. High-Frequency Vibration: Delivers professional-grade power with up to 22,800 RPM peak vibration speed, easily adjustable via the smart control panel. Cordless & Portable: Powered by a built-in 2000mAh high-capacity battery, featuring ergonomic dual handles for effortless back, shoulder, and foot massage."
     },
     {
-      "id": "2075935139286781954",
-      "sku": "CJJM2980360",
-      "name": "22 Head Fascia Gun High Frequency Vibration Body Massage Gun Back And Waist Massager Neck Shoulder Massager Muscle Masajeador",
-      "category": "recovery",
-      "price": 93.95,
-      "compareAt": 122.95,
-      "supplierCost": 38.99,
-      "image": "https://cf.cjdropshipping.com/78d248a2-9641-4d67-9844-a580ea3e8bf4.png",
+      "id": "2607111323141611500",
+      "sku": "CJYD2980357",
+      "name": "New Foldable Large-capacity Water Bottle",
+      "category": "hydration",
+      "kind": "water bottle",
+      "price": 9.95,
+      "compareAt": 12.95,
+      "supplierCost": 3.02,
+      "image": "https://oss-cf.cjdropshipping.com/product/2026/07/11/13/108d140a-83d0-4a22-96a9-ed3a7408e7c0_fine.jpeg",
       "images": [
-        "https://cf.cjdropshipping.com/8bb95f7a-085f-47fb-8f51-dec48351b628.png",
-        "https://cf.cjdropshipping.com/faadb510-4f63-47f9-a2b5-72247a7d4e13.png",
-        "https://cf.cjdropshipping.com/78d248a2-9641-4d67-9844-a580ea3e8bf4.png"
+        "https://cf.cjdropshipping.com/quick/product/c8913133-4279-448a-bbb4-4c95d017091f.jpg",
+        "https://cf.cjdropshipping.com/quick/product/53ec1992-8897-45b0-835f-1add16003a0f.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/11/13/3be556f5-7a22-49c6-8ccc-a2d97693b7f4_trans.jpeg",
+        "https://cf.cjdropshipping.com/quick/product/f9fd6b81-3771-4014-8cfd-0a435ea27151.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2026/07/11/13/0d3ce145-d35c-48cd-8e51-955af37e9ec9_fine.jpeg"
       ],
-      "description": "Deep Tissue Electric Body Massager – 4-Motor Back & Shoulder Massager with 35mm Depth, 50kg Thrust & Smart Control Panel Powerful 4-Motor System: Features a 16-link transmission system with a 4-unit motor delivering up to 50kg of strong thrust for professional-grade relief. Deep Tissue Relief: Reaches up to 35mm deep into muscles using an innovative up-and-down hammering method without causing muscle damage. Adjustable Intensity: Equipped with an LED smart display showing 30 speed levels up to 85,000 max beats per minute for customizable comfort. Ergonomic Dual Handles: Designed with double non-slip handles to easily apply targeted pressure on the back, waist, thighs, and shoulders."
+      "description": "Colors: Light blue, pink, black Material: Silicone Capacity: 750ml Product Category: Sports Water Bottle Packing list: Kettle ×1"
     },
     {
-      "id": "2607020244391628500",
-      "sku": "CJYD2963732",
-      "name": "12-Piece Stainless Steel Cocktail Shaker Set",
+      "id": "2034108566084771841",
+      "sku": "CJFU2791551",
+      "name": "10 0 00RPM Vortex Tattoo Ink Mixer High Speed Pigment Paint Shaker For Nail Polish",
       "category": "hydration",
-      "price": 23.95,
-      "compareAt": 31.95,
-      "supplierCost": 9.62,
-      "image": "https://cf.cjdropshipping.com/quick/product/efcdf862-aca3-42db-b549-bba561b259cd.jpg",
+      "kind": "shaker",
+      "price": 69.95,
+      "compareAt": 90.95,
+      "supplierCost": 29.16,
+      "image": "https://cf.cjdropshipping.com/0de51481-ed2e-4cfc-ad14-5573945d3317.jpg",
       "images": [
-        "https://cf.cjdropshipping.com/quick/product/c1451844-559c-41a1-8a9f-75ffb10cbcd3.jpg",
-        "https://cf.cjdropshipping.com/quick/product/f9634a1d-8d00-4ad6-a7e6-e8753d78799b.jpg",
-        "https://cf.cjdropshipping.com/quick/product/8c0e0cfe-1e4a-4f4e-a9fe-17b9b4979b84.jpg",
-        "https://cf.cjdropshipping.com/quick/product/f8badb9a-d29c-4baf-b170-120e87bbc4b6.jpg",
-        "https://cf.cjdropshipping.com/quick/product/755ef268-4efe-4677-b4c0-c0cd046da111.jpg"
+        "https://cf.cjdropshipping.com/307e3976-93a6-4406-aaa0-35dd73d2d6ba.jpg",
+        "https://cf.cjdropshipping.com/d60d1cf7-efe3-4d22-9a57-184721c21e69.jpg",
+        "https://cf.cjdropshipping.com/0de51481-ed2e-4cfc-ad14-5573945d3317.jpg",
+        "https://cf.cjdropshipping.com/4e95caf1-3b4a-4675-819b-53f2ae923a7d.jpg",
+        "https://cf.cjdropshipping.com/deee5429-f38b-4c7a-93d7-00521d27296b.jpg"
       ],
-      "description": "Colors: 350 ml 12-piece set (oval wooden stand), 550 ml 12-piece set (oval wooden stand), 750 ml 12-piece set (oval wooden stand), 350 ml 12-piece set (oval wooden stand with rod), 550 ml 12-piece set (oval wooden stand with rod), 750 ml 12-piece set (oval wooden stand with rod), 350 ml 12-piece set (semi-closed wooden stand), 550 ml 12-piece set (semi-closed wooden stand), 750 ml 12-piece set (semi-closed wooden stand) Style: Minimalist Material: Stainless steel Trend: Modern minimalist Cocktail shaker"
+      "description": "Feature: 1. RECHARGEABLE: Vortex mixer is equipped with a built in lithium battery that can be easily recharged, making it convenient and portable for on the go use. 2. HIGH SPEED: With a powerful motor that reaches speeds of up to 10000RPM, our vortex mixer can quickly and effectively mix your tattoo ink, pigment, or nail polish in just a few seconds. 3. TOUCH SWITCH: The touch sensitive switch on vortex mixer enables effortless operation. Simply touch the switch to start the high speed rotation. 4. SLIP RESISTANT BASE: Designed with a foam cushion on the base, our Vortex Mixer offers enhanced stability and prevents slipping or shaking during use. 5. VERSATILE APPLICATIONS: Vortex mixer is suitable for various uses, including mixing tattoo pigments, eyebrow pigments, eyelash extension adhesive, nail adhesives, and more. Specification:Item Type: Ink Vortex Shaker Material: ABS, electroni"
     },
     {
-      "id": "2605240635111622900",
-      "sku": "CJYD2901929",
-      "name": "Fitness Water Bottle Protein Shaker Cup",
+      "id": "2075676489647816705",
+      "sku": "CJHS2979370",
+      "name": "Silicone Foldable Portable Lightweight Reusable Water Bottle With Leak Proof Lid Lanyard For Outdoor Travel Cycling Gym",
       "category": "hydration",
-      "price": 32.95,
-      "compareAt": 42.95,
-      "supplierCost": 13.47,
-      "image": "https://oss-cf.cjdropshipping.com/product/2026/05/24/06/a267700d-b98c-46d0-8042-c67424fb1d47.jpg",
+      "kind": "water bottle",
+      "price": 54.95,
+      "compareAt": 71.95,
+      "supplierCost": 22.55,
+      "image": "https://cf.cjdropshipping.com/ec57ead7-4f19-4e57-a81a-d93afb3fd256.png",
       "images": [
-        "https://oss-cf.cjdropshipping.com/product/2026/05/24/06/c413eb2e-0b60-4b95-988f-f9d9cde82a9f.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/24/06/a9eaecc6-5d9f-4598-b85b-11461ed04477.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/24/06/a267700d-b98c-46d0-8042-c67424fb1d47.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/24/06/d1f22ee5-afa8-4f9f-a62f-58bd97bad119.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/24/06/9824cf80-b8d5-4529-aac1-130afd34fee1.jpg"
+        "https://cf.cjdropshipping.com/f9c490c9-26ed-4810-ad83-b6b978feff33.png",
+        "https://cf.cjdropshipping.com/c34f3cd3-8c37-4d59-8e7b-03770a31fbbe.png",
+        "https://cf.cjdropshipping.com/ec57ead7-4f19-4e57-a81a-d93afb3fd256.png",
+        "https://cf.cjdropshipping.com/4c5ea87a-e975-428f-b11d-95dfdc2276a6.png",
+        "https://cf.cjdropshipping.com/bda8dbdf-6e8b-41e1-b5e5-c387a49c3c1e.png"
       ],
-      "description": "Material: Plastic Capacity: 701 mL–800 mL Color Options Tritan Deep Space Gray [Upgraded, Thicker Lid with Leak-Proof Design]"
-    },
-    {
-      "id": "2605070855361613300",
-      "sku": "CJJT2873252",
-      "name": "316 Stainless Steel Shaker Bottle For Fitness And Exercise",
-      "category": "hydration",
-      "price": 27.95,
-      "compareAt": 36.95,
-      "supplierCost": 11.44,
-      "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/08/40843587-10c5-434e-8217-ad23eb329afc.jpg",
-      "images": [
-        "https://oss-cf.cjdropshipping.com/product/2026/05/07/09/46711013-33a6-45e5-809f-274842d32d12_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/07/09/a9d3bf55-7ebb-4723-8d2f-e1f241a5c57a_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/07/08/cab7585d-22c1-4200-baff-e7079208abc7.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/07/08/9cb5327a-7c4a-41e1-8034-b10bce89a23b.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/07/08/3689562a-f0b6-47f8-ac4f-d8691c53c0b8.jpg"
-      ],
-      "description": "Capacity: 500ml,720ml Material: 316 stainless steel Packing list: Water cup *1 Product Image:"
+      "description": "he collapsible water bottles fold down to the size of your palm when empty, becoming remarkably lightweight and compact. Easily toss it into your bag, pocket, or luggage without taking up valuable space, making it the perfect hydration companion for travel, commuting, and daily adventures."
     }
   ]
 }
