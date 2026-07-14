@@ -139,7 +139,7 @@ function renderProduct(p) {
             </div>
             <button class="button buy-btn" id="add-btn">Add to cart</button>
           </div>
-          <p class="pd-reassure">Free shipping over $60 · 30-day returns</p>
+          <p class="pd-reassure" id="pd-shipnote"></p>
           <div class="product-meta-notes">
             <details>
               <summary>Shipping</summary>
@@ -175,7 +175,9 @@ function renderProduct(p) {
   }
 
   // The big price shows the total for the chosen quantity; a small note
-  // keeps the per-item price visible once qty > 1.
+  // keeps the per-item price visible once qty > 1. Below the button, a
+  // live line shows how close this order (cart + selection) is to free
+  // shipping and how many more units would unlock it.
   function updatePrice() {
     const unit = selected ?? p;
     const total = unit.price * qty;
@@ -189,6 +191,22 @@ function renderProduct(p) {
       (compare > total ? `<s>${money(compare)}</s>` : "") +
       (qty > 1 ? `<span class="unit-note">${money(unit.price)} each</span>` : "");
     $("#add-btn").textContent = `Add to cart · ${money(total)}`;
+
+    const inCart = cartEntries().reduce((n, e) => n + e.price * e.qty, 0);
+    const combined = inCart + total;
+    const ship = $("#pd-shipnote");
+    if (combined >= FREE_SHIPPING_AT) {
+      ship.classList.add("free");
+      ship.textContent = "✓ This order ships free · 30-day returns";
+    } else {
+      ship.classList.remove("free");
+      const gap = FREE_SHIPPING_AT - combined;
+      const more = Math.ceil(gap / unit.price);
+      ship.textContent =
+        `${money(gap)} away from free shipping` +
+        (more <= 6 ? ` — add ${more} more to unlock` : ` (free over ${money(FREE_SHIPPING_AT)})`) +
+        " · 30-day returns";
+    }
   }
 
   function applyVariant(v) {
@@ -219,9 +237,10 @@ function renderProduct(p) {
     $("#qty-value").textContent = qty;
     updatePrice();
   });
-  $("#add-btn").addEventListener("click", () =>
-    addToCart(selected ? `${p.id}::${selected.id}` : p.id, qty)
-  );
+  $("#add-btn").addEventListener("click", () => {
+    addToCart(selected ? `${p.id}::${selected.id}` : p.id, qty);
+    updatePrice(); // cart total changed — refresh the free-shipping line
+  });
 
   if (selected) applyVariant(selected);
   else updatePrice();
