@@ -29,12 +29,58 @@ const PRODUCT_COUNT = Number(process.env.PRODUCT_COUNT) || 16;
 
 // What we search for on CJ, per storefront category, with how many products
 // each category gets in the published catalog.
+//
+// CJ keyword search is loose (a "yoga mat" search returns car dash mats),
+// so every search carries `require`: the product NAME must contain at least
+// one of these phrases or it is discarded.
 const CATEGORY_PLAN = [
-  { category: "training", quota: 5, keywords: ["resistance bands set", "kettlebell", "jump rope fitness", "adjustable dumbbell"] },
-  { category: "yoga", quota: 4, keywords: ["yoga mat", "yoga block set", "pilates ring"] },
-  { category: "recovery", quota: 4, keywords: ["massage gun", "foam roller muscle", "acupressure mat"] },
-  { category: "hydration", quota: 3, keywords: ["insulated water bottle", "protein shaker bottle"] },
+  {
+    category: "training",
+    quota: 5,
+    searches: [
+      { keyword: "resistance bands set", require: ["resistance band"] },
+      { keyword: "kettlebell", require: ["kettlebell"] },
+      { keyword: "jump rope fitness", require: ["jump rope", "skipping rope"] },
+      { keyword: "dumbbell set", require: ["dumbbell"] },
+    ],
+  },
+  {
+    category: "yoga",
+    quota: 4,
+    searches: [
+      { keyword: "yoga mat", require: ["yoga"] },
+      { keyword: "yoga block", require: ["yoga"] },
+      { keyword: "pilates ring", require: ["pilates"] },
+    ],
+  },
+  {
+    category: "recovery",
+    quota: 4,
+    searches: [
+      { keyword: "massage gun muscle", require: ["massage gun", "fascia gun"] },
+      { keyword: "foam roller muscle", require: ["foam roller", "muscle roller"] },
+      { keyword: "acupressure mat", require: ["acupressure"] },
+    ],
+  },
+  {
+    category: "hydration",
+    quota: 3,
+    searches: [
+      { keyword: "insulated sports water bottle", require: ["water bottle", "sports bottle"] },
+      { keyword: "protein shaker", require: ["shaker"] },
+    ],
+  },
 ];
+
+// Discard anything whose name hits one of these, whatever it matched on.
+const NAME_BLOCKLIST = [
+  "car ", " dash", "dashboard", "kitchen", "bathroom", "rust", "ornament",
+  "bonsai", "sunshade", "mosquito", "curtain", "wallpaper", "sticker",
+];
+
+// Supplier-cost sanity band: excludes $0.50 trinkets and heavy freight items.
+const MIN_COST = 3;
+const MAX_COST = 65;
 
 // Retail pricing: supplier cost -> customer price with margin, .95 endings.
 const retailPrice = (cost) => Math.max(Math.ceil(cost * 2.4) - 0.05, 9.95);
@@ -136,9 +182,9 @@ function parseImages(value) {
   return [];
 }
 
-// CJ descriptions are HTML; the storefront wants plain text.
+// CJ descriptions are HTML full of boilerplate; reduce to clean plain text.
 function stripHtml(html) {
-  return String(html ?? "")
+  let text = String(html ?? "")
     .replace(/<[^>]+>/g, " ")
     .replace(/&nbsp;/gi, " ")
     .replace(/&amp;/gi, "&")
@@ -147,8 +193,14 @@ function stripHtml(html) {
     .replace(/&quot;/gi, '"')
     .replace(/&#\d+;/g, " ")
     .replace(/\s+/g, " ")
-    .trim()
-    .slice(0, 900);
+    .trim();
+  // Drop leading spec-sheet prefix and trailing disclaimer boilerplate.
+  text = text.replace(/^product information:?\s*/i, "");
+  for (const marker of ["Note:", "Packing list:", "Package includes:", "Product Image:", "1.Please allow", "Please allow"]) {
+    const idx = text.indexOf(marker);
+    if (idx > 120) text = text.slice(0, idx);
+  }
+  return text.trim().slice(0, 900);
 }
 
 // Enrich a selected product with gallery images + description for its
@@ -169,13 +221,17 @@ async function fetchDetails(token, product) {
   }
 }
 
-function normalize(raw, category) {
+function normalize(raw, category, requirePhrases) {
   const cost = parseCost(raw.sellPrice);
   const name = String(raw.productNameEn ?? "").trim();
   const image = String(raw.productImage ?? "").trim();
   if (!raw.pid || !name || name.length > 160 || !image.startsWith("http") || !(cost > 0)) {
     return null;
   }
+  const lower = name.toLowerCase();
+  if (!requirePhrases.some((phrase) => lower.includes(phrase))) return null;
+  if (NAME_BLOCKLIST.some((term) => lower.includes(term))) return null;
+  if (cost < MIN_COST || cost > MAX_COST) return null;
   const price = retailPrice(cost);
   return {
     id: String(raw.pid),
@@ -211,11 +267,11 @@ async function main() {
 
   for (const plan of CATEGORY_PLAN) {
     const pool = [];
-    for (const keyword of plan.keywords) {
+    for (const { keyword, require } of plan.searches) {
       try {
         const results = await searchProducts(token, keyword);
         for (const raw of results) {
-          const p = normalize(raw, plan.category);
+          const p = normalize(raw, plan.category, require);
           if (p && !seen.has(p.id)) {
             seen.add(p.id);
             pool.push(p);
