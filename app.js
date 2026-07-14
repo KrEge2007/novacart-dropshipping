@@ -78,10 +78,12 @@ function renderChapters() {
     if (!items.length) continue;
     sections.push(`
       <section class="chapter chapter--${ch.key}" id="chapter-${ch.key}">
-        <header class="chapter-head">
+        <header class="chapter-head reveal-line">
           <span class="chapter-num reveal" aria-hidden="true">${ch.num}</span>
           <div class="chapter-head-text">
-            <h3 class="reveal" style="--d:90ms">${esc(ch.title)}</h3>
+            <h3 class="reveal" style="--d:90ms">
+              <span class="mask"><span class="tline" style="--d:90ms">${esc(ch.title)}</span></span>
+            </h3>
             <p class="reveal" style="--d:180ms">${esc(ch.tag)}</p>
           </div>
           <span class="chapter-count reveal" style="--d:270ms">

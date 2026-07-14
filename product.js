@@ -56,7 +56,9 @@ function imageBlock(src, i, total, name) {
   return `
     <figure class="pd-block pd-img pd-img--${variant} reveal" style="--d:${(i % 2) * 120}ms">
       <div class="pd-img-frame">
-        <img src="${esc(src)}" alt="${esc(name)} — view ${i + 1}" loading="${i === 0 ? "eager" : "lazy"}" />
+        <img src="${esc(src)}" alt="${esc(name)} — view ${i + 1}" loading="${i === 0 ? "eager" : "lazy"}"${
+    i === 0 ? ' style="view-transition-name: product-hero"' : ""
+  } />
       </div>
       <figcaption class="pd-cap">${num} / ${String(total).padStart(2, "0")}</figcaption>
     </figure>`;

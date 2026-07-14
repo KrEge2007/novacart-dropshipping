@@ -10,6 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232E4F44'/><text x='16' y='22' font-family='Georgia' font-size='18' fill='%23FAF9F6' text-anchor='middle'>K</text></svg>" />
+  <noscript>
+    <style>
+      .fade-up, .hline, .hero-media { opacity: 1; transform: none; }
+      .hero-media img { transform: none; }
+    </style>
+  </noscript>
 </head>
 <body>
 
@@ -31,13 +37,16 @@
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="hero-copy">
-      <p class="eyebrow">Fitness &amp; recovery essentials</p>
-      <h1>Move well.<br />Recover better.</h1>
-      <p class="lede">
+      <p class="eyebrow fade-up" style="--fd:60ms">Fitness &amp; recovery essentials</p>
+      <h1>
+        <span class="mask"><span class="hline" style="--hd:150ms">Move well.</span></span>
+        <span class="mask"><span class="hline" style="--hd:290ms">Recover better.</span></span>
+      </h1>
+      <p class="lede fade-up" style="--fd:480ms">
         A small, considered catalog of training and recovery gear —
         re-curated every Monday, shipped to your door.
       </p>
-      <div class="hero-actions">
+      <div class="hero-actions fade-up" style="--fd:620ms">
         <a class="button" href="#shop">Shop this week's edit</a>
         <a class="button button-plain" href="#story">Our story</a>
       </div>
@@ -185,6 +194,11 @@
 
   <div class="toast" id="toast" role="status"></div>
 
+  <script>
+    // Arm the hero entrance one frame after first paint so the
+    // choreography always animates (independent of catalog loading).
+    requestAnimationFrame(() => requestAnimationFrame(() => document.body.classList.add("loaded")));
+  </script>
   <script src="store.js"></script>
   <script src="app.js"></script>
 </body>
