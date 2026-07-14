@@ -193,6 +193,42 @@ document.addEventListener("click", (e) => {
   if (add) addToCart(add.dataset.id);
 });
 
+/* ---------- scroll nudge ----------
+   A slow ~300px downward drift shortly after load, hinting that the
+   image story continues below. Any interaction cancels it instantly;
+   skipped entirely for reduced-motion users or if already scrolled. */
+
+function nudgeScroll() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (window.scrollY > 40) return;
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  const distance = Math.min(300, max - window.scrollY);
+  if (distance < 80) return;
+
+  let raf;
+  let cancelled = false;
+  const cancelEvents = ["wheel", "touchstart", "pointerdown", "keydown"];
+  const stop = () => {
+    cancelled = true;
+    cancelAnimationFrame(raf);
+    cancelEvents.forEach((t) => window.removeEventListener(t, stop));
+  };
+  cancelEvents.forEach((t) => window.addEventListener(t, stop, { passive: true }));
+
+  const startY = window.scrollY;
+  const duration = 1800;
+  const t0 = performance.now();
+  const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const step = (now) => {
+    if (cancelled) return;
+    const k = Math.min((now - t0) / duration, 1);
+    window.scrollTo(0, startY + distance * ease(k));
+    if (k < 1) raf = requestAnimationFrame(step);
+    else stop();
+  };
+  raf = requestAnimationFrame(step);
+}
+
 /* ---------- init ---------- */
 
 (async () => {
@@ -206,6 +242,7 @@ document.addEventListener("click", (e) => {
     renderProduct(product);
     renderRelated(product);
     observeReveals();
+    setTimeout(nudgeScroll, 1500);
   } catch (err) {
     $("#product-page").innerHTML =
       `<p class="grid-empty">Couldn't load the catalog. Please refresh the page.</p>`;
