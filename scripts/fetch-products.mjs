@@ -27,50 +27,35 @@ const OUT = new URL("../data/products.json", import.meta.url);
 const ROTATION = process.env.ROTATION === "daily" ? "daily" : "weekly";
 const PRODUCT_COUNT = Number(process.env.PRODUCT_COUNT) || 16;
 
-// What we search for on CJ, per storefront category, with how many products
-// each category gets in the published catalog.
-//
-// CJ keyword search is loose (a "yoga mat" search returns car dash mats),
-// so every search carries `require`: the product NAME must contain at least
-// one of these phrases or it is discarded.
-const CATEGORY_PLAN = [
+// Sourcing: instead of CJ's loose keyword search (a "yoga mat" search
+// returns car dash mats), we browse real CJ categories and classify each
+// product into a storefront category by phrases in its name. Products that
+// match no phrase are discarded.
+const SOURCES = [
   {
-    category: "training",
-    quota: 5,
-    searches: [
-      { keyword: "resistance bands set", require: ["resistance band"] },
-      { keyword: "kettlebell", require: ["kettlebell"] },
-      { keyword: "jump rope fitness", require: ["jump rope", "skipping rope"] },
-      { keyword: "dumbbell set", require: ["dumbbell"] },
-    ],
+    name: "Fitness & Bodybuilding",
+    categoryId: "C20B25A2-348C-48C8-A2C8-FE33749A40DE",
+    pages: 3,
+    categories: ["training", "yoga", "recovery", "hydration"],
   },
   {
-    category: "yoga",
-    quota: 4,
-    searches: [
-      { keyword: "yoga mat", require: ["yoga mat"] },
-      { keyword: "yoga", require: ["yoga mat", "yoga block", "yoga brick", "yoga wheel", "yoga strap", "yoga ball", "yoga bag"] },
-      { keyword: "pilates ring", require: ["pilates"] },
-    ],
-  },
-  {
-    category: "recovery",
-    quota: 4,
-    searches: [
-      { keyword: "massage gun muscle", require: ["massage gun", "fascia gun"] },
-      { keyword: "foam roller muscle", require: ["foam roller", "muscle roller"] },
-      { keyword: "acupressure mat", require: ["acupressure"] },
-    ],
-  },
-  {
-    category: "hydration",
-    quota: 3,
-    searches: [
-      { keyword: "insulated sports water bottle", require: ["water bottle", "sports bottle"] },
-      { keyword: "protein shaker", require: ["shaker"] },
-    ],
+    name: "Drinkware",
+    categoryId: "CF330457-0E5B-4FAF-9BAE-7D2C247BD8DE",
+    pages: 1,
+    categories: ["hydration"],
   },
 ];
+
+// Order matters: first match wins, so specific gear (yoga/recovery) is
+// claimed before generic training phrases.
+const KIND_MAP = [
+  { category: "yoga", phrases: ["yoga mat", "yoga block", "yoga brick", "yoga wheel", "yoga strap", "yoga ball", "pilates"] },
+  { category: "recovery", phrases: ["massage gun", "fascia gun", "foam roller", "muscle roller", "acupressure", "massager", "muscle relax"] },
+  { category: "hydration", phrases: ["water bottle", "sports bottle", "shaker bottle", "protein shaker", "insulated bottle", "water cup"] },
+  { category: "training", phrases: ["kettlebell", "dumbbell", "resistance band", "jump rope", "skipping rope", "barbell", "pull up bar", "push up", "ab roller", "weight bench", "hand grip", "grip strength", "exercise mat", "ankle weight", "gym ball", "exercise wheel"] },
+];
+
+const QUOTAS = { training: 5, yoga: 4, recovery: 4, hydration: 3 };
 
 // Discard anything whose name hits one of these, whatever it matched on.
 const NAME_BLOCKLIST = [
@@ -154,12 +139,23 @@ async function getAccessToken(apiKey) {
   return data.accessToken;
 }
 
-async function searchProducts(token, keyword) {
+async function listByCategory(token, categoryId, pageNum) {
   const data = await cjRequest(
-    `/product/list?pageNum=1&pageSize=60&productNameEn=${encodeURIComponent(keyword)}`,
+    `/product/list?pageNum=${pageNum}&pageSize=100&categoryId=${encodeURIComponent(categoryId)}`,
     { token }
   );
   return data?.list ?? [];
+}
+
+// First matching phrase in KIND_MAP decides the storefront category.
+function classify(name, allowedCategories) {
+  const lower = name.toLowerCase();
+  for (const entry of KIND_MAP) {
+    if (!allowedCategories.includes(entry.category)) continue;
+    const phrase = entry.phrases.find((p) => lower.includes(p));
+    if (phrase) return { category: entry.category, kind: phrase };
+  }
+  return null;
 }
 
 // CJ sellPrice can be "3.50" or a range like "3.50 -- 5.20"; take the low end.
@@ -224,7 +220,7 @@ async function fetchDetails(token, product) {
   }
 }
 
-function normalize(raw, category, requirePhrases) {
+function normalize(raw, allowedCategories) {
   const cost = parseCost(raw.sellPrice);
   const name = String(raw.productNameEn ?? "").trim();
   const image = String(raw.productImage ?? "").trim();
@@ -232,8 +228,9 @@ function normalize(raw, category, requirePhrases) {
     return null;
   }
   const lower = name.toLowerCase();
-  const kind = requirePhrases.find((phrase) => lower.includes(phrase));
-  if (!kind) return null;
+  const match = classify(name, allowedCategories);
+  if (!match) return null;
+  const { category, kind } = match;
   if (NAME_BLOCKLIST.some((term) => lower.includes(term))) return null;
   if (cost < MIN_COST || cost > MAX_COST) return null;
   const price = retailPrice(cost);
@@ -308,29 +305,34 @@ async function main() {
   console.log(`Rotation mode: ${ROTATION} (seed: ${rotationSeed()})`);
 
   const rand = seededRandom(rotationSeed());
-  const selected = [];
   const seen = new Set();
+  const pools = Object.fromEntries(Object.keys(QUOTAS).map((c) => [c, []]));
 
-  for (const plan of CATEGORY_PLAN) {
-    const pool = [];
-    for (const { keyword, require } of plan.searches) {
+  for (const source of SOURCES) {
+    for (let page = 1; page <= source.pages; page++) {
       try {
-        const results = await searchProducts(token, keyword);
+        const results = await listByCategory(token, source.categoryId, page);
         for (const raw of results) {
-          const p = normalize(raw, plan.category, require);
+          const p = normalize(raw, source.categories);
           if (p && !seen.has(p.id)) {
             seen.add(p.id);
-            pool.push(p);
+            pools[p.category].push(p);
           }
         }
+        console.log(`  ${source.name} page ${page}: ${results.length} scanned`);
+        if (results.length < 100) break; // last page
         // CJ rate limit: 1 req/sec on most plans
         await new Promise((r) => setTimeout(r, 1100));
       } catch (err) {
-        console.warn(`  search "${keyword}" failed: ${err.message}`);
+        console.warn(`  ${source.name} page ${page} failed: ${err.message}`);
       }
     }
-    const picks = pickDiverse(pool, plan.quota, rand);
-    console.log(`  ${plan.category}: pool ${pool.length}, publishing ${picks.length}`);
+  }
+
+  const selected = [];
+  for (const [category, quota] of Object.entries(QUOTAS)) {
+    const picks = pickDiverse(pools[category], quota, rand);
+    console.log(`  ${category}: pool ${pools[category].length}, publishing ${picks.length}`);
     selected.push(...picks);
   }
 
