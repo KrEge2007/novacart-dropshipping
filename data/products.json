@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T12:26:04.618Z",
+    "updatedAt": "2026-07-14T12:59:33.721Z",
     "source": "cjdropshipping",
     "rotation": "weekly",
     "rotationSeed": "2026-W29"
@@ -99,7 +99,25 @@
         "https://cf.cjdropshipping.com/quick/product/9574ccb4-d043-43f6-887e-193363cc1728.jpg",
         "https://oss-cf.cjdropshipping.com/product/2026/02/23/08/d097de86-3c18-41c8-bede-ce39fc5bf1da_fine.jpeg"
       ],
-      "description": "Applicable scenarios: fitness equipment, body shaping, sports fashion Specifications: 38x22x23cm Material: steel plate + high-strength nylon Features: 1: Quick-change weighing dial 2: 12-level weight adjustment 3: Digital weighing and kilogram display on the dial 4: Built-in silicon steel sheet, reinforced nylon"
+      "description": "Applicable scenarios: fitness equipment, body shaping, sports fashion Specifications: 38x22x23cm Material: steel plate + high-strength nylon Features: 1: Quick-change weighing dial 2: 12-level weight adjustment 3: Digital weighing and kilogram display on the dial 4: Built-in silicon steel sheet, reinforced nylon",
+      "variants": [
+        {
+          "id": "2602230820481604000",
+          "sku": "CJYD276531401AZ",
+          "name": "15kg Automatic Smart Dumbbell Fitness Equipment Set Kilogram System",
+          "price": 107.95,
+          "compareAt": 140.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/5b131e22-d06a-4b03-97e0-601b12f99197.jpg"
+        },
+        {
+          "id": "2602230820481604300",
+          "sku": "CJYD276531402BY",
+          "name": "15kg Automatic Smart Dumbbell Fitness Equipment Set Pound System",
+          "price": 107.95,
+          "compareAt": 140.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/d921a8bc-c2bb-4c94-a7ef-ba678e7d1651.jpg"
+        }
+      ]
     },
     {
       "id": "2073718060999139330",
@@ -137,7 +155,57 @@
         "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/89f2aead-6d0d-43b0-924a-26d379e4ff92.jpg",
         "https://cf.cjdropshipping.com/quick/product/faba7d8a-88d9-4e50-87fe-0103f8ee90ce.jpg"
       ],
-      "description": "Applicable Scenarios: Fitness Equipment, Body Shaping, Other Color: 1.5kg Material: Silicone + Iron Specifications: Black, Flesh Pink, Pink, Gray Green, Milk Tea, Beige"
+      "description": "Applicable Scenarios: Fitness Equipment, Body Shaping, Other Color: 1.5kg Material: Silicone + Iron Specifications: Black, Flesh Pink, Pink, Gray Green, Milk Tea, Beige",
+      "variants": [
+        {
+          "id": "2605070643081629800",
+          "sku": "CJYD287276101AZ",
+          "name": "Silicone Load Ball Solid Core 1.5kg Yoga Pilates 1.5kg Black",
+          "price": 15.95,
+          "compareAt": 20.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/d122e01e-caa5-4c11-9a9b-26f63ce38030.jpg"
+        },
+        {
+          "id": "2605070643091620300",
+          "sku": "CJYD287276102BY",
+          "name": "Silicone Load Ball Solid Core 1.5kg Yoga Pilates 1.5kg Meat Pink",
+          "price": 15.95,
+          "compareAt": 20.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/f1f8da90-badc-497e-8119-838999ddf221.jpg"
+        },
+        {
+          "id": "2605070643091620800",
+          "sku": "CJYD287276103CX",
+          "name": "Silicone Load Ball Solid Core 1.5kg Yoga Pilates 1.5kg Pink",
+          "price": 15.95,
+          "compareAt": 20.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/cc9d2032-9d6d-44ad-949a-a262bde7d8da.jpg"
+        },
+        {
+          "id": "2605070643091621200",
+          "sku": "CJYD287276104DW",
+          "name": "Silicone Load Ball Solid Core 1.5kg Yoga Pilates 1.5kg Gray Green",
+          "price": 15.95,
+          "compareAt": 20.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/89f2aead-6d0d-43b0-924a-26d379e4ff92.jpg"
+        },
+        {
+          "id": "2605070643091621700",
+          "sku": "CJYD287276105EV",
+          "name": "Silicone Load Ball Solid Core 1.5kg Yoga Pilates 1.5kg Milk Tea",
+          "price": 15.95,
+          "compareAt": 20.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/50e8dd52-afff-4b5f-a39c-e16dd9f9d246.jpg"
+        },
+        {
+          "id": "2605070643091622200",
+          "sku": "CJYD287276106FU",
+          "name": "Silicone Load Ball Solid Core 1.5kg Yoga Pilates 1.5kg Beige",
+          "price": 15.95,
+          "compareAt": 20.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/c0270525-367f-42cc-93e0-e9ae0a158f2e.jpg"
+        }
+      ]
     },
     {
       "id": "2056298867837026306",
@@ -175,7 +243,33 @@
         "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/86256573-b748-4bb4-9177-ad237c69f46c_trans.jpeg",
         "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/a7ebd9a3-fad3-459f-9e34-47aa0bd4b89b_trans.jpeg"
       ],
-      "description": "Colors: Black 45 cm, Black 60 cm, Pink 45 cm, Pink 60 cm Material: Foam Functions: Bodybuilding, muscle relaxation Packing list: Foam Roller x1pc"
+      "description": "Colors: Black 45 cm, Black 60 cm, Pink 45 cm, Pink 60 cm Material: Foam Functions: Bodybuilding, muscle relaxation Packing list: Foam Roller x1pc",
+      "variants": [
+        {
+          "id": "2601150826411606700",
+          "sku": "CJYD273064102BY",
+          "name": "Yoga Block Used For Muscle Relaxation 45CM",
+          "price": 9.95,
+          "compareAt": 12.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/89647334-3667-4a2b-b1f7-bf6ca6e6c913_trans.jpeg"
+        },
+        {
+          "id": "2601150826411606800",
+          "sku": "CJYD273064103CX",
+          "name": "Yoga Block Used For Muscle Relaxation 60CM",
+          "price": 9.95,
+          "compareAt": 12.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/849d1806-1345-4385-bf94-b09548d29b2a_trans.jpeg"
+        },
+        {
+          "id": "2601150826411607000",
+          "sku": "CJYD273064104DW",
+          "name": "Yoga Block Used For Muscle Relaxation 90CM",
+          "price": 12.95,
+          "compareAt": 16.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/a7ebd9a3-fad3-459f-9e34-47aa0bd4b89b_trans.jpeg"
+        }
+      ]
     },
     {
       "id": "2075955243850825729",
@@ -270,7 +364,25 @@
         "https://cf.cjdropshipping.com/quick/product/2e6421b1-d714-49dc-901d-0236342fb1f7.jpg",
         "https://cf.cjdropshipping.com/quick/product/1adc9f24-40f7-4c28-aab1-60baa7791e75.jpg"
       ],
-      "description": "Colors: Pink 500 mL [spray design/tripolymer carbonate bottle], Yellow 500 mL [spray design/tripolymer carbonate bottle], Blue 500 mL [spray design/tripolymer carbonate bottle], Black 500 mL [spray design/tripolymer carbonate bottle] Material: Tripolymer carbonate Style: Sporty Capacity: 500 mL"
+      "description": "Colors: Pink 500 mL [spray design/tripolymer carbonate bottle], Yellow 500 mL [spray design/tripolymer carbonate bottle], Blue 500 mL [spray design/tripolymer carbonate bottle], Black 500 mL [spray design/tripolymer carbonate bottle] Material: Tripolymer carbonate Style: Sporty Capacity: 500 mL",
+      "variants": [
+        {
+          "id": "2606120926211632100",
+          "sku": "CJYD293155201AZ",
+          "name": "Summer Spray Straw Water Bottle Portable And Large Capacity For Girls Pink 500ML",
+          "price": 12.95,
+          "compareAt": 16.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/53356db5-d848-41bb-ba16-84cbfda35ea9.jpg"
+        },
+        {
+          "id": "2606120926211633000",
+          "sku": "CJYD293155203CX",
+          "name": "Summer Spray Straw Water Bottle Portable And Large Capacity For Girls Blue 500ML",
+          "price": 12.95,
+          "compareAt": 16.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/918ee5e3-6dd7-4d40-8091-516af0591e2b.jpg"
+        }
+      ]
     },
     {
       "id": "2606180805471612500",
@@ -308,7 +420,25 @@
         "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/0781ce32-93a0-42e2-8dda-cb55a015bab8_trans.jpeg",
         "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/10f7e39e-3a0d-4329-80d1-9900400dea26_trans.jpeg"
       ],
-      "description": "Colors: 3003—Green, 3003—Pink, 3003—Purple Inner Liner Material: 316 Stainless Steel Insulation Performance: 6–12 hours Material: 316 Stainless Steel Outer Cup Material: 304 Stainless Steel Capacity: 1100 mL"
+      "description": "Colors: 3003—Green, 3003—Pink, 3003—Purple Inner Liner Material: 316 Stainless Steel Insulation Performance: 6–12 hours Material: 316 Stainless Steel Outer Cup Material: 304 Stainless Steel Capacity: 1100 mL",
+      "variants": [
+        {
+          "id": "2606180826401624500",
+          "sku": "CJJT294497101AZ",
+          "name": "Stainless Steel Lined Insulated Water Bottle Pink 1100ml",
+          "price": 14.95,
+          "compareAt": 19.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/93da210c-7301-483c-a5d2-88efbfbf9599_trans.jpeg"
+        },
+        {
+          "id": "2606180826401625100",
+          "sku": "CJJT294497102BY",
+          "name": "Stainless Steel Lined Insulated Water Bottle Purple 1100ml",
+          "price": 14.95,
+          "compareAt": 19.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/0781ce32-93a0-42e2-8dda-cb55a015bab8_trans.jpeg"
+        }
+      ]
     }
   ]
 }
