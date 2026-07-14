@@ -45,6 +45,27 @@ async function loadCatalog() {
   return data;
 }
 
+/* ---------- scroll reveals (shared) ---------- */
+
+function observeReveals() {
+  if (!("IntersectionObserver" in window)) {
+    document.querySelectorAll(".reveal").forEach((el) => el.classList.add("in"));
+    return;
+  }
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        }
+      }
+    },
+    { threshold: 0.05, rootMargin: "0px 0px -6% 0px" }
+  );
+  document.querySelectorAll(".reveal:not(.in)").forEach((el) => io.observe(el));
+}
+
 /* ---------- cart ---------- */
 
 function saveCart() {

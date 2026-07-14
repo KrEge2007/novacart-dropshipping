@@ -194,7 +194,7 @@ function stripHtml(html) {
     .replace(/\s+/g, " ")
     .trim();
   // Drop leading spec-sheet prefix and trailing disclaimer boilerplate.
-  text = text.replace(/^product information:?\s*/i, "");
+  text = text.replace(/^(product information|description|product description)[.:]?\s*/i, "");
   for (const marker of ["Note:", "Packing list:", "Package includes:", "Product Image:", "1.Please allow", "Please allow"]) {
     const idx = text.indexOf(marker);
     if (idx > 120) text = text.slice(0, idx);
