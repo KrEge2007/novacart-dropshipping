@@ -48,8 +48,8 @@ const CATEGORY_PLAN = [
     category: "yoga",
     quota: 4,
     searches: [
-      { keyword: "yoga mat", require: ["yoga"] },
-      { keyword: "yoga block", require: ["yoga"] },
+      { keyword: "yoga mat non slip", require: ["yoga mat"] },
+      { keyword: "yoga block", require: ["yoga block", "yoga brick", "yoga strap"] },
       { keyword: "pilates ring", require: ["pilates"] },
     ],
   },
@@ -76,6 +76,9 @@ const CATEGORY_PLAN = [
 const NAME_BLOCKLIST = [
   "car ", " dash", "dashboard", "kitchen", "bathroom", "rust", "ornament",
   "bonsai", "sunshade", "mosquito", "curtain", "wallpaper", "sticker",
+  "mop", "floor cleaning", "cleaning", "pet ", "dog ", "cat ",
+  // non-English listings look broken next to the rest of the catalog
+  "hanteln", "kurzhantel", "langhantel",
 ];
 
 // Supplier-cost sanity band: excludes $0.50 trinkets and heavy freight items.
