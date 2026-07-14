@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "updatedAt": "2026-07-14T00:00:00.000Z",
+    "source": "seed",
+    "rotation": "weekly",
+    "note": "Seed catalog. Once CJ_EMAIL and CJ_API_KEY repo secrets are set, the refresh-catalog workflow replaces this file with live CJdropshipping products."
+  },
+  "products": [
+    {
+      "id": "seed-steel-bottle",
+      "name": "Insulated Steel Bottle · 750ml",
+      "category": "hydration",
+      "price": 34.0,
+      "compareAt": 44.0,
+      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=900&q=80"
+    },
+    {
+      "id": "seed-studio-mat",
+      "name": "Studio Yoga Mat · Natural Rubber",
+      "category": "yoga",
+      "price": 58.0,
+      "compareAt": 72.0,
+      "image": "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=900&q=80"
+    },
+    {
+      "id": "seed-yoga-set",
+      "name": "Yoga Essentials Set · Mat, Block & Towel",
+      "category": "yoga",
+      "price": 72.0,
+      "compareAt": 89.0,
+      "image": "https://images.unsplash.com/photo-1591291621164-2c6367723315?w=900&q=80"
+    },
+    {
+      "id": "seed-strength-kit",
+      "name": "Home Strength Kit · Dumbbells & Band",
+      "category": "training",
+      "price": 64.0,
+      "compareAt": 79.0,
+      "image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&q=80"
+    },
+    {
+      "id": "seed-hand-weights",
+      "name": "Neoprene Hand Weights · Pair",
+      "category": "training",
+      "price": 42.0,
+      "compareAt": 52.0,
+      "image": "https://images.unsplash.com/photo-1558017487-06bf9f82613a?w=900&q=80"
+    },
+    {
+      "id": "seed-kettlebell",
+      "name": "Cast-Iron Kettlebell · 12kg",
+      "category": "training",
+      "price": 49.0,
+      "compareAt": 62.0,
+      "image": "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=900&q=80"
+    },
+    {
+      "id": "seed-exercise-mat",
+      "name": "Non-Slip Exercise Mat · 8mm",
+      "category": "training",
+      "price": 46.0,
+      "compareAt": 58.0,
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80"
+    },
+    {
+      "id": "seed-grip-mat",
+      "name": "Grip Pro Hot Yoga Mat",
+      "category": "yoga",
+      "price": 54.0,
+      "compareAt": 68.0,
+      "image": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=900&q=80"
+    },
+    {
+      "id": "seed-training-bra",
+      "name": "Seamless Training Bra",
+      "category": "apparel",
+      "price": 38.0,
+      "compareAt": 48.0,
+      "image": "https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=900&q=80"
+    },
+    {
+      "id": "seed-barbell",
+      "name": "Olympic Barbell · 20kg",
+      "category": "training",
+      "price": 189.0,
+      "compareAt": 229.0,
+      "image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=900&q=80"
+    }
+  ]
+}

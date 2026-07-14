@@ -1,48 +1,61 @@
-# NovaCart — AI-Powered Dropshipping Storefront 🛒
+# Kinetic — Curated Dropshipping Store
 
-A professional, dependency-free dropshipping storefront with an **auto-shuffling, AI-weighted product grid**, a built-in **AI shopping assistant**, cart, and a polished responsive design. Pure HTML/CSS/JS — no build step, deploys anywhere (GitHub Pages ready).
+A professional fitness & recovery storefront whose **product catalog rotates automatically in the backend** — a scheduled GitHub Action pulls fresh products from the CJdropshipping API, commits an updated `data/products.json`, and GitHub Pages redeploys the site. The front end is a clean, static store; all the "AI/automation" lives in the pipeline where it belongs.
 
-## ✨ Features
+## How the automatic rotation works
 
-- **🔀 Automatic product shuffling** — the catalog re-ranks itself every 8 seconds using a trend-score-weighted shuffle (Efraimidis–Spirakis weighted sampling), animated with the FLIP technique so cards glide smoothly to their new positions. Pause/resume and manual shuffle controls included.
-- **🤖 AI shopping assistant ("Nova")** — a chat widget that answers questions about trending products, gift ideas within a budget, shipping, returns, and the user's cart. Runs fully client-side as a demo (see *Upgrading to a real LLM* below).
-- **📈 AI trend scoring** — every product carries a trend score that drives ranking, 🔥 badges, and the assistant's recommendations.
-- **🛍️ Cart** — quantity controls, localStorage persistence, slide-out drawer.
-- **🏷️ Category filters**, testimonials, newsletter capture, marquee, and a fully responsive dark UI with reduced-motion support.
+```
+GitHub Actions cron (daily 05:00 UTC)
+        │
+        ▼
+scripts/fetch-products.mjs
+  · authenticates against the CJdropshipping API
+  · searches curated keywords per category (training / yoga / recovery / hydration)
+  · validates products (image, name, price) and applies retail pricing (~2.4× cost)
+  · picks the week's selection with a date-seeded shuffle
+        │
+        ▼
+commits data/products.json  →  GitHub Pages redeploys  →  live site shows the new edit
+```
 
-## 🚀 Run locally
+- **Selection rotates weekly** (ISO-week seed) while **prices/stock refresh daily**. Set `ROTATION: daily` in [.github/workflows/refresh-catalog.yml](.github/workflows/refresh-catalog.yml) to rotate the selection every day instead.
+- **Safety valve:** if the API returns fewer than 8 valid products, the script exits nonzero and the old catalog is kept — the site never shows a broken page.
+- **Before credentials are added**, the site runs on the seed catalog in [data/products.json](data/products.json), so it always looks complete.
 
-No install needed — just open `index.html` in a browser, or serve it:
+## Setup: connect CJdropshipping (one-time, ~5 min)
+
+1. Create a free account at [cjdropshipping.com](https://cjdropshipping.com).
+2. Generate an API key: CJ dashboard → **My CJ → Authorization → API** (or [developers.cjdropshipping.com](https://developers.cjdropshipping.com)).
+3. In this GitHub repo: **Settings → Secrets and variables → Actions → New repository secret**, add:
+   - `CJ_EMAIL` — your CJ account email
+   - `CJ_API_KEY` — the API key
+4. Trigger the first run: **Actions → Refresh product catalog → Run workflow** (or wait for the nightly cron).
+
+To test locally: `CJ_EMAIL=... CJ_API_KEY=... node scripts/fetch-products.mjs`
+
+## Run locally
 
 ```bash
 npx serve .
 ```
 
-## 🌐 Deployment
+(The catalog is loaded with `fetch()`, so opening `index.html` directly from the file system won't work — it needs any static server.)
 
-The site is deployed with **GitHub Pages** from the `main` branch (root). Every push to `main` updates the live site automatically.
+## Taking real orders
 
-## 🧠 Upgrading the demo AI to a real LLM
+The storefront is complete up to checkout. To accept payments, the lightest path is [Snipcart](https://snipcart.com) or [Stripe Payment Links](https://stripe.com/payments/payment-links) wired to the checkout button in [app.js](app.js). Order fulfillment then happens through CJ's dashboard or their order API (`/shopping/order/createOrder`) — the product `sku` needed for that is already stored on every catalog entry.
 
-`askNova()` in [app.js](app.js) is a client-side rule engine so the demo works with zero backend. To make it a real AI assistant:
+Also before going live: replace the placeholder contact email in the footer, add real privacy/terms pages, and adjust the pricing multiplier in [scripts/fetch-products.mjs](scripts/fetch-products.mjs) to your margin strategy.
 
-1. Create a small serverless endpoint (Cloudflare Workers / Vercel / Netlify Functions) that calls the Claude API with the product catalog as context. **Never put an API key in client-side code.**
-2. Replace the body of `sendChat()` to `fetch()` your endpoint instead of calling `askNova()`.
-
-## 📦 Going live as a real store
-
-This is a demo storefront. Before taking real orders:
-
-1. **Products** — replace the static catalog in [products.js](products.js) with a fetch from your supplier API (CJ Dropshipping, Spocket, Zendrop, AliExpress) and swap the emoji art for real product photos.
-2. **Checkout** — wire the checkout button to Stripe Checkout, Shopify Buy Button, or Snipcart.
-3. **Trend scores** — feed real signals (orders, click-through, Google Trends) into `trendScore` via a scheduled job.
-4. **Legal** — add real privacy/returns/terms pages and remove the placeholder testimonials.
-
-## 🗂️ Structure
+## Structure
 
 ```
-index.html    # Page structure: hero, catalog, features, cart drawer, chat widget
-styles.css    # Full design system (dark theme, responsive)
-products.js   # Product catalog (swap for your supplier API)
-app.js        # Shuffle engine, cart, filters, AI assistant
+index.html                              storefront
+styles.css                              design system (light, editorial)
+app.js                                  catalog rendering + cart
+data/products.json                      current catalog (auto-committed by the bot)
+scripts/fetch-products.mjs              CJdropshipping fetch + rotation logic
+.github/workflows/refresh-catalog.yml   the cron job
 ```
+
+To switch suppliers later (Spocket, Zendrop, AliExpress), only `scripts/fetch-products.mjs` needs replacing — everything downstream just reads `data/products.json`.

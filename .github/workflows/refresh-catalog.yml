@@ -1,0 +1,42 @@
+name: Refresh product catalog
+
+on:
+  schedule:
+    # Runs daily at 05:00 UTC. Prices/stock refresh on every run;
+    # the product *selection* rotates per the ROTATION setting below
+    # (weekly = new selection every ISO week, daily = every day).
+    - cron: "0 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch products from supplier
+        run: node scripts/fetch-products.mjs
+        env:
+          CJ_EMAIL: ${{ secrets.CJ_EMAIL }}
+          CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
+          ROTATION: weekly
+          PRODUCT_COUNT: "16"
+
+      - name: Commit updated catalog
+        run: |
+          if git diff --quiet -- data/products.json; then
+            echo "Catalog unchanged — nothing to commit."
+            exit 0
+          fi
+          git config user.name "catalog-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/products.json
+          git commit -m "chore: rotate product catalog"
+          git push
