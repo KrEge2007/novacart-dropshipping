@@ -408,7 +408,7 @@ button { font: inherit; cursor: pointer; }
 }
 
 /* varied sizes/placements as you scroll */
-.pd-img--hero .pd-img-frame { aspect-ratio: 1 / 1; }
+.pd-img--hero .pd-img-frame { height: clamp(300px, 34vw, 440px); }
 .pd-img--left { width: min(72%, 460px); align-self: flex-start; }
 .pd-img--left .pd-img-frame { aspect-ratio: 4 / 5; }
 .pd-img--right { width: min(80%, 520px); align-self: flex-end; }
