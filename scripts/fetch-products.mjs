@@ -286,20 +286,32 @@ async function orderImagesByQuality(images) {
 // there is a real choice (2+), capped to keep the picker sane.
 function normalizeVariants(data) {
   const list = Array.isArray(data?.variants) ? data.variants : [];
+  const productName = String(data?.productNameEn ?? "").trim().toLowerCase();
   const out = [];
   const seen = new Set();
   for (const v of list) {
-    const name = String(v.variantNameEn ?? v.variantKey ?? "").trim();
+    const rawName = String(v.variantNameEn ?? "").trim();
     const cost = parseCost(v.variantSellPrice);
-    if (!v.vid || !name || name.length > 80 || !(cost > 0)) continue;
-    const dedupe = name.toLowerCase();
+    if (!v.vid || !(cost > 0)) continue;
+
+    // CJ repeats the whole product name inside variant names; prefer the
+    // short variantKey ("Black-45cm"), else strip the product-name prefix.
+    let label = String(v.variantKey ?? "").trim() || rawName;
+    if (productName && label.toLowerCase().startsWith(productName)) {
+      label = label.slice(productName.length);
+    }
+    label = label.replace(/^[\s\-–—_:·,]+/, "").trim();
+    if (!label) label = `Option ${out.length + 1}`;
+    if (label.length > 60) label = label.slice(0, 57) + "…";
+
+    const dedupe = label.toLowerCase();
     if (seen.has(dedupe)) continue;
     seen.add(dedupe);
     const image = String(v.variantImage ?? "").trim();
     out.push({
       id: String(v.vid),
       sku: v.variantSku ?? null,
-      name,
+      name: label,
       price: retailPrice(cost),
       compareAt: compareAtPrice(retailPrice(cost)),
       image: image.startsWith("http") ? image : null,
