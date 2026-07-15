@@ -693,37 +693,17 @@ a { color: inherit; text-decoration: none; }
 .pd-panel > *:nth-child(9) { animation-delay: 0.76s; }
 .pd-panel > *:nth-child(n + 10) { animation-delay: 0.84s; }
 
-/* ---------- gallery affordances: zoom hint + spinning guarantee seal ---------- */
-
-.pd-main { cursor: zoom-in; }
-
-.pd-zoom-hint {
-  position: absolute;
-  right: 0.9rem;
-  bottom: 0.9rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: grid;
-  place-items: center;
-  background: var(--card);
-  border-radius: 999px;
-  box-shadow: var(--shadow);
-  font-size: 1.05rem;
-  pointer-events: none;
-  z-index: 2;
-  transition: transform 0.2s ease;
-}
-.pd-main:hover .pd-zoom-hint { transform: scale(1.12); }
+/* ---------- spinning guarantee seal, riding the photo card's edge ---------- */
 
 .pd-seal {
   position: absolute;
-  left: 0.9rem;
-  bottom: 0.9rem;
+  right: -1.1rem;
+  bottom: -1.1rem;
   width: 5.8rem;
   height: 5.8rem;
   background: var(--card);
   border-radius: 999px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-lift);
   pointer-events: none;
   z-index: 2;
 }
@@ -817,25 +797,18 @@ body.lb-open { overflow: hidden; }
   font-weight: 700;
   font-size: 0.92rem;
 }
-.lb-hint {
-  position: absolute;
-  top: 1.3rem;
-  left: 50%;
-  translate: -50% 0;
-  color: var(--cream);
-  font-weight: 700;
-  font-size: 0.85rem;
-  opacity: 0.85;
-  pointer-events: none;
-}
-
 @media (max-width: 760px) {
   .lb-btn { width: 2.5rem; height: 2.5rem; }
   .lb-prev { left: 0.5rem; }
   .lb-next { right: 0.5rem; }
-  .lb-hint { display: none; }
   .lb-stage { max-width: 96vw; border-radius: var(--r-md); }
-  .pd-seal { width: 4.6rem; height: 4.6rem; }
+  /* photo first, thumbs as a scrollable row beneath; seal off — the
+     sticky buy bar owns the guarantee message on small screens */
+  .pd-gallery { grid-template-columns: 1fr; }
+  .pd-rail { flex-direction: row; overflow-x: auto; overflow-y: hidden; max-height: none; order: 2; }
+  .pd-thumb { width: 4.2rem; }
+  .pd-seal { display: none; }
+  .pd-gallery::before { inset: -3% -4% 20% 30%; }
 }
 .review-stars { color: var(--sun); letter-spacing: 0.12em; font-size: 1.05rem; }
 .review-card blockquote { font-size: 1.02rem; font-weight: 600; }
@@ -989,34 +962,72 @@ body.lb-open { overflow: hidden; }
   align-items: start;
 }
 
-.pd-gallery { position: sticky; top: 5.5rem; }
+/* Gallery: vertical thumb rail beside the photo card, the hero's morphing
+   blob peeking out behind it, and the guarantee seal riding the card edge
+   like a sticker on a package. The photo itself stays clean — one badge. */
+
+.pd-gallery {
+  position: sticky;
+  top: 5.5rem;
+  display: grid;
+  grid-template-columns: 4.4rem 1fr;
+  gap: 0.9rem;
+  align-items: start;
+}
+.pd-gallery--solo { grid-template-columns: 1fr; }
+
+.pd-gallery::before {
+  content: "";
+  position: absolute;
+  inset: -5% -6% 8% 22%;
+  background: var(--cream-2);
+  border-radius: 58% 42% 55% 45% / 48% 55% 45% 52%;
+  animation: blob-morph 18s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
 .pd-main {
   position: relative;
+  z-index: 1;
   border-radius: var(--r-lg);
   overflow: hidden;
   box-shadow: var(--shadow);
+  cursor: zoom-in;
+  background: #fff;
 }
 .pd-main img {
   width: 100%;
   aspect-ratio: 1 / 0.9;
   object-fit: cover;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.4s ease;
 }
+.pd-main:hover img { transform: scale(1.025); }
 .pd-main img.swapping { opacity: 0; }
 
-.pd-thumbs { display: flex; gap: 0.7rem; margin-top: 0.8rem; flex-wrap: wrap; }
+.pd-rail {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-height: 34rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding: 2px;
+}
 .pd-thumb {
-  width: 4.6rem;
-  height: 4.6rem;
+  width: 100%;
+  aspect-ratio: 1;
+  flex: none;
   border-radius: var(--r-sm);
   overflow: hidden;
   border: 3px solid transparent;
   padding: 0;
   cursor: pointer;
-  background: none;
+  background: #fff;
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
-.pd-thumb:hover { transform: translateY(-2px); }
+.pd-thumb:hover { transform: translateX(2px); }
 .pd-thumb.active { border-color: var(--brand); }
 .pd-thumb img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -1087,19 +1098,21 @@ body.lb-open { overflow: hidden; }
 .buy-row { display: flex; gap: 0.9rem; align-items: stretch; margin-bottom: 0.7rem; flex-wrap: wrap; }
 .buy-btn { flex: 1; min-width: 12rem; font-size: 1.1rem; padding: 0.95rem 1.7rem; }
 
-.pd-reassure { font-size: 0.9rem; font-weight: 700; color: var(--muted); min-height: 1.4rem; margin-bottom: 1rem; }
+.pd-reassure { font-size: 0.9rem; font-weight: 700; color: var(--muted); min-height: 1.4rem; }
 .pd-reassure.free { color: var(--leaf); }
 
-.pd-trust {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.3rem;
+.pd-secure { font-size: 0.82rem; font-weight: 700; color: var(--muted); opacity: 0.85; margin-bottom: 1.1rem; }
+
+.save-pill {
+  font-family: var(--font-display);
   font-size: 0.85rem;
-  font-weight: 800;
-  padding: 0.9rem 0;
-  border-top: 2px dashed var(--line);
-  border-bottom: 2px dashed var(--line);
-  margin-bottom: 1.1rem;
+  font-weight: 700;
+  background: var(--leaf-soft);
+  color: var(--leaf);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  margin-left: 0.6rem;
+  align-self: center;
 }
 
 .product-meta-notes { display: grid; gap: 0.7rem; }
@@ -1221,6 +1234,7 @@ img.img-contain {
   .hero-title em { animation: none; }
   .hero-title em::after { animation: none; transform: rotate(-1deg) scaleX(1); }
   .pd-gallery, .pd-panel > * { animation: none; opacity: 1; transform: none; }
+  .pd-gallery::before { animation: none; }
   .pd-seal svg { animation: none; }
   * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }

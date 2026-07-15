@@ -43,7 +43,6 @@ function renderNotFound() {
 function renderProduct(p) {
   document.title = `${p.name} — Waggle & Co.`;
   const imgs = productImages(p);
-  const pct = discountPct(p);
 
   $("#product-page").innerHTML = `
     <nav class="crumbs" aria-label="Breadcrumb">
@@ -52,24 +51,10 @@ function renderProduct(p) {
       <span>${esc(p.name)}</span>
     </nav>
     <div class="pd">
-      <div class="pd-gallery">
-        <figure class="pd-main" id="pd-main" title="Click to zoom">
-          <img id="pd-main-img" class="${imgFit(imgs[0]).trim()}" src="${esc(imgs[0])}" alt="${esc(p.name)}"
-               style="view-transition-name: product-hero" />
-          ${p.badge ? `<span class="card-badge">${esc(p.badge)}</span>` : ""}
-          ${pct ? `<span class="card-off">−${pct}%</span>` : ""}
-          <span class="pd-zoom-hint" aria-hidden="true">🔍</span>
-          <span class="pd-seal" aria-hidden="true">
-            <svg viewBox="0 0 100 100">
-              <defs><path id="seal-circle" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0" fill="none"/></defs>
-              <text><textPath href="#seal-circle">30-day wag guarantee · 30-day wag guarantee ·&#160;</textPath></text>
-            </svg>
-            <span class="pd-seal-paw">🐾</span>
-          </span>
-        </figure>
+      <div class="pd-gallery${imgs.length > 1 ? "" : " pd-gallery--solo"}">
         ${
           imgs.length > 1
-            ? `<div class="pd-thumbs" id="pd-thumbs">
+            ? `<div class="pd-rail" id="pd-thumbs">
                  ${imgs
                    .map(
                      (src, i) =>
@@ -80,10 +65,21 @@ function renderProduct(p) {
                </div>`
             : ""
         }
+        <figure class="pd-main" id="pd-main" title="Click to zoom">
+          <img id="pd-main-img" class="${imgFit(imgs[0]).trim()}" src="${esc(imgs[0])}" alt="${esc(p.name)}"
+               style="view-transition-name: product-hero" />
+          ${p.badge ? `<span class="card-badge">${esc(p.badge)}</span>` : ""}
+        </figure>
+        <span class="pd-seal" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+            <defs><path id="seal-circle" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0" fill="none"/></defs>
+            <text><textPath href="#seal-circle">30-day wag guarantee · 30-day wag guarantee ·&#160;</textPath></text>
+          </svg>
+          <span class="pd-seal-paw">🐾</span>
+        </span>
       </div>
 
       <aside class="pd-panel">
-        <p class="eyebrow">${esc(CATEGORY_LABELS[p.category] ?? p.category)}</p>
         <h1>${esc(p.name)}</h1>
         ${p.rating ? `<div class="pd-rating">${starsHTML(p.rating, p.reviews)}<span class="pd-rating-note">from real customers</span></div>` : ""}
         <p class="product-price" id="pd-price"></p>
@@ -113,11 +109,7 @@ function renderProduct(p) {
           <button class="button buy-btn" id="buy-btn">Buy now</button>
         </div>
         <p class="pd-reassure" id="pd-shipnote"></p>
-        <div class="pd-trust">
-          <span>💛 30-day wag-guarantee</span>
-          <span>📦 Tracked shipping</span>
-          <span>🔒 Secure checkout by Stripe</span>
-        </div>
+        <p class="pd-secure">🔒 Secure Stripe checkout · 📦 Tracked shipping</p>
         <div class="product-meta-notes">
           ${
             p.description
@@ -151,7 +143,6 @@ function renderProduct(p) {
       <figure class="lb-stage"><img id="lb-img" alt="${esc(p.name)} — enlarged view" /></figure>
       <button class="lb-btn lb-next" id="lb-next" aria-label="Next image">›</button>
       <div class="lb-count" id="lb-count"></div>
-      <div class="lb-hint" aria-hidden="true">click to zoom · ← → to browse</div>
     </div>`;
 
   /* ---------- gallery ---------- */
@@ -268,13 +259,14 @@ function renderProduct(p) {
 
   function updatePrice() {
     const unit = selected ?? p;
+    const off = discountPct(unit);
     const el = $("#pd-price");
     el.classList.remove("bump");
     void el.offsetWidth;
     el.classList.add("bump");
     el.innerHTML =
       money(unit.price) +
-      ((unit.compareAt ?? 0) > unit.price ? `<s>${money(unit.compareAt)}</s>` : "");
+      (off ? `<s>${money(unit.compareAt)}</s><span class="save-pill">save ${off}%</span>` : "");
     $("#stickybar-price").textContent = money(unit.price);
 
     const buyBtn = $("#buy-btn");
