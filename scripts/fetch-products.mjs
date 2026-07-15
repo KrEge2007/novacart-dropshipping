@@ -300,6 +300,24 @@ async function refreshEntry(token, entry, pid) {
 
 /* ---------- main ---------- */
 
+// One-off helper: `node fetch-products.mjs --categories` (or the workflow's
+// mode=categories) prints CJ's category tree so PET_CATEGORIES can target
+// real categoryIds. Keyword search is NOT used for matching — it returns
+// unrelated products (verified 2026-07-15: "heartbeat puppy toy" -> baseball
+// cap) — so winners are matched against category-browsed pools instead.
+async function dumpCategories(token) {
+  const data = await cjRequest("/product/getCategory", { token });
+  for (const first of data ?? []) {
+    console.log(`# ${first.categoryFirstName}`);
+    for (const second of first.categoryFirstList ?? []) {
+      console.log(`  ## ${second.categorySecondName}`);
+      for (const third of second.categorySecondList ?? []) {
+        console.log(`    ${third.categoryId}  ${third.categoryName}`);
+      }
+    }
+  }
+}
+
 async function main() {
   const apiKey = process.env.CJ_API_KEY;
   const catalog = JSON.parse(await readFile(OUT, "utf8"));
@@ -314,6 +332,12 @@ async function main() {
   }
 
   const token = await getAccessToken(apiKey);
+
+  if (process.argv.includes("--categories")) {
+    await dumpCategories(token);
+    return;
+  }
+
   let refreshed = 0;
 
   for (const winner of WINNERS) {

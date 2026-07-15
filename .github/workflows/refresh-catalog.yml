@@ -7,6 +7,11 @@ on:
     # data, supplier photos, and variants for those picks.
     - cron: "0 5 * * *"
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run mode: refresh (default) or categories (debug: print CJ category tree)"
+        required: false
+        default: refresh
 
 permissions:
   contents: write
@@ -25,7 +30,12 @@ jobs:
         run: npm install --no-audit --no-fund
 
       - name: Refresh pinned products from supplier
-        run: node scripts/fetch-products.mjs
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "categories" ]; then
+            node scripts/fetch-products.mjs --categories
+          else
+            node scripts/fetch-products.mjs
+          fi
         env:
           CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
 
