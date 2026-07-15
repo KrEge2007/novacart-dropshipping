@@ -1,32 +1,32 @@
 {
   "meta": {
-    "updatedAt": "2026-07-15T05:59:11.287Z",
+    "updatedAt": "2026-07-15T06:02:57.898Z",
     "source": "cjdropshipping",
     "note": "Hand-picked evergreen bestsellers. Images are placeholders until scripts/fetch-products.mjs matches each pick to a live CJdropshipping listing and fills in real supplier photos, prices, and SKUs."
   },
   "products": [
     {
       "id": "wg-grooming-vacuum",
-      "sku": "CJMY2127089",
+      "sku": "CJGY2140137",
       "name": "FurAway Pro Grooming Vacuum Kit",
       "category": "grooming",
       "petType": "both",
       "kind": "pet grooming vacuum",
-      "price": 14.95,
-      "compareAt": 20.95,
+      "price": 106.95,
+      "compareAt": 144.95,
       "rating": 4.8,
       "reviews": 2314,
       "badge": "Bestseller",
       "featured": true,
       "blurb": "Brush, de-shed, and trim while the built-in vacuum catches loose fur before it ever reaches your sofa.",
-      "image": "https://cf.cjdropshipping.com/quick/product/f80a2a0f-2baf-4939-b724-8469685f150a.jpg",
+      "image": "https://cf.cjdropshipping.com/quick/product/bfff2381-e953-44d3-8d67-d0a2be3fcaec.jpg",
       "images": [
-        "https://cf.cjdropshipping.com/quick/product/f80a2a0f-2baf-4939-b724-8469685f150a.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/38a06bb2-5f58-4b05-9ca5-8d4a751d375f_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/f685cef9-32c4-4e27-b286-da51d460819d_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/4f466bd4-003f-4aee-bdce-26f8bab2a859_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/c206a0c7-27e6-4ffd-8a1e-d87fa2cdcd3f_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/941bc79e-4ec8-4691-971f-c570baa972b6_trans.jpeg"
+        "https://cf.cjdropshipping.com/quick/product/bfff2381-e953-44d3-8d67-d0a2be3fcaec.jpg",
+        "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg",
+        "https://cf.cjdropshipping.com/quick/product/6e657c68-6f1e-43a0-b836-e1b7aa55c7a7.jpg",
+        "https://cf.cjdropshipping.com/quick/product/0abcb938-4a31-498c-bee1-1d6f1549e6c3.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2024/09/18/08/dd599c59-8a55-4db2-9506-d3a1efaaea72_fine.jpeg",
+        "https://cf.cjdropshipping.com/quick/product/897e637a-3abd-478f-9476-75a9ff2239f8.jpg"
       ],
       "description": "Shedding season, handled. The FurAway Pro connects five grooming tools — de-shedding brush, grooming brush, nozzle, cleaning brush, and clipper head — to a quiet vacuum that pulls loose fur straight into a sealed 1.5L canister as you groom. Low-noise motor (under 60dB) keeps nervous pets calm, and the suction is adjustable for thick double coats or short-haired cats. No more fur tumbleweeds, no more lint-rolling the couch every night. Empties in one click.",
       "benefits": [
@@ -37,23 +37,40 @@
       ],
       "variants": [
         {
-          "id": "2409030742051619700",
-          "sku": "CJMY212708901AZ",
-          "name": "Upgrade",
-          "price": 24.95,
-          "compareAt": 33.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/f685cef9-32c4-4e27-b286-da51d460819d_trans.jpeg"
+          "id": "2409180259491607900",
+          "sku": "CJGY214013701AZ",
+          "name": "American Standard",
+          "price": 106.95,
+          "compareAt": 144.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg"
         },
         {
-          "id": "2409030742051619800",
-          "sku": "CJMY212708902BY",
-          "name": "Universal version",
-          "price": 14.95,
-          "compareAt": 20.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/38a06bb2-5f58-4b05-9ca5-8d4a751d375f_trans.jpeg"
+          "id": "2409180259491608100",
+          "sku": "CJGY214013702BY",
+          "name": "British Standard",
+          "price": 106.95,
+          "compareAt": 144.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg"
+        },
+        {
+          "id": "2409180259491608300",
+          "sku": "CJGY214013703CX",
+          "name": "European Standard",
+          "price": 106.95,
+          "compareAt": 144.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg"
+        },
+        {
+          "id": "2411230957241624300",
+          "sku": "CJGY214013704DW",
+          "name": "AU",
+          "price": 106.95,
+          "compareAt": 144.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg"
         }
       ],
-      "supplierCost": 5.94
+      "supplierCost": 44.44,
+      "cjPid": "2409180259491607700"
     },
     {
       "id": "wg-paw-cleaner",
@@ -108,26 +125,26 @@
     },
     {
       "id": "wg-smart-ball",
-      "sku": "CJCT2175743",
+      "sku": "CJCT2590158",
       "name": "ZoomOrb Self-Rolling Smart Ball",
       "category": "play",
       "petType": "both",
       "kind": "interactive smart pet ball",
-      "price": 9.95,
-      "compareAt": 13.95,
+      "price": 11.95,
+      "compareAt": 16.95,
       "rating": 4.6,
       "reviews": 1204,
       "badge": "New",
       "featured": false,
       "blurb": "Rolls, bounces, and dodges on its own — hours of chase for cats and dogs, zero effort from you.",
-      "image": "https://cf.cjdropshipping.com/6ec9ebb8-9224-45aa-9155-ce3dee9f6257.jpg",
+      "image": "https://cf.cjdropshipping.com/51f9997f-8c8f-4bc4-b41d-8bfb3e15cf6e.jpg",
       "images": [
-        "https://cf.cjdropshipping.com/6ec9ebb8-9224-45aa-9155-ce3dee9f6257.jpg",
-        "https://cf.cjdropshipping.com/58534435-a099-49f4-b5e6-622bc74d8548.jpg",
-        "https://cf.cjdropshipping.com/a5504014-4919-4f00-ba2d-10aa4e5c4ddd.jpg",
-        "https://cf.cjdropshipping.com/3d1ff8c3-cbb8-4ab2-a10c-66f0f732099b.jpg",
-        "https://cf.cjdropshipping.com/01f64468-079a-422b-9e77-e67c36e7b3eb.jpg",
-        "https://cf.cjdropshipping.com/ca291871-9ce4-4681-af6d-7f465228ecd4.jpg"
+        "https://cf.cjdropshipping.com/51f9997f-8c8f-4bc4-b41d-8bfb3e15cf6e.jpg",
+        "https://cf.cjdropshipping.com/0e45b4d5-cc99-435a-896f-0cd5c3cadcf7.jpg",
+        "https://cf.cjdropshipping.com/524270a7-118f-4703-98dd-ac2bba121527.jpg",
+        "https://cf.cjdropshipping.com/6cb9d5f8-e709-4071-be98-4ad6710cfe9c.jpg",
+        "https://cf.cjdropshipping.com/5852c502-ee1d-43bd-8434-1efddc4a66cc.jpg",
+        "https://cf.cjdropshipping.com/1cc4fc25-20d9-4cf6-be5a-faa40548e786.jpg"
       ],
       "description": "Bored pets get creative — usually with your furniture. The ZoomOrb rolls itself in unpredictable patterns, changes direction when it bumps something, and takes short rest breaks so your pet never loses interest. USB-C charged, with a durable chew-safe shell and an LED glow for low-light zoomies. Auto-sleeps when playtime is over and wakes with a nudge. Works on carpet, wood, and tile.",
       "benefits": [
@@ -138,23 +155,24 @@
       ],
       "variants": [
         {
-          "id": "1851457833666498560",
-          "sku": "CJCT217574301AZ",
-          "name": "White",
-          "price": 9.95,
-          "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/a5504014-4919-4f00-ba2d-10aa4e5c4ddd.jpg"
+          "id": "1988848336782340097",
+          "sku": "CJCT259015801AZ",
+          "name": "Red",
+          "price": 11.95,
+          "compareAt": 16.95,
+          "image": "https://cf.cjdropshipping.com/0e45b4d5-cc99-435a-896f-0cd5c3cadcf7.jpg"
         },
         {
-          "id": "1851457833666498561",
-          "sku": "CJCT217574302BY",
-          "name": "Pink",
-          "price": 9.95,
-          "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/01f64468-079a-422b-9e77-e67c36e7b3eb.jpg"
+          "id": "1988848336782340098",
+          "sku": "CJCT259015802BY",
+          "name": "Blue",
+          "price": 11.95,
+          "compareAt": 16.95,
+          "image": "https://cf.cjdropshipping.com/51f9997f-8c8f-4bc4-b41d-8bfb3e15cf6e.jpg"
         }
       ],
-      "supplierCost": 2.87
+      "supplierCost": 4.91,
+      "cjPid": "1988848336526487553"
     },
     {
       "id": "wg-donut-bed",
@@ -294,26 +312,26 @@
     },
     {
       "id": "wg-harness",
-      "sku": "CJPH2407139",
+      "sku": "CJGY1895492",
       "name": "EasyWalk No-Pull Harness Set",
       "category": "travel",
       "petType": "dog",
       "kind": "no-pull dog harness",
-      "price": 47.95,
-      "compareAt": 64.95,
+      "price": 9.95,
+      "compareAt": 13.95,
       "rating": 4.7,
       "reviews": 2101,
       "badge": "Bestseller",
       "featured": false,
       "blurb": "Front-clip design steers pullers back to your side — walks stop being a tug-of-war.",
-      "image": "https://cf.cjdropshipping.com/206eaf5f-018a-4517-b785-35b8deea97a0.jpg",
+      "image": "https://cf.cjdropshipping.com/quick/product/f74f5218-ad49-4712-9826-30b25397463d.jpg",
       "images": [
-        "https://cf.cjdropshipping.com/206eaf5f-018a-4517-b785-35b8deea97a0.jpg",
-        "https://cf.cjdropshipping.com/214af00c-129e-459d-9549-d931b4acb3cb.jpg",
-        "https://cf.cjdropshipping.com/852385c5-64c9-4c1d-9ff6-7b7e549aa3e4.jpg",
-        "https://cf.cjdropshipping.com/5054acc6-4f2e-4960-b29f-647c0d1a5737.jpg",
-        "https://cf.cjdropshipping.com/c939097f-e81b-409d-8884-765cf290e4e0.jpg",
-        "https://cf.cjdropshipping.com/1776b9e8-8081-4b3e-b044-712cce9b6e1e.jpg"
+        "https://cf.cjdropshipping.com/quick/product/f74f5218-ad49-4712-9826-30b25397463d.jpg",
+        "https://cf.cjdropshipping.com/16998336/1723917573046800384.jpg",
+        "https://cf.cjdropshipping.com/16998336/1723917572874833920.jpg",
+        "https://cf.cjdropshipping.com/quick/product/17769757-f0ff-4448-81d2-f1ce8813f335.jpg",
+        "https://cf.cjdropshipping.com/16998336/1723917572723838976.jpg",
+        "https://cf.cjdropshipping.com/16998336/1723917573197795328.jpg"
       ],
       "description": "The dual-clip EasyWalk turns pulling into steering: clip the leash to the front ring and a pulling dog is gently turned back toward you instead of dragging you down the street. Padded air-mesh keeps it comfortable on long walks, reflective strips keep evening walks visible, and the top handle gives you instant control when you need it. Buckles on both the neck and chest, so it goes on without wrestling anything over your dog's head.",
       "benefits": [
@@ -324,103 +342,104 @@
       ],
       "variants": [
         {
-          "id": "1935996842014121985",
-          "sku": "CJPH240713901AZ",
-          "name": "Pink-S",
-          "price": 47.95,
-          "compareAt": 64.95,
-          "image": "https://cf.cjdropshipping.com/3bcde5ba-571c-417e-bfa7-d729e85aa71e.jpg"
+          "id": "1723917566336315392",
+          "sku": "CJGY189549201AZ",
+          "name": "Orange Blue-S",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg"
         },
         {
-          "id": "1935996842014121986",
-          "sku": "CJPH240713902BY",
-          "name": "Pink-M",
-          "price": 50.95,
-          "compareAt": 68.95,
-          "image": "https://cf.cjdropshipping.com/3bcde5ba-571c-417e-bfa7-d729e85aa71e.jpg"
+          "id": "1723917566395035648",
+          "sku": "CJGY189549202BY",
+          "name": "Orange Blue-M",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg"
         },
         {
-          "id": "1935996842014121987",
-          "sku": "CJPH240713903CX",
-          "name": "Pink-L",
-          "price": 51.95,
-          "compareAt": 70.95,
-          "image": "https://cf.cjdropshipping.com/3bcde5ba-571c-417e-bfa7-d729e85aa71e.jpg"
+          "id": "1723917566453755904",
+          "sku": "CJGY189549203CX",
+          "name": "Orange Blue-L",
+          "price": 10.95,
+          "compareAt": 14.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg"
         },
         {
-          "id": "1935996842014121988",
-          "sku": "CJPH240713904DW",
-          "name": "Pink-XL",
-          "price": 65.95,
-          "compareAt": 89.95,
-          "image": "https://cf.cjdropshipping.com/3bcde5ba-571c-417e-bfa7-d729e85aa71e.jpg"
+          "id": "1723917566508281856",
+          "sku": "CJGY189549204DW",
+          "name": "Orange Blue-XL",
+          "price": 10.95,
+          "compareAt": 14.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg"
         },
         {
-          "id": "1935996842014121989",
-          "sku": "CJPH240713905EV",
-          "name": "Black-S",
-          "price": 47.95,
-          "compareAt": 64.95,
-          "image": "https://cf.cjdropshipping.com/1776b9e8-8081-4b3e-b044-712cce9b6e1e.jpg"
+          "id": "1723917566567002112",
+          "sku": "CJGY189549205EV",
+          "name": "Pink Blue-S",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg"
         },
         {
-          "id": "1935996842014121990",
-          "sku": "CJPH240713906FU",
-          "name": "Black-M",
-          "price": 50.95,
-          "compareAt": 68.95,
-          "image": "https://cf.cjdropshipping.com/1776b9e8-8081-4b3e-b044-712cce9b6e1e.jpg"
+          "id": "1723917566621528064",
+          "sku": "CJGY189549206FU",
+          "name": "Pink Blue-M",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg"
         },
         {
-          "id": "1935996842014121991",
-          "sku": "CJPH240713907GT",
-          "name": "Black-L",
-          "price": 51.95,
-          "compareAt": 70.95,
-          "image": "https://cf.cjdropshipping.com/1776b9e8-8081-4b3e-b044-712cce9b6e1e.jpg"
+          "id": "1723917566680248320",
+          "sku": "CJGY189549207GT",
+          "name": "Pink Blue-L",
+          "price": 10.95,
+          "compareAt": 14.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg"
         },
         {
-          "id": "1935996842014121992",
-          "sku": "CJPH240713908HS",
-          "name": "Black-XL",
-          "price": 65.95,
-          "compareAt": 89.95,
-          "image": "https://cf.cjdropshipping.com/1776b9e8-8081-4b3e-b044-712cce9b6e1e.jpg"
+          "id": "1723917566734774272",
+          "sku": "CJGY189549208HS",
+          "name": "Pink Blue-XL",
+          "price": 10.95,
+          "compareAt": 14.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg"
         },
         {
-          "id": "1935996842014121993",
-          "sku": "CJPH240713909IR",
-          "name": "Tan-S",
-          "price": 47.95,
-          "compareAt": 64.95,
-          "image": "https://cf.cjdropshipping.com/ab07d914-e3f9-4e97-b34e-1f9b6102afc2.jpg"
+          "id": "1723917566793494528",
+          "sku": "CJGY189549209IR",
+          "name": "Orange-S",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg"
         },
         {
-          "id": "1935996842014121994",
-          "sku": "CJPH240713910JQ",
-          "name": "Tan-M",
-          "price": 50.95,
-          "compareAt": 68.95,
-          "image": "https://cf.cjdropshipping.com/ab07d914-e3f9-4e97-b34e-1f9b6102afc2.jpg"
+          "id": "1723917566848020480",
+          "sku": "CJGY189549210JQ",
+          "name": "Orange-M",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg"
         },
         {
-          "id": "1935996842014121996",
-          "sku": "CJPH240713912LO",
-          "name": "Tan-XL",
-          "price": 65.95,
-          "compareAt": 89.95,
-          "image": "https://cf.cjdropshipping.com/ab07d914-e3f9-4e97-b34e-1f9b6102afc2.jpg"
+          "id": "1723917566906740736",
+          "sku": "CJGY189549211KP",
+          "name": "Orange-L",
+          "price": 10.95,
+          "compareAt": 14.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg"
         },
         {
-          "id": "1935996842014121997",
-          "sku": "CJPH240713913MN",
-          "name": "GrayCamo-S",
-          "price": 47.95,
-          "compareAt": 64.95,
-          "image": "https://cf.cjdropshipping.com/214af00c-129e-459d-9549-d931b4acb3cb.jpg"
+          "id": "1723917566965460992",
+          "sku": "CJGY189549212LO",
+          "name": "Orange-XL",
+          "price": 10.95,
+          "compareAt": 14.95,
+          "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg"
         }
       ],
-      "supplierCost": 19.84
+      "supplierCost": 3.99,
+      "cjPid": "1723917566252429312"
     },
     {
       "id": "wg-hair-roller",
@@ -810,21 +829,26 @@
     },
     {
       "id": "wg-corner-brush",
-      "sku": null,
+      "sku": "CJTE2163936",
       "name": "CornerComb Self-Grooming Brush",
       "category": "grooming",
       "petType": "cat",
       "kind": "cat corner self groomer",
-      "price": 11.95,
-      "compareAt": 15.95,
+      "price": 9.95,
+      "compareAt": 13.95,
       "rating": 4.5,
       "reviews": 678,
       "badge": null,
       "featured": false,
       "blurb": "Mounts to any wall corner so your cat brushes themselves every time they walk by. They think it's a spa.",
-      "image": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/418207c6-00e4-44c2-8a14-a71e1774058f.jpeg",
       "images": [
-        "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=900&q=80"
+        "https://cf.cjdropshipping.com/418207c6-00e4-44c2-8a14-a71e1774058f.jpeg",
+        "https://cf.cjdropshipping.com/81184d44-d3c0-4a8a-baf8-e5c5ec01d8c6.jpeg",
+        "https://cf.cjdropshipping.com/4ea22073-e3fc-46c3-8f9d-812ab0790d18.jpeg",
+        "https://cf.cjdropshipping.com/7315f4e0-77bb-49cc-996e-22fdf6b042f6.jpeg",
+        "https://cf.cjdropshipping.com/630d24db-1f06-4939-a058-a6eeb33d4488.jpeg",
+        "https://cf.cjdropshipping.com/3f472d18-635f-4187-b3d7-23c94bcc75bc.jpeg"
       ],
       "description": "Cats already rub against your furniture — give the habit a job. The CornerComb mounts to any wall corner or table leg at whisker height, and its soft bristle arch collects loose fur every time your cat walks through for a scratch. Less fur on the floor, fewer hairballs, and a cat that queues up for it. Includes a pouch of catnip to seal the deal. Bristles pop out for cleaning.",
       "benefits": [
@@ -833,30 +857,32 @@
         "Fewer hairballs, less fur on the floor",
         "Catnip pouch included, bristles pop out to clean"
       ],
-      "variants": null
+      "variants": null,
+      "cjPid": "1847184159568449536",
+      "supplierCost": 3.61
     },
     {
       "id": "wg-flopping-fish",
-      "sku": "CJPT2953143",
+      "sku": "CJMY1599526",
       "name": "FlipFin Flopping Fish",
       "category": "play",
       "petType": "cat",
       "kind": "flopping fish cat toy",
-      "price": 9.95,
-      "compareAt": 13.95,
+      "price": 12.95,
+      "compareAt": 17.95,
       "rating": 4.6,
       "reviews": 1489,
       "badge": "Fan favorite",
       "featured": false,
       "blurb": "Flops like a real catch the moment your cat touches it — the toy behind a million kicking-cat videos.",
-      "image": "https://cf.cjdropshipping.com/95e8ab43-92f0-4fd0-a8f9-52512891fcd0.jpg",
+      "image": "https://cf.cjdropshipping.com/900ebbac-75f8-4353-a939-de672c877108.jpg",
       "images": [
-        "https://cf.cjdropshipping.com/95e8ab43-92f0-4fd0-a8f9-52512891fcd0.jpg",
-        "https://cf.cjdropshipping.com/4b71ea08-7f65-4395-b277-f6fa07316b29.jpg",
-        "https://cf.cjdropshipping.com/db4dde74-8540-4030-a53e-9803c86664d4.jpg",
-        "https://cf.cjdropshipping.com/6c208eeb-c42c-4b82-94a0-b0fb7dc0bf7e.jpg",
-        "https://cf.cjdropshipping.com/4e5b0f9a-3e25-407b-908d-7d227ce58f97.jpg",
-        "https://cf.cjdropshipping.com/6f6985e6-40ef-4f65-a805-64703bd64018.jpg"
+        "https://cf.cjdropshipping.com/900ebbac-75f8-4353-a939-de672c877108.jpg",
+        "https://cf.cjdropshipping.com/c92a105a-a13d-4cd1-b9e0-4c1919f73942.jpg",
+        "https://cf.cjdropshipping.com/3eacc954-4bcd-4f1a-8cd2-016f2cfc75e3.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2025/04/08/09/af685326-f361-4b1b-aee3-361128796959.jpg",
+        "https://cf.cjdropshipping.com/82f0fc43-2305-4817-92c9-447d456a5ee9.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2025/06/12/06/f4d274e9-04f0-495a-81a5-9b615f37a55b.jpg"
       ],
       "description": "The internet-famous kicker toy. A touch sensor makes the FlipFin flop and wiggle like a fresh catch the second your cat pounces, triggering the full wrestle-and-bunny-kick routine that burns real energy. It naps when your cat naps (auto-sleep) and wakes on the next attack. USB-charged, with a washable cover and a catnip pocket for cats that need convincing.",
       "benefits": [
@@ -865,8 +891,82 @@
         "USB rechargeable, washable cover",
         "Catnip pocket included"
       ],
-      "variants": null,
-      "supplierCost": 2.31
+      "variants": [
+        {
+          "id": "1586187764868067328",
+          "sku": "CJMY159952601AZ",
+          "name": "Crab-12x9x12cm-1PCS",
+          "price": 13.95,
+          "compareAt": 18.95,
+          "image": "https://cf.cjdropshipping.com/c92a105a-a13d-4cd1-b9e0-4c1919f73942.jpg"
+        },
+        {
+          "id": "1586187764872261632",
+          "sku": "CJMY159952602BY",
+          "name": "Flying fish-12x9x12cm-1PCS",
+          "price": 19.95,
+          "compareAt": 26.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/02/09/07/7c3761ed-d29c-4954-9d7e-5c6cb3c8fb3d.jpg"
+        },
+        {
+          "id": "1586187764872261633",
+          "sku": "CJMY159952603CX",
+          "name": "Sparrow-12x9x12cm-1PCS",
+          "price": 13.95,
+          "compareAt": 18.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/06/12/06/f4d274e9-04f0-495a-81a5-9b615f37a55b.jpg"
+        },
+        {
+          "id": "1586187764872261634",
+          "sku": "CJMY159952604DW",
+          "name": "Penguin-12x9x12cm-1PCS",
+          "price": 13.95,
+          "compareAt": 18.95,
+          "image": "https://cf.cjdropshipping.com/b61f3560-b7c2-4aab-a57c-1f4ae4d9a313.jpg"
+        },
+        {
+          "id": "1586187764876455936",
+          "sku": "CJMY159952605EV",
+          "name": "Jojo-12x9x12cm-1PCS",
+          "price": 13.95,
+          "compareAt": 18.95,
+          "image": "https://cf.cjdropshipping.com/3eacc954-4bcd-4f1a-8cd2-016f2cfc75e3.jpg"
+        },
+        {
+          "id": "2502050823571617100",
+          "sku": "CJMY159952606FU",
+          "name": "Woodpecker-12x9x12cm-1PCS",
+          "price": 12.95,
+          "compareAt": 17.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/02/05/08/f2a52140-717d-460a-bbb3-77f311e24bdf.jpg"
+        },
+        {
+          "id": "2504080917491626600",
+          "sku": "CJMY159952615OL",
+          "name": "Sparrow-12x9x12cm-2PCS",
+          "price": 27.95,
+          "compareAt": 37.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/08/09/af685326-f361-4b1b-aee3-361128796959.jpg"
+        },
+        {
+          "id": "2504080917491627100",
+          "sku": "CJMY159952616PK",
+          "name": "Sparrow-12x9x12cm-3PCS",
+          "price": 41.95,
+          "compareAt": 56.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/08/09/4c6845dd-2c1c-44c4-a004-77afd9eaa12c.jpg"
+        },
+        {
+          "id": "2605130619551629300",
+          "sku": "CJMY159952619SH",
+          "name": "Set-12x9x12cm-1PCS",
+          "price": 18.95,
+          "compareAt": 25.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/13/06/725ee184-b1e0-4f89-bca9-bca3908efd48.jpg"
+        }
+      ],
+      "supplierCost": 5.2,
+      "cjPid": "1586187764805152768"
     },
     {
       "id": "wg-heartbeat-pup",
