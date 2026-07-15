@@ -130,7 +130,7 @@ function cardHTML(p, i = 0) {
         <img class="${imgFit(p.image).trim()}" src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" />
         ${p.badge ? `<span class="card-badge">${esc(p.badge)}</span>` : ""}
         ${pct ? `<span class="card-off">−${pct}%</span>` : ""}
-        <span class="card-add" aria-hidden="true">View product</span>
+        <span class="card-view" aria-hidden="true">View product</span>
       </div>
       <div class="card-info">
         ${starsHTML(p.rating, p.reviews)}

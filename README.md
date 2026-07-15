@@ -83,11 +83,29 @@ the static site never touches the secret key:
 - `STRIPE_PUBLISHABLE_KEY` is not needed for this integration (it's only for
   Stripe.js in the browser); it can stay in secrets for later.
 
-Fulfillment happens through CJ's dashboard or their order API
-(`/shopping/order/createOrder`) — the `sku` and variant ids needed for that
-are stored on every catalog entry. Set up a
-[Stripe webhook or email notification](https://dashboard.stripe.com/settings/notifications)
-so new orders reach you.
+## Automated fulfillment
+
+`.github/workflows/fulfill-orders.yml` runs every 30 minutes and executes
+`scripts/fulfill-orders.mjs`:
+
+1. Lists recent paid Stripe Checkout Sessions.
+2. Maps the line item's Stripe price id to the CJ variant id stored in
+   `data/products.json` (variant ids are CJ vids; variantless products use
+   `cjVid`).
+3. Picks the cheapest CJ shipping option (freightCalculate) and creates the
+   CJ order with the customer's shipping address and phone.
+4. Stamps the Stripe PaymentIntent with `cj_order_id` metadata — that's the
+   dedupe state, so no customer data is ever committed to this public repo.
+
+**The CJ order is created but not paid.** Your remaining manual step per
+order: CJ dashboard → Orders → review → Confirm & Pay (with your CJ balance).
+CJ then ships direct to the customer; forward the tracking number they give
+you. With a test-mode Stripe key the script runs as a dry run (logs the order
+it would create, calls no CJ order API).
+
+Set up
+[Stripe payment notifications](https://dashboard.stripe.com/settings/notifications)
+so you know when to go pay the CJ order.
 
 Also before going live: replace the placeholder contact email in the footer,
 add real privacy/terms pages, replace the seeded review copy with real

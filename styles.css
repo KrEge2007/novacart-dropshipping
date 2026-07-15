@@ -163,36 +163,7 @@ a { color: inherit; text-decoration: none; }
 }
 .nav a:hover { background: var(--cream-2); }
 
-.cart-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-family: var(--font-body);
-  font-weight: 800;
-  font-size: 0.95rem;
-  background: var(--card);
-  border: 2px solid var(--ink);
-  color: var(--ink);
-  border-radius: 999px;
-  padding: 0.45rem 1rem;
-  cursor: pointer;
-  transition: transform 0.15s ease;
-}
-.cart-toggle:hover { transform: translateY(-2px); }
-
-#cart-count {
-  display: inline-grid;
-  place-items: center;
-  min-width: 1.5rem;
-  height: 1.5rem;
-  padding: 0 0.3rem;
-  background: var(--brand);
-  color: #fff;
-  border-radius: 999px;
-  font-size: 0.82rem;
-}
-#cart-count.pop { animation: pop 0.45s cubic-bezier(0.3, 1.6, 0.5, 1); }
-@keyframes pop { 40% { transform: scale(1.45); } }
+.header-cta { white-space: nowrap; }
 
 /* ---------- hero ---------- */
 
@@ -380,7 +351,7 @@ a { color: inherit; text-decoration: none; }
 .card-badge { left: 0.8rem; background: var(--sun); color: var(--ink); transform: rotate(-3deg); }
 .card-off { right: 0.8rem; background: var(--brand); color: #fff; transform: rotate(3deg); }
 
-.card-add {
+.card-view {
   position: absolute;
   left: 50%;
   bottom: 0.9rem;
@@ -400,8 +371,8 @@ a { color: inherit; text-decoration: none; }
   transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
   white-space: nowrap;
 }
-.card:hover .card-add, .card:focus-within .card-add { opacity: 1; transform: translateY(0); }
-.card-add:hover { background: var(--brand); }
+.card:hover .card-view, .card:focus-within .card-view { opacity: 1; transform: translateY(0); }
+.card-view:hover { background: var(--brand); }
 
 .card-info { padding: 1rem 1.15rem 1.25rem; }
 
@@ -627,125 +598,6 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.85rem;
 }
 
-/* ---------- cart drawer ---------- */
-
-.scrim {
-  position: fixed;
-  inset: 0;
-  background: rgba(58, 46, 38, 0.4);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s ease;
-  z-index: 90;
-}
-.scrim.show { opacity: 1; pointer-events: auto; }
-
-.cart {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: min(26rem, 92vw);
-  background: var(--cream);
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  padding: 1.4rem;
-  transform: translateX(105%);
-  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.3, 1);
-  border-radius: var(--r-lg) 0 0 var(--r-lg);
-  box-shadow: var(--shadow-lift);
-}
-.cart.open { transform: translateX(0); }
-
-.cart-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem; }
-.cart-head h3 { font-size: 1.4rem; }
-.cart-close {
-  background: var(--cream-2);
-  border: none;
-  border-radius: 999px;
-  width: 2.2rem;
-  height: 2.2rem;
-  font-size: 1rem;
-  cursor: pointer;
-  color: var(--ink);
-}
-
-.cart-shipbar {
-  height: 0.55rem;
-  background: var(--cream-2);
-  border-radius: 999px;
-  overflow: hidden;
-  margin-bottom: 0.4rem;
-}
-.cart-shipbar span {
-  display: block;
-  height: 100%;
-  width: var(--fill, 0%);
-  background: linear-gradient(90deg, var(--sun), var(--brand));
-  border-radius: 999px;
-  transition: width 0.4s ease;
-}
-.cart-shipnote { font-size: 0.88rem; font-weight: 700; color: var(--muted); min-height: 1.3rem; margin-bottom: 0.6rem; }
-
-.cart-body { flex: 1; overflow-y: auto; padding-right: 0.2rem; }
-
-.cart-empty {
-  text-align: center;
-  color: var(--muted);
-  padding: 2.5rem 1rem;
-  display: grid;
-  gap: 0.8rem;
-  justify-items: center;
-}
-.cart-empty-icon { font-size: 2.2rem; }
-
-.cart-line {
-  display: flex;
-  gap: 0.9rem;
-  align-items: center;
-  padding: 0.8rem 0;
-  border-bottom: 2px solid var(--cream-2);
-}
-.cart--fresh .cart-line { animation: line-in 0.4s both; animation-delay: calc(var(--i) * 70ms); }
-@keyframes line-in {
-  from { opacity: 0; transform: translateX(14px); }
-}
-.cart-line img {
-  width: 4rem;
-  height: 4rem;
-  object-fit: cover;
-  border-radius: var(--r-sm);
-}
-.cart-line-info { flex: 1; display: grid; gap: 0.15rem; font-size: 0.92rem; }
-.cart-line-info strong { line-height: 1.3; }
-.cart-line-price { font-family: var(--font-display); font-weight: 700; }
-.muted { color: var(--muted); }
-
-.qty { display: inline-flex; align-items: center; gap: 0.7rem; }
-.qty button {
-  width: 1.7rem;
-  height: 1.7rem;
-  border: 2px solid var(--line);
-  background: var(--card);
-  color: var(--ink);
-  border-radius: 999px;
-  font-size: 1rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: border-color 0.15s ease;
-}
-.qty button:hover { border-color: var(--brand); }
-
-.cart-foot { border-top: 2px solid var(--line); padding-top: 1rem; margin-top: 0.6rem; }
-.cart-total {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.1rem;
-  margin-bottom: 0.9rem;
-}
-.cart-total strong { font-family: var(--font-display); font-size: 1.3rem; }
-
 /* ---------- toast ---------- */
 
 .toast {
@@ -884,16 +736,7 @@ a { color: inherit; text-decoration: none; }
 .variant-chip.active { background: var(--brand-soft); border-color: var(--brand); color: var(--brand-dark); }
 
 .buy-row { display: flex; gap: 0.9rem; align-items: stretch; margin-bottom: 0.7rem; flex-wrap: wrap; }
-.qty-lg {
-  background: var(--card);
-  border: 2px solid var(--line);
-  border-radius: 999px;
-  padding: 0.35rem 0.8rem;
-  gap: 0.9rem;
-  font-weight: 800;
-}
-.qty-lg button { border: none; background: none; font-size: 1.2rem; width: 1.6rem; height: 1.6rem; }
-.buy-btn { flex: 1; min-width: 12rem; }
+.buy-btn { flex: 1; min-width: 12rem; font-size: 1.1rem; padding: 0.95rem 1.7rem; }
 
 .pd-reassure { font-size: 0.9rem; font-weight: 700; color: var(--muted); min-height: 1.4rem; margin-bottom: 1rem; }
 .pd-reassure.free { color: var(--leaf); }
@@ -1001,7 +844,7 @@ img.img-contain {
   .card-name { font-size: 0.98rem; }
   .card-blurb { display: none; }
   /* touch devices: quick-add always visible */
-  .card-add { opacity: 1; transform: none; font-size: 0.8rem; padding: 0.45rem 1rem; }
+  .card-view { opacity: 1; transform: none; font-size: 0.8rem; padding: 0.45rem 1rem; }
   .stickybar { display: flex; }
   .sticker-rating { left: 0; }
   .sticker-ship { right: 0; }

@@ -367,6 +367,10 @@ async function refreshEntry(token, entry, pid) {
   const variants = normalizeVariants(data);
   const price = variants ? Math.min(...variants.map((v) => v.price)) : retailPrice(cost);
 
+  // Variantless storefront entries still need a CJ variant id to place
+  // orders (fulfill-orders.mjs) — keep the listing's first vid around.
+  const firstVid = (Array.isArray(data?.variants) ? data.variants : []).find((v) => v.vid)?.vid;
+
   return {
     ...entry, // curated copy (name, blurb, benefits, rating, badge, …) wins
     cjPid: String(pid),
@@ -375,7 +379,7 @@ async function refreshEntry(token, entry, pid) {
     price,
     compareAt: compareAtPrice(price),
     ...(images.length ? { image: images[0], images } : {}),
-    ...(variants ? { variants } : {}),
+    ...(variants ? { variants } : firstVid ? { cjVid: String(firstVid) } : {}),
   };
 }
 

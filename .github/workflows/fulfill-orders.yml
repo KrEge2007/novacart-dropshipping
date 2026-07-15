@@ -1,0 +1,28 @@
+name: Fulfill orders
+
+on:
+  schedule:
+    # Every 30 minutes: bridge new paid Stripe checkouts to CJ orders.
+    # State lives in Stripe metadata (cj_order_id on the PaymentIntent),
+    # so runs are idempotent and nothing customer-related touches the repo.
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fulfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Create CJ orders for new Stripe payments
+        run: node scripts/fulfill-orders.mjs
+        env:
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+          CJ_API_KEY: ${{ secrets.CJ_API_KEY }}

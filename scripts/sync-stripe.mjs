@@ -113,6 +113,8 @@ async function syncUnit({ key, name, image, amount, holder }) {
         },
       },
       shipping_address_collection: { allowed_countries: countries },
+      // CJ logistics require a contact phone on the order.
+      phone_number_collection: { enabled: true },
       after_completion: {
         type: "redirect",
         redirect: { url: `${SITE_URL}?paid=1` },
@@ -123,7 +125,16 @@ async function syncUnit({ key, name, image, amount, holder }) {
     if (cur.link && cur.linkId) {
       await stripe(`/payment_links/${cur.linkId}`, { active: false }).catch(() => {});
     }
-    holder.stripe = { productId, priceId, linkId: paymentLink.id, link: paymentLink.url, amount };
+    holder.stripe = {
+      productId, priceId, linkId: paymentLink.id, link: paymentLink.url, amount, phone: true,
+    };
+    return true;
+  }
+
+  // One-time retrofit: links created before phone collection existed.
+  if (!cur.phone && cur.linkId) {
+    await stripe(`/payment_links/${cur.linkId}`, { phone_number_collection: { enabled: true } });
+    holder.stripe = { ...cur, productId, priceId, amount, phone: true };
     return true;
   }
 
