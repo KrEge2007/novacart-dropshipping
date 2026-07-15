@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-15T06:02:57.898Z",
+    "updatedAt": "2026-07-15T06:14:20.348Z",
     "source": "cjdropshipping",
     "note": "Hand-picked evergreen bestsellers. Images are placeholders until scripts/fetch-products.mjs matches each pick to a live CJdropshipping listing and fills in real supplier photos, prices, and SKUs."
   },
@@ -42,7 +42,14 @@
           "name": "American Standard",
           "price": 106.95,
           "compareAt": 144.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MhuddgrH1ks",
+            "priceId": "price_1TtM5J7lhIablcA655upvrTK",
+            "linkId": "plink_1TtM5J7lhIablcA6lerluX6b",
+            "link": "https://buy.stripe.com/test_bJeaER3dZaXygf89g43AY00",
+            "amount": 106.95
+          }
         },
         {
           "id": "2409180259491608100",
@@ -50,7 +57,14 @@
           "name": "British Standard",
           "price": 106.95,
           "compareAt": 144.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg",
+          "stripe": {
+            "productId": "prod_Ut8Mpx5WrmpIqS",
+            "priceId": "price_1TtM5K7lhIablcA6bsgkjjG6",
+            "linkId": "plink_1TtM5K7lhIablcA6cdITe6TK",
+            "link": "https://buy.stripe.com/test_9B6bIV9Cn6HibYS9g43AY01",
+            "amount": 106.95
+          }
         },
         {
           "id": "2409180259491608300",
@@ -58,7 +72,14 @@
           "name": "European Standard",
           "price": 106.95,
           "compareAt": 144.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MHYVwCPKFOT",
+            "priceId": "price_1TtM5L7lhIablcA66RrypFXn",
+            "linkId": "plink_1TtM5L7lhIablcA6iKnqnKVY",
+            "link": "https://buy.stripe.com/test_14A00dcOzaXyaUO63S3AY02",
+            "amount": 106.95
+          }
         },
         {
           "id": "2411230957241624300",
@@ -66,7 +87,14 @@
           "name": "AU",
           "price": 106.95,
           "compareAt": 144.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MJZ9OG003OJ",
+            "priceId": "price_1TtM5L7lhIablcA6H1DnwNEr",
+            "linkId": "plink_1TtM5M7lhIablcA65PKnsrh0",
+            "link": "https://buy.stripe.com/test_7sY28l29VaXy3smak83AY03",
+            "amount": 106.95
+          }
         }
       ],
       "supplierCost": 44.44,
@@ -109,7 +137,14 @@
           "name": "Blue",
           "price": 21.95,
           "compareAt": 29.95,
-          "image": "https://cf.cjdropshipping.com/f91e1530-6d30-475a-bc06-a4e484d4bebd.jpg"
+          "image": "https://cf.cjdropshipping.com/f91e1530-6d30-475a-bc06-a4e484d4bebd.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MmYBCCIgEzY",
+            "priceId": "price_1TtM5M7lhIablcA6a8uEsx8r",
+            "linkId": "plink_1TtM5N7lhIablcA6DOV6noJm",
+            "link": "https://buy.stripe.com/test_4gMbIV6qbfdOe7077W3AY04",
+            "amount": 21.95
+          }
         },
         {
           "id": "2027586120989843458",
@@ -117,7 +152,14 @@
           "name": "Pink",
           "price": 21.95,
           "compareAt": 29.95,
-          "image": "https://cf.cjdropshipping.com/3c406ac5-a8b7-4952-a1aa-83ee83977fc9.jpg"
+          "image": "https://cf.cjdropshipping.com/3c406ac5-a8b7-4952-a1aa-83ee83977fc9.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MDmDb2BBqsS",
+            "priceId": "price_1TtM5N7lhIablcA6VLReJBLm",
+            "linkId": "plink_1TtM5O7lhIablcA6mrmScHJH",
+            "link": "https://buy.stripe.com/test_5kQ9AN9CnfdOaUOak83AY05",
+            "amount": 21.95
+          }
         }
       ],
       "cjPid": "2027586120817876993",
@@ -160,7 +202,14 @@
           "name": "Red",
           "price": 11.95,
           "compareAt": 16.95,
-          "image": "https://cf.cjdropshipping.com/0e45b4d5-cc99-435a-896f-0cd5c3cadcf7.jpg"
+          "image": "https://cf.cjdropshipping.com/0e45b4d5-cc99-435a-896f-0cd5c3cadcf7.jpg",
+          "stripe": {
+            "productId": "prod_Ut8M4uKJiKawA4",
+            "priceId": "price_1TtM5O7lhIablcA6sRpGxHDo",
+            "linkId": "plink_1TtM5O7lhIablcA6aBNN5IA8",
+            "link": "https://buy.stripe.com/test_eVqbIV7uf2r22oi9g43AY06",
+            "amount": 11.95
+          }
         },
         {
           "id": "1988848336782340098",
@@ -168,7 +217,14 @@
           "name": "Blue",
           "price": 11.95,
           "compareAt": 16.95,
-          "image": "https://cf.cjdropshipping.com/51f9997f-8c8f-4bc4-b41d-8bfb3e15cf6e.jpg"
+          "image": "https://cf.cjdropshipping.com/51f9997f-8c8f-4bc4-b41d-8bfb3e15cf6e.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MsbVRSNGfrV",
+            "priceId": "price_1TtM5P7lhIablcA6dP3bU0qp",
+            "linkId": "plink_1TtM5P7lhIablcA69ybpnGdJ",
+            "link": "https://buy.stripe.com/test_cNi8wJ7ufe9K4wqboc3AY07",
+            "amount": 11.95
+          }
         }
       ],
       "supplierCost": 4.91,
@@ -211,7 +267,14 @@
           "name": "Tea brown",
           "price": 67.95,
           "compareAt": 91.95,
-          "image": "https://cf.cjdropshipping.com/e1574ab0-f79f-410d-abe7-249184149c8e.jpg"
+          "image": "https://cf.cjdropshipping.com/e1574ab0-f79f-410d-abe7-249184149c8e.jpg",
+          "stripe": {
+            "productId": "prod_Ut8M1giqrg8VGg",
+            "priceId": "price_1TtM5Q7lhIablcA6nrYOPnon",
+            "linkId": "plink_1TtM5R7lhIablcA6VSxQ1o4D",
+            "link": "https://buy.stripe.com/test_bJeaERbKv1mYe70dwk3AY08",
+            "amount": 67.95
+          }
         },
         {
           "id": "2077083339994796034",
@@ -219,7 +282,14 @@
           "name": "Grey",
           "price": 64.95,
           "compareAt": 87.95,
-          "image": "https://cf.cjdropshipping.com/8ae69ad1-c9ab-4312-8503-640eb63fde5f.jpg"
+          "image": "https://cf.cjdropshipping.com/8ae69ad1-c9ab-4312-8503-640eb63fde5f.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MsOUqbV3jIz",
+            "priceId": "price_1TtM5R7lhIablcA6NXCnAxXU",
+            "linkId": "plink_1TtM5S7lhIablcA6fpYwm6eM",
+            "link": "https://buy.stripe.com/test_5kQ4gt4i3d5GbYS8c03AY09",
+            "amount": 64.95
+          }
         }
       ],
       "cjPid": "2077083339709583361",
@@ -257,7 +327,14 @@
       ],
       "variants": null,
       "cjPid": "1942861574144040962",
-      "supplierCost": 21.5
+      "supplierCost": 21.5,
+      "stripe": {
+        "productId": "prod_Ut8M1g9BkJKqz5",
+        "priceId": "price_1TtM5S7lhIablcA6OsPiOaF1",
+        "linkId": "plink_1TtM5S7lhIablcA6H2IdCSXj",
+        "link": "https://buy.stripe.com/test_5kQ5kx4i38Pq9QKak83AY0a",
+        "amount": 51.95
+      }
     },
     {
       "id": "wg-water-fountain",
@@ -296,7 +373,14 @@
           "name": "Rhombus-3.2L",
           "price": 36.95,
           "compareAt": 49.95,
-          "image": "https://cf.cjdropshipping.com/b882d8cc-d6be-49ca-afb3-009a200bfd3d.png"
+          "image": "https://cf.cjdropshipping.com/b882d8cc-d6be-49ca-afb3-009a200bfd3d.png",
+          "stripe": {
+            "productId": "prod_Ut8MvR2WaPDh1k",
+            "priceId": "price_1TtM5T7lhIablcA6RYAG2jwm",
+            "linkId": "plink_1TtM5T7lhIablcA6SHdRZvyS",
+            "link": "https://buy.stripe.com/test_14AfZbcOz0iUgf89g43AY0b",
+            "amount": 36.95
+          }
         },
         {
           "id": "2075157497051975682",
@@ -304,7 +388,14 @@
           "name": "Circle-3.2L",
           "price": 36.95,
           "compareAt": 49.95,
-          "image": "https://cf.cjdropshipping.com/ac2e7341-1d27-4337-a89b-a4919830b778.png"
+          "image": "https://cf.cjdropshipping.com/ac2e7341-1d27-4337-a89b-a4919830b778.png",
+          "stripe": {
+            "productId": "prod_Ut8MV6CoMPP3Cp",
+            "priceId": "price_1TtM5U7lhIablcA6PRsE7EdA",
+            "linkId": "plink_1TtM5V7lhIablcA6VDN3jsMk",
+            "link": "https://buy.stripe.com/test_bJefZbeWH4za6Ey63S3AY0c",
+            "amount": 36.95
+          }
         }
       ],
       "cjPid": "2075157496968089602",
@@ -347,7 +438,14 @@
           "name": "Orange Blue-S",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MTXWpxQGII8",
+            "priceId": "price_1TtM5V7lhIablcA6wL6Dip3J",
+            "linkId": "plink_1TtM5W7lhIablcA6Yusq5fil",
+            "link": "https://buy.stripe.com/test_7sY6oB5m7d5G1ke4ZO3AY0d",
+            "amount": 9.95
+          }
         },
         {
           "id": "1723917566395035648",
@@ -355,7 +453,14 @@
           "name": "Orange Blue-M",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MRbVXaJvEmQ",
+            "priceId": "price_1TtM5W7lhIablcA6eWd4ZOay",
+            "linkId": "plink_1TtM5X7lhIablcA6AD06feb9",
+            "link": "https://buy.stripe.com/test_aFa6oBg0L7Lm9QK1NC3AY0e",
+            "amount": 9.95
+          }
         },
         {
           "id": "1723917566453755904",
@@ -363,7 +468,14 @@
           "name": "Orange Blue-L",
           "price": 10.95,
           "compareAt": 14.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MHdXYBc5PbZ",
+            "priceId": "price_1TtM5X7lhIablcA6AZvIESpm",
+            "linkId": "plink_1TtM5X7lhIablcA6SZz29u0S",
+            "link": "https://buy.stripe.com/test_6oUdR37uf5De7IC0Jy3AY0f",
+            "amount": 10.95
+          }
         },
         {
           "id": "1723917566508281856",
@@ -371,7 +483,14 @@
           "name": "Orange Blue-XL",
           "price": 10.95,
           "compareAt": 14.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MJieLcwSAHo",
+            "priceId": "price_1TtM5Y7lhIablcA6SUfInkKa",
+            "linkId": "plink_1TtM5Y7lhIablcA6MZBo0r4T",
+            "link": "https://buy.stripe.com/test_fZu5kxeWHghS1ke8c03AY0g",
+            "amount": 10.95
+          }
         },
         {
           "id": "1723917566567002112",
@@ -379,7 +498,14 @@
           "name": "Pink Blue-S",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg",
+          "stripe": {
+            "productId": "prod_Ut8M5ddrFk2WvL",
+            "priceId": "price_1TtM5Z7lhIablcA6NqtlPORG",
+            "linkId": "plink_1TtM5Z7lhIablcA6bTcVChPG",
+            "link": "https://buy.stripe.com/test_cNi7sFdSDfdO6Ey2RG3AY0h",
+            "amount": 9.95
+          }
         },
         {
           "id": "1723917566621528064",
@@ -387,7 +513,14 @@
           "name": "Pink Blue-M",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MFkmFnVv3a1",
+            "priceId": "price_1TtM5a7lhIablcA6MpYAAyEs",
+            "linkId": "plink_1TtM5a7lhIablcA6sufVFK58",
+            "link": "https://buy.stripe.com/test_8x27sFdSDc1Cd2WgIw3AY0i",
+            "amount": 9.95
+          }
         },
         {
           "id": "1723917566680248320",
@@ -395,7 +528,14 @@
           "name": "Pink Blue-L",
           "price": 10.95,
           "compareAt": 14.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MbZefhEdoos",
+            "priceId": "price_1TtM5b7lhIablcA69fCN1ZIN",
+            "linkId": "plink_1TtM5b7lhIablcA6hCyc1OHs",
+            "link": "https://buy.stripe.com/test_eVq6oB7uf3v63sm77W3AY0j",
+            "amount": 10.95
+          }
         },
         {
           "id": "1723917566734774272",
@@ -403,7 +543,14 @@
           "name": "Pink Blue-XL",
           "price": 10.95,
           "compareAt": 14.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MXENjhXXoOg",
+            "priceId": "price_1TtM5c7lhIablcA6N9RIg0Dd",
+            "linkId": "plink_1TtM5c7lhIablcA6DeqR4mMC",
+            "link": "https://buy.stripe.com/test_cNi28l29V9Tufb49g43AY0k",
+            "amount": 10.95
+          }
         },
         {
           "id": "1723917566793494528",
@@ -411,7 +558,14 @@
           "name": "Orange-S",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg",
+          "stripe": {
+            "productId": "prod_Ut8M511anX2QAQ",
+            "priceId": "price_1TtM5d7lhIablcA6YQfh6ALV",
+            "linkId": "plink_1TtM5d7lhIablcA6pIShWwY7",
+            "link": "https://buy.stripe.com/test_5kQdR36qbaXy2oifEs3AY0l",
+            "amount": 9.95
+          }
         },
         {
           "id": "1723917566848020480",
@@ -419,7 +573,14 @@
           "name": "Orange-M",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MPISzeMKLvh",
+            "priceId": "price_1TtM5e7lhIablcA6XDYFNo82",
+            "linkId": "plink_1TtM5e7lhIablcA6PapD5jn7",
+            "link": "https://buy.stripe.com/test_28EeV715R0iUaUO8c03AY0m",
+            "amount": 9.95
+          }
         },
         {
           "id": "1723917566906740736",
@@ -427,7 +588,14 @@
           "name": "Orange-L",
           "price": 10.95,
           "compareAt": 14.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MPvaPtcqrfJ",
+            "priceId": "price_1TtM5e7lhIablcA61f1tDbeZ",
+            "linkId": "plink_1TtM5f7lhIablcA6B6DoaL0w",
+            "link": "https://buy.stripe.com/test_6oU5kx5m78Pq2oi4ZO3AY0n",
+            "amount": 10.95
+          }
         },
         {
           "id": "1723917566965460992",
@@ -435,7 +603,14 @@
           "name": "Orange-XL",
           "price": 10.95,
           "compareAt": 14.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg"
+          "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg",
+          "stripe": {
+            "productId": "prod_Ut8Mio6lDMNzet",
+            "priceId": "price_1TtM5f7lhIablcA67aUFEp2j",
+            "linkId": "plink_1TtM5g7lhIablcA6iy3QGV2I",
+            "link": "https://buy.stripe.com/test_fZu9ANeWHfdO9QK77W3AY0o",
+            "amount": 10.95
+          }
         }
       ],
       "supplierCost": 3.99,
@@ -478,7 +653,14 @@
           "name": "Green",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/1204db08-c0f9-4bfd-8155-99ac6be6bcd0.jpg"
+          "image": "https://cf.cjdropshipping.com/1204db08-c0f9-4bfd-8155-99ac6be6bcd0.jpg",
+          "stripe": {
+            "productId": "prod_Ut8M2hA1YOMwcY",
+            "priceId": "price_1TtM5g7lhIablcA67n4QqDBm",
+            "linkId": "plink_1TtM5h7lhIablcA6SBEE9dqE",
+            "link": "https://buy.stripe.com/test_cNi6oBdSD5De2oidwk3AY0p",
+            "amount": 9.95
+          }
         },
         {
           "id": "1848998526286974977",
@@ -486,7 +668,14 @@
           "name": "Gray",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/d43124a4-7fec-46ae-8fbc-21e1dd2c1618.jpg"
+          "image": "https://cf.cjdropshipping.com/d43124a4-7fec-46ae-8fbc-21e1dd2c1618.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MgsJvRUXirg",
+            "priceId": "price_1TtM5h7lhIablcA6W7evyOuY",
+            "linkId": "plink_1TtM5i7lhIablcA6z7sLTYCA",
+            "link": "https://buy.stripe.com/test_14AaER29V7Lmfb477W3AY0q",
+            "amount": 9.95
+          }
         }
       ],
       "cjPid": "1848998525955624960",
@@ -529,7 +718,14 @@
           "name": "Brown",
           "price": 11.95,
           "compareAt": 16.95,
-          "image": "https://cf.cjdropshipping.com/cc287379-6d03-4208-b697-07bb9c82266c.jpg"
+          "image": "https://cf.cjdropshipping.com/cc287379-6d03-4208-b697-07bb9c82266c.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MFY9UZINUGb",
+            "priceId": "price_1TtM5i7lhIablcA62bfLOhzz",
+            "linkId": "plink_1TtM5j7lhIablcA6mZwruIAx",
+            "link": "https://buy.stripe.com/test_9B6dR3cOzaXy3smak83AY0r",
+            "amount": 11.95
+          }
         },
         {
           "id": "1875373971943231491",
@@ -537,7 +733,14 @@
           "name": "White",
           "price": 11.95,
           "compareAt": 16.95,
-          "image": "https://cf.cjdropshipping.com/a8bca47d-72b8-4cf8-8dd5-c3d5522e840e.jpg"
+          "image": "https://cf.cjdropshipping.com/a8bca47d-72b8-4cf8-8dd5-c3d5522e840e.jpg",
+          "stripe": {
+            "productId": "prod_Ut8Mihaunypv4R",
+            "priceId": "price_1TtM5j7lhIablcA6qZmiQLbc",
+            "linkId": "plink_1TtM5j7lhIablcA6fupjMtTR",
+            "link": "https://buy.stripe.com/test_bJecMZ6qb3v6d2W8c03AY0s",
+            "amount": 11.95
+          }
         },
         {
           "id": "1875373971943231492",
@@ -545,7 +748,14 @@
           "name": "Pink",
           "price": 11.95,
           "compareAt": 16.95,
-          "image": "https://cf.cjdropshipping.com/42cb053b-8fb7-4936-b9b2-932efc57ba5b.jpg"
+          "image": "https://cf.cjdropshipping.com/42cb053b-8fb7-4936-b9b2-932efc57ba5b.jpg",
+          "stripe": {
+            "productId": "prod_Ut8M1AO7FwJ55h",
+            "priceId": "price_1TtM5k7lhIablcA6IIw24fS3",
+            "linkId": "plink_1TtM5k7lhIablcA6Wn3M0xvT",
+            "link": "https://buy.stripe.com/test_28EaER9Cnd5G8MG9g43AY0t",
+            "amount": 11.95
+          }
         }
       ],
       "cjPid": "1875373971892899841",
@@ -588,7 +798,14 @@
           "name": "BLUE GRAY",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/8d865447-af4c-4bde-ba31-c4d0285b1c0b.jpg"
+          "image": "https://cf.cjdropshipping.com/8d865447-af4c-4bde-ba31-c4d0285b1c0b.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MPr0EQ04H8f",
+            "priceId": "price_1TtM5l7lhIablcA6eGw58KJS",
+            "linkId": "plink_1TtM5l7lhIablcA6Rn1spR0f",
+            "link": "https://buy.stripe.com/test_3cIbIV3dZ9TuaUO0Jy3AY0u",
+            "amount": 9.95
+          }
         },
         {
           "id": "1866745611476160513",
@@ -596,7 +813,14 @@
           "name": "BLUE PINK",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/78fbb8d3-c0e2-4a1b-bfae-c2af40bb3185.jpg"
+          "image": "https://cf.cjdropshipping.com/78fbb8d3-c0e2-4a1b-bfae-c2af40bb3185.jpg",
+          "stripe": {
+            "productId": "prod_Ut8Mc1uFq3dKCB",
+            "priceId": "price_1TtM5m7lhIablcA63zCFh3fn",
+            "linkId": "plink_1TtM5n7lhIablcA6p7IY0eiC",
+            "link": "https://buy.stripe.com/test_cNicMZdSD1mY1keboc3AY0v",
+            "amount": 9.95
+          }
         },
         {
           "id": "1866745611476160514",
@@ -604,7 +828,14 @@
           "name": "PINK",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/5d705ba1-af57-4f62-9267-530a9e5ffe90.jpg"
+          "image": "https://cf.cjdropshipping.com/5d705ba1-af57-4f62-9267-530a9e5ffe90.jpg",
+          "stripe": {
+            "productId": "prod_Ut8Mknscj6Ao9w",
+            "priceId": "price_1TtM5n7lhIablcA62UY58a53",
+            "linkId": "plink_1TtM5o7lhIablcA6rjwITd1Q",
+            "link": "https://buy.stripe.com/test_00w28laGr9Tu8MG3VK3AY0w",
+            "amount": 9.95
+          }
         },
         {
           "id": "1866745611476160515",
@@ -612,7 +843,14 @@
           "name": "SKY BLUE PINK",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://cf.cjdropshipping.com/38969310-d442-4598-be3f-769f2f4b6e80.jpg"
+          "image": "https://cf.cjdropshipping.com/38969310-d442-4598-be3f-769f2f4b6e80.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MLGczxj0Cq5",
+            "priceId": "price_1TtM5o7lhIablcA603kcglOk",
+            "linkId": "plink_1TtM5p7lhIablcA6o0Am0Wku",
+            "link": "https://buy.stripe.com/test_6oU00dcOz2r2aUOeAo3AY0x",
+            "amount": 9.95
+          }
         }
       ],
       "cjPid": "1866745611010592768",
@@ -655,7 +893,14 @@
           "name": "S",
           "price": 18.95,
           "compareAt": 25.95,
-          "image": "https://cf.cjdropshipping.com/e6aea598-4486-44e1-a482-146d8ed158a3.jpg"
+          "image": "https://cf.cjdropshipping.com/e6aea598-4486-44e1-a482-146d8ed158a3.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MQNpN7IVysb",
+            "priceId": "price_1TtM5p7lhIablcA6vXI1orNf",
+            "linkId": "plink_1TtM5q7lhIablcA6FwehqBoL",
+            "link": "https://buy.stripe.com/test_5kQ00d8yj0iU8MG8c03AY0y",
+            "amount": 18.95
+          }
         },
         {
           "id": "1965595461250224131",
@@ -663,7 +908,14 @@
           "name": "M",
           "price": 18.95,
           "compareAt": 25.95,
-          "image": "https://cf.cjdropshipping.com/e6aea598-4486-44e1-a482-146d8ed158a3.jpg"
+          "image": "https://cf.cjdropshipping.com/e6aea598-4486-44e1-a482-146d8ed158a3.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MSPmt0Hxt5o",
+            "priceId": "price_1TtM5q7lhIablcA6oV7BabkA",
+            "linkId": "plink_1TtM5r7lhIablcA6qkPnFB00",
+            "link": "https://buy.stripe.com/test_3cI9AN5m7d5GaUOboc3AY0z",
+            "amount": 18.95
+          }
         }
       ],
       "cjPid": "1965595461183115266",
@@ -706,7 +958,14 @@
           "name": "Shoulder Cat Bag-Double Shoulder Cat Bag",
           "price": 25.95,
           "compareAt": 35.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/c6b6a394-6d9e-4764-b563-d12e97b1d847_trans.jpeg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/c6b6a394-6d9e-4764-b563-d12e97b1d847_trans.jpeg",
+          "stripe": {
+            "productId": "prod_Ut8M3dDfNXEIBf",
+            "priceId": "price_1TtM5r7lhIablcA65AuuvbQu",
+            "linkId": "plink_1TtM5s7lhIablcA6vPUsNEom",
+            "link": "https://buy.stripe.com/test_bJecMZ4i30iUbYSboc3AY0A",
+            "amount": 25.95
+          }
         },
         {
           "id": "2604270116031634700",
@@ -714,7 +973,14 @@
           "name": "Backpack-Double Shoulder Cat Bag",
           "price": 37.95,
           "compareAt": 51.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/3702c164-7b7b-434f-a513-651e71a8b7a3_trans.jpeg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/3702c164-7b7b-434f-a513-651e71a8b7a3_trans.jpeg",
+          "stripe": {
+            "productId": "prod_Ut8MdL8YDNNeEV",
+            "priceId": "price_1TtM5s7lhIablcA6515yh0b1",
+            "linkId": "plink_1TtM5t7lhIablcA6adESt6rP",
+            "link": "https://buy.stripe.com/test_5kQ9AN5m7aXy7ICfEs3AY0B",
+            "amount": 37.95
+          }
         }
       ],
       "cjPid": "2604270116031633700",
@@ -757,7 +1023,14 @@
           "name": "380ML Purple",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/93084e30-e346-4055-9601-a383744b0a36_trans.jpeg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/93084e30-e346-4055-9601-a383744b0a36_trans.jpeg",
+          "stripe": {
+            "productId": "prod_Ut8MhYzG656tqK",
+            "priceId": "price_1TtM5t7lhIablcA6vxKD7szL",
+            "linkId": "plink_1TtM5t7lhIablcA6OxLZGkB1",
+            "link": "https://buy.stripe.com/test_3cIdR315RfdO3sm4ZO3AY0C",
+            "amount": 9.95
+          }
         },
         {
           "id": "2504100230321610700",
@@ -765,7 +1038,14 @@
           "name": "380ML White",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/9d63d36a-6a55-449f-880e-73dc1fe1e68d_trans.jpeg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/9d63d36a-6a55-449f-880e-73dc1fe1e68d_trans.jpeg",
+          "stripe": {
+            "productId": "prod_Ut8M2Hb2Mj1nCO",
+            "priceId": "price_1TtM5u7lhIablcA6Zz3KXwRy",
+            "linkId": "plink_1TtM5u7lhIablcA6VjmyupjM",
+            "link": "https://buy.stripe.com/test_eVqdR3g0L6Hi5Au8c03AY0D",
+            "amount": 9.95
+          }
         },
         {
           "id": "2504100230321610900",
@@ -773,7 +1053,14 @@
           "name": "380ML Yellow",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/effd5f86-88aa-4d14-844c-09dd1cd60261_trans.jpeg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/effd5f86-88aa-4d14-844c-09dd1cd60261_trans.jpeg",
+          "stripe": {
+            "productId": "prod_Ut8M8fTsQHdrZI",
+            "priceId": "price_1TtM5v7lhIablcA6FPkF5hyu",
+            "linkId": "plink_1TtM5v7lhIablcA6cfcM9GwE",
+            "link": "https://buy.stripe.com/test_eVqcMZbKv7Lm7IC2RG3AY0E",
+            "amount": 9.95
+          }
         },
         {
           "id": "2504100230321611100",
@@ -781,7 +1068,14 @@
           "name": "500ML White",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/d5341cf1-ed83-47a9-83a5-791354336efa_trans.jpeg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/d5341cf1-ed83-47a9-83a5-791354336efa_trans.jpeg",
+          "stripe": {
+            "productId": "prod_Ut8MpAnx0DbRCc",
+            "priceId": "price_1TtM5w7lhIablcA6amggbFhO",
+            "linkId": "plink_1TtM5w7lhIablcA6oI8d71vU",
+            "link": "https://buy.stripe.com/test_3cI6oB29V8Pq6Eyak83AY0F",
+            "amount": 9.95
+          }
         },
         {
           "id": "2504100230321611200",
@@ -789,7 +1083,14 @@
           "name": "500ml Purple",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/77cbe1c3-970b-4258-852b-b79b1d100f44_trans.jpeg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/77cbe1c3-970b-4258-852b-b79b1d100f44_trans.jpeg",
+          "stripe": {
+            "productId": "prod_Ut8MFryKfY2SlZ",
+            "priceId": "price_1TtM5x7lhIablcA6dV5s7iJQ",
+            "linkId": "plink_1TtM5x7lhIablcA6oBlyRSdb",
+            "link": "https://buy.stripe.com/test_cNi3cp29V9Tu0ga1NC3AY0G",
+            "amount": 9.95
+          }
         },
         {
           "id": "2504100230321611400",
@@ -797,7 +1098,14 @@
           "name": "500ml Yellow",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/76b90376-38c0-40ab-a9e9-7e8d3aad1b97_trans.jpeg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/76b90376-38c0-40ab-a9e9-7e8d3aad1b97_trans.jpeg",
+          "stripe": {
+            "productId": "prod_Ut8MZw206P5xlF",
+            "priceId": "price_1TtM5y7lhIablcA6R9gWlJWw",
+            "linkId": "plink_1TtM5y7lhIablcA6RPUB2sCQ",
+            "link": "https://buy.stripe.com/test_00w4gt8yjghS9QK77W3AY0H",
+            "amount": 9.95
+          }
         },
         {
           "id": "2504100230321611600",
@@ -805,7 +1113,14 @@
           "name": "Water Grain Cup White",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/08/b196619e-f143-484f-86e1-f8be500bdead_trans.jpeg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/08/b196619e-f143-484f-86e1-f8be500bdead_trans.jpeg",
+          "stripe": {
+            "productId": "prod_Ut8McvZ6QPhZNI",
+            "priceId": "price_1TtM5z7lhIablcA6S7MV7rGA",
+            "linkId": "plink_1TtM5z7lhIablcA6Iqkws5r5",
+            "link": "https://buy.stripe.com/test_dRmeV715R9Tud2W1NC3AY0I",
+            "amount": 9.95
+          }
         },
         {
           "id": "2504100230321611900",
@@ -813,7 +1128,14 @@
           "name": "Water Grain Cup yellow",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/d7a0f31b-fd0a-4544-acce-6e87774a8716_trans.jpeg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/d7a0f31b-fd0a-4544-acce-6e87774a8716_trans.jpeg",
+          "stripe": {
+            "productId": "prod_Ut8MKqjJm5PNXm",
+            "priceId": "price_1TtM607lhIablcA6zJcwH7S5",
+            "linkId": "plink_1TtM607lhIablcA6ETyA3EgE",
+            "link": "https://buy.stripe.com/test_28EfZb8yjaXy6Eydwk3AY0J",
+            "amount": 9.95
+          }
         },
         {
           "id": "2504100230321612100",
@@ -821,7 +1143,14 @@
           "name": "Water Grain Cup purple",
           "price": 9.95,
           "compareAt": 13.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/6bb5b508-276c-4940-a480-7270e3e001b0_trans.jpeg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/6bb5b508-276c-4940-a480-7270e3e001b0_trans.jpeg",
+          "stripe": {
+            "productId": "prod_Ut8MFJF7r1xw36",
+            "priceId": "price_1TtM617lhIablcA6KUTqzJ6Z",
+            "linkId": "plink_1TtM617lhIablcA6m8cRAGjJ",
+            "link": "https://buy.stripe.com/test_8x28wJg0LfdOd2Wak83AY0K",
+            "amount": 9.95
+          }
         }
       ],
       "cjPid": "2504100230321610200",
@@ -859,7 +1188,14 @@
       ],
       "variants": null,
       "cjPid": "1847184159568449536",
-      "supplierCost": 3.61
+      "supplierCost": 3.61,
+      "stripe": {
+        "productId": "prod_Ut8MgBjeJO5U99",
+        "priceId": "price_1TtM627lhIablcA6Fw8tCcoe",
+        "linkId": "plink_1TtM627lhIablcA6sFu8J5O4",
+        "link": "https://buy.stripe.com/test_3cI4gt7uf5Defb42RG3AY0L",
+        "amount": 9.95
+      }
     },
     {
       "id": "wg-flopping-fish",
@@ -898,7 +1234,14 @@
           "name": "Crab-12x9x12cm-1PCS",
           "price": 13.95,
           "compareAt": 18.95,
-          "image": "https://cf.cjdropshipping.com/c92a105a-a13d-4cd1-b9e0-4c1919f73942.jpg"
+          "image": "https://cf.cjdropshipping.com/c92a105a-a13d-4cd1-b9e0-4c1919f73942.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MrMRnWaY2QY",
+            "priceId": "price_1TtM637lhIablcA6WjhhwyLn",
+            "linkId": "plink_1TtM637lhIablcA6vfVdUfIC",
+            "link": "https://buy.stripe.com/test_3cIbIVbKv8PqbYSgIw3AY0M",
+            "amount": 13.95
+          }
         },
         {
           "id": "1586187764872261632",
@@ -906,7 +1249,14 @@
           "name": "Flying fish-12x9x12cm-1PCS",
           "price": 19.95,
           "compareAt": 26.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/02/09/07/7c3761ed-d29c-4954-9d7e-5c6cb3c8fb3d.jpg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/02/09/07/7c3761ed-d29c-4954-9d7e-5c6cb3c8fb3d.jpg",
+          "stripe": {
+            "productId": "prod_Ut8Mz1XrpP5EB4",
+            "priceId": "price_1TtM637lhIablcA6DHxatNsV",
+            "linkId": "plink_1TtM647lhIablcA6tYdOXgNH",
+            "link": "https://buy.stripe.com/test_aFa3cp4i3aXyd2WfEs3AY0N",
+            "amount": 19.95
+          }
         },
         {
           "id": "1586187764872261633",
@@ -914,7 +1264,14 @@
           "name": "Sparrow-12x9x12cm-1PCS",
           "price": 13.95,
           "compareAt": 18.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/06/12/06/f4d274e9-04f0-495a-81a5-9b615f37a55b.jpg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/06/12/06/f4d274e9-04f0-495a-81a5-9b615f37a55b.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MSFCI1eOBFR",
+            "priceId": "price_1TtM647lhIablcA683DCTXxP",
+            "linkId": "plink_1TtM657lhIablcA6GK3XQHRT",
+            "link": "https://buy.stripe.com/test_dRm7sF8yj6Hid2W4ZO3AY0O",
+            "amount": 13.95
+          }
         },
         {
           "id": "1586187764872261634",
@@ -922,7 +1279,14 @@
           "name": "Penguin-12x9x12cm-1PCS",
           "price": 13.95,
           "compareAt": 18.95,
-          "image": "https://cf.cjdropshipping.com/b61f3560-b7c2-4aab-a57c-1f4ae4d9a313.jpg"
+          "image": "https://cf.cjdropshipping.com/b61f3560-b7c2-4aab-a57c-1f4ae4d9a313.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MnpZKoAvQw4",
+            "priceId": "price_1TtM657lhIablcA6iqTJ83gy",
+            "linkId": "plink_1TtM667lhIablcA6b5g6obXJ",
+            "link": "https://buy.stripe.com/test_eVq14hcOz3v60ga1NC3AY0P",
+            "amount": 13.95
+          }
         },
         {
           "id": "1586187764876455936",
@@ -930,7 +1294,14 @@
           "name": "Jojo-12x9x12cm-1PCS",
           "price": 13.95,
           "compareAt": 18.95,
-          "image": "https://cf.cjdropshipping.com/3eacc954-4bcd-4f1a-8cd2-016f2cfc75e3.jpg"
+          "image": "https://cf.cjdropshipping.com/3eacc954-4bcd-4f1a-8cd2-016f2cfc75e3.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MfyiBzAL7mw",
+            "priceId": "price_1TtM667lhIablcA6KIai7dt7",
+            "linkId": "plink_1TtM667lhIablcA6B51FEjV1",
+            "link": "https://buy.stripe.com/test_8x2aER9CnfdO9QK2RG3AY0Q",
+            "amount": 13.95
+          }
         },
         {
           "id": "2502050823571617100",
@@ -938,7 +1309,14 @@
           "name": "Woodpecker-12x9x12cm-1PCS",
           "price": 12.95,
           "compareAt": 17.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/02/05/08/f2a52140-717d-460a-bbb3-77f311e24bdf.jpg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/02/05/08/f2a52140-717d-460a-bbb3-77f311e24bdf.jpg",
+          "stripe": {
+            "productId": "prod_Ut8Mn0dW2K09kR",
+            "priceId": "price_1TtM677lhIablcA6BdOA3xuO",
+            "linkId": "plink_1TtM677lhIablcA6Y9RJgw61",
+            "link": "https://buy.stripe.com/test_8x200d29V3v67IC4ZO3AY0R",
+            "amount": 12.95
+          }
         },
         {
           "id": "2504080917491626600",
@@ -946,7 +1324,14 @@
           "name": "Sparrow-12x9x12cm-2PCS",
           "price": 27.95,
           "compareAt": 37.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/08/09/af685326-f361-4b1b-aee3-361128796959.jpg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/08/09/af685326-f361-4b1b-aee3-361128796959.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MckuPtGBq8t",
+            "priceId": "price_1TtM687lhIablcA6KIHFTIlk",
+            "linkId": "plink_1TtM687lhIablcA6LOmLxsfY",
+            "link": "https://buy.stripe.com/test_3cI4gteWHghS8MGeAo3AY0S",
+            "amount": 27.95
+          }
         },
         {
           "id": "2504080917491627100",
@@ -954,7 +1339,14 @@
           "name": "Sparrow-12x9x12cm-3PCS",
           "price": 41.95,
           "compareAt": 56.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/08/09/4c6845dd-2c1c-44c4-a004-77afd9eaa12c.jpg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/08/09/4c6845dd-2c1c-44c4-a004-77afd9eaa12c.jpg",
+          "stripe": {
+            "productId": "prod_Ut8MKCThatxpBd",
+            "priceId": "price_1TtM697lhIablcA6VMuZMY76",
+            "linkId": "plink_1TtM697lhIablcA6k7a5MU0C",
+            "link": "https://buy.stripe.com/test_dRmfZb29VghSd2W1NC3AY0T",
+            "amount": 41.95
+          }
         },
         {
           "id": "2605130619551629300",
@@ -962,7 +1354,14 @@
           "name": "Set-12x9x12cm-1PCS",
           "price": 18.95,
           "compareAt": 25.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/13/06/725ee184-b1e0-4f89-bca9-bca3908efd48.jpg"
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/13/06/725ee184-b1e0-4f89-bca9-bca3908efd48.jpg",
+          "stripe": {
+            "productId": "prod_Ut8M9KJhDNVzlt",
+            "priceId": "price_1TtM6A7lhIablcA6JBdaJk6M",
+            "linkId": "plink_1TtM6A7lhIablcA6ZkI3QSCj",
+            "link": "https://buy.stripe.com/test_5kQ4gtcOz1mY6Ey9g43AY0U",
+            "amount": 18.95
+          }
         }
       ],
       "supplierCost": 5.2,
@@ -999,7 +1398,14 @@
       ],
       "variants": null,
       "cjPid": "2503280557141617100",
-      "supplierCost": 7.75
+      "supplierCost": 7.75,
+      "stripe": {
+        "productId": "prod_Ut8MEMtaiDTTk3",
+        "priceId": "price_1TtM6B7lhIablcA6Ig2BFcKw",
+        "linkId": "plink_1TtM6B7lhIablcA6nKZuAl85",
+        "link": "https://buy.stripe.com/test_fZu3cp6qbe9K0ga63S3AY0V",
+        "amount": 18.95
+      }
     }
   ]
 }
