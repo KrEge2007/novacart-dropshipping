@@ -39,6 +39,12 @@ jobs:
         env:
           CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
 
+      - name: Sync Stripe checkout links
+        if: github.event.inputs.mode != 'categories'
+        run: node scripts/sync-stripe.mjs
+        env:
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+
       - name: Commit updated catalog
         run: |
           if git diff --quiet -- data/products.json; then

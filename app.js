@@ -95,6 +95,13 @@ $("#newsletter-form").addEventListener("submit", (e) => {
     await loadCatalog();
     renderGrid();
     renderFeatured();
+    // Back from a completed Stripe checkout: thank the buyer, clear the cart.
+    if (new URLSearchParams(location.search).get("paid")) {
+      store.cart = {};
+      saveCart();
+      history.replaceState(null, "", location.pathname);
+      toast("Order received — thank you! 🐾 Confirmation is on its way to your inbox.");
+    }
     renderCart();
     observeReveals();
   } catch (err) {
