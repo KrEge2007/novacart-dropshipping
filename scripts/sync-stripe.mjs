@@ -68,7 +68,13 @@ async function stripe(path, params, { method = "POST" } = {}) {
 const toCents = (n) => Math.round(n * 100);
 
 async function syncUnit({ key, name, image, amount, holder }) {
-  const cur = holder.stripe ?? {};
+  let cur = holder.stripe ?? {};
+  // Test-mode ids are invisible to a live key (and vice versa). If the key
+  // mode doesn't match the stored link's mode, start that unit from scratch
+  // so switching to live keys just regenerates everything on the next run.
+  const liveKey = process.env.STRIPE_SECRET_KEY.startsWith("sk_live");
+  const linkIsTest = (cur.link ?? "").includes("buy.stripe.com/test_");
+  if (cur.link && liveKey === linkIsTest) cur = {};
   const cents = toCents(amount);
   let changed = false;
 
