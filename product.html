@@ -3,39 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kinetic — Product</title>
-  <meta name="description" content="Product details — Kinetic, fitness & recovery essentials." />
+  <title>Waggle &amp; Co. — Product</title>
+  <meta name="description" content="Product details — Waggle & Co., bestselling gear for happy pets." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=2" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232E4F44'/><text x='16' y='22' font-family='Georgia' font-size='18' fill='%23FAF9F6' text-anchor='middle'>K</text></svg>" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%23E86A47'/><text x='16' y='23' font-size='17' text-anchor='middle'>🐾</text></svg>" />
 </head>
 <body>
 
-  <div class="announce">Complimentary shipping on orders over $60 &nbsp;·&nbsp; New edit every Monday</div>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>🐾 Free shipping over $50</span><span>⭐ 4.8 from 12,000+ pet parents</span><span>💛 30-day wag-guarantee</span><span>📦 Ships in 24h from our warehouse partners</span>
+      <span>🐾 Free shipping over $50</span><span>⭐ 4.8 from 12,000+ pet parents</span><span>💛 30-day wag-guarantee</span><span>📦 Ships in 24h from our warehouse partners</span>
+    </div>
+  </div>
 
   <header class="header" id="header">
-    <a class="logo" href="index.html">KINETIC</a>
+    <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">🐾</span> waggle <span class="logo-amp">&amp;</span> co.</a>
     <nav class="nav">
-      <a href="index.html#shop">Shop</a>
-      <a href="index.html#categories">Categories</a>
-      <a href="index.html#story">Our story</a>
+      <a href="index.html#shop">Bestsellers</a>
+      <a href="index.html#shop">Dogs</a>
+      <a href="index.html#shop">Cats</a>
+      <a href="index.html#reviews">Reviews</a>
       <a href="index.html#faq">FAQ</a>
     </nav>
-    <button class="cart-toggle" id="cart-btn">
-      Cart <span id="cart-count">0</span>
+    <button class="cart-toggle" id="cart-btn" aria-label="Open cart">
+      <span aria-hidden="true">🛒</span> <span id="cart-count">0</span>
     </button>
   </header>
 
   <main>
     <section class="section product-page" id="product-page">
-      <p class="grid-empty">Loading…</p>
+      <p class="grid-empty">Fetching the good stuff…</p>
     </section>
 
     <section class="section related" id="related-section" hidden>
       <div class="section-head">
-        <h2 class="reveal">More from this week's edit</h2>
+        <h2>Pairs well with</h2>
+        <p class="section-sub">Frequently wagged-at together.</p>
       </div>
       <div class="grid" id="related-grid"></div>
     </section>
@@ -44,50 +51,52 @@
   <footer class="footer">
     <div class="footer-main">
       <div class="footer-brand">
-        <span class="logo">KINETIC</span>
-        <p>Fitness &amp; recovery essentials,<br />curated weekly.</p>
+        <span class="logo"><span class="logo-mark" aria-hidden="true">🐾</span> waggle &amp; co.</span>
+        <p>The pet products that earned the hype.<br />Tested by thousands of very good boys (and judgmental cats).</p>
       </div>
       <div class="footer-links">
         <div>
           <h4>Shop</h4>
-          <a href="index.html#shop">This week's edit</a>
-          <a href="index.html#categories">Categories</a>
+          <a href="index.html#shop">Bestsellers</a>
+          <a href="index.html#pets">For dogs</a>
+          <a href="index.html#pets">For cats</a>
         </div>
         <div>
           <h4>Help</h4>
           <a href="index.html#faq">Shipping</a>
-          <a href="index.html#faq">Returns</a>
+          <a href="index.html#faq">Guarantee &amp; refunds</a>
           <a href="mailto:hello@example.com">Contact</a>
         </div>
         <div>
           <h4>Company</h4>
-          <a href="index.html#story">Our story</a>
+          <a href="index.html#reviews">Reviews</a>
           <a href="#">Privacy</a>
           <a href="#">Terms</a>
         </div>
       </div>
     </div>
-    <div class="footer-fine">© 2026 Kinetic. All prices in USD.</div>
+    <div class="footer-fine">© 2026 Waggle &amp; Co. All prices in USD.</div>
   </footer>
 
   <!-- ============ CART ============ -->
   <div class="scrim" id="scrim"></div>
   <aside class="cart" id="cart" aria-label="Shopping cart">
     <div class="cart-head">
-      <h3>Cart</h3>
+      <h3>Your cart</h3>
       <button class="cart-close" id="cart-close" aria-label="Close cart">✕</button>
     </div>
+    <div class="cart-shipbar" id="cart-shipbar" aria-hidden="true"><span></span></div>
+    <p class="cart-shipnote" id="cart-shipnote"></p>
     <div class="cart-body" id="cart-items"></div>
     <div class="cart-foot">
       <div class="cart-total"><span>Subtotal</span><strong id="cart-total">$0.00</strong></div>
-      <p class="cart-shipnote" id="cart-shipnote"></p>
       <button class="button button-full" id="checkout-btn">Continue to checkout</button>
     </div>
   </aside>
 
   <div class="toast" id="toast" role="status"></div>
 
-  <script src="store.js?v=2"></script>
-  <script src="product.js?v=2"></script>
+  <script src="store.js?v=4"></script>
+  <script src="product.js?v=4"></script>
 </body>
 </html>

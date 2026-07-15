@@ -3,203 +3,227 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kinetic — Fitness & Recovery Essentials</title>
-  <meta name="description" content="Kinetic is a curated fitness and recovery store. A small, considered catalog that rotates every week." />
+  <title>Waggle &amp; Co. — Bestselling gear for happy pets</title>
+  <meta name="description" content="Waggle & Co. sells the pet products everyone's talking about — tested bestsellers for dogs and cats, with free shipping over $50 and a 30-day wag-guarantee." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=2" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232E4F44'/><text x='16' y='22' font-family='Georgia' font-size='18' fill='%23FAF9F6' text-anchor='middle'>K</text></svg>" />
-  <noscript>
-    <style>
-      .fade-up, .hline, .hero-media { opacity: 1; transform: none; }
-      .hero-media img { transform: none; }
-    </style>
-  </noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%23E86A47'/><text x='16' y='23' font-size='17' text-anchor='middle'>🐾</text></svg>" />
 </head>
 <body>
 
-  <div class="announce">Complimentary shipping on orders over $60 &nbsp;·&nbsp; New edit every Monday</div>
+  <!-- ============ TICKER ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>🐾 Free shipping over $50</span><span>⭐ 4.8 from 12,000+ pet parents</span><span>💛 30-day wag-guarantee</span><span>📦 Ships in 24h from our warehouse partners</span>
+      <span>🐾 Free shipping over $50</span><span>⭐ 4.8 from 12,000+ pet parents</span><span>💛 30-day wag-guarantee</span><span>📦 Ships in 24h from our warehouse partners</span>
+    </div>
+  </div>
 
   <header class="header" id="header">
-    <a class="logo" href="#">KINETIC</a>
+    <a class="logo" href="#"><span class="logo-mark" aria-hidden="true">🐾</span> waggle <span class="logo-amp">&amp;</span> co.</a>
     <nav class="nav">
-      <a href="#shop">Shop</a>
-      <a href="#categories">Categories</a>
-      <a href="#story">Our story</a>
+      <a href="#shop">Bestsellers</a>
+      <a href="#shop" data-filter-link="dog">Dogs</a>
+      <a href="#shop" data-filter-link="cat">Cats</a>
+      <a href="#reviews">Reviews</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <button class="cart-toggle" id="cart-btn">
-      Cart <span id="cart-count">0</span>
+    <button class="cart-toggle" id="cart-btn" aria-label="Open cart">
+      <span aria-hidden="true">🛒</span> <span id="cart-count">0</span>
     </button>
   </header>
 
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="hero-copy">
-      <p class="eyebrow fade-up" style="--fd:60ms">Fitness &amp; recovery essentials</p>
-      <h1>
-        <span class="mask"><span class="hline" style="--hd:150ms">Move well.</span></span>
-        <span class="mask"><span class="hline" style="--hd:290ms">Recover better.</span></span>
-      </h1>
-      <p class="lede fade-up" style="--fd:480ms">
-        A small, considered catalog of training and recovery gear —
-        re-curated every Monday, shipped to your door.
+      <p class="eyebrow reveal in">For dogs, cats &amp; the people they own</p>
+      <h1 class="hero-title">The good stuff.<br /><em>Tails will wag.</em></h1>
+      <p class="lede">
+        We stock only the pet products that earned the hype — the ones with
+        thousands of five-star reviews and the before/after videos to prove it.
+        No endless catalog. Just the hits.
       </p>
-      <div class="hero-actions fade-up" style="--fd:620ms">
-        <a class="button" href="#shop">Shop this week's edit</a>
-        <a class="button button-plain" href="#story">Our story</a>
+      <div class="hero-actions">
+        <a class="button button-big" href="#shop">Shop bestsellers</a>
+        <a class="button button-plain" href="#featured">See what's trending</a>
       </div>
+      <ul class="hero-trust" aria-label="Why shop with us">
+        <li>⭐ 4.8 average rating</li>
+        <li>🚚 Free shipping over $50</li>
+        <li>💛 30-day wag-guarantee</li>
+      </ul>
     </div>
-    <figure class="hero-media">
-      <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1100&q=80" alt="Yoga practice at sunrise" />
-    </figure>
+    <div class="hero-media">
+      <div class="hero-blob" aria-hidden="true"></div>
+      <img class="hero-img" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=1000&q=80" alt="Happy dog mid-jump" />
+      <div class="sticker sticker-rating" aria-hidden="true"><strong>4.8★</strong>12,000+ happy pets</div>
+      <div class="sticker sticker-ship" aria-hidden="true">📦 Ships in 24h</div>
+    </div>
   </section>
 
-  <!-- ============ SHOP ============ -->
   <main>
+    <!-- ============ BESTSELLERS ============ -->
     <section class="section" id="shop">
       <div class="section-head">
-        <div class="reveal">
-          <h2><span class="mask"><span class="tline">This week's edit</span></span></h2>
-          <p class="refresh-note" id="refresh-note">Loading catalog…</p>
-        </div>
-        <p class="explore-hint reveal" style="--d:150ms" aria-hidden="true">Scroll to explore ↓</p>
+        <h2>Shop the bestsellers</h2>
+        <p class="section-sub">Every product here earned its spot — proven winners, not guesses.</p>
       </div>
-      <div id="chapters"></div>
-    </section>
-
-    <!-- ============ CATEGORIES ============ -->
-    <section class="section" id="categories">
-      <div class="tile-row">
-        <a class="tile reveal" href="#chapter-training">
-          <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=900&q=80" alt="Barbell training" loading="lazy" />
-          <span>Training</span>
-        </a>
-        <a class="tile reveal" style="--d:130ms" href="#chapter-yoga">
-          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=900&q=80" alt="Yoga studio class" loading="lazy" />
-          <span>Yoga &amp; mobility</span>
-        </a>
-        <a class="tile reveal" style="--d:260ms" href="#chapter-recovery">
-          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=900&q=80" alt="Morning meditation" loading="lazy" />
-          <span>Recovery &amp; wellness</span>
-        </a>
+      <div class="filters" id="filters" role="tablist" aria-label="Filter products">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="dog">🐶 For dogs</button>
+        <button class="filter-pill" data-filter="cat">🐱 For cats</button>
+        <button class="filter-pill" data-filter="grooming">✨ Grooming</button>
+        <button class="filter-pill" data-filter="play">🎾 Play</button>
+        <button class="filter-pill" data-filter="comfort">😴 Comfort</button>
+        <button class="filter-pill" data-filter="travel">🚗 Out &amp; about</button>
+        <button class="filter-pill" data-filter="mealtime">🍖 Mealtime</button>
+      </div>
+      <div class="grid" id="product-grid">
+        <p class="grid-empty">Loading the good stuff…</p>
       </div>
     </section>
 
-    <!-- ============ VALUE PROPS ============ -->
+    <!-- ============ SHOP BY PET ============ -->
+    <section class="section pets" id="pets">
+      <a class="pet-tile reveal" href="#shop" data-filter-link="dog">
+        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=1000&q=80" alt="Golden retriever puppy" loading="lazy" />
+        <div class="pet-tile-label"><h3>For dogs</h3><span>Walks, rides &amp; zoomies →</span></div>
+      </a>
+      <a class="pet-tile reveal" style="--d:120ms" href="#shop" data-filter-link="cat">
+        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=1000&q=80" alt="Cat with green eyes" loading="lazy" />
+        <div class="pet-tile-label"><h3>For cats</h3><span>Play, sips &amp; long naps →</span></div>
+      </a>
+    </section>
+
+    <!-- ============ FEATURED (filled by app.js from the catalog) ============ -->
+    <section class="section featured" id="featured"></section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section reviews" id="reviews">
+      <div class="section-head">
+        <h2>The tail-wag test</h2>
+        <p class="section-sub">Real pets, extremely biased reviewers.</p>
+      </div>
+      <div class="review-row">
+        <figure class="review-card reveal">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“The grooming vacuum paid for itself in one shedding season. My black couch is black again.”</blockquote>
+          <figcaption>Maria K. <span>&amp; Luna, husky (professional shedder)</span></figcaption>
+        </figure>
+        <figure class="review-card reveal" style="--d:120ms">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“My cat ignored every toy for 3 years. The ZoomOrb has him doing parkour off the sofa.”</blockquote>
+          <figcaption>Jonas T. <span>&amp; Biscuit, cat (formerly unimpressed)</span></figcaption>
+        </figure>
+        <figure class="review-card reveal" style="--d:240ms">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“Bought the donut bed as a joke. She hasn't slept in our bed since. Mildly offended, very well rested.”</blockquote>
+          <figcaption>Sofie R. <span>&amp; Pixel, frenchie (nest connoisseur)</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ GUARANTEES ============ -->
     <section class="props">
-      <div class="reveal"><h3>Free shipping over $60</h3><p>Tracked delivery to 40+ countries, typically 5–9 business days.</p></div>
-      <div class="reveal" style="--d:130ms"><h3>30-day returns</h3><p>Changed your mind? Send it back within 30 days for a full refund.</p></div>
-      <div class="reveal" style="--d:260ms"><h3>Curated, not crowded</h3><p>Sixteen products at a time. If it's in the catalog, it earned its place.</p></div>
-    </section>
-
-    <!-- ============ STORY ============ -->
-    <section class="section story" id="story">
-      <figure class="story-media reveal">
-        <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1100&q=80" alt="Yoga practice in the studio" loading="lazy" />
-      </figure>
-      <div class="story-copy">
-        <p class="eyebrow reveal" style="--d:100ms">Our story</p>
-        <h2 class="reveal" style="--d:200ms"><span class="mask"><span class="tline" style="--d:200ms">A catalog that stays small on purpose</span></span></h2>
-        <p class="reveal" style="--d:300ms">
-          Most fitness shops list ten thousand products and hope you'll dig.
-          We do the opposite: each week we review what's available from our
-          suppliers and publish a short edit of gear worth owning — for
-          strength, mobility, and the slow work of recovery.
-        </p>
-        <p class="reveal" style="--d:400ms">
-          When the week ends, the catalog rotates. What stays is the standard:
-          simple tools, honest prices, and nothing we wouldn't use ourselves.
-        </p>
-      </div>
+      <div class="prop reveal"><span class="prop-icon" aria-hidden="true">💛</span><h3>30-day wag-guarantee</h3><p>Pet not impressed? Tell us within 30 days and we'll make it right — refund or replacement.</p></div>
+      <div class="prop reveal" style="--d:120ms"><span class="prop-icon" aria-hidden="true">🚚</span><h3>Free shipping over $50</h3><p>Tracked delivery to 40+ countries, typically 7–15 business days.</p></div>
+      <div class="prop reveal" style="--d:240ms"><span class="prop-icon" aria-hidden="true">🔒</span><h3>Delivery guarantee</h3><p>Damaged, wrong, or lost in transit? We replace it or refund you in full. No return postage.</p></div>
     </section>
 
     <!-- ============ FAQ ============ -->
     <section class="section faq" id="faq">
-      <h2 class="reveal"><span class="mask"><span class="tline">Questions, answered</span></span></h2>
-      <details class="reveal" style="--d:100ms">
-        <summary>How does shipping work?</summary>
-        <p>Orders ship directly from our supplier warehouses. Standard delivery is 5–9 business days with tracking, free on orders over $60.</p>
-      </details>
-      <details class="reveal" style="--d:190ms">
-        <summary>Why does the catalog change every week?</summary>
-        <p>We publish a small edit rather than an endless catalog. Every Monday the selection rotates based on what's in stock and worth recommending. If you see something you like, don't wait too long.</p>
-      </details>
-      <details class="reveal" style="--d:280ms">
-        <summary>What if my order arrives damaged?</summary>
-        <p>Photograph it and reply to your order confirmation within 30 days — we'll replace it or refund you in full, no return postage needed.</p>
-      </details>
-      <details class="reveal" style="--d:370ms">
-        <summary>Where are you based?</summary>
-        <p>We're a small team in Norway. Products ship from supplier warehouses in Europe, the US, and Asia depending on stock.</p>
-      </details>
+      <div class="section-head">
+        <h2>Questions, answered</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>How long does shipping take?</summary>
+          <p>Orders ship within 24 hours from the nearest partner warehouse and typically arrive in 7–15 business days with full tracking. Free over $50, flat $4.95 under.</p>
+        </details>
+        <details>
+          <summary>What if my pet doesn't like it?</summary>
+          <p>That's what the 30-day wag-guarantee is for. If it's not a hit, contact us within 30 days of delivery and we'll refund or replace it — your call.</p>
+        </details>
+        <details>
+          <summary>What if it arrives damaged or wrong?</summary>
+          <p>Reply to your order confirmation with a photo within 7 days of delivery and we'll send a replacement or refund you in full. You never pay return postage.</p>
+        </details>
+        <details>
+          <summary>Are the products safe for pets?</summary>
+          <p>Everything we stock is made from pet-safe, food-grade, or vet-informed materials — it's the first thing we check before a product earns a spot in the store.</p>
+        </details>
+        <details>
+          <summary>Where do you ship?</summary>
+          <p>We currently ship to 40+ countries across North America, Europe, and Oceania. Shipping options and tracking details appear at checkout.</p>
+        </details>
+      </div>
     </section>
 
     <!-- ============ NEWSLETTER ============ -->
-    <section class="section newsletter">
-      <h2 class="reveal"><span class="mask"><span class="tline">Monday, in your inbox</span></span></h2>
-      <p class="reveal" style="--d:110ms">One short email when the new edit goes live. No noise.</p>
-      <form id="newsletter-form" class="reveal" style="--d:220ms">
-        <input type="email" placeholder="Email address" required aria-label="Email address" />
-        <button class="button" type="submit">Subscribe</button>
-      </form>
-      <p class="form-note" id="newsletter-note"></p>
+    <section class="newsletter">
+      <div class="newsletter-inner reveal">
+        <h2>Get first dibs 🐾</h2>
+        <p>New arrivals, restocks, and subscriber-only deals. No spam — we'd rather nap.</p>
+        <form id="newsletter-form">
+          <input type="email" required placeholder="your@email.com" aria-label="Email address" />
+          <button class="button" type="submit">Join the pack</button>
+        </form>
+        <p class="newsletter-note" id="newsletter-note"></p>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer-main">
       <div class="footer-brand">
-        <span class="logo">KINETIC</span>
-        <p>Fitness &amp; recovery essentials,<br />curated weekly.</p>
+        <span class="logo"><span class="logo-mark" aria-hidden="true">🐾</span> waggle &amp; co.</span>
+        <p>The pet products that earned the hype.<br />Tested by thousands of very good boys (and judgmental cats).</p>
       </div>
       <div class="footer-links">
         <div>
           <h4>Shop</h4>
-          <a href="#shop">This week's edit</a>
-          <a href="#categories">Categories</a>
+          <a href="#shop">Bestsellers</a>
+          <a href="#shop" data-filter-link="dog">For dogs</a>
+          <a href="#shop" data-filter-link="cat">For cats</a>
         </div>
         <div>
           <h4>Help</h4>
           <a href="#faq">Shipping</a>
-          <a href="#faq">Returns</a>
+          <a href="#faq">Guarantee &amp; refunds</a>
           <a href="mailto:hello@example.com">Contact</a>
         </div>
         <div>
           <h4>Company</h4>
-          <a href="#story">Our story</a>
+          <a href="#reviews">Reviews</a>
           <a href="#">Privacy</a>
           <a href="#">Terms</a>
         </div>
       </div>
     </div>
-    <div class="footer-fine">© 2026 Kinetic. All prices in USD.</div>
+    <div class="footer-fine">© 2026 Waggle &amp; Co. All prices in USD.</div>
   </footer>
 
   <!-- ============ CART ============ -->
   <div class="scrim" id="scrim"></div>
   <aside class="cart" id="cart" aria-label="Shopping cart">
     <div class="cart-head">
-      <h3>Cart</h3>
+      <h3>Your cart</h3>
       <button class="cart-close" id="cart-close" aria-label="Close cart">✕</button>
     </div>
+    <div class="cart-shipbar" id="cart-shipbar" aria-hidden="true"><span></span></div>
+    <p class="cart-shipnote" id="cart-shipnote"></p>
     <div class="cart-body" id="cart-items"></div>
     <div class="cart-foot">
       <div class="cart-total"><span>Subtotal</span><strong id="cart-total">$0.00</strong></div>
-      <p class="cart-shipnote" id="cart-shipnote"></p>
       <button class="button button-full" id="checkout-btn">Continue to checkout</button>
     </div>
   </aside>
 
   <div class="toast" id="toast" role="status"></div>
 
-  <script>
-    // Arm the hero entrance one frame after first paint so the
-    // choreography always animates (independent of catalog loading).
-    requestAnimationFrame(() => requestAnimationFrame(() => document.body.classList.add("loaded")));
-  </script>
-  <script src="store.js?v=2"></script>
-  <script src="app.js?v=2"></script>
+  <script src="store.js?v=4"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>

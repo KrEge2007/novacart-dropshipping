@@ -1,622 +1,304 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T13:04:15.200Z",
-    "source": "cjdropshipping",
-    "rotation": "weekly",
-    "rotationSeed": "2026-W29"
+    "updatedAt": "2026-07-15T08:00:00.000Z",
+    "source": "seed",
+    "note": "Hand-picked evergreen bestsellers. Images are placeholders until scripts/fetch-products.mjs matches each pick to a live CJdropshipping listing and fills in real supplier photos, prices, and SKUs."
   },
   "products": [
     {
-      "id": "2070061789702389761",
-      "sku": "CJJM2954415",
-      "name": "Pedal Resistance Band With 4 Tubes, Adjustable 25-100lb Full Body Workout For",
-      "category": "training",
-      "kind": "resistance band",
-      "price": 55.95,
-      "compareAt": 72.95,
-      "supplierCost": 23,
-      "image": "https://cf.cjdropshipping.com/4a2a41f6-2dd9-4f61-b346-db04d346c5b3.jpg",
+      "id": "wg-grooming-vacuum",
+      "sku": null,
+      "name": "FurAway Pro Grooming Vacuum Kit",
+      "category": "grooming",
+      "petType": "both",
+      "kind": "pet grooming vacuum",
+      "price": 54.95,
+      "compareAt": 79.95,
+      "rating": 4.8,
+      "reviews": 2314,
+      "badge": "Bestseller",
+      "featured": true,
+      "blurb": "Brush, de-shed, and trim while the built-in vacuum catches loose fur before it ever reaches your sofa.",
+      "image": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=900&q=80",
       "images": [
-        "https://cf.cjdropshipping.com/4a2a41f6-2dd9-4f61-b346-db04d346c5b3.jpg",
-        "https://cf.cjdropshipping.com/b68dc7e3-14d8-4d42-9824-d5d65b54fea9.jpg",
-        "https://cf.cjdropshipping.com/65507865-7a70-48e0-8ee5-1d4c2fa4696f.jpg",
-        "https://cf.cjdropshipping.com/98d38391-236a-4f7d-854a-08acacd0de5c.jpg",
-        "https://cf.cjdropshipping.com/a039982f-ffc9-49bb-be4f-56f90b4fe4fe.jpg"
+        "https://images.unsplash.com/photo-1552053831-71594a27632d?w=900&q=80",
+        "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=900&q=80",
+        "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=900&q=80"
       ],
-      "description": "The Pedal Resistance Band is your all-in-one solution for full body shaping and fat burning. With 4 adjustable resistance tubes offering 25-100lb of tension, you can easily customise your workout intensity as you progress. The patented design effectively stimulates multiple muscle groups including abdomen, chest, arms, shoulders, back, and legs - helping you build a toned physique and tighter muscle definition. Safety and comfort are prioritised with high-quality natural latex construction, fully wrapped in gourd weaving to prevent breakage. The non-slip NBR pedal and thick buckle ensure stability during use, while foam-coated handles provide a secure grip. This portable home gym equipment comes complete with a door anchor and storage bag, making it easy to maintain your fitness routine whether at home, in the office, or while travelling. Suitable for yoga, Pilates, stretching, and stren"
+      "description": "Shedding season, handled. The FurAway Pro connects five grooming tools — de-shedding brush, grooming brush, nozzle, cleaning brush, and clipper head — to a quiet vacuum that pulls loose fur straight into a sealed 1.5L canister as you groom. Low-noise motor (under 60dB) keeps nervous pets calm, and the suction is adjustable for thick double coats or short-haired cats. No more fur tumbleweeds, no more lint-rolling the couch every night. Empties in one click.",
+      "benefits": [
+        "Catches loose fur as you brush — before it hits your floor",
+        "Quiet enough for noise-shy pets (under 60dB)",
+        "5 tools in one kit: de-shed, brush, trim, nozzle, crevice",
+        "1.5L canister empties in one click"
+      ],
+      "variants": null
     },
     {
-      "id": "2069306113644425218",
-      "sku": "CJJM2951115",
-      "name": "Flat Weight Bench Foldable Strength Training Exercise Home Gym Workout Fitness",
-      "category": "training",
-      "kind": "weight bench",
-      "price": 108.95,
-      "compareAt": 141.95,
-      "supplierCost": 45.37,
-      "image": "https://cf.cjdropshipping.com/15c4d737-7afc-42b4-be28-7369a0379d4d.jpg",
+      "id": "wg-paw-cleaner",
+      "sku": null,
+      "name": "MudBuster Portable Paw Cleaner",
+      "category": "grooming",
+      "petType": "dog",
+      "kind": "dog paw cleaner cup",
+      "price": 16.95,
+      "compareAt": 22.95,
+      "rating": 4.7,
+      "reviews": 1892,
+      "badge": "Fan favorite",
+      "featured": false,
+      "blurb": "Dunk, twist, done — soft silicone bristles lift mud off paws in seconds, right at the door.",
+      "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900&q=80",
       "images": [
-        "https://cf.cjdropshipping.com/15c4d737-7afc-42b4-be28-7369a0379d4d.jpg",
-        "https://cf.cjdropshipping.com/658737fb-f013-4a9a-9704-d67f28790547.jpg",
-        "https://cf.cjdropshipping.com/c6337bd9-493b-40be-b8b6-7acfc8f6b3c0.jpg",
-        "https://cf.cjdropshipping.com/196c9970-22be-4568-acc2-dcdf74fb2a79.jpg",
-        "https://cf.cjdropshipping.com/de493135-c60f-4746-b322-5d41fa3f4c31.jpg"
+        "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900&q=80",
+        "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=900&q=80"
       ],
-      "description": "Features: ----Space-Saving Foldable Design: Folds quickly for easy storage, perfect for compact home gyms. ----Cushioned Black-Red Seat: Padded 108cm-long surface (30cm width) for workout comfort & sleek 2-tone look. ----Multifunctional Strength Trainer: Suitable for squats, deadlifts, leg presses & core exercises. ----Heavy-Duty Stable Frame: Durable construction with reliable weight capacity for safe training. ----Quick Setup & Storage: Simple assembly and fast stowage to match your daily fitness routine. Specification: Colour: Black Size: 108*30*41 cm Maximum Load Capacity: 200KG Package Listing: 1 * Flat Weight Bench"
-    },
-    {
-      "id": "2605260336231605200",
-      "sku": "CJYD2903902",
-      "name": "Hand Grip Strengthener With Adjustable Finger Resistance And Electronic Counting",
-      "category": "training",
-      "kind": "hand grip",
-      "price": 17.95,
-      "compareAt": 23.95,
-      "supplierCost": 7.46,
-      "image": "https://oss-cf.cjdropshipping.com/product/2026/05/26/03/6a3fec94-1d3c-45c0-9d04-fc4fa1a0911f_trans.jpeg",
-      "images": [
-        "https://oss-cf.cjdropshipping.com/product/2026/05/26/03/6a3fec94-1d3c-45c0-9d04-fc4fa1a0911f_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/26/03/9b823003-2845-44a8-a515-177398184c4b_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/26/03/0ecde869-b5c3-4f5f-8eea-1fc7f27e6522_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/26/03/fa470a9c-d6d3-4b87-871e-b734c66aa004_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/26/03/78c22e48-cb3f-4845-b886-1a03051be846_trans.jpeg"
+      "description": "The walk was great. The paws are not. Add a little water, dunk each paw, give it a gentle twist, and the soft silicone bristles lift away mud, sand, and street grime before it gets tracked across your floor. Gentle enough for daily use, sturdy enough to live by the front door, and the whole thing pulls apart to rinse clean in seconds. Pick the size that matches your dog's paw.",
+      "benefits": [
+        "Cleans muddy paws in under 30 seconds",
+        "Soft silicone bristles — no scrubbing, no stress",
+        "Pulls apart to rinse clean",
+        "Spill-resistant design lives by the door"
       ],
-      "description": "Color: Dark gray Material: ABS + metal + nylon Spring diameter: 6 cm Packing list: Spring Grip x 1pc Product Image:",
       "variants": [
-        {
-          "id": "2605260336231605700",
-          "sku": "CJYD290390202BY",
-          "name": "With acupressure point",
-          "price": 19.95,
-          "compareAt": 25.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/26/03/9b823003-2845-44a8-a515-177398184c4b_trans.jpeg"
-        },
-        {
-          "id": "2605260336231606100",
-          "sku": "CJYD290390203CX",
-          "name": "Without acupressure point",
-          "price": 17.95,
-          "compareAt": 23.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/26/03/6a3fec94-1d3c-45c0-9d04-fc4fa1a0911f_trans.jpeg"
-        }
+        { "id": "s", "sku": null, "name": "Small (cats & small dogs)", "price": 14.95, "compareAt": 19.95, "image": null },
+        { "id": "m", "sku": null, "name": "Medium (most dogs)", "price": 16.95, "compareAt": 22.95, "image": null },
+        { "id": "l", "sku": null, "name": "Large (big paws)", "price": 19.95, "compareAt": 26.95, "image": null }
       ]
     },
     {
-      "id": "2046124663105675265",
-      "sku": "CJJM2844215",
-      "name": "Power Tower Dip Station Pull Up Bar Stand Adjustable Height Heavy Duty Multi-Function Fitness Training Equipment",
-      "category": "training",
-      "kind": "pull up bar",
-      "price": 126.95,
-      "compareAt": 165.95,
-      "supplierCost": 52.71,
-      "image": "https://cf.cjdropshipping.com/17766432/6f48c840-0f3e-4d58-b049-919077177513.jpg",
-      "images": [
-        "https://cf.cjdropshipping.com/17766432/6f48c840-0f3e-4d58-b049-919077177513.jpg",
-        "https://cf.cjdropshipping.com/17766432/9b968c65-34bf-4c45-9116-c7713ed4dd0e.jpg",
-        "https://cf.cjdropshipping.com/17766432/1ffbb892-2c3b-4122-a73d-8e18ee0e351b.jpg",
-        "https://cf.cjdropshipping.com/17766432/f51b47e2-9f54-44ef-90d5-222884eb6141.jpg",
-        "https://cf.cjdropshipping.com/17766432/5f4af111-8891-496a-bc91-cdd7b60aee81.jpg"
-      ],
-      "description": "Specification Available Ship to:United States Details Power Tower with Detachable Bench:The removable weight bench provide flexibility during your strength training workout. The sit up bench could be decline, flat and collapsible. You can easily to fold up the bench or remove it according your own needs by insert the plug pin to change to a free standing pull up station. Space-saving Design:This power tower will not take up too much space. Multi-functional, compact and foldable design takes small space to use and can be collected in any room or garage. Suitable for all teenagers, and adults' fitness needs at home, and in the office. Ergonomic Design: Humanized design It is filled with soft and high-resilience foam in the weight bench cushion and 2 elbow cushions that can reduce impact and muscle fatigue during training. The extended and thickened base with non-slip foot pads can prevent "
-    },
-    {
-      "id": "2602230820481603600",
-      "sku": "CJYD2765314",
-      "name": "15kg Automatic Smart Dumbbell Fitness Equipment Set",
-      "category": "training",
-      "kind": "dumbbell",
-      "price": 107.95,
-      "compareAt": 140.95,
-      "supplierCost": 44.78,
-      "image": "https://cf.cjdropshipping.com/quick/product/977b4a75-57a0-45f9-ae0b-18bdbfd403da.jpg",
-      "images": [
-        "https://cf.cjdropshipping.com/quick/product/977b4a75-57a0-45f9-ae0b-18bdbfd403da.jpg",
-        "https://cf.cjdropshipping.com/quick/product/5b131e22-d06a-4b03-97e0-601b12f99197.jpg",
-        "https://cf.cjdropshipping.com/quick/product/d921a8bc-c2bb-4c94-a7ef-ba678e7d1651.jpg",
-        "https://cf.cjdropshipping.com/quick/product/9574ccb4-d043-43f6-887e-193363cc1728.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2026/02/23/08/d097de86-3c18-41c8-bede-ce39fc5bf1da_fine.jpeg"
-      ],
-      "description": "Applicable scenarios: fitness equipment, body shaping, sports fashion Specifications: 38x22x23cm Material: steel plate + high-strength nylon Features: 1: Quick-change weighing dial 2: 12-level weight adjustment 3: Digital weighing and kilogram display on the dial 4: Built-in silicon steel sheet, reinforced nylon",
-      "variants": [
-        {
-          "id": "2602230820481604000",
-          "sku": "CJYD276531401AZ",
-          "name": "Kilogram System",
-          "price": 107.95,
-          "compareAt": 140.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/5b131e22-d06a-4b03-97e0-601b12f99197.jpg"
-        },
-        {
-          "id": "2602230820481604300",
-          "sku": "CJYD276531402BY",
-          "name": "Pound System",
-          "price": 107.95,
-          "compareAt": 140.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/d921a8bc-c2bb-4c94-a7ef-ba678e7d1651.jpg"
-        }
-      ]
-    },
-    {
-      "id": "2073718060999139330",
-      "sku": "CJJM2968874",
-      "name": "Anti-slip, Thickened, Widened And Lengthened Home Yoga Mat For Men And Women, Suitable For Sports, Dancing And Fitness",
-      "category": "yoga",
-      "kind": "yoga mat",
+      "id": "wg-smart-ball",
+      "sku": null,
+      "name": "ZoomOrb Self-Rolling Smart Ball",
+      "category": "play",
+      "petType": "both",
+      "kind": "interactive smart pet ball",
       "price": 21.95,
       "compareAt": 28.95,
-      "supplierCost": 8.99,
-      "image": "https://cf.cjdropshipping.com/88447663-7496-428b-bb52-3cc1b3c9faaa.png",
+      "rating": 4.6,
+      "reviews": 1204,
+      "badge": "New",
+      "featured": false,
+      "blurb": "Rolls, bounces, and dodges on its own — hours of chase for cats and dogs, zero effort from you.",
+      "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=900&q=80",
       "images": [
-        "https://cf.cjdropshipping.com/88447663-7496-428b-bb52-3cc1b3c9faaa.png",
-        "https://cf.cjdropshipping.com/817dc42b-3946-4539-b057-ab6d81921680.png",
-        "https://cf.cjdropshipping.com/cf004f54-0718-489a-9cb0-3a88bbadff01.png",
-        "https://cf.cjdropshipping.com/fe719299-1acf-4edf-a14a-98e66bc9804a.png",
-        "https://cf.cjdropshipping.com/123cba0a-3696-451c-a451-f22d7a09a7c4.png"
+        "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=900&q=80",
+        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=900&q=80"
       ],
-      "description": null,
+      "description": "Bored pets get creative — usually with your furniture. The ZoomOrb rolls itself in unpredictable patterns, changes direction when it bumps something, and takes short rest breaks so your pet never loses interest. USB-C charged, with a durable chew-safe shell and an LED glow for low-light zoomies. Auto-sleeps when playtime is over and wakes with a nudge. Works on carpet, wood, and tile.",
+      "benefits": [
+        "Moves on its own in unpredictable patterns — no app needed",
+        "Auto-rests and restarts to keep pets hooked",
+        "USB-C rechargeable, one charge lasts days of play",
+        "Durable chew-safe shell, works on any floor"
+      ],
+      "variants": null
+    },
+    {
+      "id": "wg-donut-bed",
+      "sku": null,
+      "name": "CalmCloud Donut Bed",
+      "category": "comfort",
+      "petType": "both",
+      "kind": "calming donut pet bed",
+      "price": 39.95,
+      "compareAt": 54.95,
+      "rating": 4.9,
+      "reviews": 3428,
+      "badge": "Bestseller",
+      "featured": false,
+      "blurb": "The raised rim mimics a mother's embrace — anxious sleepers melt into it and stay there.",
+      "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=900&q=80",
+        "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=900&q=80"
+      ],
+      "description": "Vet-inspired design for pets that pace, circle, and can't settle. The plush raised rim gives head-and-neck support and a sense of security that helps anxious dogs and cats calm down and actually sleep. Ultra-soft faux fur, a non-slip base for hard floors, and the whole bed goes in the washing machine when it inevitably needs it. Size up if your pet likes to stretch.",
+      "benefits": [
+        "Raised rim = built-in security for anxious sleepers",
+        "Ultra-soft faux fur they sink straight into",
+        "Machine washable, non-slip base",
+        "Four sizes from cat to big-dog"
+      ],
       "variants": [
-        {
-          "id": "2073718061133357057",
-          "sku": "CJJM296887401AZ",
-          "name": "15mm-Pink",
-          "price": 21.95,
-          "compareAt": 28.95,
-          "image": "https://cf.cjdropshipping.com/817dc42b-3946-4539-b057-ab6d81921680.png"
-        },
-        {
-          "id": "2073718061133357058",
-          "sku": "CJJM296887402BY",
-          "name": "15mm-Black",
-          "price": 21.95,
-          "compareAt": 28.95,
-          "image": "https://cf.cjdropshipping.com/fe719299-1acf-4edf-a14a-98e66bc9804a.png"
-        },
-        {
-          "id": "2073718061133357059",
-          "sku": "CJJM296887403CX",
-          "name": "15mm-Blue",
-          "price": 21.95,
-          "compareAt": 28.95,
-          "image": "https://cf.cjdropshipping.com/123cba0a-3696-451c-a451-f22d7a09a7c4.png"
-        },
-        {
-          "id": "2073718061133357060",
-          "sku": "CJJM296887404DW",
-          "name": "15mm-Purple",
-          "price": 21.95,
-          "compareAt": 28.95,
-          "image": "https://cf.cjdropshipping.com/cf004f54-0718-489a-9cb0-3a88bbadff01.png"
-        },
-        {
-          "id": "2073718061133357061",
-          "sku": "CJJM296887405EV",
-          "name": "20mm-Pink",
-          "price": 23.95,
-          "compareAt": 31.95,
-          "image": "https://cf.cjdropshipping.com/817dc42b-3946-4539-b057-ab6d81921680.png"
-        },
-        {
-          "id": "2073718061133357062",
-          "sku": "CJJM296887406FU",
-          "name": "20mm-Black",
-          "price": 23.95,
-          "compareAt": 31.95,
-          "image": "https://cf.cjdropshipping.com/fe719299-1acf-4edf-a14a-98e66bc9804a.png"
-        },
-        {
-          "id": "2073718061133357063",
-          "sku": "CJJM296887407GT",
-          "name": "20mm-Blue",
-          "price": 23.95,
-          "compareAt": 31.95,
-          "image": "https://cf.cjdropshipping.com/123cba0a-3696-451c-a451-f22d7a09a7c4.png"
-        },
-        {
-          "id": "2073718061133357064",
-          "sku": "CJJM296887408HS",
-          "name": "20mm-Purple",
-          "price": 23.95,
-          "compareAt": 31.95,
-          "image": "https://cf.cjdropshipping.com/cf004f54-0718-489a-9cb0-3a88bbadff01.png"
-        }
+        { "id": "s", "sku": null, "name": "S — 50cm (cats, toy breeds)", "price": 39.95, "compareAt": 54.95, "image": null },
+        { "id": "m", "sku": null, "name": "M — 60cm (up to 15kg)", "price": 49.95, "compareAt": 66.95, "image": null },
+        { "id": "l", "sku": null, "name": "L — 70cm (up to 25kg)", "price": 59.95, "compareAt": 79.95, "image": null },
+        { "id": "xl", "sku": null, "name": "XL — 80cm (large breeds)", "price": 69.95, "compareAt": 92.95, "image": null }
       ]
     },
     {
-      "id": "2605070643081629300",
-      "sku": "CJYD2872761",
-      "name": "Silicone Load Ball Solid Core 1.5kg Yoga Pilates",
-      "category": "yoga",
-      "kind": "pilates",
-      "price": 15.95,
-      "compareAt": 20.95,
-      "supplierCost": 6.47,
-      "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/d122e01e-caa5-4c11-9a9b-26f63ce38030.jpg",
+      "id": "wg-car-hammock",
+      "sku": null,
+      "name": "BackSeat Buddy Car Hammock",
+      "category": "travel",
+      "petType": "dog",
+      "kind": "dog car seat cover hammock",
+      "price": 36.95,
+      "compareAt": 47.95,
+      "rating": 4.7,
+      "reviews": 986,
+      "badge": null,
+      "featured": false,
+      "blurb": "Waterproof, scratch-proof back-seat protection that doubles as a safe hammock for the ride.",
+      "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=900&q=80",
       "images": [
-        "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/d122e01e-caa5-4c11-9a9b-26f63ce38030.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/c0270525-367f-42cc-93e0-e9ae0a158f2e.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/cc9d2032-9d6d-44ad-949a-a262bde7d8da.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/89f2aead-6d0d-43b0-924a-26d379e4ff92.jpg",
-        "https://cf.cjdropshipping.com/quick/product/faba7d8a-88d9-4e50-87fe-0103f8ee90ce.jpg"
+        "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=900&q=80",
+        "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=900&q=80"
       ],
-      "description": "Applicable Scenarios: Fitness Equipment, Body Shaping, Other Color: 1.5kg Material: Silicone + Iron Specifications: Black, Flesh Pink, Pink, Gray Green, Milk Tea, Beige",
+      "description": "Adventure dogs are wet, sandy, hairy dogs. The BackSeat Buddy converts your entire back seat into a waterproof, quilted hammock in about a minute — headrest straps, seat anchors, done. Side flaps protect your doors, a mesh window keeps eye contact so nervous riders stay calm, and a zip opening lets one seat still take a human passenger. Shake it out or machine wash it after the beach.",
+      "benefits": [
+        "Installs in about a minute — no tools",
+        "Waterproof 4-layer quilting protects the whole back seat",
+        "Mesh window keeps nervous dogs calm",
+        "Side flaps shield doors from claws and drool"
+      ],
+      "variants": null
+    },
+    {
+      "id": "wg-water-fountain",
+      "sku": null,
+      "name": "WhiskerFalls Quiet Water Fountain",
+      "category": "mealtime",
+      "petType": "both",
+      "kind": "pet water fountain",
+      "price": 32.95,
+      "compareAt": 42.95,
+      "rating": 4.8,
+      "reviews": 1755,
+      "badge": "Top rated",
+      "featured": false,
+      "blurb": "Cats drink more from moving water — 2.5L of filtered, whisper-quiet flow keeps them hydrated.",
+      "image": "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=900&q=80",
+        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=900&q=80"
+      ],
+      "description": "Most cats are chronically under-hydrated — still water just doesn't interest them. WhiskerFalls keeps 2.5 litres circulating through a triple-layer filter that catches hair, sediment, and odd tastes, with a pump so quiet you'll forget it's running. The transparent window and low-water light tell you when to top up, and every part that touches water disassembles for the dishwasher.",
+      "benefits": [
+        "Moving water = cats actually drink more",
+        "Whisper-quiet pump (under 30dB)",
+        "Triple filtration catches hair and sediment",
+        "2.5L tank, low-water indicator, dishwasher-safe parts"
+      ],
+      "variants": null
+    },
+    {
+      "id": "wg-harness",
+      "sku": null,
+      "name": "EasyWalk No-Pull Harness Set",
+      "category": "travel",
+      "petType": "dog",
+      "kind": "no-pull dog harness",
+      "price": 26.95,
+      "compareAt": 35.95,
+      "rating": 4.7,
+      "reviews": 2101,
+      "badge": "Bestseller",
+      "featured": false,
+      "blurb": "Front-clip design steers pullers back to your side — walks stop being a tug-of-war.",
+      "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=900&q=80",
+        "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900&q=80"
+      ],
+      "description": "The dual-clip EasyWalk turns pulling into steering: clip the leash to the front ring and a pulling dog is gently turned back toward you instead of dragging you down the street. Padded air-mesh keeps it comfortable on long walks, reflective strips keep evening walks visible, and the top handle gives you instant control when you need it. Buckles on both the neck and chest, so it goes on without wrestling anything over your dog's head.",
+      "benefits": [
+        "Front clip gently redirects pulling — kinder than a collar",
+        "Padded air-mesh, no chafing on long walks",
+        "Reflective strips for evening walks",
+        "Steps on and buckles — nothing forced over the head"
+      ],
       "variants": [
-        {
-          "id": "2605070643081629800",
-          "sku": "CJYD287276101AZ",
-          "name": "Black",
-          "price": 15.95,
-          "compareAt": 20.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/d122e01e-caa5-4c11-9a9b-26f63ce38030.jpg"
-        },
-        {
-          "id": "2605070643091620300",
-          "sku": "CJYD287276102BY",
-          "name": "Meat Pink",
-          "price": 15.95,
-          "compareAt": 20.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/f1f8da90-badc-497e-8119-838999ddf221.jpg"
-        },
-        {
-          "id": "2605070643091620800",
-          "sku": "CJYD287276103CX",
-          "name": "Pink",
-          "price": 15.95,
-          "compareAt": 20.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/cc9d2032-9d6d-44ad-949a-a262bde7d8da.jpg"
-        },
-        {
-          "id": "2605070643091621200",
-          "sku": "CJYD287276104DW",
-          "name": "Gray Green",
-          "price": 15.95,
-          "compareAt": 20.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/89f2aead-6d0d-43b0-924a-26d379e4ff92.jpg"
-        },
-        {
-          "id": "2605070643091621700",
-          "sku": "CJYD287276105EV",
-          "name": "Milk Tea",
-          "price": 15.95,
-          "compareAt": 20.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/50e8dd52-afff-4b5f-a39c-e16dd9f9d246.jpg"
-        },
-        {
-          "id": "2605070643091622200",
-          "sku": "CJYD287276106FU",
-          "name": "Beige",
-          "price": 15.95,
-          "compareAt": 20.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/05/07/06/c0270525-367f-42cc-93e0-e9ae0a158f2e.jpg"
-        }
+        { "id": "s", "sku": null, "name": "S — chest 40–50cm", "price": 26.95, "compareAt": 35.95, "image": null },
+        { "id": "m", "sku": null, "name": "M — chest 50–65cm", "price": 28.95, "compareAt": 38.95, "image": null },
+        { "id": "l", "sku": null, "name": "L — chest 65–80cm", "price": 30.95, "compareAt": 41.95, "image": null },
+        { "id": "xl", "sku": null, "name": "XL — chest 80–100cm", "price": 32.95, "compareAt": 43.95, "image": null }
       ]
     },
     {
-      "id": "2056298867837026306",
-      "sku": "CJJM2894838",
-      "name": "14Pcs Pilates Ring Essentials-Kit For Women With Yoga Ball Arm Stretcher 5 Resistant Bands-Figure 8 Resistant Band Elastic Band Non-slip Socks Yoga Strap",
-      "category": "yoga",
-      "kind": "yoga strap",
-      "price": 88.95,
-      "compareAt": 115.95,
-      "supplierCost": 36.88,
-      "image": "https://cf.cjdropshipping.com/17790624/ff4c323c-030d-415a-9928-f5ea639431e6.jpg",
-      "images": [
-        "https://cf.cjdropshipping.com/17790624/ff4c323c-030d-415a-9928-f5ea639431e6.jpg",
-        "https://cf.cjdropshipping.com/17790624/45e60f0a-76ff-4fe0-a947-c9065b8cfb36.jpg",
-        "https://cf.cjdropshipping.com/17790624/6c91dc54-6911-420c-bfa1-cc6a751750be.jpg",
-        "https://cf.cjdropshipping.com/17790624/a14852e6-cd1b-4c26-afb5-6fb0f03bec4b.jpg",
-        "https://cf.cjdropshipping.com/17790624/34416353-41b6-4240-83a5-039ddf1fe463.jpg"
-      ],
-      "description": null
-    },
-    {
-      "id": "2601150826411606500",
-      "sku": "CJYD2730641",
-      "name": "Yoga Block Used For Muscle Relaxation",
-      "category": "yoga",
-      "kind": "yoga block",
-      "price": 9.95,
-      "compareAt": 12.95,
-      "supplierCost": 3.19,
-      "image": "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/fe153cd6-243e-44a0-83dc-d85097f8e423_trans.jpeg",
-      "images": [
-        "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/fe153cd6-243e-44a0-83dc-d85097f8e423_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/89647334-3667-4a2b-b1f7-bf6ca6e6c913_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/fb469fad-c2c2-4073-8f1c-d6133044ff40_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/86256573-b748-4bb4-9177-ad237c69f46c_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/a7ebd9a3-fad3-459f-9e34-47aa0bd4b89b_trans.jpeg"
-      ],
-      "description": "Colors: Black 45 cm, Black 60 cm, Pink 45 cm, Pink 60 cm Material: Foam Functions: Bodybuilding, muscle relaxation Packing list: Foam Roller x1pc",
-      "variants": [
-        {
-          "id": "2601150826411606700",
-          "sku": "CJYD273064102BY",
-          "name": "45CM",
-          "price": 9.95,
-          "compareAt": 12.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/89647334-3667-4a2b-b1f7-bf6ca6e6c913_trans.jpeg"
-        },
-        {
-          "id": "2601150826411606800",
-          "sku": "CJYD273064103CX",
-          "name": "60CM",
-          "price": 9.95,
-          "compareAt": 12.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/849d1806-1345-4385-bf94-b09548d29b2a_trans.jpeg"
-        },
-        {
-          "id": "2601150826411607000",
-          "sku": "CJYD273064104DW",
-          "name": "90CM",
-          "price": 12.95,
-          "compareAt": 16.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/01/15/08/a7ebd9a3-fad3-459f-9e34-47aa0bd4b89b_trans.jpeg"
-        }
-      ]
-    },
-    {
-      "id": "2075955243850825729",
-      "sku": "CJJM2980410",
-      "name": "24 Head Professional Fascia Gun Deep Tissue Electric Muscle Massager With 21mm Depth, 2000mAh Battery And Dual Handles For Full Body Relief",
-      "category": "recovery",
-      "kind": "fascia gun",
-      "price": 95.95,
-      "compareAt": 124.95,
-      "supplierCost": 39.99,
-      "image": "https://cf.cjdropshipping.com/daf9458f-5b57-4d51-8154-1efc4daf80d8.png",
-      "images": [
-        "https://cf.cjdropshipping.com/daf9458f-5b57-4d51-8154-1efc4daf80d8.png",
-        "https://cf.cjdropshipping.com/6014ae16-d14a-4b5f-8431-acbe7e7add33.png",
-        "https://cf.cjdropshipping.com/8b2f6e17-268d-4bfb-9787-63f3eea6b6f1.png",
-        "https://cf.cjdropshipping.com/1bccfc98-7cb9-4e5f-a291-32af2cb12599.png",
-        "https://cf.cjdropshipping.com/1a8dba40-5223-4b0c-81f4-13dc97fc96de.png"
-      ],
-      "description": "24-Head Professional Fascia Gun – Deep Tissue Electric Muscle Massager with 21mm Depth, 2000mAh Battery & Dual Handles for Full Body Relief 24-Head Multi-Point Massage: Equipped with 24 specialized massage heads covering a massive 85,000mm² relaxation area for fast and comprehensive muscle recovery. Deep Tissue Percussion: Penetrates up to 21mm deep into muscles with a 50-60kg strong thrust to eliminate stiffness, lactic acid, and deep soreness. High-Frequency Vibration: Delivers professional-grade power with up to 22,800 RPM peak vibration speed, easily adjustable via the smart control panel. Cordless & Portable: Powered by a built-in 2000mAh high-capacity battery, featuring ergonomic dual handles for effortless back, shoulder, and foot massage."
-    },
-    {
-      "id": "2512260510541622500",
-      "sku": "CJYD2694376",
-      "name": "Household Mini Portable Muscle-relaxing Massage Gun With Rechargeable Battery",
-      "category": "recovery",
-      "kind": "massage gun",
-      "price": 21.95,
-      "compareAt": 28.95,
-      "supplierCost": 9.12,
-      "image": "https://cf.cjdropshipping.com/quick/product/c640930a-458f-4a18-8304-2cf0b9d28afd.jpg",
-      "images": [
-        "https://cf.cjdropshipping.com/quick/product/c640930a-458f-4a18-8304-2cf0b9d28afd.jpg",
-        "https://oss-cf.cjdropshipping.com/product/2025/12/26/05/c1ecd62b-16c9-4330-8b82-3a197b7381d4_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2025/12/26/05/975f347c-801b-4942-a9e2-33be810d1cb4_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2025/12/26/05/ef3cf10a-0047-46c7-a4d2-00422978f645_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2025/12/26/05/abec0a32-1cb6-4ad2-81f3-d36fd8670b26_trans.jpeg"
-      ],
-      "description": "Power Source: Rechargeable Colors: 4-Head Massage Gun (White), 4-Head Massage Gun (Black) Features: Portable, multi-speed settings",
-      "variants": [
-        {
-          "id": "2512260510541622700",
-          "sku": "CJYD269437601AZ",
-          "name": "White",
-          "price": 21.95,
-          "compareAt": 28.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/c640930a-458f-4a18-8304-2cf0b9d28afd.jpg"
-        },
-        {
-          "id": "2512260510541622900",
-          "sku": "CJYD269437602BY",
-          "name": "Black",
-          "price": 21.95,
-          "compareAt": 28.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/8bb70e3c-ce78-4e10-9382-61e557ced465.jpg"
-        }
-      ]
-    },
-    {
-      "id": "2028292158080180226",
-      "sku": "CJJM2771571",
-      "name": "Silicone Torsion Bar Fitness Resistance Stick Arm Wrist Trainer With Massage Function For Muscle Relaxation And Rehabilitation Exercise",
-      "category": "recovery",
-      "kind": "muscle relax",
-      "price": 47.95,
-      "compareAt": 62.95,
-      "supplierCost": 19.98,
-      "image": "https://cf.cjdropshipping.com/dcb57fc5-895e-45da-aa37-93a8e223f68a.png",
-      "images": [
-        "https://cf.cjdropshipping.com/dcb57fc5-895e-45da-aa37-93a8e223f68a.png",
-        "https://cf.cjdropshipping.com/853c570d-58da-4858-bc17-c89b3137dde2.png",
-        "https://cf.cjdropshipping.com/40f83fd2-78e1-4677-8ea2-4103133f0b49.jpg",
-        "https://cf.cjdropshipping.com/48e726e2-33ff-4613-8e55-bc2ea6c8069f.png",
-        "https://cf.cjdropshipping.com/deabcaa5-a058-48b7-881f-616381e0e862.png"
-      ],
-      "description": "Features： • Premium Liquid Silicone Construction: Crafted from food-grade liquid silicone material that is odorless, non-toxic, and environmentally friendly. Features upgraded anti-slip texture patterns for enhanced friction and secure grip during sweaty workouts, ensuring safety and comfort. • Multifunctional 4-in-1 Design: Versatile fitness tool combining arm strength training, wrist exercise, muscle massage, and back tapping functions. Ideal for full-body relaxation, stress relief, and deep tissue muscle recovery after exercise. • Solid Durable Structure: One-piece solid molding technology provides exceptional toughness and flexibility. Resistant to strong twisting forces and deformation, maintaining shape integrity even under intensive daily training sessions. • Portable Compact Size: Measures 33cm in length and weighs 500g, making it perfect for home gyms, office workouts, or travel",
-      "variants": [
-        {
-          "id": "2028292158923235330",
-          "sku": "CJJM277157101AZ",
-          "name": "PinkGreen",
-          "price": 47.95,
-          "compareAt": 62.95,
-          "image": "https://cf.cjdropshipping.com/45ca83d8-3311-40e2-b076-ef25d484475f.jpg"
-        },
-        {
-          "id": "2028292158923235331",
-          "sku": "CJJM277157102BY",
-          "name": "PinkPurple",
-          "price": 47.95,
-          "compareAt": 62.95,
-          "image": "https://cf.cjdropshipping.com/40f83fd2-78e1-4677-8ea2-4103133f0b49.jpg"
-        },
-        {
-          "id": "2028292158923235332",
-          "sku": "CJJM277157103CX",
-          "name": "GrayPink",
-          "price": 47.95,
-          "compareAt": 62.95,
-          "image": "https://cf.cjdropshipping.com/69874cb6-03ad-4905-92f2-22b355a1f2ce.jpg"
-        },
-        {
-          "id": "2028292158923235333",
-          "sku": "CJJM277157104DW",
-          "name": "GrayBlue",
-          "price": 47.95,
-          "compareAt": 62.95,
-          "image": "https://cf.cjdropshipping.com/76942d88-9c35-4db7-a055-f69d8f763e62.jpg"
-        }
-      ]
-    },
-    {
-      "id": "2601130735201639900",
-      "sku": "CJYD2727050",
-      "name": "New Design Fitness Body Building Training Gym Foam Roller",
-      "category": "recovery",
-      "kind": "foam roller",
-      "price": 59.95,
-      "compareAt": 77.95,
-      "supplierCost": 24.88,
-      "image": "https://cf.cjdropshipping.com/quick/product/3de9358e-e18c-4198-81b6-84a8a728a90f.jpg",
-      "images": [
-        "https://cf.cjdropshipping.com/quick/product/3de9358e-e18c-4198-81b6-84a8a728a90f.jpg",
-        "https://cf.cjdropshipping.com/quick/product/730312c2-19d2-44df-b58e-59be4d0ad076.jpg",
-        "https://cf.cjdropshipping.com/quick/product/8dd61556-6a70-48ae-b61e-4843e3223f37.jpg",
-        "https://cf.cjdropshipping.com/quick/product/ee648b86-33fd-4e27-8702-61f36e0ac339.jpg",
-        "https://cf.cjdropshipping.com/quick/product/ed6b2f4d-8ae2-4e1b-8122-0d3e06df161e.jpg"
-      ],
-      "description": "Applicable scenarios: health massage, fitness and body shaping Color: black Material: soft rubber Category: yoga ball Packing list: Yoga Ball X 1pc"
-    },
-    {
-      "id": "2606120926211631500",
-      "sku": "CJYD2931552",
-      "name": "Summer Spray Straw Water Bottle Portable And Large Capacity For Girls",
-      "category": "hydration",
-      "kind": "water bottle",
-      "price": 12.95,
-      "compareAt": 16.95,
-      "supplierCost": 5.29,
-      "image": "https://cf.cjdropshipping.com/quick/product/65aa5e9b-4ef6-4278-b0a1-de2769f4ba4d.jpg",
-      "images": [
-        "https://cf.cjdropshipping.com/quick/product/65aa5e9b-4ef6-4278-b0a1-de2769f4ba4d.jpg",
-        "https://cf.cjdropshipping.com/quick/product/c4e038f8-85fa-41b6-a633-6817bfac0f7f.jpg",
-        "https://cf.cjdropshipping.com/quick/product/e4b1d426-feb9-45e9-996f-294c2dc2a5f3.jpg",
-        "https://cf.cjdropshipping.com/quick/product/2e6421b1-d714-49dc-901d-0236342fb1f7.jpg",
-        "https://cf.cjdropshipping.com/quick/product/1adc9f24-40f7-4c28-aab1-60baa7791e75.jpg"
-      ],
-      "description": "Colors: Pink 500 mL [spray design/tripolymer carbonate bottle], Yellow 500 mL [spray design/tripolymer carbonate bottle], Blue 500 mL [spray design/tripolymer carbonate bottle], Black 500 mL [spray design/tripolymer carbonate bottle] Material: Tripolymer carbonate Style: Sporty Capacity: 500 mL",
-      "variants": [
-        {
-          "id": "2606120926211632100",
-          "sku": "CJYD293155201AZ",
-          "name": "Pink-500ML",
-          "price": 12.95,
-          "compareAt": 16.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/53356db5-d848-41bb-ba16-84cbfda35ea9.jpg"
-        },
-        {
-          "id": "2606120926211632600",
-          "sku": "CJYD293155202BY",
-          "name": "Yellow-500ML",
-          "price": 12.95,
-          "compareAt": 16.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/966b695b-c29f-4c78-acf8-f2e8cf9ba288.jpg"
-        },
-        {
-          "id": "2606120926211633000",
-          "sku": "CJYD293155203CX",
-          "name": "Blue-500ML",
-          "price": 12.95,
-          "compareAt": 16.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/918ee5e3-6dd7-4d40-8091-516af0591e2b.jpg"
-        },
-        {
-          "id": "2606120926211633500",
-          "sku": "CJYD293155204DW",
-          "name": "Black-500ML",
-          "price": 12.95,
-          "compareAt": 16.95,
-          "image": "https://cf.cjdropshipping.com/quick/product/c4e038f8-85fa-41b6-a633-6817bfac0f7f.jpg"
-        }
-      ]
-    },
-    {
-      "id": "2606180805471612500",
-      "sku": "CJJT2944807",
-      "name": "Ceramic covered 316L inner tank large capacity water cup",
-      "category": "hydration",
-      "kind": "water cup",
-      "price": 23.95,
-      "compareAt": 31.95,
-      "supplierCost": 9.93,
-      "image": "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/f5800643-3ed9-4a2c-a891-81d44e02867b_trans.jpeg",
-      "images": [
-        "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/f5800643-3ed9-4a2c-a891-81d44e02867b_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/d1ddb65b-c504-4525-b429-a9b61cc6f91b_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/acedd67c-0346-47da-9aa1-7484ba2e885c_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/fa2970cc-27fe-4181-a384-9459fa0d5b72_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/32fbec37-45b2-4564-a92b-da4a3a7d868a_trans.jpeg"
-      ],
-      "description": "Colors: Pink [316L inner liner with ceramic coating], White [316L inner liner with ceramic coating], Coffee Brown [316L inner liner with ceramic coating] Inner Liner Material: 316 Stainless Steel Insulation Performance: 0–6 hours Outer Shell Material: 304 Stainless Steel, both inside and outside Outer Cup Shell Material: 201 Stainless Steel Capacity: 1,200 mL [Ice Boss Cup]",
-      "variants": [
-        {
-          "id": "2606180805471613200",
-          "sku": "CJJT294480701AZ",
-          "name": "Peach Milk Fudge-1200ML",
-          "price": 23.95,
-          "compareAt": 31.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/d1ddb65b-c504-4525-b429-a9b61cc6f91b_trans.jpeg"
-        },
-        {
-          "id": "2606180805471613600",
-          "sku": "CJJT294480702BY",
-          "name": "Snowflake Fairy Trail-1200ML",
-          "price": 23.95,
-          "compareAt": 31.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/f5800643-3ed9-4a2c-a891-81d44e02867b_trans.jpeg"
-        },
-        {
-          "id": "2606180805471614400",
-          "sku": "CJJT294480703CX",
-          "name": "Taro Pudding Boba-1200ML",
-          "price": 23.95,
-          "compareAt": 31.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/34633c3e-a615-4ddb-bbbd-afeed9c7723b_trans.jpeg"
-        }
-      ]
-    },
-    {
-      "id": "2606180826401623800",
-      "sku": "CJJT2944971",
-      "name": "Stainless Steel Lined Insulated Water Bottle",
-      "category": "hydration",
-      "kind": "water bottle",
+      "id": "wg-hair-roller",
+      "sku": null,
+      "name": "FuzzOff Reusable Hair Roller",
+      "category": "grooming",
+      "petType": "both",
+      "kind": "pet hair remover roller",
       "price": 14.95,
       "compareAt": 19.95,
-      "supplierCost": 6.05,
-      "image": "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/a26fe423-846c-4375-91a8-3cd44f84d2fb_trans.jpeg",
+      "rating": 4.8,
+      "reviews": 4102,
+      "badge": "Top rated",
+      "featured": false,
+      "blurb": "A few passes and the couch is fur-free — no refills, no batteries, empties with one click.",
+      "image": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=900&q=80",
       "images": [
-        "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/a26fe423-846c-4375-91a8-3cd44f84d2fb_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/93da210c-7301-483c-a5d2-88efbfbf9599_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/c5fbdbc6-4ad7-4130-8823-69ef84eb974f_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/0781ce32-93a0-42e2-8dda-cb55a015bab8_trans.jpeg",
-        "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/10f7e39e-3a0d-4329-80d1-9900400dea26_trans.jpeg"
+        "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=900&q=80",
+        "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=900&q=80"
       ],
-      "description": "Colors: 3003—Green, 3003—Pink, 3003—Purple Inner Liner Material: 316 Stainless Steel Insulation Performance: 6–12 hours Material: 316 Stainless Steel Outer Cup Material: 304 Stainless Steel Capacity: 1100 mL",
-      "variants": [
-        {
-          "id": "2606180826401624500",
-          "sku": "CJJT294497101AZ",
-          "name": "Pink-1100ml",
-          "price": 14.95,
-          "compareAt": 19.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/93da210c-7301-483c-a5d2-88efbfbf9599_trans.jpeg"
-        },
-        {
-          "id": "2606180826401625100",
-          "sku": "CJJT294497102BY",
-          "name": "Purple-1100ml",
-          "price": 14.95,
-          "compareAt": 19.95,
-          "image": "https://oss-cf.cjdropshipping.com/product/2026/06/18/08/0781ce32-93a0-42e2-8dda-cb55a015bab8_trans.jpeg"
-        }
-      ]
+      "description": "The one that started the 'wait, where did all the fur go?' videos. Roll it back and forth over sofas, beds, car seats, and cat trees — the electrostatic brush head grabs embedded fur that lint rollers skate right over, and traps it in a built-in chamber. When it's full, press the button, tip it into the bin, and keep going. No adhesive refills, no batteries, no noise. It just works, forever.",
+      "benefits": [
+        "Grabs embedded fur lint rollers can't reach",
+        "Self-cleaning chamber — one click to empty",
+        "No refills, no batteries, no noise",
+        "Works on sofas, car seats, bedding, cat trees"
+      ],
+      "variants": null
+    },
+    {
+      "id": "wg-snuffle-mat",
+      "sku": null,
+      "name": "Sniff & Seek Snuffle Mat",
+      "category": "play",
+      "petType": "dog",
+      "kind": "dog snuffle mat",
+      "price": 19.95,
+      "compareAt": 26.95,
+      "rating": 4.6,
+      "reviews": 743,
+      "badge": null,
+      "featured": false,
+      "blurb": "Ten minutes of sniffing tires a dog like a half-hour walk — hide kibble, watch them work.",
+      "image": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=900&q=80",
+        "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=900&q=80"
+      ],
+      "description": "Sniffing is a dog's crossword puzzle — ten focused minutes of nose-work is as tiring as a long walk. Scatter kibble or treats into the layered fleece folds and let your dog hunt. Slows down speed-eaters, calms rainy-day restlessness, and gives high-energy breeds a job to do. Non-slip backing keeps it in place, and the whole mat rolls up for travel and goes in the washing machine.",
+      "benefits": [
+        "Mental workout that genuinely tires them out",
+        "Slows down speed-eaters naturally",
+        "Non-slip base, rolls up for travel",
+        "Machine washable fleece"
+      ],
+      "variants": null
+    },
+    {
+      "id": "wg-lick-mat",
+      "sku": null,
+      "name": "Lick'n'Chill Slow Feeder Mat (2-Pack)",
+      "category": "mealtime",
+      "petType": "both",
+      "kind": "pet lick mat slow feeder",
+      "price": 13.95,
+      "compareAt": 18.95,
+      "rating": 4.7,
+      "reviews": 1318,
+      "badge": null,
+      "featured": false,
+      "blurb": "Spread, stick to any smooth surface, and buy yourself 20 calm minutes — bath time's secret weapon.",
+      "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=900&q=80",
+        "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=900&q=80"
+      ],
+      "description": "Licking is naturally calming for dogs and cats — it releases endorphins the way chewing does. Spread a little wet food, yogurt, or peanut butter across the textured surface, stick the suction back to the bathtub, fridge, or floor, and you've got a distracted, happy pet for bath time, nail trims, brushing, or thunderstorms. Two textures in the pack: one for thick spreads, one that makes soft food last even longer. Dishwasher safe, food-grade silicone.",
+      "benefits": [
+        "Licking releases calming endorphins — great for stress",
+        "Suction back sticks to tubs, fridges, floors",
+        "Turns bath time and nail trims into snack time",
+        "2 textures, food-grade silicone, dishwasher safe"
+      ],
+      "variants": null
     }
   ]
 }

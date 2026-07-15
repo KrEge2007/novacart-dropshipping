@@ -1,17 +1,12 @@
-name: Refresh product catalog
+name: Refresh catalog prices
 
 on:
   schedule:
-    # Runs daily at 05:00 UTC. Prices/stock refresh on every run;
-    # the product *selection* rotates per the ROTATION setting below
-    # (weekly = new selection every ISO week, daily = every day).
+    # Daily at 05:00 UTC. The product selection is pinned (see WINNERS in
+    # scripts/fetch-products.mjs) — runs only refresh prices, stock-relevant
+    # data, supplier photos, and variants for those picks.
     - cron: "0 5 * * *"
   workflow_dispatch:
-    inputs:
-      mode:
-        description: "Run mode: refresh (default) or categories (debug: print CJ category tree)"
-        required: false
-        default: refresh
 
 permissions:
   contents: write
@@ -29,17 +24,10 @@ jobs:
       - name: Install image decoders for quality scoring
         run: npm install --no-audit --no-fund
 
-      - name: Fetch products from supplier
-        run: |
-          if [ "${{ github.event.inputs.mode }}" = "categories" ]; then
-            node scripts/fetch-products.mjs --categories
-          else
-            node scripts/fetch-products.mjs
-          fi
+      - name: Refresh pinned products from supplier
+        run: node scripts/fetch-products.mjs
         env:
           CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
-          ROTATION: weekly
-          PRODUCT_COUNT: "16"
 
       - name: Commit updated catalog
         run: |
@@ -50,5 +38,5 @@ jobs:
           git config user.name "catalog-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/products.json
-          git commit -m "chore: rotate product catalog"
+          git commit -m "chore: refresh catalog prices"
           git push
