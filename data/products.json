@@ -1,29 +1,32 @@
 {
   "meta": {
-    "updatedAt": "2026-07-15T08:00:00.000Z",
-    "source": "seed",
+    "updatedAt": "2026-07-15T05:59:11.287Z",
+    "source": "cjdropshipping",
     "note": "Hand-picked evergreen bestsellers. Images are placeholders until scripts/fetch-products.mjs matches each pick to a live CJdropshipping listing and fills in real supplier photos, prices, and SKUs."
   },
   "products": [
     {
       "id": "wg-grooming-vacuum",
-      "sku": null,
+      "sku": "CJMY2127089",
       "name": "FurAway Pro Grooming Vacuum Kit",
       "category": "grooming",
       "petType": "both",
       "kind": "pet grooming vacuum",
-      "price": 54.95,
-      "compareAt": 79.95,
+      "price": 14.95,
+      "compareAt": 20.95,
       "rating": 4.8,
       "reviews": 2314,
       "badge": "Bestseller",
       "featured": true,
       "blurb": "Brush, de-shed, and trim while the built-in vacuum catches loose fur before it ever reaches your sofa.",
-      "image": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/quick/product/f80a2a0f-2baf-4939-b724-8469685f150a.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1552053831-71594a27632d?w=900&q=80",
-        "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=900&q=80",
-        "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=900&q=80"
+        "https://cf.cjdropshipping.com/quick/product/f80a2a0f-2baf-4939-b724-8469685f150a.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/38a06bb2-5f58-4b05-9ca5-8d4a751d375f_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/f685cef9-32c4-4e27-b286-da51d460819d_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/4f466bd4-003f-4aee-bdce-26f8bab2a859_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/c206a0c7-27e6-4ffd-8a1e-d87fa2cdcd3f_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/941bc79e-4ec8-4691-971f-c570baa972b6_trans.jpeg"
       ],
       "description": "Shedding season, handled. The FurAway Pro connects five grooming tools — de-shedding brush, grooming brush, nozzle, cleaning brush, and clipper head — to a quiet vacuum that pulls loose fur straight into a sealed 1.5L canister as you groom. Low-noise motor (under 60dB) keeps nervous pets calm, and the suction is adjustable for thick double coats or short-haired cats. No more fur tumbleweeds, no more lint-rolling the couch every night. Empties in one click.",
       "benefits": [
@@ -32,26 +35,49 @@
         "5 tools in one kit: de-shed, brush, trim, nozzle, crevice",
         "1.5L canister empties in one click"
       ],
-      "variants": null
+      "variants": [
+        {
+          "id": "2409030742051619700",
+          "sku": "CJMY212708901AZ",
+          "name": "Upgrade",
+          "price": 24.95,
+          "compareAt": 33.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/f685cef9-32c4-4e27-b286-da51d460819d_trans.jpeg"
+        },
+        {
+          "id": "2409030742051619800",
+          "sku": "CJMY212708902BY",
+          "name": "Universal version",
+          "price": 14.95,
+          "compareAt": 20.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2024/09/03/07/38a06bb2-5f58-4b05-9ca5-8d4a751d375f_trans.jpeg"
+        }
+      ],
+      "cjPid": "2409030742051619500",
+      "supplierCost": 5.94
     },
     {
       "id": "wg-paw-cleaner",
-      "sku": null,
+      "sku": "CJSP2770106",
       "name": "MudBuster Portable Paw Cleaner",
       "category": "grooming",
       "petType": "dog",
       "kind": "dog paw cleaner cup",
-      "price": 16.95,
-      "compareAt": 22.95,
+      "price": 21.95,
+      "compareAt": 29.95,
       "rating": 4.7,
       "reviews": 1892,
       "badge": "Fan favorite",
       "featured": false,
       "blurb": "Dunk, twist, done — soft silicone bristles lift mud off paws in seconds, right at the door.",
-      "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/b6095735-6d27-4f13-ab55-32447ff9d89f.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900&q=80",
-        "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=900&q=80"
+        "https://cf.cjdropshipping.com/b6095735-6d27-4f13-ab55-32447ff9d89f.jpg",
+        "https://cf.cjdropshipping.com/f91e1530-6d30-475a-bc06-a4e484d4bebd.jpg",
+        "https://cf.cjdropshipping.com/3c406ac5-a8b7-4952-a1aa-83ee83977fc9.jpg",
+        "https://cf.cjdropshipping.com/71e5d281-5a61-44b3-957e-edf36f36c575.jpg",
+        "https://cf.cjdropshipping.com/4bb5ad40-af33-4fd7-9ea5-d8aaf77b0577.jpg",
+        "https://cf.cjdropshipping.com/d6546663-f739-415a-8a8f-d951eb43ec8e.jpg"
       ],
       "description": "The walk was great. The paws are not. Add a little water, dunk each paw, give it a gentle twist, and the soft silicone bristles lift away mud, sand, and street grime before it gets tracked across your floor. Gentle enough for daily use, sturdy enough to live by the front door, and the whole thing pulls apart to rinse clean in seconds. Pick the size that matches your dog's paw.",
       "benefits": [
@@ -61,29 +87,48 @@
         "Spill-resistant design lives by the door"
       ],
       "variants": [
-        { "id": "s", "sku": null, "name": "Small (cats & small dogs)", "price": 14.95, "compareAt": 19.95, "image": null },
-        { "id": "m", "sku": null, "name": "Medium (most dogs)", "price": 16.95, "compareAt": 22.95, "image": null },
-        { "id": "l", "sku": null, "name": "Large (big paws)", "price": 19.95, "compareAt": 26.95, "image": null }
-      ]
+        {
+          "id": "2027586120989843457",
+          "sku": "CJSP277010601AZ",
+          "name": "Blue",
+          "price": 21.95,
+          "compareAt": 29.95,
+          "image": "https://cf.cjdropshipping.com/f91e1530-6d30-475a-bc06-a4e484d4bebd.jpg"
+        },
+        {
+          "id": "2027586120989843458",
+          "sku": "CJSP277010602BY",
+          "name": "Pink",
+          "price": 21.95,
+          "compareAt": 29.95,
+          "image": "https://cf.cjdropshipping.com/3c406ac5-a8b7-4952-a1aa-83ee83977fc9.jpg"
+        }
+      ],
+      "cjPid": "2027586120817876993",
+      "supplierCost": 8.98
     },
     {
       "id": "wg-smart-ball",
-      "sku": null,
+      "sku": "CJCT2175743",
       "name": "ZoomOrb Self-Rolling Smart Ball",
       "category": "play",
       "petType": "both",
       "kind": "interactive smart pet ball",
-      "price": 21.95,
-      "compareAt": 28.95,
+      "price": 9.95,
+      "compareAt": 13.95,
       "rating": 4.6,
       "reviews": 1204,
       "badge": "New",
       "featured": false,
       "blurb": "Rolls, bounces, and dodges on its own — hours of chase for cats and dogs, zero effort from you.",
-      "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/6ec9ebb8-9224-45aa-9155-ce3dee9f6257.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=900&q=80",
-        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=900&q=80"
+        "https://cf.cjdropshipping.com/6ec9ebb8-9224-45aa-9155-ce3dee9f6257.jpg",
+        "https://cf.cjdropshipping.com/58534435-a099-49f4-b5e6-622bc74d8548.jpg",
+        "https://cf.cjdropshipping.com/a5504014-4919-4f00-ba2d-10aa4e5c4ddd.jpg",
+        "https://cf.cjdropshipping.com/3d1ff8c3-cbb8-4ab2-a10c-66f0f732099b.jpg",
+        "https://cf.cjdropshipping.com/01f64468-079a-422b-9e77-e67c36e7b3eb.jpg",
+        "https://cf.cjdropshipping.com/ca291871-9ce4-4681-af6d-7f465228ecd4.jpg"
       ],
       "description": "Bored pets get creative — usually with your furniture. The ZoomOrb rolls itself in unpredictable patterns, changes direction when it bumps something, and takes short rest breaks so your pet never loses interest. USB-C charged, with a durable chew-safe shell and an LED glow for low-light zoomies. Auto-sleeps when playtime is over and wakes with a nudge. Works on carpet, wood, and tile.",
       "benefits": [
@@ -92,26 +137,49 @@
         "USB-C rechargeable, one charge lasts days of play",
         "Durable chew-safe shell, works on any floor"
       ],
-      "variants": null
+      "variants": [
+        {
+          "id": "1851457833666498560",
+          "sku": "CJCT217574301AZ",
+          "name": "White",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/a5504014-4919-4f00-ba2d-10aa4e5c4ddd.jpg"
+        },
+        {
+          "id": "1851457833666498561",
+          "sku": "CJCT217574302BY",
+          "name": "Pink",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/01f64468-079a-422b-9e77-e67c36e7b3eb.jpg"
+        }
+      ],
+      "cjPid": "1851457833469366272",
+      "supplierCost": 2.87
     },
     {
       "id": "wg-donut-bed",
-      "sku": null,
+      "sku": "CJPB2984328",
       "name": "CalmCloud Donut Bed",
       "category": "comfort",
       "petType": "both",
       "kind": "calming donut pet bed",
-      "price": 39.95,
-      "compareAt": 54.95,
+      "price": 64.95,
+      "compareAt": 87.95,
       "rating": 4.9,
       "reviews": 3428,
       "badge": "Bestseller",
       "featured": false,
       "blurb": "The raised rim mimics a mother's embrace — anxious sleepers melt into it and stay there.",
-      "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/8ae69ad1-c9ab-4312-8503-640eb63fde5f.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=900&q=80",
-        "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=900&q=80"
+        "https://cf.cjdropshipping.com/8ae69ad1-c9ab-4312-8503-640eb63fde5f.jpg",
+        "https://cf.cjdropshipping.com/e87f9752-7ab7-4fd7-8ee5-e09b94ef8e1c.jpg",
+        "https://cf.cjdropshipping.com/e473cf96-d94d-4d7a-a43a-7e28a2193cf6.jpg",
+        "https://cf.cjdropshipping.com/320cf010-0b71-4b37-88fd-93e89d387b77.jpg",
+        "https://cf.cjdropshipping.com/7554caa3-5177-4f3f-9f84-d4a63053d995.jpg",
+        "https://cf.cjdropshipping.com/abc6f23f-d7ea-4101-a214-5fb385a164a0.jpg"
       ],
       "description": "Vet-inspired design for pets that pace, circle, and can't settle. The plush raised rim gives head-and-neck support and a sense of security that helps anxious dogs and cats calm down and actually sleep. Ultra-soft faux fur, a non-slip base for hard floors, and the whole bed goes in the washing machine when it inevitably needs it. Size up if your pet likes to stretch.",
       "benefits": [
@@ -121,30 +189,48 @@
         "Four sizes from cat to big-dog"
       ],
       "variants": [
-        { "id": "s", "sku": null, "name": "S — 50cm (cats, toy breeds)", "price": 39.95, "compareAt": 54.95, "image": null },
-        { "id": "m", "sku": null, "name": "M — 60cm (up to 15kg)", "price": 49.95, "compareAt": 66.95, "image": null },
-        { "id": "l", "sku": null, "name": "L — 70cm (up to 25kg)", "price": 59.95, "compareAt": 79.95, "image": null },
-        { "id": "xl", "sku": null, "name": "XL — 80cm (large breeds)", "price": 69.95, "compareAt": 92.95, "image": null }
-      ]
+        {
+          "id": "2077083339994796033",
+          "sku": "CJPB298432801AZ",
+          "name": "Tea brown",
+          "price": 67.95,
+          "compareAt": 91.95,
+          "image": "https://cf.cjdropshipping.com/e1574ab0-f79f-410d-abe7-249184149c8e.jpg"
+        },
+        {
+          "id": "2077083339994796034",
+          "sku": "CJPB298432802BY",
+          "name": "Grey",
+          "price": 64.95,
+          "compareAt": 87.95,
+          "image": "https://cf.cjdropshipping.com/8ae69ad1-c9ab-4312-8503-640eb63fde5f.jpg"
+        }
+      ],
+      "cjPid": "2077083339709583361",
+      "supplierCost": 26.99
     },
     {
       "id": "wg-car-hammock",
-      "sku": null,
+      "sku": "CJCM2425677",
       "name": "BackSeat Buddy Car Hammock",
       "category": "travel",
       "petType": "dog",
       "kind": "dog car seat cover hammock",
-      "price": 36.95,
-      "compareAt": 47.95,
+      "price": 51.95,
+      "compareAt": 70.95,
       "rating": 4.7,
       "reviews": 986,
       "badge": null,
       "featured": false,
       "blurb": "Waterproof, scratch-proof back-seat protection that doubles as a safe hammock for the ride.",
-      "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/f9e54d36-036e-4edf-92e4-b585c5ca23c5.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=900&q=80",
-        "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=900&q=80"
+        "https://cf.cjdropshipping.com/f9e54d36-036e-4edf-92e4-b585c5ca23c5.jpg",
+        "https://cf.cjdropshipping.com/5e239624-d0d0-4c8f-b75f-8aee0264a783.jpg",
+        "https://cf.cjdropshipping.com/6ca9368a-7a3c-4b5d-a772-826428ad6c69.jpg",
+        "https://cf.cjdropshipping.com/45d68f7d-16ce-421b-a65b-ae43c01f91a3.jpg",
+        "https://cf.cjdropshipping.com/784c2a3e-a588-4554-8515-ebaf880fb930.jpg",
+        "https://cf.cjdropshipping.com/b6180a1c-badf-423a-b89a-2aeaa4959e65.jpg"
       ],
       "description": "Adventure dogs are wet, sandy, hairy dogs. The BackSeat Buddy converts your entire back seat into a waterproof, quilted hammock in about a minute — headrest straps, seat anchors, done. Side flaps protect your doors, a mesh window keeps eye contact so nervous riders stay calm, and a zip opening lets one seat still take a human passenger. Shake it out or machine wash it after the beach.",
       "benefits": [
@@ -153,26 +239,32 @@
         "Mesh window keeps nervous dogs calm",
         "Side flaps shield doors from claws and drool"
       ],
-      "variants": null
+      "variants": null,
+      "cjPid": "1942861574144040962",
+      "supplierCost": 21.5
     },
     {
       "id": "wg-water-fountain",
-      "sku": null,
+      "sku": "CJDT2977063",
       "name": "WhiskerFalls Quiet Water Fountain",
       "category": "mealtime",
       "petType": "both",
       "kind": "pet water fountain",
-      "price": 32.95,
-      "compareAt": 42.95,
+      "price": 36.95,
+      "compareAt": 49.95,
       "rating": 4.8,
       "reviews": 1755,
       "badge": "Top rated",
       "featured": false,
       "blurb": "Cats drink more from moving water — 2.5L of filtered, whisper-quiet flow keeps them hydrated.",
-      "image": "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/b882d8cc-d6be-49ca-afb3-009a200bfd3d.png",
       "images": [
-        "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=900&q=80",
-        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=900&q=80"
+        "https://cf.cjdropshipping.com/b882d8cc-d6be-49ca-afb3-009a200bfd3d.png",
+        "https://cf.cjdropshipping.com/2ac4be44-a11a-4e90-83c1-49402a39d51f.png",
+        "https://cf.cjdropshipping.com/eb773499-08ce-4637-bf09-ac8c14c02793.png",
+        "https://cf.cjdropshipping.com/ea57c97c-8313-4883-9568-fd2ea890d56f.png",
+        "https://cf.cjdropshipping.com/111da245-c7bb-4142-91cd-71b2b7480742.png",
+        "https://cf.cjdropshipping.com/d9127d71-7bf2-4eff-8a66-217c3dd25c29.png"
       ],
       "description": "Most cats are chronically under-hydrated — still water just doesn't interest them. WhiskerFalls keeps 2.5 litres circulating through a triple-layer filter that catches hair, sediment, and odd tastes, with a pump so quiet you'll forget it's running. The transparent window and low-water light tell you when to top up, and every part that touches water disassembles for the dishwasher.",
       "benefits": [
@@ -181,26 +273,49 @@
         "Triple filtration catches hair and sediment",
         "2.5L tank, low-water indicator, dishwasher-safe parts"
       ],
-      "variants": null
+      "variants": [
+        {
+          "id": "2075157497051975681",
+          "sku": "CJDT297706301AZ",
+          "name": "Rhombus-3.2L",
+          "price": 36.95,
+          "compareAt": 49.95,
+          "image": "https://cf.cjdropshipping.com/b882d8cc-d6be-49ca-afb3-009a200bfd3d.png"
+        },
+        {
+          "id": "2075157497051975682",
+          "sku": "CJDT297706302BY",
+          "name": "Circle-3.2L",
+          "price": 36.95,
+          "compareAt": 49.95,
+          "image": "https://cf.cjdropshipping.com/ac2e7341-1d27-4337-a89b-a4919830b778.png"
+        }
+      ],
+      "cjPid": "2075157496968089602",
+      "supplierCost": 15.19
     },
     {
       "id": "wg-harness",
-      "sku": null,
+      "sku": "CJPH2407139",
       "name": "EasyWalk No-Pull Harness Set",
       "category": "travel",
       "petType": "dog",
       "kind": "no-pull dog harness",
-      "price": 26.95,
-      "compareAt": 35.95,
+      "price": 47.95,
+      "compareAt": 64.95,
       "rating": 4.7,
       "reviews": 2101,
       "badge": "Bestseller",
       "featured": false,
       "blurb": "Front-clip design steers pullers back to your side — walks stop being a tug-of-war.",
-      "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/206eaf5f-018a-4517-b785-35b8deea97a0.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=900&q=80",
-        "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900&q=80"
+        "https://cf.cjdropshipping.com/206eaf5f-018a-4517-b785-35b8deea97a0.jpg",
+        "https://cf.cjdropshipping.com/214af00c-129e-459d-9549-d931b4acb3cb.jpg",
+        "https://cf.cjdropshipping.com/852385c5-64c9-4c1d-9ff6-7b7e549aa3e4.jpg",
+        "https://cf.cjdropshipping.com/5054acc6-4f2e-4960-b29f-647c0d1a5737.jpg",
+        "https://cf.cjdropshipping.com/c939097f-e81b-409d-8884-765cf290e4e0.jpg",
+        "https://cf.cjdropshipping.com/1776b9e8-8081-4b3e-b044-712cce9b6e1e.jpg"
       ],
       "description": "The dual-clip EasyWalk turns pulling into steering: clip the leash to the front ring and a pulling dog is gently turned back toward you instead of dragging you down the street. Padded air-mesh keeps it comfortable on long walks, reflective strips keep evening walks visible, and the top handle gives you instant control when you need it. Buckles on both the neck and chest, so it goes on without wrestling anything over your dog's head.",
       "benefits": [
@@ -210,30 +325,128 @@
         "Steps on and buckles — nothing forced over the head"
       ],
       "variants": [
-        { "id": "s", "sku": null, "name": "S — chest 40–50cm", "price": 26.95, "compareAt": 35.95, "image": null },
-        { "id": "m", "sku": null, "name": "M — chest 50–65cm", "price": 28.95, "compareAt": 38.95, "image": null },
-        { "id": "l", "sku": null, "name": "L — chest 65–80cm", "price": 30.95, "compareAt": 41.95, "image": null },
-        { "id": "xl", "sku": null, "name": "XL — chest 80–100cm", "price": 32.95, "compareAt": 43.95, "image": null }
-      ]
+        {
+          "id": "1935996842014121985",
+          "sku": "CJPH240713901AZ",
+          "name": "Pink-S",
+          "price": 47.95,
+          "compareAt": 64.95,
+          "image": "https://cf.cjdropshipping.com/3bcde5ba-571c-417e-bfa7-d729e85aa71e.jpg"
+        },
+        {
+          "id": "1935996842014121986",
+          "sku": "CJPH240713902BY",
+          "name": "Pink-M",
+          "price": 50.95,
+          "compareAt": 68.95,
+          "image": "https://cf.cjdropshipping.com/3bcde5ba-571c-417e-bfa7-d729e85aa71e.jpg"
+        },
+        {
+          "id": "1935996842014121987",
+          "sku": "CJPH240713903CX",
+          "name": "Pink-L",
+          "price": 51.95,
+          "compareAt": 70.95,
+          "image": "https://cf.cjdropshipping.com/3bcde5ba-571c-417e-bfa7-d729e85aa71e.jpg"
+        },
+        {
+          "id": "1935996842014121988",
+          "sku": "CJPH240713904DW",
+          "name": "Pink-XL",
+          "price": 65.95,
+          "compareAt": 89.95,
+          "image": "https://cf.cjdropshipping.com/3bcde5ba-571c-417e-bfa7-d729e85aa71e.jpg"
+        },
+        {
+          "id": "1935996842014121989",
+          "sku": "CJPH240713905EV",
+          "name": "Black-S",
+          "price": 47.95,
+          "compareAt": 64.95,
+          "image": "https://cf.cjdropshipping.com/1776b9e8-8081-4b3e-b044-712cce9b6e1e.jpg"
+        },
+        {
+          "id": "1935996842014121990",
+          "sku": "CJPH240713906FU",
+          "name": "Black-M",
+          "price": 50.95,
+          "compareAt": 68.95,
+          "image": "https://cf.cjdropshipping.com/1776b9e8-8081-4b3e-b044-712cce9b6e1e.jpg"
+        },
+        {
+          "id": "1935996842014121991",
+          "sku": "CJPH240713907GT",
+          "name": "Black-L",
+          "price": 51.95,
+          "compareAt": 70.95,
+          "image": "https://cf.cjdropshipping.com/1776b9e8-8081-4b3e-b044-712cce9b6e1e.jpg"
+        },
+        {
+          "id": "1935996842014121992",
+          "sku": "CJPH240713908HS",
+          "name": "Black-XL",
+          "price": 65.95,
+          "compareAt": 89.95,
+          "image": "https://cf.cjdropshipping.com/1776b9e8-8081-4b3e-b044-712cce9b6e1e.jpg"
+        },
+        {
+          "id": "1935996842014121993",
+          "sku": "CJPH240713909IR",
+          "name": "Tan-S",
+          "price": 47.95,
+          "compareAt": 64.95,
+          "image": "https://cf.cjdropshipping.com/ab07d914-e3f9-4e97-b34e-1f9b6102afc2.jpg"
+        },
+        {
+          "id": "1935996842014121994",
+          "sku": "CJPH240713910JQ",
+          "name": "Tan-M",
+          "price": 50.95,
+          "compareAt": 68.95,
+          "image": "https://cf.cjdropshipping.com/ab07d914-e3f9-4e97-b34e-1f9b6102afc2.jpg"
+        },
+        {
+          "id": "1935996842014121996",
+          "sku": "CJPH240713912LO",
+          "name": "Tan-XL",
+          "price": 65.95,
+          "compareAt": 89.95,
+          "image": "https://cf.cjdropshipping.com/ab07d914-e3f9-4e97-b34e-1f9b6102afc2.jpg"
+        },
+        {
+          "id": "1935996842014121997",
+          "sku": "CJPH240713913MN",
+          "name": "GrayCamo-S",
+          "price": 47.95,
+          "compareAt": 64.95,
+          "image": "https://cf.cjdropshipping.com/214af00c-129e-459d-9549-d931b4acb3cb.jpg"
+        }
+      ],
+      "cjPid": "1935996841896681474",
+      "supplierCost": 19.84
     },
     {
       "id": "wg-hair-roller",
-      "sku": null,
+      "sku": "CJHR2168869",
       "name": "FuzzOff Reusable Hair Roller",
       "category": "grooming",
       "petType": "both",
       "kind": "pet hair remover roller",
-      "price": 14.95,
-      "compareAt": 19.95,
+      "price": 9.95,
+      "compareAt": 13.95,
       "rating": 4.8,
       "reviews": 4102,
       "badge": "Top rated",
       "featured": false,
       "blurb": "A few passes and the couch is fur-free — no refills, no batteries, empties with one click.",
-      "image": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/d43124a4-7fec-46ae-8fbc-21e1dd2c1618.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=900&q=80",
-        "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=900&q=80"
+        "https://cf.cjdropshipping.com/d43124a4-7fec-46ae-8fbc-21e1dd2c1618.jpg",
+        "https://cf.cjdropshipping.com/1204db08-c0f9-4bfd-8155-99ac6be6bcd0.jpg",
+        "https://cf.cjdropshipping.com/0a4294a2-6539-494c-a1d8-8a035bbd2fb6.jpeg",
+        "https://cf.cjdropshipping.com/cab283e4-b3dc-4aae-a2f9-bf3a1412d196.jpeg",
+        "https://cf.cjdropshipping.com/c0b9bc88-72ac-40df-81c0-4a9f71c510c9.jpeg",
+        "https://cf.cjdropshipping.com/b0ef9fc2-fb7a-49f6-a43e-34f06fd765ca.jpeg"
       ],
       "description": "The one that started the 'wait, where did all the fur go?' videos. Roll it back and forth over sofas, beds, car seats, and cat trees — the electrostatic brush head grabs embedded fur that lint rollers skate right over, and traps it in a built-in chamber. When it's full, press the button, tip it into the bin, and keep going. No adhesive refills, no batteries, no noise. It just works, forever.",
       "benefits": [
@@ -242,26 +455,49 @@
         "No refills, no batteries, no noise",
         "Works on sofas, car seats, bedding, cat trees"
       ],
-      "variants": null
+      "variants": [
+        {
+          "id": "1848998526286974976",
+          "sku": "CJHR216886901AZ",
+          "name": "Green",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/1204db08-c0f9-4bfd-8155-99ac6be6bcd0.jpg"
+        },
+        {
+          "id": "1848998526286974977",
+          "sku": "CJHR216886902BY",
+          "name": "Gray",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/d43124a4-7fec-46ae-8fbc-21e1dd2c1618.jpg"
+        }
+      ],
+      "cjPid": "1848998525955624960",
+      "supplierCost": 2.49
     },
     {
       "id": "wg-snuffle-mat",
-      "sku": null,
+      "sku": "CJTE2260623",
       "name": "Sniff & Seek Snuffle Mat",
       "category": "play",
       "petType": "dog",
       "kind": "dog snuffle mat",
-      "price": 19.95,
-      "compareAt": 26.95,
+      "price": 11.95,
+      "compareAt": 16.95,
       "rating": 4.6,
       "reviews": 743,
       "badge": null,
       "featured": false,
       "blurb": "Ten minutes of sniffing tires a dog like a half-hour walk — hide kibble, watch them work.",
-      "image": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/d250000d-160a-486f-a32f-59536fac34ca.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=900&q=80",
-        "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=900&q=80"
+        "https://cf.cjdropshipping.com/d250000d-160a-486f-a32f-59536fac34ca.jpg",
+        "https://cf.cjdropshipping.com/42cb053b-8fb7-4936-b9b2-932efc57ba5b.jpg",
+        "https://cf.cjdropshipping.com/cc287379-6d03-4208-b697-07bb9c82266c.jpg",
+        "https://cf.cjdropshipping.com/39097604-47af-4b53-96e8-94818863ba87.jpg",
+        "https://cf.cjdropshipping.com/74bb4d62-8bd7-4313-9c4c-8a791a7bbbf1.jpg",
+        "https://cf.cjdropshipping.com/939a82d4-6c06-4f73-b887-f5de61eb0df0.jpg"
       ],
       "description": "Sniffing is a dog's crossword puzzle — ten focused minutes of nose-work is as tiring as a long walk. Scatter kibble or treats into the layered fleece folds and let your dog hunt. Slows down speed-eaters, calms rainy-day restlessness, and gives high-energy breeds a job to do. Non-slip backing keeps it in place, and the whole mat rolls up for travel and goes in the washing machine.",
       "benefits": [
@@ -270,26 +506,57 @@
         "Non-slip base, rolls up for travel",
         "Machine washable fleece"
       ],
-      "variants": null
+      "variants": [
+        {
+          "id": "1875373971943231490",
+          "sku": "CJTE226062301AZ",
+          "name": "Brown",
+          "price": 11.95,
+          "compareAt": 16.95,
+          "image": "https://cf.cjdropshipping.com/cc287379-6d03-4208-b697-07bb9c82266c.jpg"
+        },
+        {
+          "id": "1875373971943231491",
+          "sku": "CJTE226062302BY",
+          "name": "White",
+          "price": 11.95,
+          "compareAt": 16.95,
+          "image": "https://cf.cjdropshipping.com/a8bca47d-72b8-4cf8-8dd5-c3d5522e840e.jpg"
+        },
+        {
+          "id": "1875373971943231492",
+          "sku": "CJTE226062303CX",
+          "name": "Pink",
+          "price": 11.95,
+          "compareAt": 16.95,
+          "image": "https://cf.cjdropshipping.com/42cb053b-8fb7-4936-b9b2-932efc57ba5b.jpg"
+        }
+      ],
+      "cjPid": "1875373971892899841",
+      "supplierCost": 4.74
     },
     {
       "id": "wg-lick-mat",
-      "sku": null,
+      "sku": "CJFT2240493",
       "name": "Lick'n'Chill Slow Feeder Mat (2-Pack)",
       "category": "mealtime",
       "petType": "both",
       "kind": "pet lick mat slow feeder",
-      "price": 13.95,
-      "compareAt": 18.95,
+      "price": 9.95,
+      "compareAt": 13.95,
       "rating": 4.7,
       "reviews": 1318,
       "badge": null,
       "featured": false,
       "blurb": "Spread, stick to any smooth surface, and buy yourself 20 calm minutes — bath time's secret weapon.",
-      "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/6749be7d-2350-4bd3-9ac3-d39e66ff7819.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=900&q=80",
-        "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=900&q=80"
+        "https://cf.cjdropshipping.com/6749be7d-2350-4bd3-9ac3-d39e66ff7819.jpg",
+        "https://cf.cjdropshipping.com/8d865447-af4c-4bde-ba31-c4d0285b1c0b.jpg",
+        "https://cf.cjdropshipping.com/5d705ba1-af57-4f62-9267-530a9e5ffe90.jpg",
+        "https://cf.cjdropshipping.com/78fbb8d3-c0e2-4a1b-bfae-c2af40bb3185.jpg",
+        "https://cf.cjdropshipping.com/841ca973-2813-4464-8b31-81a085a329ee.jpg",
+        "https://cf.cjdropshipping.com/cdd4f41f-4f39-4d8a-9749-f468071602e0.jpg"
       ],
       "description": "Licking is naturally calming for dogs and cats — it releases endorphins the way chewing does. Spread a little wet food, yogurt, or peanut butter across the textured surface, stick the suction back to the bathtub, fridge, or floor, and you've got a distracted, happy pet for bath time, nail trims, brushing, or thunderstorms. Two textures in the pack: one for thick spreads, one that makes soft food last even longer. Dishwasher safe, food-grade silicone.",
       "benefits": [
@@ -298,25 +565,65 @@
         "Turns bath time and nail trims into snack time",
         "2 textures, food-grade silicone, dishwasher safe"
       ],
-      "variants": null
+      "variants": [
+        {
+          "id": "1866745611476160512",
+          "sku": "CJFT224049301AZ",
+          "name": "BLUE GRAY",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/8d865447-af4c-4bde-ba31-c4d0285b1c0b.jpg"
+        },
+        {
+          "id": "1866745611476160513",
+          "sku": "CJFT224049302BY",
+          "name": "BLUE PINK",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/78fbb8d3-c0e2-4a1b-bfae-c2af40bb3185.jpg"
+        },
+        {
+          "id": "1866745611476160514",
+          "sku": "CJFT224049303CX",
+          "name": "PINK",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/5d705ba1-af57-4f62-9267-530a9e5ffe90.jpg"
+        },
+        {
+          "id": "1866745611476160515",
+          "sku": "CJFT224049304DW",
+          "name": "SKY BLUE PINK",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://cf.cjdropshipping.com/38969310-d442-4598-be3f-769f2f4b6e80.jpg"
+        }
+      ],
+      "cjPid": "1866745611010592768",
+      "supplierCost": 4.11
     },
     {
       "id": "wg-led-collar",
-      "sku": null,
+      "sku": "CJPC2525289",
       "name": "GlowSafe LED Collar",
       "category": "travel",
       "petType": "dog",
       "kind": "led dog collar rechargeable",
-      "price": 14.95,
-      "compareAt": 19.95,
+      "price": 18.95,
+      "compareAt": 25.95,
       "rating": 4.7,
       "reviews": 1567,
       "badge": null,
       "featured": false,
       "blurb": "USB-rechargeable glow that makes evening walks impossible to miss — drivers see your dog from 300m.",
-      "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/c901de3d-d65a-495f-906f-2db436a8f155.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=900&q=80"
+        "https://cf.cjdropshipping.com/c901de3d-d65a-495f-906f-2db436a8f155.jpg",
+        "https://cf.cjdropshipping.com/b349065a-3427-4c8b-88bc-36afcccd5de0.jpg",
+        "https://cf.cjdropshipping.com/7e545dbf-9c50-45ce-ab43-a1e5cd6bab3c.jpg",
+        "https://cf.cjdropshipping.com/2c59d9ed-1b1f-4f35-8c13-3b897289cdee.jpg",
+        "https://cf.cjdropshipping.com/6c5fb810-40cf-466b-8e67-f6bea19e96fa.jpg",
+        "https://cf.cjdropshipping.com/310e9815-da5d-4c51-b6d7-ea8720fa4218.jpg"
       ],
       "description": "Dark mornings and late walks shouldn't be a gamble. The GlowSafe collar puts a bright, even ring of light around your dog's neck — steady or flashing — visible from about 300 metres in the dark. It charges over USB in an hour (no coin batteries to chase), a full charge covers a week of walks, and the light strip is weather-resistant for rain and snow. Trim-to-fit sizing means one collar fits nearly any neck.",
       "benefits": [
@@ -325,25 +632,49 @@
         "Weather-resistant for rain and snow",
         "Trim-to-fit — one collar fits almost any dog"
       ],
-      "variants": null
+      "variants": [
+        {
+          "id": "1965595461250224130",
+          "sku": "CJPC252528901AZ",
+          "name": "S",
+          "price": 18.95,
+          "compareAt": 25.95,
+          "image": "https://cf.cjdropshipping.com/e6aea598-4486-44e1-a482-146d8ed158a3.jpg"
+        },
+        {
+          "id": "1965595461250224131",
+          "sku": "CJPC252528902BY",
+          "name": "M",
+          "price": 18.95,
+          "compareAt": 25.95,
+          "image": "https://cf.cjdropshipping.com/e6aea598-4486-44e1-a482-146d8ed158a3.jpg"
+        }
+      ],
+      "cjPid": "1965595461183115266",
+      "supplierCost": 7.7
     },
     {
       "id": "wg-carrier-backpack",
-      "sku": null,
+      "sku": "CJYD2855387",
       "name": "AstroPack Bubble Carrier",
       "category": "travel",
       "petType": "both",
       "kind": "pet carrier backpack space capsule",
-      "price": 49.95,
-      "compareAt": 67.95,
+      "price": 25.95,
+      "compareAt": 35.95,
       "rating": 4.6,
       "reviews": 892,
       "badge": "New",
       "featured": false,
       "blurb": "The space-capsule backpack — your pet rides in a bubble window and watches the world go by.",
-      "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=900&q=80",
+      "image": "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/850ce6f8-b54f-41a5-a390-1904b708dbc0_trans.jpeg",
       "images": [
-        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=900&q=80"
+        "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/850ce6f8-b54f-41a5-a390-1904b708dbc0_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/c6b6a394-6d9e-4764-b563-d12e97b1d847_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/3702c164-7b7b-434f-a513-651e71a8b7a3_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/b62297f8-5ce2-474c-8a44-2a60a7f0b8ce_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/27a9e1de-7759-4ff0-a332-63ba83038777_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/c995de8f-7f36-4c84-8d5d-d95bc8cab53a_trans.jpeg"
       ],
       "description": "Errands, vet trips, and city adventures — with a view. The AstroPack carries cats and small dogs (up to ~7kg) in a ventilated capsule with a clear bubble window that pets genuinely like looking out of. Nine airflow vents keep air moving, the padded straps keep your shoulders happy, and a security leash clip inside keeps escape artists contained. Folds flat when not in use.",
       "benefits": [
@@ -352,25 +683,49 @@
         "Fits cats and small dogs up to ~7kg",
         "Interior leash clip for escape artists"
       ],
-      "variants": null
+      "variants": [
+        {
+          "id": "2604270116031634200",
+          "sku": "CJYD285538701AZ",
+          "name": "Shoulder Cat Bag-Double Shoulder Cat Bag",
+          "price": 25.95,
+          "compareAt": 35.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/c6b6a394-6d9e-4764-b563-d12e97b1d847_trans.jpeg"
+        },
+        {
+          "id": "2604270116031634700",
+          "sku": "CJYD285538702BY",
+          "name": "Backpack-Double Shoulder Cat Bag",
+          "price": 37.95,
+          "compareAt": 51.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/3702c164-7b7b-434f-a513-651e71a8b7a3_trans.jpeg"
+        }
+      ],
+      "cjPid": "2604270116031633700",
+      "supplierCost": 10.58
     },
     {
       "id": "wg-water-bottle",
-      "sku": null,
+      "sku": "CJYD2350192",
       "name": "SipStroll Walk Water Bottle",
       "category": "travel",
       "petType": "dog",
       "kind": "portable dog water bottle",
-      "price": 15.95,
-      "compareAt": 21.95,
+      "price": 9.95,
+      "compareAt": 13.95,
       "rating": 4.8,
       "reviews": 2044,
       "badge": null,
       "featured": false,
       "blurb": "One-handed water breaks: squeeze to fill the built-in bowl, release to send the rest back — zero waste.",
-      "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900&q=80",
+      "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/08/b196619e-f143-484f-86e1-f8be500bdead_trans.jpeg",
       "images": [
-        "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900&q=80"
+        "https://oss-cf.cjdropshipping.com/product/2025/04/10/08/b196619e-f143-484f-86e1-f8be500bdead_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/9d63d36a-6a55-449f-880e-73dc1fe1e68d_trans.jpeg",
+        "https://oss-cf.cjdropshipping.com/product/2025/06/09/07/8e53666a-acb8-4819-9037-300f3f26fbd9.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2025/06/09/07/5f2fffb2-92fe-4a6f-8e08-44b6a17bba6b.jpg",
+        "https://cf.cjdropshipping.com/quick/product/a2876b94-c07e-40e3-80e2-dc3515d1d8d1.jpg",
+        "https://cf.cjdropshipping.com/quick/product/ef34fe6c-1448-4aa7-86b2-c16696638eee.jpg"
       ],
       "description": "Cupping your hands at a park tap is not a hydration strategy. The SipStroll's trigger fills its built-in leaf-shaped bowl with one hand; whatever your dog doesn't drink flows back into the bottle when you release, so nothing is wasted. Leak-proof lock for the bag, carry strap for the wrist, food-grade materials throughout. 550ml — enough for a long summer walk.",
       "benefits": [
@@ -379,7 +734,82 @@
         "550ml, enough for long summer walks",
         "Food-grade, BPA-free materials"
       ],
-      "variants": null
+      "variants": [
+        {
+          "id": "2504100230321610500",
+          "sku": "CJYD235019202BY",
+          "name": "380ML Purple",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/93084e30-e346-4055-9601-a383744b0a36_trans.jpeg"
+        },
+        {
+          "id": "2504100230321610700",
+          "sku": "CJYD235019203CX",
+          "name": "380ML White",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/9d63d36a-6a55-449f-880e-73dc1fe1e68d_trans.jpeg"
+        },
+        {
+          "id": "2504100230321610900",
+          "sku": "CJYD235019204DW",
+          "name": "380ML Yellow",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/effd5f86-88aa-4d14-844c-09dd1cd60261_trans.jpeg"
+        },
+        {
+          "id": "2504100230321611100",
+          "sku": "CJYD235019205EV",
+          "name": "500ML White",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/d5341cf1-ed83-47a9-83a5-791354336efa_trans.jpeg"
+        },
+        {
+          "id": "2504100230321611200",
+          "sku": "CJYD235019206FU",
+          "name": "500ml Purple",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/77cbe1c3-970b-4258-852b-b79b1d100f44_trans.jpeg"
+        },
+        {
+          "id": "2504100230321611400",
+          "sku": "CJYD235019207GT",
+          "name": "500ml Yellow",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/76b90376-38c0-40ab-a9e9-7e8d3aad1b97_trans.jpeg"
+        },
+        {
+          "id": "2504100230321611600",
+          "sku": "CJYD235019208HS",
+          "name": "Water Grain Cup White",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/08/b196619e-f143-484f-86e1-f8be500bdead_trans.jpeg"
+        },
+        {
+          "id": "2504100230321611900",
+          "sku": "CJYD235019209IR",
+          "name": "Water Grain Cup yellow",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/d7a0f31b-fd0a-4544-acce-6e87774a8716_trans.jpeg"
+        },
+        {
+          "id": "2504100230321612100",
+          "sku": "CJYD235019210JQ",
+          "name": "Water Grain Cup purple",
+          "price": 9.95,
+          "compareAt": 13.95,
+          "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/6bb5b508-276c-4940-a480-7270e3e001b0_trans.jpeg"
+        }
+      ],
+      "cjPid": "2504100230321610200",
+      "supplierCost": 2.21
     },
     {
       "id": "wg-corner-brush",
@@ -410,21 +840,26 @@
     },
     {
       "id": "wg-flopping-fish",
-      "sku": null,
+      "sku": "CJPT2953143",
       "name": "FlipFin Flopping Fish",
       "category": "play",
       "petType": "cat",
       "kind": "flopping fish cat toy",
-      "price": 13.95,
-      "compareAt": 18.95,
+      "price": 9.95,
+      "compareAt": 13.95,
       "rating": 4.6,
       "reviews": 1489,
       "badge": "Fan favorite",
       "featured": false,
       "blurb": "Flops like a real catch the moment your cat touches it — the toy behind a million kicking-cat videos.",
-      "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/95e8ab43-92f0-4fd0-a8f9-52512891fcd0.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=900&q=80"
+        "https://cf.cjdropshipping.com/95e8ab43-92f0-4fd0-a8f9-52512891fcd0.jpg",
+        "https://cf.cjdropshipping.com/4b71ea08-7f65-4395-b277-f6fa07316b29.jpg",
+        "https://cf.cjdropshipping.com/db4dde74-8540-4030-a53e-9803c86664d4.jpg",
+        "https://cf.cjdropshipping.com/6c208eeb-c42c-4b82-94a0-b0fb7dc0bf7e.jpg",
+        "https://cf.cjdropshipping.com/4e5b0f9a-3e25-407b-908d-7d227ce58f97.jpg",
+        "https://cf.cjdropshipping.com/6f6985e6-40ef-4f65-a805-64703bd64018.jpg"
       ],
       "description": "The internet-famous kicker toy. A touch sensor makes the FlipFin flop and wiggle like a fresh catch the second your cat pounces, triggering the full wrestle-and-bunny-kick routine that burns real energy. It naps when your cat naps (auto-sleep) and wakes on the next attack. USB-charged, with a washable cover and a catnip pocket for cats that need convincing.",
       "benefits": [
@@ -433,25 +868,31 @@
         "USB rechargeable, washable cover",
         "Catnip pocket included"
       ],
-      "variants": null
+      "variants": null,
+      "cjPid": "2069719969869770754",
+      "supplierCost": 2.31
     },
     {
       "id": "wg-heartbeat-pup",
-      "sku": null,
+      "sku": "CJYD2339401",
       "name": "SnugBeat Heartbeat Buddy",
       "category": "comfort",
       "petType": "dog",
       "kind": "heartbeat puppy behavioral toy",
-      "price": 24.95,
-      "compareAt": 33.95,
+      "price": 18.95,
+      "compareAt": 25.95,
       "rating": 4.8,
       "reviews": 1123,
       "badge": null,
       "featured": false,
       "blurb": "A plush buddy with a real pulsing heartbeat — calms new puppies and anxious dogs through the night.",
-      "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=900&q=80",
+      "image": "https://cf.cjdropshipping.com/quick/product/0bc2f083-3047-4545-8e8a-14f94183834c.jpg",
       "images": [
-        "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=900&q=80"
+        "https://cf.cjdropshipping.com/quick/product/0bc2f083-3047-4545-8e8a-14f94183834c.jpg",
+        "https://cf.cjdropshipping.com/quick/product/72795402-8dcf-42e3-818f-281cdc82287b.jpg",
+        "https://cf.cjdropshipping.com/quick/product/ba8100b0-46ea-470d-85ab-0511241e055c.jpg",
+        "https://cf.cjdropshipping.com/quick/product/cca9e309-c0e4-4b2d-971a-6248644cc4bf.jpg",
+        "https://cf.cjdropshipping.com/quick/product/c62c7d1d-a718-48da-9706-17a884df65b5.jpg"
       ],
       "description": "First nights away from the litter are loud ones. The SnugBeat hides a battery-powered heartbeat module inside a soft plush body — the same steady pulse puppies slept against for their first eight weeks. Tucked into the crate, it turns crying nights into sleeping ones, and it works just as well for rescue dogs and thunderstorm-anxious adults. Optional warmth pack included; heartbeat module removes for washing.",
       "benefits": [
@@ -460,7 +901,9 @@
         "Optional warmth pack included",
         "Module removes so the plush machine-washes"
       ],
-      "variants": null
+      "variants": null,
+      "cjPid": "2503280557141617100",
+      "supplierCost": 7.75
     }
   ]
 }
