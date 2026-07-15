@@ -53,11 +53,19 @@ function renderProduct(p) {
     </nav>
     <div class="pd">
       <div class="pd-gallery">
-        <figure class="pd-main">
+        <figure class="pd-main" id="pd-main" title="Click to zoom">
           <img id="pd-main-img" class="${imgFit(imgs[0]).trim()}" src="${esc(imgs[0])}" alt="${esc(p.name)}"
                style="view-transition-name: product-hero" />
           ${p.badge ? `<span class="card-badge">${esc(p.badge)}</span>` : ""}
           ${pct ? `<span class="card-off">−${pct}%</span>` : ""}
+          <span class="pd-zoom-hint" aria-hidden="true">🔍</span>
+          <span class="pd-seal" aria-hidden="true">
+            <svg viewBox="0 0 100 100">
+              <defs><path id="seal-circle" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0" fill="none"/></defs>
+              <text><textPath href="#seal-circle">30-day wag guarantee · 30-day wag guarantee ·&#160;</textPath></text>
+            </svg>
+            <span class="pd-seal-paw">🐾</span>
+          </span>
         </figure>
         ${
           imgs.length > 1
@@ -135,6 +143,15 @@ function renderProduct(p) {
         <span id="stickybar-price"></span>
       </div>
       <button class="button" id="stickybar-buy">Buy now</button>
+    </div>
+
+    <div class="lightbox" id="lightbox" hidden role="dialog" aria-label="Image viewer">
+      <button class="lb-btn lb-close" id="lb-close" aria-label="Close viewer">✕</button>
+      <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous image">‹</button>
+      <figure class="lb-stage"><img id="lb-img" alt="${esc(p.name)} — enlarged view" /></figure>
+      <button class="lb-btn lb-next" id="lb-next" aria-label="Next image">›</button>
+      <div class="lb-count" id="lb-count"></div>
+      <div class="lb-hint" aria-hidden="true">click to zoom · ← → to browse</div>
     </div>`;
 
   /* ---------- gallery ---------- */
@@ -165,6 +182,80 @@ function renderProduct(p) {
   document.getElementById("pd-thumbs")?.addEventListener("click", (e) => {
     const thumb = e.target.closest(".pd-thumb");
     if (thumb) swapMain(thumb.dataset.src);
+  });
+
+  /* ---------- lightbox: browse + zoom ---------- */
+
+  const lb = $("#lightbox");
+  const lbImg = $("#lb-img");
+  let lbIndex = 0;
+
+  function lbShow(i) {
+    lbIndex = (i + imgs.length) % imgs.length;
+    lbImg.classList.remove("zoomed");
+    lbImg.style.transformOrigin = "";
+    lbImg.src = imgs[lbIndex];
+    $("#lb-count").textContent = `${lbIndex + 1} / ${imgs.length}`;
+  }
+  function lbOpen(i) {
+    lbShow(i);
+    lb.hidden = false;
+    document.body.classList.add("lb-open");
+  }
+  function lbClose() {
+    lb.hidden = true;
+    document.body.classList.remove("lb-open");
+    swapMain(imgs[lbIndex]); // the page follows where you browsed to
+  }
+
+  $("#pd-main").addEventListener("click", () => {
+    const current = imgs.indexOf(mainImg.src);
+    lbOpen(current === -1 ? 0 : current);
+  });
+  $("#lb-close").addEventListener("click", lbClose);
+  $("#lb-prev").addEventListener("click", (e) => { e.stopPropagation(); lbShow(lbIndex - 1); });
+  $("#lb-next").addEventListener("click", (e) => { e.stopPropagation(); lbShow(lbIndex + 1); });
+  lb.addEventListener("click", (e) => {
+    if (e.target === lb) lbClose(); // backdrop closes
+  });
+
+  // Click to zoom in at that spot; while zoomed, the image pans with the
+  // cursor; click again to zoom out.
+  function lbSetOrigin(e) {
+    const r = lbImg.getBoundingClientRect();
+    const x = ((e.clientX - r.left) / r.width) * 100;
+    const y = ((e.clientY - r.top) / r.height) * 100;
+    lbImg.style.transformOrigin = `${x}% ${y}%`;
+  }
+  lbImg.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (lbImg.classList.contains("zoomed")) {
+      lbImg.classList.remove("zoomed");
+    } else {
+      lbSetOrigin(e);
+      lbImg.classList.add("zoomed");
+    }
+  });
+  lbImg.addEventListener("mousemove", (e) => {
+    if (lbImg.classList.contains("zoomed")) lbSetOrigin(e);
+  });
+
+  // Keyboard: Esc closes, arrows browse.
+  document.addEventListener("keydown", (e) => {
+    if (lb.hidden) return;
+    if (e.key === "Escape") lbClose();
+    else if (e.key === "ArrowLeft") lbShow(lbIndex - 1);
+    else if (e.key === "ArrowRight") lbShow(lbIndex + 1);
+  });
+
+  // Touch: horizontal swipe browses (when not zoomed).
+  let touchX = null;
+  lb.addEventListener("pointerdown", (e) => { touchX = e.clientX; }, { passive: true });
+  lb.addEventListener("pointerup", (e) => {
+    if (touchX === null || lbImg.classList.contains("zoomed")) return (touchX = null);
+    const dx = e.clientX - touchX;
+    if (Math.abs(dx) > 45) lbShow(lbIndex + (dx < 0 ? 1 : -1));
+    touchX = null;
   });
 
   /* ---------- variant -> live price & Buy now target ---------- */
