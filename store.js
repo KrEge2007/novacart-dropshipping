@@ -23,6 +23,7 @@ const FREE_SHIPPING_AT = 50;
 const store = {
   products: [],
   meta: null,
+  reviews: [],
 };
 
 /* ---------- shared render helpers ---------- */
@@ -66,7 +67,43 @@ async function loadCatalog() {
   const data = await res.json();
   store.products = data.products || [];
   store.meta = data.meta || null;
+
+  // Real reviews only (data/reviews.json, curated by hand). Product ratings
+  // are DERIVED from them — no reviews, no stars, anywhere on the site.
+  try {
+    const rres = await fetch("data/reviews.json", { cache: "no-cache" });
+    store.reviews = rres.ok ? (await rres.json()).reviews || [] : [];
+  } catch {
+    store.reviews = [];
+  }
+  const byProduct = new Map();
+  for (const r of store.reviews) {
+    if (!byProduct.has(r.productId)) byProduct.set(r.productId, []);
+    byProduct.get(r.productId).push(r);
+  }
+  for (const p of store.products) {
+    const list = byProduct.get(p.id);
+    if (list?.length) {
+      p.rating = Math.round((list.reduce((n, r) => n + r.rating, 0) / list.length) * 10) / 10;
+      p.reviews = list.length;
+    }
+  }
   return data;
+}
+
+function reviewsFor(productId) {
+  return store.reviews.filter((r) => r.productId === productId);
+}
+
+function reviewCardHTML(r, i = 0) {
+  return `
+    <figure class="review-card reveal" style="--d:${(i % 3) * 120}ms">
+      <div class="review-stars" aria-label="${r.rating} out of 5 stars">${"★".repeat(r.rating)}${"☆".repeat(5 - r.rating)}</div>
+      <blockquote>“${esc(r.text)}”</blockquote>
+      <figcaption>${esc(r.name)} <span>&amp; ${esc(r.pet)}${r.verified ? " · verified buyer" : ""}${
+        r.incentivized ? " · received a discount for reviewing" : ""
+      }</span></figcaption>
+    </figure>`;
 }
 
 /* ---------- scroll reveals ---------- */

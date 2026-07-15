@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=8" />
+  <link rel="stylesheet" href="styles.css?v=9" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%23E86A47'/><text x='16' y='23' font-size='17' text-anchor='middle'>🐾</text></svg>" />
 </head>
 <body>
@@ -16,8 +16,8 @@
   <!-- ============ TICKER ============ -->
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>🐾 Free shipping over $50</span><span>⭐ 4.8 from 12,000+ pet parents</span><span>💛 30-day wag-guarantee</span><span>📦 Ships in 24h from our warehouse partners</span>
-      <span>🐾 Free shipping over $50</span><span>⭐ 4.8 from 12,000+ pet parents</span><span>💛 30-day wag-guarantee</span><span>📦 Ships in 24h from our warehouse partners</span>
+      <span>🐾 Free shipping over $50</span><span>💛 30-day wag-guarantee</span><span>🔒 Secure checkout by Stripe</span><span>📦 Tracked delivery, dispatched in 1–3 business days</span>
+      <span>🐾 Free shipping over $50</span><span>💛 30-day wag-guarantee</span><span>🔒 Secure checkout by Stripe</span><span>📦 Tracked delivery, dispatched in 1–3 business days</span>
     </div>
   </div>
 
@@ -59,7 +59,7 @@
         <a class="button button-plain" href="#featured">See what's trending</a>
       </div>
       <ul class="hero-trust" aria-label="Why shop with us">
-        <li class="hero-in" style="--d:0.88s">⭐ 4.8 average rating</li>
+        <li class="hero-in" style="--d:0.88s">🔒 Secure Stripe checkout</li>
         <li class="hero-in" style="--d:0.98s">🚚 Free shipping over $50</li>
         <li class="hero-in" style="--d:1.08s">💛 30-day wag-guarantee</li>
       </ul>
@@ -67,8 +67,8 @@
     <div class="hero-media">
       <div class="hero-blob" aria-hidden="true"></div>
       <img class="hero-img" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=1000&q=80" alt="Happy dog mid-jump" />
-      <div class="sticker sticker-rating" aria-hidden="true"><strong>4.8★</strong>12,000+ happy pets</div>
-      <div class="sticker sticker-ship" aria-hidden="true">📦 Ships in 24h</div>
+      <div class="sticker sticker-rating" aria-hidden="true"><strong>30 days</strong>wag-guarantee</div>
+      <div class="sticker sticker-ship" aria-hidden="true">📦 Tracked shipping</div>
     </div>
   </section>
 
@@ -109,28 +109,23 @@
     <!-- ============ FEATURED (filled by app.js from the catalog) ============ -->
     <section class="section featured" id="featured"></section>
 
-    <!-- ============ REVIEWS ============ -->
+    <!-- ============ REVIEWS (real ones render via app.js; until then, honesty) ============ -->
     <section class="section reviews" id="reviews">
       <div class="section-head">
         <h2>The tail-wag test</h2>
-        <p class="section-sub">Real pets, extremely biased reviewers.</p>
+        <p class="section-sub" id="reviews-sub">Real reviews only — and we just opened.</p>
       </div>
-      <div class="review-row">
-        <figure class="review-card reveal">
-          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <blockquote>“The grooming vacuum paid for itself in one shedding season. My black couch is black again.”</blockquote>
-          <figcaption>Maria K. <span>&amp; Luna, husky (professional shedder)</span></figcaption>
-        </figure>
-        <figure class="review-card reveal" style="--d:120ms">
-          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <blockquote>“My cat ignored every toy for 3 years. The ZoomOrb has him doing parkour off the sofa.”</blockquote>
-          <figcaption>Jonas T. <span>&amp; Biscuit, cat (formerly unimpressed)</span></figcaption>
-        </figure>
-        <figure class="review-card reveal" style="--d:240ms">
-          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <blockquote>“Bought the donut bed as a joke. She hasn't slept in our bed since. Mildly offended, very well rested.”</blockquote>
-          <figcaption>Sofie R. <span>&amp; Pixel, frenchie (nest connoisseur)</span></figcaption>
-        </figure>
+      <div class="review-row" id="review-row">
+        <div class="founding reveal">
+          <span class="founding-icon" aria-hidden="true">🐾</span>
+          <h3>Zero reviews. Zero spin.</h3>
+          <p>
+            We literally just opened, and we'd rather show you an empty shelf than
+            rented applause. Every product here earned its spot through proven
+            demand — the reviews will come from real pets, starting with yours.
+          </p>
+          <a class="button" href="#shop">Be our first review</a>
+        </div>
       </div>
     </section>
 
@@ -149,7 +144,7 @@
       <div class="faq-list">
         <details>
           <summary>How long does shipping take?</summary>
-          <p>Orders ship within 24 hours from the nearest partner warehouse and typically arrive in 7–15 business days with full tracking. Free over $50, flat $4.95 under.</p>
+          <p>Orders are dispatched from a partner warehouse within 1–3 business days and typically arrive in 7–15 business days with full tracking. Free over $50, flat $4.95 under.</p>
         </details>
         <details>
           <summary>What if my pet doesn't like it?</summary>
@@ -216,7 +211,7 @@
 
   <div class="toast" id="toast" role="status"></div>
 
-  <script src="store.js?v=8"></script>
-  <script src="app.js?v=8"></script>
+  <script src="store.js?v=9"></script>
+  <script src="app.js?v=9"></script>
 </body>
 </html>

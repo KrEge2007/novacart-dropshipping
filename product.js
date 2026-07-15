@@ -71,9 +71,7 @@ function renderProduct(p) {
       <aside class="pd-panel">
         <p class="eyebrow">${esc(CATEGORY_LABELS[p.category] ?? p.category)}</p>
         <h1>${esc(p.name)}</h1>
-        <div class="pd-rating">${starsHTML(p.rating, p.reviews)}${
-          p.reviews ? `<span class="pd-rating-note">verified reviews</span>` : ""
-        }</div>
+        ${p.rating ? `<div class="pd-rating">${starsHTML(p.rating, p.reviews)}<span class="pd-rating-note">from real customers</span></div>` : ""}
         <p class="product-price" id="pd-price"></p>
         ${p.blurb ? `<p class="product-desc">${esc(p.blurb)}</p>` : ""}
         ${
@@ -103,7 +101,7 @@ function renderProduct(p) {
         <p class="pd-reassure" id="pd-shipnote"></p>
         <div class="pd-trust">
           <span>💛 30-day wag-guarantee</span>
-          <span>📦 Ships in 24h</span>
+          <span>📦 Tracked shipping</span>
           <span>🔒 Secure checkout by Stripe</span>
         </div>
         <div class="product-meta-notes">
@@ -114,7 +112,7 @@ function renderProduct(p) {
           }
           <details>
             <summary>Shipping</summary>
-            <p>Ships within 24 hours; tracked delivery in 7–15 business days, free on orders over $50. Orders not delivered within 45 days (US) / 60 days elsewhere are refunded or resent in full.</p>
+            <p>Dispatched within 1–3 business days; tracked delivery in 7–15 business days, free on orders over $50. Orders not delivered within 45 days (US) / 60 days elsewhere are refunded or resent in full.</p>
           </details>
           <details>
             <summary>Guarantee &amp; refunds</summary>
@@ -230,6 +228,19 @@ function renderProduct(p) {
   }
 }
 
+// Real reviews for this product, appended below the buy panel. Nothing
+// renders until data/reviews.json has entries for it.
+function renderProductReviews(p) {
+  const list = reviewsFor(p.id);
+  if (!list.length) return;
+  const block = document.createElement("div");
+  block.className = "pd-reviews";
+  block.innerHTML = `
+    <h2>From the pack</h2>
+    <div class="review-row">${list.slice(0, 6).map((r, i) => reviewCardHTML(r, i)).join("")}</div>`;
+  $("#product-page").appendChild(block);
+}
+
 function renderRelated(current) {
   const related = store.products
     .filter((p) => p.id !== current.id)
@@ -255,6 +266,7 @@ function renderRelated(current) {
     const product = store.products.find((p) => p.id === id);
     if (!product) return renderNotFound();
     renderProduct(product);
+    renderProductReviews(product);
     renderRelated(product);
     observeReveals();
   } catch (err) {

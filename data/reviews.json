@@ -1,0 +1,4 @@
+{
+  "note": "Real customer reviews only. Add entries after verifying against a Stripe order. If a reviewer got a discount or freebie for reviewing, set incentivized: true — the site must disclose it. Schema: productId (catalog id), name (first name only), pet (e.g. 'Luna the husky'), rating (1-5), text, date (YYYY-MM-DD), verified (checked against an order), incentivized.",
+  "reviews": []
+}

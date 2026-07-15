@@ -107,9 +107,28 @@ Set up
 [Stripe payment notifications](https://dashboard.stripe.com/settings/notifications)
 so you know when to go pay the CJ order.
 
+## Reviews (real ones only)
+
+The site shows **no invented social proof** — fake reviews are illegal (FTC
+2024 rule; EU/Norwegian consumer law) and get ad accounts banned. Until real
+reviews exist, the reviews section shows an honest "we just opened" block and
+products render without stars.
+
+To add a review: verify it against a Stripe order, then append it to
+[data/reviews.json](data/reviews.json) (schema documented in the file's
+`note`). Everything downstream is automatic — product ratings and counts are
+computed from real reviews at load time, star rows light up on cards and
+product pages, the product page grows a "From the pack" section, and the
+homepage swaps the founding block for review cards. If a reviewer received a
+discount, set `incentivized: true`; the site discloses it next to their name.
+
+Collecting them: ~2–3 weeks after delivery (tracking shows arrival), email
+the customer — their address is on the Stripe payment — with a short review
+form (Tally/Google Forms works). Automating that email via the fulfillment
+workflow + an email API is a natural later step.
+
 Also before going live: replace the placeholder contact email in the footer,
-add real privacy/terms pages, replace the seeded review copy with real
-reviews as they come in, and adjust the pricing multiplier in
+add real privacy/terms pages, and adjust the pricing multiplier in
 [scripts/fetch-products.mjs](scripts/fetch-products.mjs) to your margin
 strategy.
 

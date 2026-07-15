@@ -121,7 +121,12 @@ purchases are emotional and impulse-priced ($14–70 here).
 
 ## Honesty guardrails
 
-Ratings/review counts on the site are seeded placeholders — replace them with
-real numbers as orders come in, and never put a specific fabricated claim
-("2,314 reviews", "vet approved") inside an ad. Cute exaggeration (waterskiing
-behind a lab) is fine; fake authority is not — and ad platforms ban the latter.
+The site carries **real reviews only** (`data/reviews.json`, verified against
+orders) — there are no seeded ratings anywhere, and ads must match: never
+invent review counts, star ratings, customer quotes, or authority claims
+("vet approved") you can't source. Product-category facts are fair game
+("the kicker toy behind a million cat videos" describes the product type, not
+your customers). Cute exaggeration (waterskiing behind a lab) is fine; fake
+social proof is illegal (FTC 2024 fake-review rule, EU/Norwegian consumer
+law) and gets ad accounts banned. Once real reviews arrive, quoting them in
+ads — with permission — is the strongest creative you'll have.

@@ -16,20 +16,22 @@ function matchesFilter(p, filter) {
   return p.category === filter;
 }
 
-/* Non-product tiles that break up the grid so it reads hand-arranged. */
+/* Non-product tiles that break up the grid so it reads hand-arranged.
+   Claims here must be product-category facts or our own policies — never
+   invented customers. */
 
 const QUOTE_TILE = `
-  <figure class="grid-tile tile-quote reveal" aria-label="Customer review">
-    <div class="review-stars" aria-hidden="true">★★★★★</div>
-    <blockquote>“Wait, where did all the fur go?”</blockquote>
-    <figcaption>— every FuzzOff review, basically</figcaption>
+  <figure class="grid-tile tile-quote reveal" aria-label="Did you know">
+    <div class="review-stars" aria-hidden="true">🐶</div>
+    <blockquote>“10 minutes of sniffing tires a dog like a 30-minute walk.”</blockquote>
+    <figcaption>— why trainers love snuffle mats</figcaption>
   </figure>`;
 
 const STAT_TILE = `
   <div class="grid-tile tile-stat reveal">
-    <strong>12,000+</strong>
-    <p>happy pets and counting</p>
-    <span>⭐ 4.8 average · 💛 30-day wag-guarantee</span>
+    <strong>30 days</strong>
+    <p>to change your pet's mind</p>
+    <span>💛 refund or replacement — no return postage</span>
   </div>`;
 
 function renderGrid() {
@@ -108,6 +110,17 @@ function renderFeatured() {
     </div>`;
 }
 
+/* ---------- reviews: real ones replace the founding block ---------- */
+
+function renderReviews() {
+  if (!store.reviews.length) return; // keep the honest "we just opened" block
+  $("#reviews-sub").textContent = "Real pets, verified against real orders.";
+  $("#review-row").innerHTML = store.reviews
+    .slice(0, 6)
+    .map((r, i) => reviewCardHTML(r, i))
+    .join("");
+}
+
 /* ---------- newsletter ---------- */
 
 $("#newsletter-form").addEventListener("submit", (e) => {
@@ -123,6 +136,7 @@ $("#newsletter-form").addEventListener("submit", (e) => {
     await loadCatalog();
     renderGrid();
     renderFeatured();
+    renderReviews();
     // Back from a completed Stripe checkout: thank the buyer.
     if (new URLSearchParams(location.search).get("paid")) {
       history.replaceState(null, "", location.pathname);
