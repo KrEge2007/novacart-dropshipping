@@ -118,7 +118,7 @@ function renderProduct(p) {
           }
           <details>
             <summary>Shipping</summary>
-            <p>Dispatched within 1–3 business days; tracked delivery in 7–15 business days, free on orders over $50. Orders not delivered within 45 days (US) / 60 days elsewhere are refunded or resent in full.</p>
+            <p>Dispatched within 1–3 business days; free tracked delivery in 7–15 business days — shipping is always on us. Orders not delivered within 45 days (US) / 60 days elsewhere are refunded or resent in full.</p>
           </details>
           <details>
             <summary>Guarantee &amp; refunds</summary>
@@ -274,13 +274,8 @@ function renderProduct(p) {
     buyBtn.disabled = !stripeLink();
 
     const ship = $("#pd-shipnote");
-    if (unit.price >= FREE_SHIPPING_AT) {
-      ship.classList.add("free");
-      ship.textContent = "✓ Ships free";
-    } else {
-      ship.classList.remove("free");
-      ship.textContent = `Free shipping on orders over ${money(FREE_SHIPPING_AT)} — quantity can be adjusted at checkout`;
-    }
+    ship.classList.add("free");
+    ship.textContent = "✓ Free shipping — quantity can be adjusted at checkout";
   }
 
   function applyVariant(v) {

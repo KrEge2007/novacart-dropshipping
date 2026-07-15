@@ -13,7 +13,7 @@ purchases are emotional and impulse-priced ($14–70 here).
 - **The hook is the ad.** The first 1.5 seconds decide everything. Open on
   the pet or the mess — never on a logo or the product box.
 - One product, one problem, one payoff per video. End with the offer
-  ("Free shipping over $50 · 30-day wag-guarantee") and the product page URL.
+  ("Free shipping · 30-day wag-guarantee") and the product page URL.
 - Make 3–5 hook variants per product against the same body footage; kill
   anything under ~20% 3-second hold rate and re-cut.
 - Disclose AI-generated content where the platform requires it (TikTok and

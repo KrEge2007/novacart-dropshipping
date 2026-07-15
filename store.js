@@ -18,8 +18,6 @@ const esc = (s) =>
     (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
   );
 
-const FREE_SHIPPING_AT = 50;
-
 const store = {
   products: [],
   meta: null,

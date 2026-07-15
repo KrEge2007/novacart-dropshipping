@@ -105,7 +105,9 @@ const MIN_COST = 2;
 const MAX_COST = 70;
 
 // Retail pricing: supplier cost -> customer price with margin, .95 endings.
-const retailPrice = (cost) => Math.max(Math.ceil(cost * 2.4) - 0.05, 9.95);
+// The +$4 bakes average CJ freight into the price — every order ships free
+// at checkout (no Stripe shipping rates), and the site advertises exactly that.
+const retailPrice = (cost) => Math.max(Math.ceil(cost * 2.4 + 4) - 0.05, 12.95);
 const compareAtPrice = (retail) => Math.ceil(retail * 1.35) - 0.05;
 
 /* ---------- CJ API ---------- */
