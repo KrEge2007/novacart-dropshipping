@@ -32,27 +32,72 @@ const API = "https://developers.cjdropshipping.com/api2.0/v1";
 const OUT = new URL("../data/products.json", import.meta.url);
 
 /**
- * The pinned catalog. `id` must match the product id in data/products.json;
- * `query` is the CJ search phrase used to find the listing the first time;
- * `mustInclude` / `blocklist` keep the match honest (all lowercase).
+ * CJ's pet subcategory ids (from the --categories dump, 2026-07-15).
+ * Winners are matched by browsing these pools — CJ's keyword search
+ * endpoint returns unrelated products and must not be used.
+ */
+const CAT = {
+  chaseToys: "2410110339311602900",
+  trainingToys: "2410110340031614900",
+  soundToys: "2410110340161623400",
+  toySets: "2410110340411608400",
+  plushToys: "2410110340531618900",
+  bowls: "2410110341061612000",
+  drinkingTools: "2410110341331606800",
+  feedingTools: "2410110341451628800",
+  outdoorBags: "2410110342571606700",
+  seatBelts: "2410110343091603200",
+  carMats: "2410110343211625200",
+  apparelBags: "2410110351121613900",
+  collars: "2410110352331629800",
+  harnesses: "2410110352591600400",
+  harnessSets: "2410110353301600600",
+  hairRemovers: "2410110354491625800",
+  showerProducts: "2410110355151622300",
+  beds: "2410110358051626100",
+  nests: "2410110357511615700",
+  petMats: "2410110357391611900",
+};
+
+/**
+ * The pinned catalog. `id` must match the product id in data/products.json.
+ * A candidate's name (lowercase) must contain ALL `mustInclude` terms and
+ * at least one `mustAny` term (if set), and none of `blocklist`. `nice`
+ * terms only affect ranking.
  */
 const WINNERS = [
-  { id: "wg-grooming-vacuum", query: "pet grooming vacuum", mustInclude: ["groom"], blocklist: [] },
-  { id: "wg-paw-cleaner", query: "dog paw cleaner cup", mustInclude: ["paw"], blocklist: ["mat", "balm"] },
-  { id: "wg-smart-ball", query: "smart interactive pet ball", mustInclude: ["ball"], blocklist: ["launcher"] },
-  { id: "wg-donut-bed", query: "calming donut pet bed", mustInclude: ["bed"], blocklist: ["car "] },
-  { id: "wg-car-hammock", query: "dog car seat cover hammock", mustInclude: ["car"], blocklist: [] },
-  { id: "wg-water-fountain", query: "pet water fountain", mustInclude: ["fountain"], blocklist: ["solar", "garden"] },
-  { id: "wg-harness", query: "no pull dog harness reflective", mustInclude: ["harness"], blocklist: ["cat "] },
-  { id: "wg-hair-roller", query: "pet hair remover roller", mustInclude: ["hair"], blocklist: ["clipper"] },
-  { id: "wg-snuffle-mat", query: "dog snuffle mat", mustInclude: ["mat"], blocklist: ["bath"] },
-  { id: "wg-lick-mat", query: "pet lick mat slow feeder", mustInclude: ["lick", "mat"], blocklist: [] },
-  { id: "wg-led-collar", query: "led dog collar rechargeable", mustInclude: ["collar"], blocklist: ["cat", "leash"] },
-  { id: "wg-carrier-backpack", query: "pet carrier backpack space capsule", mustInclude: ["backpack"], blocklist: [] },
-  { id: "wg-water-bottle", query: "portable dog water bottle", mustInclude: ["bottle"], blocklist: ["glass", "human"] },
-  { id: "wg-corner-brush", query: "cat corner groomer self grooming brush", mustInclude: ["cat"], blocklist: ["dog"] },
-  { id: "wg-flopping-fish", query: "flopping fish cat toy", mustInclude: ["fish"], blocklist: ["aquarium", "tank"] },
-  { id: "wg-heartbeat-pup", query: "heartbeat puppy toy behavioral aid", mustInclude: ["heartbeat"], blocklist: [] },
+  { id: "wg-grooming-vacuum", categories: [CAT.hairRemovers, CAT.showerProducts],
+    mustInclude: ["vacuum"], mustAny: [], nice: ["groom", "suction", "dog", "cat"], blocklist: ["robot"] },
+  { id: "wg-paw-cleaner", categories: [CAT.showerProducts, CAT.hairRemovers],
+    mustInclude: ["paw"], mustAny: ["clean", "wash"], nice: ["cup", "portable", "silicone"], blocklist: ["balm", "wax", "sock", "wipe"] },
+  { id: "wg-smart-ball", categories: [CAT.chaseToys, CAT.trainingToys, CAT.toySets],
+    mustInclude: ["ball"], mustAny: ["smart", "automatic", "rolling", "interactive", "electric", "self"], nice: ["usb", "rechargeable", "led"], blocklist: ["launcher", "tennis", "wool"] },
+  { id: "wg-donut-bed", categories: [CAT.beds, CAT.nests],
+    mustInclude: ["bed"], mustAny: [], nice: ["donut", "calming", "plush", "round", "anxiety", "washable"], blocklist: ["car", "cooling", "stairs"] },
+  { id: "wg-car-hammock", categories: [CAT.carMats, CAT.seatBelts],
+    mustInclude: ["car"], mustAny: ["hammock", "seat cover", "back seat", "rear seat"], nice: ["waterproof", "dog"], blocklist: ["dash", "front", "trunk"] },
+  { id: "wg-water-fountain", categories: [CAT.drinkingTools, CAT.bowls],
+    mustInclude: ["fountain"], mustAny: [], nice: ["water", "automatic", "filter", "quiet", "cat"], blocklist: ["solar", "garden"] },
+  { id: "wg-harness", categories: [CAT.harnesses, CAT.harnessSets],
+    mustInclude: ["harness"], mustAny: [], nice: ["no pull", "no-pull", "reflective", "vest", "adjustable", "dog"], blocklist: ["car", "seat", "cat", "bird", "rabbit"] },
+  { id: "wg-hair-roller", categories: [CAT.hairRemovers],
+    mustInclude: ["hair"], mustAny: ["roller", "remover", "removal"], nice: ["reusable", "self-cleaning", "sofa", "lint"], blocklist: ["bow", "dye", "clipper", "trimmer"] },
+  { id: "wg-snuffle-mat", categories: [CAT.trainingToys, CAT.petMats, CAT.feedingTools],
+    mustInclude: ["mat"], mustAny: ["snuffle", "sniff", "foraging", "nose"], nice: ["dog", "washable"], blocklist: [] },
+  { id: "wg-lick-mat", categories: [CAT.feedingTools, CAT.bowls],
+    mustInclude: [], mustAny: ["lick mat", "licking mat", "lick pad", "slow feeder"], nice: ["suction", "silicone", "set"], blocklist: [] },
+  { id: "wg-led-collar", categories: [CAT.collars],
+    mustInclude: ["collar"], mustAny: ["led", "light", "glow", "luminous"], nice: ["rechargeable", "usb", "dog"], blocklist: ["cat", "rhinestone", "pearl", "leather"] },
+  { id: "wg-carrier-backpack", categories: [CAT.outdoorBags, CAT.apparelBags],
+    mustInclude: [], mustAny: ["backpack", "carrier"], nice: ["space", "capsule", "bubble", "window", "breathable", "transparent"], blocklist: ["waste", "poop", "treat", "stroller"] },
+  { id: "wg-water-bottle", categories: [CAT.drinkingTools],
+    mustInclude: ["bottle"], mustAny: ["portable", "travel", "walking", "outdoor", "dog"], nice: ["leak", "bowl", "one-hand"], blocklist: ["nursing", "milk", "feeding", "glass"] },
+  { id: "wg-corner-brush", categories: [CAT.hairRemovers],
+    mustInclude: ["cat"], mustAny: ["corner", "wall"], nice: ["groom", "brush", "massage", "comb", "catnip"], blocklist: ["board", "paper", "scratch"] },
+  { id: "wg-flopping-fish", categories: [CAT.plushToys, CAT.soundToys, CAT.chaseToys],
+    mustInclude: ["fish"], mustAny: ["flop", "electric", "moving", "kicker", "wiggle", "dancing", "jumping"], nice: ["usb", "catnip", "cat"], blocklist: ["tank", "aquarium", "wall", "feeder"] },
+  { id: "wg-heartbeat-pup", categories: [CAT.plushToys],
+    mustInclude: [], mustAny: ["heartbeat", "heart beat"], nice: ["puppy", "dog", "anxiety", "calm", "sleep"], blocklist: ["cap", "hat", "shirt"] },
 ];
 
 // Supplier-cost sanity band: excludes trinkets and heavy-freight surprises.
@@ -242,7 +287,35 @@ function normalizeVariants(data) {
   return out;
 }
 
-/* ---------- matching a winner to a CJ listing ---------- */
+/* ---------- matching a winner to a CJ listing ----------
+   Candidates come from browsing the winner's pet categories (pooled and
+   cached across winners), then get filtered by name terms and ranked by
+   `nice`-term hits and CJ's listedNum popularity signal. */
+
+const PAGES_PER_CATEGORY = 3;
+const poolCache = new Map(); // categoryId -> raw listings
+
+async function categoryPool(token, categoryId) {
+  if (poolCache.has(categoryId)) return poolCache.get(categoryId);
+  const pool = [];
+  for (let page = 1; page <= PAGES_PER_CATEGORY; page++) {
+    await sleep(1100);
+    try {
+      const data = await cjRequest(
+        `/product/list?pageNum=${page}&pageSize=100&categoryId=${encodeURIComponent(categoryId)}`,
+        { token }
+      );
+      const list = data?.list ?? [];
+      pool.push(...list);
+      if (list.length < 100) break; // last page
+    } catch (err) {
+      console.warn(`    category ${categoryId} page ${page} failed: ${err.message}`);
+      break;
+    }
+  }
+  poolCache.set(categoryId, pool);
+  return pool;
+}
 
 function candidateOk(raw, winner) {
   const name = String(raw.productNameEn ?? "").toLowerCase();
@@ -250,24 +323,32 @@ function candidateOk(raw, winner) {
   if (!raw.pid || !name || !(cost >= MIN_COST && cost <= MAX_COST)) return false;
   if (!String(raw.productImage ?? "").startsWith("http")) return false;
   if (!winner.mustInclude.every((t) => name.includes(t))) return false;
+  if (winner.mustAny.length && !winner.mustAny.some((t) => name.includes(t))) return false;
   if (winner.blocklist.some((t) => name.includes(t))) return false;
   return true;
 }
 
 async function findListing(token, winner) {
-  const data = await cjRequest(
-    `/product/list?pageNum=1&pageSize=40&productNameEn=${encodeURIComponent(winner.query)}`,
-    { token }
-  );
-  const candidates = (data?.list ?? []).filter((raw) => candidateOk(raw, winner));
+  const seen = new Set();
+  const candidates = [];
+  for (const categoryId of winner.categories) {
+    for (const raw of await categoryPool(token, categoryId)) {
+      if (seen.has(raw.pid)) continue;
+      seen.add(raw.pid);
+      if (candidateOk(raw, winner)) candidates.push(raw);
+    }
+  }
   if (!candidates.length) return null;
-  // Prefer listings whose name covers more of the query terms, then cheaper cost.
-  const terms = winner.query.toLowerCase().split(/\s+/);
-  candidates.sort((a, b) => {
-    const hits = (r) =>
-      terms.filter((t) => String(r.productNameEn).toLowerCase().includes(t)).length;
-    return hits(b) - hits(a) || parseCost(a.sellPrice) - parseCost(b.sellPrice);
-  });
+  const score = (r) => {
+    const name = String(r.productNameEn).toLowerCase();
+    return winner.nice.filter((t) => name.includes(t)).length;
+  };
+  const popularity = (r) => Number(r.listedNum) || 0;
+  candidates.sort(
+    (a, b) => score(b) - score(a) || popularity(b) - popularity(a) ||
+      parseCost(a.sellPrice) - parseCost(b.sellPrice)
+  );
+  console.log(`    ${winner.id}: ${candidates.length} candidates`);
   return candidates[0];
 }
 
