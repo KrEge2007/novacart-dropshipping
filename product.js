@@ -19,8 +19,14 @@ const CATEGORY_LABELS = {
 };
 
 function productImages(p) {
-  const imgs = Array.isArray(p.images) && p.images.length ? p.images : [p.image];
-  return [...new Set(imgs.filter(Boolean))];
+  // Gallery photos first, then each variant's own photo — CJ often ships
+  // variant shots that aren't in the main image set, and options must be
+  // browsable even before they're selected.
+  const imgs = [
+    ...(Array.isArray(p.images) && p.images.length ? p.images : [p.image]),
+    ...(p.variants ?? []).map((v) => v.image),
+  ];
+  return [...new Set(imgs.filter(Boolean))].slice(0, 12);
 }
 
 function renderNotFound() {
@@ -134,18 +140,31 @@ function renderProduct(p) {
   /* ---------- gallery ---------- */
 
   const mainImg = $("#pd-main-img");
-  document.getElementById("pd-thumbs")?.addEventListener("click", (e) => {
-    const thumb = e.target.closest(".pd-thumb");
-    if (!thumb) return;
-    document.querySelectorAll(".pd-thumb").forEach((t) => t.classList.remove("active"));
-    thumb.classList.add("active");
+
+  // Swap the hero image directly — never via a thumbnail, because variant
+  // photos may not have one. Thumb highlighting follows the shown image;
+  // a dead URL falls back to the lead photo.
+  function swapMain(src) {
+    if (!src) return;
+    document
+      .querySelectorAll(".pd-thumb")
+      .forEach((t) => t.classList.toggle("active", t.dataset.src === src));
+    if (mainImg.src === src) return;
     mainImg.classList.add("swapping");
     setTimeout(() => {
       mainImg.onload = () => mainImg.classList.remove("swapping");
-      mainImg.onerror = () => mainImg.classList.remove("swapping");
-      mainImg.classList.toggle("img-contain", !!imgFit(thumb.dataset.src).trim());
-      mainImg.src = thumb.dataset.src;
+      mainImg.onerror = () => {
+        mainImg.classList.remove("swapping");
+        if (src !== imgs[0]) swapMain(imgs[0]);
+      };
+      mainImg.classList.toggle("img-contain", !!imgFit(src).trim());
+      mainImg.src = src;
     }, 150);
+  }
+
+  document.getElementById("pd-thumbs")?.addEventListener("click", (e) => {
+    const thumb = e.target.closest(".pd-thumb");
+    if (thumb) swapMain(thumb.dataset.src);
   });
 
   /* ---------- variant -> live price & Buy now target ---------- */
@@ -185,9 +204,9 @@ function renderProduct(p) {
   function applyVariant(v) {
     selected = v;
     $("#variant-name").textContent = `— ${v.name}`;
-    if (v.image) {
-      document.querySelector(`.pd-thumb[data-src="${CSS.escape(v.image)}"]`)?.click();
-    }
+    // Show the option's own photo; options without one show the lead photo
+    // so the image never silently stays on a different variant's shot.
+    swapMain(v.image || imgs[0]);
     updatePrice();
   }
 
