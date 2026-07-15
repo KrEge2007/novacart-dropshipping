@@ -47,6 +47,12 @@ const WINNERS = [
   { id: "wg-hair-roller", query: "pet hair remover roller", mustInclude: ["hair"], blocklist: ["clipper"] },
   { id: "wg-snuffle-mat", query: "dog snuffle mat", mustInclude: ["mat"], blocklist: ["bath"] },
   { id: "wg-lick-mat", query: "pet lick mat slow feeder", mustInclude: ["lick", "mat"], blocklist: [] },
+  { id: "wg-led-collar", query: "led dog collar rechargeable", mustInclude: ["collar"], blocklist: ["cat", "leash"] },
+  { id: "wg-carrier-backpack", query: "pet carrier backpack space capsule", mustInclude: ["backpack"], blocklist: [] },
+  { id: "wg-water-bottle", query: "portable dog water bottle", mustInclude: ["bottle"], blocklist: ["glass", "human"] },
+  { id: "wg-corner-brush", query: "cat corner groomer self grooming brush", mustInclude: ["cat"], blocklist: ["dog"] },
+  { id: "wg-flopping-fish", query: "flopping fish cat toy", mustInclude: ["fish"], blocklist: ["aquarium", "tank"] },
+  { id: "wg-heartbeat-pup", query: "heartbeat puppy toy behavioral aid", mustInclude: ["heartbeat"], blocklist: [] },
 ];
 
 // Supplier-cost sanity band: excludes trinkets and heavy-freight surprises.

@@ -299,6 +299,168 @@
         "2 textures, food-grade silicone, dishwasher safe"
       ],
       "variants": null
+    },
+    {
+      "id": "wg-led-collar",
+      "sku": null,
+      "name": "GlowSafe LED Collar",
+      "category": "travel",
+      "petType": "dog",
+      "kind": "led dog collar rechargeable",
+      "price": 14.95,
+      "compareAt": 19.95,
+      "rating": 4.7,
+      "reviews": 1567,
+      "badge": null,
+      "featured": false,
+      "blurb": "USB-rechargeable glow that makes evening walks impossible to miss — drivers see your dog from 300m.",
+      "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=900&q=80"
+      ],
+      "description": "Dark mornings and late walks shouldn't be a gamble. The GlowSafe collar puts a bright, even ring of light around your dog's neck — steady or flashing — visible from about 300 metres in the dark. It charges over USB in an hour (no coin batteries to chase), a full charge covers a week of walks, and the light strip is weather-resistant for rain and snow. Trim-to-fit sizing means one collar fits nearly any neck.",
+      "benefits": [
+        "Visible from ~300m — steady, flash, or pulse modes",
+        "USB rechargeable, one charge lasts a week of walks",
+        "Weather-resistant for rain and snow",
+        "Trim-to-fit — one collar fits almost any dog"
+      ],
+      "variants": null
+    },
+    {
+      "id": "wg-carrier-backpack",
+      "sku": null,
+      "name": "AstroPack Bubble Carrier",
+      "category": "travel",
+      "petType": "both",
+      "kind": "pet carrier backpack space capsule",
+      "price": 49.95,
+      "compareAt": 67.95,
+      "rating": 4.6,
+      "reviews": 892,
+      "badge": "New",
+      "featured": false,
+      "blurb": "The space-capsule backpack — your pet rides in a bubble window and watches the world go by.",
+      "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=900&q=80"
+      ],
+      "description": "Errands, vet trips, and city adventures — with a view. The AstroPack carries cats and small dogs (up to ~7kg) in a ventilated capsule with a clear bubble window that pets genuinely like looking out of. Nine airflow vents keep air moving, the padded straps keep your shoulders happy, and a security leash clip inside keeps escape artists contained. Folds flat when not in use.",
+      "benefits": [
+        "Bubble window pets actually enjoy looking out of",
+        "9 ventilation ports for constant airflow",
+        "Fits cats and small dogs up to ~7kg",
+        "Interior leash clip for escape artists"
+      ],
+      "variants": null
+    },
+    {
+      "id": "wg-water-bottle",
+      "sku": null,
+      "name": "SipStroll Walk Water Bottle",
+      "category": "travel",
+      "petType": "dog",
+      "kind": "portable dog water bottle",
+      "price": 15.95,
+      "compareAt": 21.95,
+      "rating": 4.8,
+      "reviews": 2044,
+      "badge": null,
+      "featured": false,
+      "blurb": "One-handed water breaks: squeeze to fill the built-in bowl, release to send the rest back — zero waste.",
+      "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900&q=80"
+      ],
+      "description": "Cupping your hands at a park tap is not a hydration strategy. The SipStroll's trigger fills its built-in leaf-shaped bowl with one hand; whatever your dog doesn't drink flows back into the bottle when you release, so nothing is wasted. Leak-proof lock for the bag, carry strap for the wrist, food-grade materials throughout. 550ml — enough for a long summer walk.",
+      "benefits": [
+        "One-handed: squeeze to fill, release to reclaim",
+        "Leak-proof lock — safe in any bag",
+        "550ml, enough for long summer walks",
+        "Food-grade, BPA-free materials"
+      ],
+      "variants": null
+    },
+    {
+      "id": "wg-corner-brush",
+      "sku": null,
+      "name": "CornerComb Self-Grooming Brush",
+      "category": "grooming",
+      "petType": "cat",
+      "kind": "cat corner self groomer",
+      "price": 11.95,
+      "compareAt": 15.95,
+      "rating": 4.5,
+      "reviews": 678,
+      "badge": null,
+      "featured": false,
+      "blurb": "Mounts to any wall corner so your cat brushes themselves every time they walk by. They think it's a spa.",
+      "image": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=900&q=80"
+      ],
+      "description": "Cats already rub against your furniture — give the habit a job. The CornerComb mounts to any wall corner or table leg at whisker height, and its soft bristle arch collects loose fur every time your cat walks through for a scratch. Less fur on the floor, fewer hairballs, and a cat that queues up for it. Includes a pouch of catnip to seal the deal. Bristles pop out for cleaning.",
+      "benefits": [
+        "Cats groom themselves — you just empty the fur",
+        "Mounts to corners, table legs, cabinet edges",
+        "Fewer hairballs, less fur on the floor",
+        "Catnip pouch included, bristles pop out to clean"
+      ],
+      "variants": null
+    },
+    {
+      "id": "wg-flopping-fish",
+      "sku": null,
+      "name": "FlipFin Flopping Fish",
+      "category": "play",
+      "petType": "cat",
+      "kind": "flopping fish cat toy",
+      "price": 13.95,
+      "compareAt": 18.95,
+      "rating": 4.6,
+      "reviews": 1489,
+      "badge": "Fan favorite",
+      "featured": false,
+      "blurb": "Flops like a real catch the moment your cat touches it — the toy behind a million kicking-cat videos.",
+      "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=900&q=80"
+      ],
+      "description": "The internet-famous kicker toy. A touch sensor makes the FlipFin flop and wiggle like a fresh catch the second your cat pounces, triggering the full wrestle-and-bunny-kick routine that burns real energy. It naps when your cat naps (auto-sleep) and wakes on the next attack. USB-charged, with a washable cover and a catnip pocket for cats that need convincing.",
+      "benefits": [
+        "Motion sensor — flops when touched, sleeps when ignored",
+        "Triggers the full bunny-kick wrestle instinct",
+        "USB rechargeable, washable cover",
+        "Catnip pocket included"
+      ],
+      "variants": null
+    },
+    {
+      "id": "wg-heartbeat-pup",
+      "sku": null,
+      "name": "SnugBeat Heartbeat Buddy",
+      "category": "comfort",
+      "petType": "dog",
+      "kind": "heartbeat puppy behavioral toy",
+      "price": 24.95,
+      "compareAt": 33.95,
+      "rating": 4.8,
+      "reviews": 1123,
+      "badge": null,
+      "featured": false,
+      "blurb": "A plush buddy with a real pulsing heartbeat — calms new puppies and anxious dogs through the night.",
+      "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=900&q=80"
+      ],
+      "description": "First nights away from the litter are loud ones. The SnugBeat hides a battery-powered heartbeat module inside a soft plush body — the same steady pulse puppies slept against for their first eight weeks. Tucked into the crate, it turns crying nights into sleeping ones, and it works just as well for rescue dogs and thunderstorm-anxious adults. Optional warmth pack included; heartbeat module removes for washing.",
+      "benefits": [
+        "Real pulsing heartbeat mimics a littermate",
+        "Eases first nights, crate training, and storm anxiety",
+        "Optional warmth pack included",
+        "Module removes so the plush machine-washes"
+      ],
+      "variants": null
     }
   ]
 }
