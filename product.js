@@ -82,7 +82,6 @@ function renderProduct(p) {
       <aside class="pd-panel">
         <h1>${esc(p.name)}</h1>
         ${p.rating ? `<div class="pd-rating">${starsHTML(p.rating, p.reviews)}<span class="pd-rating-note">from real customers</span></div>` : ""}
-        <p class="product-price" id="pd-price"></p>
         ${p.blurb ? `<p class="product-desc">${esc(p.blurb)}</p>` : ""}
         ${
           p.benefits?.length
@@ -106,6 +105,7 @@ function renderProduct(p) {
             : ""
         }
         <div class="buy-row">
+          <p class="product-price" id="pd-price"></p>
           <button class="button buy-btn" id="buy-btn">Buy now</button>
         </div>
         <p class="pd-reassure" id="pd-shipnote"></p>
@@ -270,9 +270,8 @@ function renderProduct(p) {
     $("#stickybar-price").textContent = money(unit.price);
 
     const buyBtn = $("#buy-btn");
-    buyBtn.textContent = `Buy now · ${money(unit.price)}`;
+    buyBtn.textContent = stripeLink() ? "Buy now" : "Coming soon";
     buyBtn.disabled = !stripeLink();
-    if (!stripeLink()) buyBtn.textContent = "Coming soon";
 
     const ship = $("#pd-shipnote");
     if (unit.price >= FREE_SHIPPING_AT) {

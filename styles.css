@@ -1040,12 +1040,13 @@ body.lb-open { overflow: hidden; }
 .product-price {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.9rem;
-  margin-bottom: 0.7rem;
+  font-size: 2.1rem;
+  line-height: 1;
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
   gap: 0.2rem;
+  white-space: nowrap;
 }
 .product-price.bump { animation: bump 0.35s ease; }
 @keyframes bump { 40% { transform: scale(1.06); } }
@@ -1095,8 +1096,14 @@ body.lb-open { overflow: hidden; }
 .variant-chip:hover { border-color: var(--brand); }
 .variant-chip.active { background: var(--brand-soft); border-color: var(--brand); color: var(--brand-dark); }
 
-.buy-row { display: flex; gap: 0.9rem; align-items: stretch; margin-bottom: 0.7rem; flex-wrap: wrap; }
-.buy-btn { flex: 1; min-width: 12rem; font-size: 1.1rem; padding: 0.95rem 1.7rem; }
+.buy-row {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin: 0.4rem 0 0.7rem;
+  flex-wrap: wrap;
+}
+.buy-btn { flex: 1; min-width: 11rem; font-size: 1.1rem; padding: 0.95rem 1.7rem; }
 
 .pd-reassure { font-size: 0.9rem; font-weight: 700; color: var(--muted); min-height: 1.4rem; }
 .pd-reassure.free { color: var(--leaf); }
