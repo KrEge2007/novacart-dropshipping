@@ -168,12 +168,36 @@ a { color: inherit; text-decoration: none; }
 /* ---------- hero ---------- */
 
 .hero {
+  position: relative;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
   gap: clamp(2rem, 5vw, 4.5rem);
   padding: clamp(2rem, 6vh, 4.5rem) var(--pagepad) clamp(2.5rem, 7vh, 5rem);
 }
+
+/* --- entrance choreography ---
+   Copy fades up in a stagger; headline lines rise out of overflow masks;
+   the sun underline draws itself, then the whole line gives one tail-wag. */
+
+.hero-in {
+  opacity: 0;
+  animation: hero-in 0.7s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  animation-delay: var(--d, 0s);
+}
+@keyframes hero-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+
+.h-mask { display: block; overflow: hidden; padding-bottom: 0.08em; }
+.h-line {
+  display: block;
+  transform: translateY(115%);
+  animation: h-rise 0.8s cubic-bezier(0.2, 0.75, 0.25, 1) both;
+  animation-delay: var(--d, 0s);
+}
+@keyframes h-rise { to { transform: none; } }
 
 .hero-title {
   font-size: clamp(2.6rem, 6vw, 4.6rem);
@@ -186,6 +210,9 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   white-space: nowrap;
   z-index: 0;
+  display: inline-block;
+  transform-origin: 12% 85%;
+  animation: wag 0.9s ease-in-out 1.6s 1;
 }
 .hero-title em::after {
   content: "";
@@ -197,7 +224,30 @@ a { color: inherit; text-decoration: none; }
   background: var(--sun);
   border-radius: 999px;
   z-index: -1;
-  transform: rotate(-1deg);
+  transform: rotate(-1deg) scaleX(0);
+  transform-origin: left center;
+  animation: underline-draw 0.5s cubic-bezier(0.2, 0.7, 0.3, 1) 1.05s both;
+}
+@keyframes underline-draw { to { transform: rotate(-1deg) scaleX(1); } }
+@keyframes wag {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-2.5deg); }
+  55% { transform: rotate(2deg); }
+  80% { transform: rotate(-1deg); }
+}
+
+/* faint paw prints stroll in across the bottom of the hero */
+.paw-trail { position: absolute; inset: 0; pointer-events: none; }
+.paw-trail span {
+  position: absolute;
+  font-size: 1.35rem;
+  opacity: 0;
+  animation: paw-in 0.5s ease-out both;
+  animation-delay: var(--d, 1.2s);
+}
+@keyframes paw-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.5) rotate(var(--r, 0deg)); }
+  to { opacity: 0.16; transform: translateY(0) scale(1) rotate(var(--r, 0deg)); }
 }
 
 .lede {
@@ -226,6 +276,19 @@ a { color: inherit; text-decoration: none; }
   background: var(--cream-2);
   border-radius: 58% 42% 55% 45% / 48% 55% 45% 52%;
   z-index: 0;
+  /* pops in with a spring, then slowly morphs forever — feels alive */
+  animation:
+    blob-pop 0.9s cubic-bezier(0.3, 1.4, 0.4, 1) 0.25s both,
+    blob-morph 16s ease-in-out 1.2s infinite alternate;
+}
+@keyframes blob-pop {
+  from { opacity: 0; transform: scale(0.55); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes blob-morph {
+  0% { border-radius: 58% 42% 55% 45% / 48% 55% 45% 52%; }
+  50% { border-radius: 45% 55% 48% 52% / 56% 44% 58% 42%; }
+  100% { border-radius: 52% 48% 60% 40% / 44% 58% 42% 56%; }
 }
 .hero-img {
   position: relative;
@@ -235,6 +298,11 @@ a { color: inherit; text-decoration: none; }
   object-fit: cover;
   border-radius: 46% 54% 42% 58% / 55% 46% 54% 45%;
   box-shadow: var(--shadow-lift);
+  animation: img-reveal 0.9s cubic-bezier(0.2, 0.7, 0.3, 1) 0.4s both;
+}
+@keyframes img-reveal {
+  from { opacity: 0; transform: scale(1.08) translateY(12px); }
+  to { opacity: 1; transform: none; }
 }
 
 .sticker {
@@ -247,7 +315,16 @@ a { color: inherit; text-decoration: none; }
   font-weight: 800;
   font-size: 0.85rem;
   line-height: 1.25;
-  animation: float 5s ease-in-out infinite;
+  /* springs in (scale/opacity), then floats forever (translate) — the two
+     animations use different properties so they never fight */
+  opacity: 0;
+  scale: 0.5;
+  animation:
+    sticker-in 0.55s cubic-bezier(0.3, 1.5, 0.4, 1) both,
+    float 5s ease-in-out infinite;
+}
+@keyframes sticker-in {
+  to { opacity: 1; scale: 1; }
 }
 .sticker strong {
   display: block;
@@ -255,8 +332,8 @@ a { color: inherit; text-decoration: none; }
   font-size: 1.25rem;
   color: var(--brand);
 }
-.sticker-rating { bottom: 6%; left: -4%; transform: rotate(-4deg); }
-.sticker-ship { top: 4%; right: -2%; transform: rotate(3deg); animation-delay: 2.2s; }
+.sticker-rating { bottom: 6%; left: -4%; transform: rotate(-4deg); animation-delay: 1.05s, 1.6s; }
+.sticker-ship { top: 4%; right: -2%; transform: rotate(3deg); animation-delay: 1.25s, 2.6s; }
 .sticker-deal {
   top: 1rem;
   right: 1rem;
@@ -264,6 +341,7 @@ a { color: inherit; text-decoration: none; }
   transform: rotate(4deg);
   font-family: var(--font-display);
   font-size: 1rem;
+  animation-delay: 0.4s, 1s;
 }
 @keyframes float {
   0%, 100% { translate: 0 0; }
@@ -906,6 +984,7 @@ img.img-contain {
 @media (max-width: 1000px) {
   .hero { grid-template-columns: 1fr; text-align: center; padding-top: 1.6rem; }
   .hero-copy { display: flex; flex-direction: column; align-items: center; }
+  .paw-trail { display: none; } /* stacked hero: prints would sit on content */
   .hero-media { max-width: 30rem; margin: 0 auto; width: 100%; }
   .featured-inner { grid-template-columns: 1fr; }
   .review-row { grid-template-columns: 1fr; max-width: 34rem; margin: 0 auto; }
@@ -939,7 +1018,16 @@ img.img-contain {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .ticker-track { animation: none; }
-  .sticker { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
+  /* entrance-animated elements start hidden in CSS — restore them fully */
+  .hero-in, .h-line, .hero-blob, .hero-img, .paw-trail span {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .paw-trail span { opacity: 0.16; transform: rotate(var(--r, 0deg)); }
+  .sticker { animation: none; opacity: 1; scale: 1; }
+  .hero-title em { animation: none; }
+  .hero-title em::after { animation: none; transform: rotate(-1deg) scaleX(1); }
   * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }

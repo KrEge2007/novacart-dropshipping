@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=7" />
+  <link rel="stylesheet" href="styles.css?v=8" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%23E86A47'/><text x='16' y='23' font-size='17' text-anchor='middle'>🐾</text></svg>" />
 </head>
 <body>
@@ -35,22 +35,33 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero">
+    <div class="paw-trail" aria-hidden="true">
+      <span style="--d:1.15s; --r:-18deg; left:4%;  bottom:9%">🐾</span>
+      <span style="--d:1.3s;  --r:14deg;  left:12%; bottom:15%">🐾</span>
+      <span style="--d:1.45s; --r:-16deg; left:20%; bottom:10%">🐾</span>
+      <span style="--d:1.6s;  --r:12deg;  left:28%; bottom:17%">🐾</span>
+      <span style="--d:1.75s; --r:-14deg; left:36%; bottom:12%">🐾</span>
+      <span style="--d:1.9s;  --r:10deg;  left:44%; bottom:19%">🐾</span>
+    </div>
     <div class="hero-copy">
-      <p class="eyebrow reveal in">For dogs, cats &amp; the people they own</p>
-      <h1 class="hero-title">The good stuff.<br /><em>Tails will wag.</em></h1>
-      <p class="lede">
+      <p class="eyebrow hero-in" style="--d:0.05s">For dogs, cats &amp; the people they own</p>
+      <h1 class="hero-title">
+        <span class="h-mask"><span class="h-line" style="--d:0.18s">The good stuff.</span></span>
+        <span class="h-mask"><span class="h-line" style="--d:0.34s"><em>Tails will wag.</em></span></span>
+      </h1>
+      <p class="lede hero-in" style="--d:0.55s">
         We stock only the pet products that earned the hype — the ones with
         thousands of five-star reviews and the before/after videos to prove it.
         No endless catalog. Just the hits.
       </p>
-      <div class="hero-actions">
+      <div class="hero-actions hero-in" style="--d:0.72s">
         <a class="button button-big" href="#shop">Shop bestsellers</a>
         <a class="button button-plain" href="#featured">See what's trending</a>
       </div>
       <ul class="hero-trust" aria-label="Why shop with us">
-        <li>⭐ 4.8 average rating</li>
-        <li>🚚 Free shipping over $50</li>
-        <li>💛 30-day wag-guarantee</li>
+        <li class="hero-in" style="--d:0.88s">⭐ 4.8 average rating</li>
+        <li class="hero-in" style="--d:0.98s">🚚 Free shipping over $50</li>
+        <li class="hero-in" style="--d:1.08s">💛 30-day wag-guarantee</li>
       </ul>
     </div>
     <div class="hero-media">
@@ -205,7 +216,7 @@
 
   <div class="toast" id="toast" role="status"></div>
 
-  <script src="store.js?v=7"></script>
-  <script src="app.js?v=7"></script>
+  <script src="store.js?v=8"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>
