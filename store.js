@@ -120,11 +120,13 @@ window.addEventListener("pageshow", () => {
 
 /* ---------- shared product card ---------- */
 
-function cardHTML(p, i = 0) {
+// `feature` renders the wide bento variant: spans two grid columns with a
+// side-by-side image/info layout and roomier typography.
+function cardHTML(p, i = 0, feature = false) {
   const pct = discountPct(p);
   const fromPrice = p.variants?.length ? Math.min(...p.variants.map((v) => v.price)) : p.price;
   return `
-    <article class="card reveal" style="--d:${(i % 4) * 90}ms" data-pet="${esc(p.petType || "both")}" data-cat="${esc(p.category)}">
+    <article class="card reveal${feature ? " card--feature" : ""}" style="--d:${(i % 4) * 90}ms" data-pet="${esc(p.petType || "both")}" data-cat="${esc(p.category)}">
       <a class="card-link" href="product.html?id=${encodeURIComponent(p.id)}" aria-label="${esc(p.name)}"></a>
       <div class="card-media">
         <img class="${imgFit(p.image).trim()}" src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" />
@@ -136,6 +138,14 @@ function cardHTML(p, i = 0) {
         ${starsHTML(p.rating, p.reviews)}
         <h3 class="card-name">${esc(p.name)}</h3>
         <p class="card-blurb">${esc(p.blurb || "")}</p>
+        ${
+          feature && p.benefits?.length
+            ? `<ul class="card-benefits">${p.benefits
+                .slice(0, 2)
+                .map((b) => `<li>${esc(b)}</li>`)
+                .join("")}</ul>`
+            : ""
+        }
         <p class="card-price">
           ${p.variants?.length ? `<span class="from">from</span> ` : ""}${money(fromPrice)}
           ${p.compareAt > p.price ? `<s>${money(p.compareAt)}</s>` : ""}

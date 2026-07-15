@@ -16,11 +16,40 @@ function matchesFilter(p, filter) {
   return p.category === filter;
 }
 
+/* Non-product tiles that break up the grid so it reads hand-arranged. */
+
+const QUOTE_TILE = `
+  <figure class="grid-tile tile-quote reveal" aria-label="Customer review">
+    <div class="review-stars" aria-hidden="true">★★★★★</div>
+    <blockquote>“Wait, where did all the fur go?”</blockquote>
+    <figcaption>— every FuzzOff review, basically</figcaption>
+  </figure>`;
+
+const STAT_TILE = `
+  <div class="grid-tile tile-stat reveal">
+    <strong>12,000+</strong>
+    <p>happy pets and counting</p>
+    <span>⭐ 4.8 average · 💛 30-day wag-guarantee</span>
+  </div>`;
+
 function renderGrid() {
   const grid = $("#product-grid");
   const items = store.products.filter((p) => matchesFilter(p, activeFilter));
-  grid.innerHTML = items.length
-    ? items.map((p, i) => cardHTML(p, i)).join("")
+
+  // Bento rhythm: lead with a wide feature card, drop another mid-grid,
+  // and (on the full view) slip editorial tiles between products.
+  const cells = [];
+  items.forEach((p, i) => {
+    const feature = items.length > 4 && (i === 0 || i === 7);
+    cells.push(cardHTML(p, i, feature));
+    if (activeFilter === "all") {
+      if (i === 3) cells.push(QUOTE_TILE);
+      if (i === 10) cells.push(STAT_TILE);
+    }
+  });
+
+  grid.innerHTML = cells.length
+    ? cells.join("")
     : `<p class="grid-empty">Nothing in this corner yet — check the other filters.</p>`;
   observeReveals();
 }
