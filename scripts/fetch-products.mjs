@@ -67,11 +67,11 @@ const CAT = {
  */
 const WINNERS = [
   { id: "wg-grooming-vacuum", categories: [CAT.hairRemovers, CAT.showerProducts],
-    mustInclude: ["vacuum"], mustAny: [], nice: ["groom", "suction", "dog", "cat"], blocklist: ["robot"] },
+    mustInclude: ["vacuum"], mustAny: [], nice: ["kit", "in 1", "groom", "brush", "suction"], blocklist: ["robot"] },
   { id: "wg-paw-cleaner", categories: [CAT.showerProducts, CAT.hairRemovers],
     mustInclude: ["paw"], mustAny: ["clean", "wash"], nice: ["cup", "portable", "silicone"], blocklist: ["balm", "wax", "sock", "wipe"] },
   { id: "wg-smart-ball", categories: [CAT.chaseToys, CAT.trainingToys, CAT.toySets],
-    mustInclude: ["ball"], mustAny: ["smart", "automatic", "rolling", "interactive", "electric", "self"], nice: ["usb", "rechargeable", "led"], blocklist: ["launcher", "tennis", "wool"] },
+    mustInclude: ["ball"], mustAny: ["smart", "automatic", "rolling", "self-moving", "self moving", "jumping"], nice: ["usb", "rechargeable", "interactive", "electric"], blocklist: ["launcher", "tennis", "wool", "feather", "stick", "tease", "wand"] },
   { id: "wg-donut-bed", categories: [CAT.beds, CAT.nests],
     mustInclude: ["bed"], mustAny: [], nice: ["donut", "calming", "plush", "round", "anxiety", "washable"], blocklist: ["car", "cooling", "stairs"] },
   { id: "wg-car-hammock", categories: [CAT.carMats, CAT.seatBelts],
@@ -79,7 +79,7 @@ const WINNERS = [
   { id: "wg-water-fountain", categories: [CAT.drinkingTools, CAT.bowls],
     mustInclude: ["fountain"], mustAny: [], nice: ["water", "automatic", "filter", "quiet", "cat"], blocklist: ["solar", "garden"] },
   { id: "wg-harness", categories: [CAT.harnesses, CAT.harnessSets],
-    mustInclude: ["harness"], mustAny: [], nice: ["no pull", "no-pull", "reflective", "vest", "adjustable", "dog"], blocklist: ["car", "seat", "cat", "bird", "rabbit"] },
+    mustInclude: ["harness"], mustAny: [], nice: ["no pull", "no-pull", "reflective", "adjustable", "dog", "breathable"], blocklist: ["car", "seat", "cat", "bird", "rabbit", "tactical", "boobs", "service"] },
   { id: "wg-hair-roller", categories: [CAT.hairRemovers],
     mustInclude: ["hair"], mustAny: ["roller", "remover", "removal"], nice: ["reusable", "self-cleaning", "sofa", "lint"], blocklist: ["bow", "dye", "clipper", "trimmer"] },
   { id: "wg-snuffle-mat", categories: [CAT.trainingToys, CAT.petMats, CAT.feedingTools],
@@ -92,10 +92,10 @@ const WINNERS = [
     mustInclude: [], mustAny: ["backpack", "carrier"], nice: ["space", "capsule", "bubble", "window", "breathable", "transparent"], blocklist: ["waste", "poop", "treat", "stroller"] },
   { id: "wg-water-bottle", categories: [CAT.drinkingTools],
     mustInclude: ["bottle"], mustAny: ["portable", "travel", "walking", "outdoor", "dog"], nice: ["leak", "bowl", "one-hand"], blocklist: ["nursing", "milk", "feeding", "glass"] },
-  { id: "wg-corner-brush", categories: [CAT.hairRemovers],
-    mustInclude: ["cat"], mustAny: ["corner", "wall"], nice: ["groom", "brush", "massage", "comb", "catnip"], blocklist: ["board", "paper", "scratch"] },
-  { id: "wg-flopping-fish", categories: [CAT.plushToys, CAT.soundToys, CAT.chaseToys],
-    mustInclude: ["fish"], mustAny: ["flop", "electric", "moving", "kicker", "wiggle", "dancing", "jumping"], nice: ["usb", "catnip", "cat"], blocklist: ["tank", "aquarium", "wall", "feeder"] },
+  { id: "wg-corner-brush", categories: [CAT.hairRemovers, CAT.showerProducts, CAT.trainingToys],
+    mustInclude: ["cat"], mustAny: ["corner", "wall", "arch"], nice: ["groom", "brush", "massage", "comb", "catnip"], blocklist: ["board", "paper", "cardboard"] },
+  { id: "wg-flopping-fish", categories: [CAT.plushToys, CAT.soundToys, CAT.chaseToys, CAT.trainingToys, CAT.toySets],
+    mustInclude: ["fish"], mustAny: ["flop", "electric", "moving", "kicker", "wiggle", "dancing", "jumping"], nice: ["electric", "flopping", "usb", "rechargeable", "simulation"], blocklist: ["tank", "aquarium", "wall", "feeder"] },
   { id: "wg-heartbeat-pup", categories: [CAT.plushToys],
     mustInclude: [], mustAny: ["heartbeat", "heart beat"], nice: ["puppy", "dog", "anxiety", "calm", "sleep"], blocklist: ["cap", "hat", "shirt"] },
 ];
@@ -434,7 +434,7 @@ async function main() {
         await sleep(1100);
         const listing = await findListing(token, winner);
         if (!listing) {
-          console.warn(`  ${winner.id}: no CJ match for "${winner.query}" — keeping current entry`);
+          console.warn(`  ${winner.id}: no CJ match in its categories — keeping current entry`);
           continue;
         }
         pid = listing.pid;
