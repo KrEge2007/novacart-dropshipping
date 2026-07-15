@@ -53,10 +53,10 @@ purchases are emotional and impulse-priced ($14–70 here).
   the 10 seconds). After-shot: clean paw on white sofa.
 - Format: problem montage. Rain-season seasonal spikes — schedule around them.
 
-### ZoomOrb Smart Ball
+### ZoomOrb Jumping Ball
 - Hook: cat sitting dead-eyed next to a mountain of ignored toys. "He's
   bored of everything. Watch this."
-- Body: ball starts rolling on its own, cat's pupils dilate, parkour ensues.
+- Body: ball starts bouncing on its own, cat's pupils dilate, parkour ensues.
 - Format: POV pet or straight reaction footage. Cat reaction videos are the
   single most reliable pet-content format on TikTok.
 
@@ -81,12 +81,13 @@ purchases are emotional and impulse-priced ($14–70 here).
 - Format: POV cat. Educational hooks convert well for this one — it solves a
   real health worry.
 
-### EasyWalk Harness
+### EasyWalk Vest Harness
 - Hook: human waterskiing behind a lab on a leash (AI video shines at this
   kind of exaggeration).
-- Body: clip to front ring, dog turns gently back, loose-leash walking.
-- Format: before/after. Show the on/off buckling — "nothing over the head"
-  matters to buyers with head-shy dogs.
+- Body: swap collar for the vest, pressure moves off the throat, loose-leash
+  walking; reflective strips glowing on an evening walk as the closer.
+- Format: before/after. The "collar = choking, vest = steering" line is the
+  educational hook that converts.
 
 ### FuzzOff Roller
 - Hook: lint roller sheet count hitting 47 on one sofa cushion.
