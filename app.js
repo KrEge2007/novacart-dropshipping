@@ -74,7 +74,6 @@ function renderFeatured() {
             p.compareAt > p.price ? ` <s>${money(p.compareAt)}</s>` : ""
           }</span>
           <a class="button" href="product.html?id=${encodeURIComponent(p.id)}">See it in action</a>
-          ${p.variants?.length ? "" : `<button class="button button-plain card-add" data-id="${esc(p.id)}">Add to cart</button>`}
         </div>
       </div>
     </div>`;
@@ -95,14 +94,11 @@ $("#newsletter-form").addEventListener("submit", (e) => {
     await loadCatalog();
     renderGrid();
     renderFeatured();
-    // Back from a completed Stripe checkout: thank the buyer, clear the cart.
+    // Back from a completed Stripe checkout: thank the buyer.
     if (new URLSearchParams(location.search).get("paid")) {
-      store.cart = {};
-      saveCart();
       history.replaceState(null, "", location.pathname);
       toast("Order received — thank you! 🐾 Confirmation is on its way to your inbox.");
     }
-    renderCart();
     observeReveals();
   } catch (err) {
     $("#product-grid").innerHTML =

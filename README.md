@@ -74,13 +74,12 @@ the static site never touches the secret key:
   Payment Link for every product and variant, and writes the `buy.stripe.com`
   URL into `data/products.json` (`stripe.link`). When the daily CJ refresh
   changes a price, a new Price/Link is created and the old link deactivated.
-- The product page's **Buy now** goes straight to that hosted checkout
-  (quantity adjustable there, shipping address collected, then redirected
-  back to the site with `?paid=1` for the thank-you state).
-- A payment link covers one product, so the cart redirects to Stripe when it
-  holds a single item; mixed carts check out per item. True multi-item
-  checkout needs a small serverless endpoint that creates Checkout Sessions —
-  the natural next step (Cloudflare Workers / Vercel).
+- The store is **Buy-now only** (no cart): the product page's Buy now goes
+  straight to that hosted checkout — quantity adjustable there, shipping
+  address collected, then redirected back to the site with `?paid=1` for the
+  thank-you toast. A payment link covers one product; if a multi-item cart
+  ever becomes worth it, that needs a small serverless endpoint creating
+  Checkout Sessions (Cloudflare Workers / Vercel).
 - `STRIPE_PUBLISHABLE_KEY` is not needed for this integration (it's only for
   Stripe.js in the browser); it can stay in secrets for later.
 

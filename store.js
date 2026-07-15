@@ -1,6 +1,8 @@
 /* ============================================================
    Waggle & Co. — shared store logic
-   Catalog loading, cart drawer, toast, ratings, scroll reveals.
+   Catalog loading, toast, ratings, product cards, scroll reveals.
+   Checkout is Buy-now only: every product/variant carries a hosted
+   Stripe Payment Link (stripe.link), so there is no local cart.
    Loaded before app.js (home) and product.js (product page).
    ============================================================ */
 
@@ -18,15 +20,9 @@ const esc = (s) =>
 
 const FREE_SHIPPING_AT = 50;
 
-// CJ supplier photos are square studio shots (often with baked-in text):
-// they need object-fit: contain on white, while lifestyle placeholders
-// look best cropped with cover. Decided per image URL.
-const imgFit = (src) => (/cjdropshipping\.com/.test(String(src)) ? " img-contain" : "");
-
 const store = {
   products: [],
   meta: null,
-  cart: JSON.parse(localStorage.getItem("waggle-cart") || "{}"),
 };
 
 /* ---------- shared render helpers ---------- */
@@ -47,6 +43,11 @@ function discountPct(p) {
   return Math.round((1 - p.price / p.compareAt) * 100);
 }
 
+// CJ supplier photos are square studio shots (often with baked-in text):
+// they need object-fit: contain on white, while lifestyle placeholders
+// look best cropped with cover. Decided per image URL.
+const imgFit = (src) => (/cjdropshipping\.com/.test(String(src)) ? " img-contain" : "");
+
 /* ---------- toast ---------- */
 
 function toast(msg) {
@@ -54,7 +55,7 @@ function toast(msg) {
   el.textContent = msg;
   el.classList.add("show");
   clearTimeout(toast._t);
-  toast._t = setTimeout(() => el.classList.remove("show"), 2400);
+  toast._t = setTimeout(() => el.classList.remove("show"), 3200);
 }
 
 /* ---------- catalog ---------- */
@@ -117,143 +118,6 @@ window.addEventListener("pageshow", () => {
   });
 });
 
-/* ---------- cart ---------- */
-
-function saveCart() {
-  localStorage.setItem("waggle-cart", JSON.stringify(store.cart));
-}
-
-function addToCart(id, qty = 1) {
-  store.cart[id] = (store.cart[id] || 0) + qty;
-  saveCart();
-  renderCart();
-  const badge = $("#cart-count");
-  badge.classList.remove("pop");
-  void badge.offsetWidth; // restart the animation
-  badge.classList.add("pop");
-  toast("Added to cart 🐾");
-}
-
-// Cart keys are "pid" or "pid::vid" (product variant).
-function resolveCartKey(key) {
-  const [pid, vid] = String(key).split("::");
-  const product = store.products.find((p) => p.id === pid);
-  if (!product) return null;
-  const variant = vid ? (product.variants || []).find((v) => v.id === vid) : null;
-  if (vid && !variant) return null;
-  return {
-    key,
-    product,
-    variant,
-    price: variant?.price ?? product.price,
-    image: variant?.image ?? product.image,
-    label: variant ? `${product.name} · ${variant.name}` : product.name,
-  };
-}
-
-function cartEntries() {
-  return Object.entries(store.cart)
-    .map(([key, qty]) => ({ ...resolveCartKey(key), qty }))
-    .filter((e) => e.product && e.qty > 0);
-}
-
-function renderCart() {
-  const entries = cartEntries();
-  const count = entries.reduce((n, e) => n + e.qty, 0);
-  const total = entries.reduce((n, e) => n + e.price * e.qty, 0);
-
-  $("#cart-count").textContent = count;
-  $("#cart-total").textContent = money(total);
-
-  const ship = $("#cart-shipnote");
-  const bar = $("#cart-shipbar");
-  if (!count) {
-    ship.textContent = "";
-    if (bar) bar.style.setProperty("--fill", "0%");
-  } else if (total >= FREE_SHIPPING_AT) {
-    ship.textContent = "🎉 Free shipping unlocked!";
-    if (bar) bar.style.setProperty("--fill", "100%");
-  } else {
-    ship.textContent = `${money(FREE_SHIPPING_AT - total)} away from free shipping`;
-    if (bar) bar.style.setProperty("--fill", `${Math.min(100, (total / FREE_SHIPPING_AT) * 100)}%`);
-  }
-
-  const body = $("#cart-items");
-  if (!entries.length) {
-    body.innerHTML = `<div class="cart-empty">
-      <span class="cart-empty-icon" aria-hidden="true">🐾</span>
-      <p>Your cart is empty.</p>
-      <a class="button button-small" href="index.html#shop">Shop bestsellers</a>
-    </div>`;
-    return;
-  }
-  body.innerHTML = entries
-    .map(
-      ({ key, label, image, price, qty }, i) => `
-    <div class="cart-line" style="--i:${i}">
-      <img src="${esc(image)}" alt="" />
-      <div class="cart-line-info">
-        <strong>${esc(label)}</strong>
-        <span class="muted">${money(price)}</span>
-        <div class="qty">
-          <button data-id="${esc(key)}" data-d="-1" aria-label="Decrease quantity">−</button>
-          <span>${qty}</span>
-          <button data-id="${esc(key)}" data-d="1" aria-label="Increase quantity">+</button>
-        </div>
-      </div>
-      <span class="cart-line-price">${money(price * qty)}</span>
-    </div>`
-    )
-    .join("");
-}
-
-document.addEventListener("click", (e) => {
-  const qty = e.target.closest(".qty button");
-  if (qty && qty.dataset.id) {
-    const id = qty.dataset.id;
-    store.cart[id] = (store.cart[id] || 0) + Number(qty.dataset.d);
-    if (store.cart[id] <= 0) delete store.cart[id];
-    saveCart();
-    renderCart();
-  }
-  // Quick-add buttons on product cards (home, related, anywhere)
-  const add = e.target.closest(".card-add");
-  if (add) addToCart(add.dataset.id);
-});
-
-function openCart(open) {
-  const cart = $("#cart");
-  cart.classList.toggle("open", open);
-  $("#scrim").classList.toggle("show", open);
-  if (open) {
-    cart.classList.add("cart--fresh");
-    clearTimeout(openCart._t);
-    openCart._t = setTimeout(() => cart.classList.remove("cart--fresh"), 900);
-  }
-}
-
-$("#cart-btn").addEventListener("click", () => openCart(true));
-$("#cart-close").addEventListener("click", () => openCart(false));
-$("#scrim").addEventListener("click", () => openCart(false));
-
-/* Checkout goes through Stripe-hosted Payment Links (one per product/
-   variant, generated by scripts/sync-stripe.mjs). A payment link covers a
-   single product, so a one-line cart redirects straight to Stripe; mixed
-   carts check out per item via each product's Buy now for the time being. */
-$("#checkout-btn").addEventListener("click", () => {
-  const entries = cartEntries();
-  if (!entries.length) return toast("Your cart is empty");
-  const links = entries.map((e) => e.variant?.stripe?.link ?? e.product.stripe?.link);
-  if (!links[0]) {
-    return toast("Checkout isn't connected yet — check back soon");
-  }
-  if (entries.length === 1) {
-    location.href = links[0];
-    return;
-  }
-  toast("Checkout handles one product at a time for now — open a product and hit Buy now");
-});
-
 /* ---------- shared product card ---------- */
 
 function cardHTML(p, i = 0) {
@@ -266,7 +130,7 @@ function cardHTML(p, i = 0) {
         <img class="${imgFit(p.image).trim()}" src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" />
         ${p.badge ? `<span class="card-badge">${esc(p.badge)}</span>` : ""}
         ${pct ? `<span class="card-off">−${pct}%</span>` : ""}
-        <button class="card-add" data-id="${esc(p.id)}" aria-label="Add ${esc(p.name)} to cart">Add to cart</button>
+        <span class="card-add" aria-hidden="true">View product</span>
       </div>
       <div class="card-info">
         ${starsHTML(p.rating, p.reviews)}
