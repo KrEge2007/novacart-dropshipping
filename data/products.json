@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-19T07:25:02.861Z",
+    "updatedAt": "2026-07-20T07:55:22.264Z",
     "source": "cjdropshipping",
     "note": "Hand-picked evergreen bestsellers. Images are placeholders until scripts/fetch-products.mjs matches each pick to a live CJdropshipping listing and fills in real supplier photos, prices, and SKUs."
   },
@@ -42,10 +42,10 @@
           "compareAt": 149.95,
           "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg",
           "stripe": {
-            "productId": "prod_UueOU4RA76HaUU",
-            "priceId": "price_1Tup5v7lhIablcA6Nbtpru8t",
-            "linkId": "plink_1Tup5v7lhIablcA6RMsNi7Lp",
-            "link": "https://buy.stripe.com/test_6oU4gtaGr3v61ke3VK3AZ2b",
+            "productId": "prod_Uv27iTiOid2DDX",
+            "priceId": "price_1TvC2o7lhIablcA6FwcfKanN",
+            "linkId": "plink_1TvC2p7lhIablcA6UzwZJ3U9",
+            "link": "https://buy.stripe.com/test_fZuaERbKv0iUgf81NC3AZ34",
             "amount": 110.95,
             "phone": true
           }
@@ -58,10 +58,10 @@
           "compareAt": 149.95,
           "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg",
           "stripe": {
-            "productId": "prod_UueOLuqn69JZAJ",
-            "priceId": "price_1Tup5w7lhIablcA6QtDOMTkl",
-            "linkId": "plink_1Tup5w7lhIablcA6iCJxPOrf",
-            "link": "https://buy.stripe.com/test_fZuaERdSDd5G3sm9g43AZ2c",
+            "productId": "prod_Uv27eswA0T99YZ",
+            "priceId": "price_1TvC2p7lhIablcA6LhiEaM67",
+            "linkId": "plink_1TvC2q7lhIablcA64ssfGodp",
+            "link": "https://buy.stripe.com/test_bJe9AN9Cn5De9QKgIw3AZ35",
             "amount": 110.95,
             "phone": true
           }
@@ -74,10 +74,10 @@
           "compareAt": 149.95,
           "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg",
           "stripe": {
-            "productId": "prod_UueO6Vk0bq1Iny",
-            "priceId": "price_1Tup5x7lhIablcA6feY6TfYe",
-            "linkId": "plink_1Tup5x7lhIablcA6WUDKYGUp",
-            "link": "https://buy.stripe.com/test_8x27sF15R3v6d2Wcsg3AZ2d",
+            "productId": "prod_Uv27fwBwXssPBi",
+            "priceId": "price_1TvC2q7lhIablcA6kkZxW9u2",
+            "linkId": "plink_1TvC2q7lhIablcA6Bqjmkvhh",
+            "link": "https://buy.stripe.com/test_3cI28leWH2r28MG0Jy3AZ36",
             "amount": 110.95,
             "phone": true
           }
@@ -90,10 +90,10 @@
           "compareAt": 149.95,
           "image": "https://cf.cjdropshipping.com/quick/product/426553f5-0eaa-4653-9936-cf7b79b116ee.jpg",
           "stripe": {
-            "productId": "prod_UueOuUe2QmZ5dw",
-            "priceId": "price_1Tup5x7lhIablcA6kQiImfED",
-            "linkId": "plink_1Tup5y7lhIablcA6NDfovXhg",
-            "link": "https://buy.stripe.com/test_7sYaEReWH1mYaUO2RG3AZ2e",
+            "productId": "prod_Uv27bnd2zYY0Tn",
+            "priceId": "price_1TvC2r7lhIablcA6IgnewHXe",
+            "linkId": "plink_1TvC2r7lhIablcA6I6XJdrcS",
+            "link": "https://buy.stripe.com/test_9B66oB6qb8Pqgf82RG3AZ37",
             "amount": 110.95,
             "phone": true
           }
@@ -139,10 +139,10 @@
           "compareAt": 35.95,
           "image": "https://cf.cjdropshipping.com/f91e1530-6d30-475a-bc06-a4e484d4bebd.jpg",
           "stripe": {
-            "productId": "prod_UueORPgDidNaUc",
-            "priceId": "price_1Tup5y7lhIablcA6E5VW90nQ",
-            "linkId": "plink_1Tup5y7lhIablcA6ynsb9RFo",
-            "link": "https://buy.stripe.com/test_bJe28l3dZ9Tugf8ak83AZ2f",
+            "productId": "prod_Uv272sUqwnmgVP",
+            "priceId": "price_1TvC2s7lhIablcA6GCk0FnhG",
+            "linkId": "plink_1TvC2s7lhIablcA6mAdQtYe2",
+            "link": "https://buy.stripe.com/test_eVqeV78yj9Tud2Wak83AZ38",
             "amount": 25.95,
             "phone": true
           }
@@ -155,10 +155,10 @@
           "compareAt": 35.95,
           "image": "https://cf.cjdropshipping.com/3c406ac5-a8b7-4952-a1aa-83ee83977fc9.jpg",
           "stripe": {
-            "productId": "prod_UueOqRFm6IOmdI",
-            "priceId": "price_1Tup5z7lhIablcA6UO0bd37f",
-            "linkId": "plink_1Tup5z7lhIablcA6SwkB5yOe",
-            "link": "https://buy.stripe.com/test_aFa7sF8yj2r29QKcsg3AZ2g",
+            "productId": "prod_Uv27V6JEPITcMM",
+            "priceId": "price_1TvC2t7lhIablcA6sdPG5bXU",
+            "linkId": "plink_1TvC2t7lhIablcA6mUC7YHmP",
+            "link": "https://buy.stripe.com/test_3cI28l9Cnc1Cfb42RG3AZ39",
             "amount": 25.95,
             "phone": true
           }
@@ -204,10 +204,10 @@
           "compareAt": 21.95,
           "image": "https://cf.cjdropshipping.com/0e45b4d5-cc99-435a-896f-0cd5c3cadcf7.jpg",
           "stripe": {
-            "productId": "prod_UueOn0I3E9qtXN",
-            "priceId": "price_1Tup607lhIablcA6BUlRRuJJ",
-            "linkId": "plink_1Tup607lhIablcA6QYN5PRQX",
-            "link": "https://buy.stripe.com/test_dRm28l4i39Tugf88c03AZ2h",
+            "productId": "prod_Uv27itl7bSNAJE",
+            "priceId": "price_1TvC2u7lhIablcA6TdnCTxFJ",
+            "linkId": "plink_1TvC2u7lhIablcA6ZLjKVqvf",
+            "link": "https://buy.stripe.com/test_00wcMZaGrghS3smgIw3AZ3a",
             "amount": 15.95,
             "phone": true
           }
@@ -220,10 +220,10 @@
           "compareAt": 21.95,
           "image": "https://cf.cjdropshipping.com/51f9997f-8c8f-4bc4-b41d-8bfb3e15cf6e.jpg",
           "stripe": {
-            "productId": "prod_UueOHnvSmh7Qts",
-            "priceId": "price_1Tup617lhIablcA604xBNQ29",
-            "linkId": "plink_1Tup617lhIablcA6A02SK9O3",
-            "link": "https://buy.stripe.com/test_fZubIV7ufe9KbYSeAo3AZ2i",
+            "productId": "prod_Uv27KfjkzYUlG6",
+            "priceId": "price_1TvC2u7lhIablcA6IUOGYDPl",
+            "linkId": "plink_1TvC2v7lhIablcA6tSDsLFVr",
+            "link": "https://buy.stripe.com/test_5kQfZb5m7c1C0ga63S3AZ3b",
             "amount": 15.95,
             "phone": true
           }
@@ -269,10 +269,10 @@
           "compareAt": 97.95,
           "image": "https://cf.cjdropshipping.com/e1574ab0-f79f-410d-abe7-249184149c8e.jpg",
           "stripe": {
-            "productId": "prod_UueO9KPrgWzhSW",
-            "priceId": "price_1Tup617lhIablcA6l11gkLjh",
-            "linkId": "plink_1Tup627lhIablcA6NRozMjyR",
-            "link": "https://buy.stripe.com/test_bJe00d6qb0iU7ICak83AZ2j",
+            "productId": "prod_Uv27sN9SM9Jo7s",
+            "priceId": "price_1TvC2v7lhIablcA6BS1OKBSG",
+            "linkId": "plink_1TvC2w7lhIablcA61p0UK1L8",
+            "link": "https://buy.stripe.com/test_aFabIV4i31mY0gagIw3AZ3c",
             "amount": 71.95,
             "phone": true
           }
@@ -285,10 +285,10 @@
           "compareAt": 93.95,
           "image": "https://cf.cjdropshipping.com/8ae69ad1-c9ab-4312-8503-640eb63fde5f.jpg",
           "stripe": {
-            "productId": "prod_UueOEe98brcuZ8",
-            "priceId": "price_1Tup627lhIablcA6ca9Y32Ls",
-            "linkId": "plink_1Tup637lhIablcA6VCaVjCrR",
-            "link": "https://buy.stripe.com/test_9B628ldSDfdObYS4ZO3AZ2k",
+            "productId": "prod_Uv27OFt8S4iBsE",
+            "priceId": "price_1TvC2w7lhIablcA6jguAUwi9",
+            "linkId": "plink_1TvC2w7lhIablcA6yqsQmesJ",
+            "link": "https://buy.stripe.com/test_00w3cp6qbfdO8MGcsg3AZ3d",
             "amount": 68.95,
             "phone": true
           }
@@ -375,10 +375,10 @@
           "compareAt": 55.95,
           "image": "https://cf.cjdropshipping.com/b882d8cc-d6be-49ca-afb3-009a200bfd3d.png",
           "stripe": {
-            "productId": "prod_UueOMnE15GIp4C",
-            "priceId": "price_1Tup637lhIablcA6518fbr9Z",
-            "linkId": "plink_1Tup637lhIablcA61IeOBksN",
-            "link": "https://buy.stripe.com/test_bJeeV73dZ6Hid2W8c03AZ2l",
+            "productId": "prod_Uv27sUZqJAT9y7",
+            "priceId": "price_1TvC2x7lhIablcA6yAfhl1u1",
+            "linkId": "plink_1TvC2x7lhIablcA622gv34eP",
+            "link": "https://buy.stripe.com/test_8x28wJ4i3aXybYS2RG3AZ3e",
             "amount": 40.95,
             "phone": true
           }
@@ -391,10 +391,10 @@
           "compareAt": 55.95,
           "image": "https://cf.cjdropshipping.com/ac2e7341-1d27-4337-a89b-a4919830b778.png",
           "stripe": {
-            "productId": "prod_UueOkhJsB6bL4j",
-            "priceId": "price_1Tup647lhIablcA6oFFVkjns",
-            "linkId": "plink_1Tup647lhIablcA6dgD7C5Am",
-            "link": "https://buy.stripe.com/test_bJeaER6qb9Tu1ke2RG3AZ2m",
+            "productId": "prod_Uv27uNQZNILczT",
+            "priceId": "price_1TvC2y7lhIablcA6bP7zPld9",
+            "linkId": "plink_1TvC2y7lhIablcA6vRYEruyy",
+            "link": "https://buy.stripe.com/test_fZu28l01Ne9K5Au9g43AZ3f",
             "amount": 40.95,
             "phone": true
           }
@@ -440,10 +440,10 @@
           "compareAt": 18.95,
           "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg",
           "stripe": {
-            "productId": "prod_UueOFs1eZ5OUpz",
-            "priceId": "price_1Tup657lhIablcA6NJQPlVFi",
-            "linkId": "plink_1Tup657lhIablcA6FiSXVQxm",
-            "link": "https://buy.stripe.com/test_5kQ00dg0L9TuaUOboc3AZ2n",
+            "productId": "prod_Uv27NSopeMM7mL",
+            "priceId": "price_1TvC2z7lhIablcA6UOPRvEjK",
+            "linkId": "plink_1TvC2z7lhIablcA66L98gxk8",
+            "link": "https://buy.stripe.com/test_8x214hdSD1mY4wq77W3AZ3g",
             "amount": 13.95,
             "phone": true
           }
@@ -456,10 +456,10 @@
           "compareAt": 18.95,
           "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg",
           "stripe": {
-            "productId": "prod_UueOl272BFM67R",
-            "priceId": "price_1Tup667lhIablcA62KTryYhU",
-            "linkId": "plink_1Tup667lhIablcA60bOKwly4",
-            "link": "https://buy.stripe.com/test_bJeeV77uf2r27IC3VK3AZ2o",
+            "productId": "prod_Uv27jBPB6qRkdj",
+            "priceId": "price_1TvC307lhIablcA6URwp0e8i",
+            "linkId": "plink_1TvC307lhIablcA6Pfd7qTFv",
+            "link": "https://buy.stripe.com/test_cNiaER15R9Tu4wqak83AZ3h",
             "amount": 13.95,
             "phone": true
           }
@@ -472,10 +472,10 @@
           "compareAt": 20.95,
           "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg",
           "stripe": {
-            "productId": "prod_UueOEpbHdgfpwI",
-            "priceId": "price_1Tup667lhIablcA61n041lna",
-            "linkId": "plink_1Tup677lhIablcA6n4VL2IYK",
-            "link": "https://buy.stripe.com/test_8x25kx15Re9KbYS0Jy3AZ2p",
+            "productId": "prod_Uv27WV2VEfbFUB",
+            "priceId": "price_1TvC317lhIablcA6GPFrI9DG",
+            "linkId": "plink_1TvC317lhIablcA6cGvq3WdI",
+            "link": "https://buy.stripe.com/test_fZu3cp8yj1mY2oi9g43AZ3i",
             "amount": 14.95,
             "phone": true
           }
@@ -488,10 +488,10 @@
           "compareAt": 20.95,
           "image": "https://cf.cjdropshipping.com/quick/product/efd823c0-a319-4a15-b727-6ac882488d19.jpg",
           "stripe": {
-            "productId": "prod_UueOCrVNgcQ7Mf",
-            "priceId": "price_1Tup677lhIablcA62GS0V1UT",
-            "linkId": "plink_1Tup687lhIablcA6sLblfHXL",
-            "link": "https://buy.stripe.com/test_14A00daGr3v6gf8gIw3AZ2q",
+            "productId": "prod_Uv27S0zjUtYZiD",
+            "priceId": "price_1TvC317lhIablcA6xQxL310R",
+            "linkId": "plink_1TvC327lhIablcA6lMPTwzDB",
+            "link": "https://buy.stripe.com/test_4gMeV7cOz0iU8MGfEs3AZ3j",
             "amount": 14.95,
             "phone": true
           }
@@ -504,10 +504,10 @@
           "compareAt": 18.95,
           "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg",
           "stripe": {
-            "productId": "prod_UueO7JucrL3kVD",
-            "priceId": "price_1Tup687lhIablcA6YTKTdxmA",
-            "linkId": "plink_1Tup687lhIablcA6Ky9q4IgS",
-            "link": "https://buy.stripe.com/test_eVqcMZ01N5De3smeAo3AZ2r",
+            "productId": "prod_Uv271anrlGlznC",
+            "priceId": "price_1TvC327lhIablcA6lTPgLKfE",
+            "linkId": "plink_1TvC337lhIablcA6fbAdCjvZ",
+            "link": "https://buy.stripe.com/test_00weV79Cn5De4wqdwk3AZ3k",
             "amount": 13.95,
             "phone": true
           }
@@ -520,10 +520,10 @@
           "compareAt": 18.95,
           "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg",
           "stripe": {
-            "productId": "prod_UueOdjW6PhqDrm",
-            "priceId": "price_1Tup697lhIablcA6rz2B17gn",
-            "linkId": "plink_1Tup697lhIablcA6rBG1I9sO",
-            "link": "https://buy.stripe.com/test_7sY28lcOz1mY3smdwk3AZ2s",
+            "productId": "prod_Uv27Rk817J6ZJS",
+            "priceId": "price_1TvC337lhIablcA6qu9HKu5d",
+            "linkId": "plink_1TvC347lhIablcA6ltPKnKDb",
+            "link": "https://buy.stripe.com/test_cNi5kx15Re9K6Eyak83AZ3l",
             "amount": 13.95,
             "phone": true
           }
@@ -536,10 +536,10 @@
           "compareAt": 20.95,
           "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg",
           "stripe": {
-            "productId": "prod_UueO3RSoWZ3mPO",
-            "priceId": "price_1Tup6A7lhIablcA6QS8PqN3v",
-            "linkId": "plink_1Tup6A7lhIablcA6Ef0p0dml",
-            "link": "https://buy.stripe.com/test_9B600d4i3fdObYSgIw3AZ2t",
+            "productId": "prod_Uv278MRqlLDGmT",
+            "priceId": "price_1TvC347lhIablcA6FOBlGj5Q",
+            "linkId": "plink_1TvC347lhIablcA6enzzgEDZ",
+            "link": "https://buy.stripe.com/test_8x24gt7uf5De3smeAo3AZ3m",
             "amount": 14.95,
             "phone": true
           }
@@ -552,10 +552,10 @@
           "compareAt": 20.95,
           "image": "https://cf.cjdropshipping.com/quick/product/43062a6e-77df-4451-8138-ff2dae1b1cec.jpg",
           "stripe": {
-            "productId": "prod_UueO5sMClt0oZk",
-            "priceId": "price_1Tup6A7lhIablcA6kuaVzqXX",
-            "linkId": "plink_1Tup6B7lhIablcA6SNdC6QJ9",
-            "link": "https://buy.stripe.com/test_8x2fZbcOz8Pq1ke1NC3AZ2u",
+            "productId": "prod_Uv27e0ZH5uoBl1",
+            "priceId": "price_1TvC357lhIablcA6hHPwUmeD",
+            "linkId": "plink_1TvC357lhIablcA6EO3yYgfW",
+            "link": "https://buy.stripe.com/test_6oU6oB3dZ3v62oifEs3AZ3n",
             "amount": 14.95,
             "phone": true
           }
@@ -568,10 +568,10 @@
           "compareAt": 18.95,
           "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg",
           "stripe": {
-            "productId": "prod_UueOYbcPh3BXnX",
-            "priceId": "price_1Tup6B7lhIablcA69BcANuM5",
-            "linkId": "plink_1Tup6B7lhIablcA6IG8gaMQu",
-            "link": "https://buy.stripe.com/test_eVq7sFeWH5Defb4csg3AZ2v",
+            "productId": "prod_Uv27JukkLqnvGk",
+            "priceId": "price_1TvC367lhIablcA6f1cpPeVM",
+            "linkId": "plink_1TvC367lhIablcA6nZzj5yJ5",
+            "link": "https://buy.stripe.com/test_00w7sF6qb5Defb463S3AZ3o",
             "amount": 13.95,
             "phone": true
           }
@@ -584,10 +584,10 @@
           "compareAt": 18.95,
           "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg",
           "stripe": {
-            "productId": "prod_UuePOChLNW7frw",
-            "priceId": "price_1Tup6C7lhIablcA65Jkb67af",
-            "linkId": "plink_1Tup6C7lhIablcA6gKNa9mty",
-            "link": "https://buy.stripe.com/test_14A9AN8yje9K4wq8c03AZ2w",
+            "productId": "prod_Uv271aOFxJnION",
+            "priceId": "price_1TvC377lhIablcA6XPbBAtMU",
+            "linkId": "plink_1TvC377lhIablcA6hud73UK9",
+            "link": "https://buy.stripe.com/test_7sY28l4i32r20gafEs3AZ3p",
             "amount": 13.95,
             "phone": true
           }
@@ -600,10 +600,10 @@
           "compareAt": 20.95,
           "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg",
           "stripe": {
-            "productId": "prod_UuePwX8YyTpNou",
-            "priceId": "price_1Tup6D7lhIablcA6l32fxu0i",
-            "linkId": "plink_1Tup6D7lhIablcA6I8rTKMYu",
-            "link": "https://buy.stripe.com/test_dRm00d3dZ7Lm9QK4ZO3AZ2x",
+            "productId": "prod_Uv27aEUNUVPFgy",
+            "priceId": "price_1TvC387lhIablcA6oAKrFKp0",
+            "linkId": "plink_1TvC387lhIablcA6eY5MUXH1",
+            "link": "https://buy.stripe.com/test_aFa3cp01NfdO3smboc3AZ3q",
             "amount": 14.95,
             "phone": true
           }
@@ -616,10 +616,10 @@
           "compareAt": 20.95,
           "image": "https://cf.cjdropshipping.com/quick/product/4d9ede0a-7790-4c14-80a2-0e2ebfa42483.jpg",
           "stripe": {
-            "productId": "prod_UueP5hKDcvxK6C",
-            "priceId": "price_1Tup6E7lhIablcA6igqxcxxq",
-            "linkId": "plink_1Tup6E7lhIablcA6sSiJebjS",
-            "link": "https://buy.stripe.com/test_8x2eV7aGre9K7ICgIw3AZ2y",
+            "productId": "prod_Uv27fyIW1p7ikL",
+            "priceId": "price_1TvC397lhIablcA6Rz4DVget",
+            "linkId": "plink_1TvC397lhIablcA6RXiZg42w",
+            "link": "https://buy.stripe.com/test_6oU00d9Cn3v60ga4ZO3AZ3r",
             "amount": 14.95,
             "phone": true
           }
@@ -665,10 +665,10 @@
           "compareAt": 17.95,
           "image": "https://cf.cjdropshipping.com/1204db08-c0f9-4bfd-8155-99ac6be6bcd0.jpg",
           "stripe": {
-            "productId": "prod_UueP8wEAOxGrb9",
-            "priceId": "price_1Tup6E7lhIablcA6ftMs4LIu",
-            "linkId": "plink_1Tup6F7lhIablcA6KJD0gJms",
-            "link": "https://buy.stripe.com/test_00wbIVeWH7Lm9QKcsg3AZ2z",
+            "productId": "prod_Uv27nBNxjRRehn",
+            "priceId": "price_1TvC397lhIablcA6EskWaSzL",
+            "linkId": "plink_1TvC3A7lhIablcA66rMkb9Dp",
+            "link": "https://buy.stripe.com/test_5kQ14h15R6HibYS63S3AZ3s",
             "amount": 12.95,
             "phone": true
           }
@@ -681,10 +681,10 @@
           "compareAt": 17.95,
           "image": "https://cf.cjdropshipping.com/d43124a4-7fec-46ae-8fbc-21e1dd2c1618.jpg",
           "stripe": {
-            "productId": "prod_UuePvV62PH816y",
-            "priceId": "price_1Tup6F7lhIablcA6fTKyIFCt",
-            "linkId": "plink_1Tup6F7lhIablcA63bNvpLA3",
-            "link": "https://buy.stripe.com/test_cNi7sF3dZ6Hi6Eyboc3AZ2A",
+            "productId": "prod_Uv27ZR3i1owfbr",
+            "priceId": "price_1TvC3A7lhIablcA6AuPz5Q27",
+            "linkId": "plink_1TvC3B7lhIablcA6VIbSXE5Y",
+            "link": "https://buy.stripe.com/test_8x25kxdSD8Pqfb42RG3AZ3t",
             "amount": 12.95,
             "phone": true
           }
@@ -730,10 +730,10 @@
           "compareAt": 21.95,
           "image": "https://cf.cjdropshipping.com/cc287379-6d03-4208-b697-07bb9c82266c.jpg",
           "stripe": {
-            "productId": "prod_UuePmWAWE55Ec0",
-            "priceId": "price_1Tup6G7lhIablcA6bnzBMQ19",
-            "linkId": "plink_1Tup6G7lhIablcA6JMSdHP01",
-            "link": "https://buy.stripe.com/test_00wdR3aGr4za2oi77W3AZ2B",
+            "productId": "prod_Uv27xFgWIMvupE",
+            "priceId": "price_1TvC3B7lhIablcA6Eg4vARf7",
+            "linkId": "plink_1TvC3B7lhIablcA64NCmrZmX",
+            "link": "https://buy.stripe.com/test_7sY3cpaGr1mYe708c03AZ3u",
             "amount": 15.95,
             "phone": true
           }
@@ -746,10 +746,10 @@
           "compareAt": 21.95,
           "image": "https://cf.cjdropshipping.com/a8bca47d-72b8-4cf8-8dd5-c3d5522e840e.jpg",
           "stripe": {
-            "productId": "prod_UuePWaCOHYPUpX",
-            "priceId": "price_1Tup6H7lhIablcA6HdOQHKUj",
-            "linkId": "plink_1Tup6H7lhIablcA6JJANRceh",
-            "link": "https://buy.stripe.com/test_fZu14haGr3v60ga63S3AZ2C",
+            "productId": "prod_Uv27PQgiz6ivun",
+            "priceId": "price_1TvC3C7lhIablcA6zI8L3g3R",
+            "linkId": "plink_1TvC3C7lhIablcA6HdSPPkvE",
+            "link": "https://buy.stripe.com/test_aFa6oBaGr1mYaUOdwk3AZ3v",
             "amount": 15.95,
             "phone": true
           }
@@ -762,10 +762,10 @@
           "compareAt": 21.95,
           "image": "https://cf.cjdropshipping.com/42cb053b-8fb7-4936-b9b2-932efc57ba5b.jpg",
           "stripe": {
-            "productId": "prod_UueP9SkGEuyvic",
-            "priceId": "price_1Tup6I7lhIablcA6m85PMTwo",
-            "linkId": "plink_1Tup6I7lhIablcA69IwlXuki",
-            "link": "https://buy.stripe.com/test_6oU3cp4i30iU2oieAo3AZ2D",
+            "productId": "prod_Uv27ySpjZ7FfWA",
+            "priceId": "price_1TvC3D7lhIablcA621epee94",
+            "linkId": "plink_1TvC3D7lhIablcA6ersITArE",
+            "link": "https://buy.stripe.com/test_00w6oB9Cn2r29QK3VK3AZ3w",
             "amount": 15.95,
             "phone": true
           }
@@ -811,10 +811,10 @@
           "compareAt": 18.95,
           "image": "https://cf.cjdropshipping.com/8d865447-af4c-4bde-ba31-c4d0285b1c0b.jpg",
           "stripe": {
-            "productId": "prod_UuePOJcknWnr7P",
-            "priceId": "price_1Tup6I7lhIablcA6n3TO6jIQ",
-            "linkId": "plink_1Tup6J7lhIablcA6GH3Ux8Yi",
-            "link": "https://buy.stripe.com/test_dRmfZb7ufaXy0ga77W3AZ2E",
+            "productId": "prod_Uv27na4UdEZw1v",
+            "priceId": "price_1TvC3E7lhIablcA6sSvbEqB2",
+            "linkId": "plink_1TvC3E7lhIablcA6doNgAFtl",
+            "link": "https://buy.stripe.com/test_00w8wJ9Cn7Lm0gagIw3AZ3x",
             "amount": 13.95,
             "phone": true
           }
@@ -827,10 +827,10 @@
           "compareAt": 18.95,
           "image": "https://cf.cjdropshipping.com/78fbb8d3-c0e2-4a1b-bfae-c2af40bb3185.jpg",
           "stripe": {
-            "productId": "prod_UuePBeIMyc5yPs",
-            "priceId": "price_1Tup6J7lhIablcA6RN6XjSzN",
-            "linkId": "plink_1Tup6J7lhIablcA6qPAI5lx7",
-            "link": "https://buy.stripe.com/test_28E9ANg0L0iU3sm0Jy3AZ2F",
+            "productId": "prod_Uv271iQRznbsoY",
+            "priceId": "price_1TvC3F7lhIablcA60cOaHFGp",
+            "linkId": "plink_1TvC3F7lhIablcA6WHH1rixr",
+            "link": "https://buy.stripe.com/test_6oU7sF8yjd5G6Ey9g43AZ3y",
             "amount": 13.95,
             "phone": true
           }
@@ -843,10 +843,10 @@
           "compareAt": 18.95,
           "image": "https://cf.cjdropshipping.com/5d705ba1-af57-4f62-9267-530a9e5ffe90.jpg",
           "stripe": {
-            "productId": "prod_UuePLuIYREmQUp",
-            "priceId": "price_1Tup6K7lhIablcA6pPZ9XGqC",
-            "linkId": "plink_1Tup6K7lhIablcA6k5sGiMan",
-            "link": "https://buy.stripe.com/test_9B614hdSDd5G9QKgIw3AZ2G",
+            "productId": "prod_Uv27zbXrKB9G3C",
+            "priceId": "price_1TvC3G7lhIablcA6vcSZeMBO",
+            "linkId": "plink_1TvC3G7lhIablcA6XS1aMYp5",
+            "link": "https://buy.stripe.com/test_fZu14h4i36Hid2W77W3AZ3z",
             "amount": 13.95,
             "phone": true
           }
@@ -859,10 +859,10 @@
           "compareAt": 18.95,
           "image": "https://cf.cjdropshipping.com/38969310-d442-4598-be3f-769f2f4b6e80.jpg",
           "stripe": {
-            "productId": "prod_UuePLIHhDDgqRs",
-            "priceId": "price_1Tup6L7lhIablcA6ZkSj9qkS",
-            "linkId": "plink_1Tup6L7lhIablcA6VItQM3bC",
-            "link": "https://buy.stripe.com/test_28E14hdSD4za5Au1NC3AZ2H",
+            "productId": "prod_Uv2785DBiFgccJ",
+            "priceId": "price_1TvC3H7lhIablcA6qItwZnCO",
+            "linkId": "plink_1TvC3H7lhIablcA6JsQQVTUx",
+            "link": "https://buy.stripe.com/test_aFaeV7eWH4za5AugIw3AZ3A",
             "amount": 13.95,
             "phone": true
           }
@@ -908,10 +908,10 @@
           "compareAt": 30.95,
           "image": "https://cf.cjdropshipping.com/e6aea598-4486-44e1-a482-146d8ed158a3.jpg",
           "stripe": {
-            "productId": "prod_UuePzsxDAJFdoX",
-            "priceId": "price_1Tup6L7lhIablcA6TVf7CE9T",
-            "linkId": "plink_1Tup6M7lhIablcA6AwQ3srM1",
-            "link": "https://buy.stripe.com/test_bJeeV73dZ9Tufb41NC3AZ2I",
+            "productId": "prod_Uv27KjNENHKVAf",
+            "priceId": "price_1TvC3I7lhIablcA6HbuhG0bc",
+            "linkId": "plink_1TvC3I7lhIablcA63bgTgYCf",
+            "link": "https://buy.stripe.com/test_00weV7eWH6Hie70boc3AZ3B",
             "amount": 22.95,
             "phone": true
           }
@@ -924,10 +924,10 @@
           "compareAt": 30.95,
           "image": "https://cf.cjdropshipping.com/e6aea598-4486-44e1-a482-146d8ed158a3.jpg",
           "stripe": {
-            "productId": "prod_UueP3uoKxehHWm",
-            "priceId": "price_1Tup6M7lhIablcA6ippxwKkR",
-            "linkId": "plink_1Tup6M7lhIablcA60g9pnYjC",
-            "link": "https://buy.stripe.com/test_aFa6oB5m77Lmd2W63S3AZ2J",
+            "productId": "prod_Uv272SZUpl7T7E",
+            "priceId": "price_1TvC3J7lhIablcA6cszwhuuK",
+            "linkId": "plink_1TvC3J7lhIablcA62AzAlu5N",
+            "link": "https://buy.stripe.com/test_bJebIV3dZ2r2e7077W3AZ3C",
             "amount": 22.95,
             "phone": true
           }
@@ -973,10 +973,10 @@
           "compareAt": 40.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/c6b6a394-6d9e-4764-b563-d12e97b1d847_trans.jpeg",
           "stripe": {
-            "productId": "prod_UuePxyYxsjlepK",
-            "priceId": "price_1Tup6N7lhIablcA6Oq5Inu7H",
-            "linkId": "plink_1Tup6N7lhIablcA6eImY99MN",
-            "link": "https://buy.stripe.com/test_fZuaEReWH8Pqfb463S3AZ2K",
+            "productId": "prod_Uv27DLMqFLoH43",
+            "priceId": "price_1TvC3J7lhIablcA6QrKiUFfm",
+            "linkId": "plink_1TvC3K7lhIablcA6o3xegFFc",
+            "link": "https://buy.stripe.com/test_9B68wJ3dZfdO0gacsg3AZ3D",
             "amount": 29.95,
             "phone": true
           }
@@ -989,10 +989,10 @@
           "compareAt": 56.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2026/04/27/01/3702c164-7b7b-434f-a513-651e71a8b7a3_trans.jpeg",
           "stripe": {
-            "productId": "prod_UuePhADrMtVZtp",
-            "priceId": "price_1Tup6O7lhIablcA6cy8L72Ko",
-            "linkId": "plink_1Tup6O7lhIablcA6hyY4FJbL",
-            "link": "https://buy.stripe.com/test_5kQcMZdSD1mY5Auak83AZ2L",
+            "productId": "prod_Uv277fwzFFx1Il",
+            "priceId": "price_1TvC3K7lhIablcA6X0GN4Ky0",
+            "linkId": "plink_1TvC3K7lhIablcA6ziU41mct",
+            "link": "https://buy.stripe.com/test_6oUfZb01N4zabYSfEs3AZ3E",
             "amount": 41.95,
             "phone": true
           }
@@ -1038,10 +1038,10 @@
           "compareAt": 17.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/93084e30-e346-4055-9601-a383744b0a36_trans.jpeg",
           "stripe": {
-            "productId": "prod_UueP9dHl8dEW6L",
-            "priceId": "price_1Tup6P7lhIablcA6wOT8m3yl",
-            "linkId": "plink_1Tup6P7lhIablcA6V5228ZTh",
-            "link": "https://buy.stripe.com/test_cNibIVdSD4za6Ey3VK3AZ2M",
+            "productId": "prod_Uv27GElbUo9pwH",
+            "priceId": "price_1TvC3L7lhIablcA6d8DzAEW6",
+            "linkId": "plink_1TvC3L7lhIablcA6HGASMiE2",
+            "link": "https://buy.stripe.com/test_14A6oB3dZ4zagf8dwk3AZ3F",
             "amount": 12.95,
             "phone": true
           }
@@ -1054,10 +1054,10 @@
           "compareAt": 17.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/9d63d36a-6a55-449f-880e-73dc1fe1e68d_trans.jpeg",
           "stripe": {
-            "productId": "prod_UueP1S33ufuH64",
-            "priceId": "price_1Tup6P7lhIablcA6tspHZKv7",
-            "linkId": "plink_1Tup6Q7lhIablcA60yX5VnX9",
-            "link": "https://buy.stripe.com/test_00w9ANbKv5De4wqgIw3AZ2N",
+            "productId": "prod_Uv27SGUNyCYarv",
+            "priceId": "price_1TvC3M7lhIablcA66aQpik0o",
+            "linkId": "plink_1TvC3M7lhIablcA69wKhR45D",
+            "link": "https://buy.stripe.com/test_6oU9AN7uf2r2fb4gIw3AZ3G",
             "amount": 12.95,
             "phone": true
           }
@@ -1070,10 +1070,10 @@
           "compareAt": 17.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/effd5f86-88aa-4d14-844c-09dd1cd60261_trans.jpeg",
           "stripe": {
-            "productId": "prod_UuePB3nzZDv5UV",
-            "priceId": "price_1Tup6Q7lhIablcA6ykorsiSo",
-            "linkId": "plink_1Tup6Q7lhIablcA6gKJHnMtS",
-            "link": "https://buy.stripe.com/test_dRmeV7cOz1mYaUO63S3AZ2O",
+            "productId": "prod_Uv27nkNiNROkGI",
+            "priceId": "price_1TvC3N7lhIablcA6Wv6nr5B9",
+            "linkId": "plink_1TvC3N7lhIablcA6gTEQOueG",
+            "link": "https://buy.stripe.com/test_cNi6oB9Cn8Pq2oi9g43AZ3H",
             "amount": 12.95,
             "phone": true
           }
@@ -1086,10 +1086,10 @@
           "compareAt": 17.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/d5341cf1-ed83-47a9-83a5-791354336efa_trans.jpeg",
           "stripe": {
-            "productId": "prod_UuePRMcwEIysB6",
-            "priceId": "price_1Tup6R7lhIablcA6b7Zk06FP",
-            "linkId": "plink_1Tup6R7lhIablcA6LFVk51HS",
-            "link": "https://buy.stripe.com/test_6oU9ANcOz0iUd2W63S3AZ2P",
+            "productId": "prod_Uv27KJaCikDEB4",
+            "priceId": "price_1TvC3O7lhIablcA65WUNmY6H",
+            "linkId": "plink_1TvC3O7lhIablcA6i1M5oPas",
+            "link": "https://buy.stripe.com/test_4gMdR3aGr8Pq8MG1NC3AZ3I",
             "amount": 12.95,
             "phone": true
           }
@@ -1102,10 +1102,10 @@
           "compareAt": 17.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/77cbe1c3-970b-4258-852b-b79b1d100f44_trans.jpeg",
           "stripe": {
-            "productId": "prod_UuePKN6SwQNWB8",
-            "priceId": "price_1Tup6S7lhIablcA66WmtssAe",
-            "linkId": "plink_1Tup6S7lhIablcA6X5CMGDYH",
-            "link": "https://buy.stripe.com/test_28EbIVg0LfdOfb49g43AZ2Q",
+            "productId": "prod_Uv27jiZ819kwLG",
+            "priceId": "price_1TvC3O7lhIablcA6ruvLsTp0",
+            "linkId": "plink_1TvC3P7lhIablcA6W9ObngNr",
+            "link": "https://buy.stripe.com/test_4gMfZb7uf6Hi0ga4ZO3AZ3J",
             "amount": 12.95,
             "phone": true
           }
@@ -1118,10 +1118,10 @@
           "compareAt": 17.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/76b90376-38c0-40ab-a9e9-7e8d3aad1b97_trans.jpeg",
           "stripe": {
-            "productId": "prod_UuePhJf84poz1h",
-            "priceId": "price_1Tup6S7lhIablcA6c0omEC2W",
-            "linkId": "plink_1Tup6T7lhIablcA6x1nJWkEU",
-            "link": "https://buy.stripe.com/test_7sY5kx01Nc1C3sm3VK3AZ2R",
+            "productId": "prod_Uv279kwwwcugOs",
+            "priceId": "price_1TvC3P7lhIablcA6WTjejYC8",
+            "linkId": "plink_1TvC3Q7lhIablcA6A2Lsw05V",
+            "link": "https://buy.stripe.com/test_5kQ28lcOz9Tu8MG4ZO3AZ3K",
             "amount": 12.95,
             "phone": true
           }
@@ -1134,10 +1134,10 @@
           "compareAt": 17.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/08/b196619e-f143-484f-86e1-f8be500bdead_trans.jpeg",
           "stripe": {
-            "productId": "prod_UuePbGX1ed5398",
-            "priceId": "price_1Tup6T7lhIablcA6dTYUJCuU",
-            "linkId": "plink_1Tup6U7lhIablcA61oZFrJCb",
-            "link": "https://buy.stripe.com/test_cNi28l9Cn5Ded2W77W3AZ2S",
+            "productId": "prod_Uv275Jtp5RBF8j",
+            "priceId": "price_1TvC3Q7lhIablcA6fiqU8rV5",
+            "linkId": "plink_1TvC3Q7lhIablcA6YGWVEJG6",
+            "link": "https://buy.stripe.com/test_aFa3cpcOz2r21keboc3AZ3L",
             "amount": 12.95,
             "phone": true
           }
@@ -1150,10 +1150,10 @@
           "compareAt": 17.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/d7a0f31b-fd0a-4544-acce-6e87774a8716_trans.jpeg",
           "stripe": {
-            "productId": "prod_UuePbqTJZy2xfq",
-            "priceId": "price_1Tup6U7lhIablcA6JXrSQ8co",
-            "linkId": "plink_1Tup6U7lhIablcA6nbKAWaTg",
-            "link": "https://buy.stripe.com/test_14A7sFbKvc1C3sm0Jy3AZ2T",
+            "productId": "prod_Uv27KJSf7PWQ6Z",
+            "priceId": "price_1TvC3R7lhIablcA6PkFkp86t",
+            "linkId": "plink_1TvC3R7lhIablcA6enBTHIsx",
+            "link": "https://buy.stripe.com/test_8x2dR34i37Lm1ke4ZO3AZ3M",
             "amount": 12.95,
             "phone": true
           }
@@ -1166,10 +1166,10 @@
           "compareAt": 17.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/04/10/02/6bb5b508-276c-4940-a480-7270e3e001b0_trans.jpeg",
           "stripe": {
-            "productId": "prod_UuePQQ7VwjwqG6",
-            "priceId": "price_1Tup6V7lhIablcA6XSDVsvrL",
-            "linkId": "plink_1Tup6V7lhIablcA6V2aPhW0J",
-            "link": "https://buy.stripe.com/test_cNi4gt4i38Pqfb44ZO3AZ2U",
+            "productId": "prod_Uv27hv7i80uM7C",
+            "priceId": "price_1TvC3S7lhIablcA6kajlXLpE",
+            "linkId": "plink_1TvC3S7lhIablcA6O4cdQg6M",
+            "link": "https://buy.stripe.com/test_3cIbIV15R8Pq1ke2RG3AZ3N",
             "amount": 12.95,
             "phone": true
           }
@@ -1256,10 +1256,10 @@
           "compareAt": 24.95,
           "image": "https://cf.cjdropshipping.com/c92a105a-a13d-4cd1-b9e0-4c1919f73942.jpg",
           "stripe": {
-            "productId": "prod_UueP2W1PMHlN6j",
-            "priceId": "price_1Tup6W7lhIablcA6QsJdvLbE",
-            "linkId": "plink_1Tup6W7lhIablcA67M6jbChA",
-            "link": "https://buy.stripe.com/test_5kQeV78yj9Tud2W4ZO3AZ2V",
+            "productId": "prod_Uv27xWuoOV6MV4",
+            "priceId": "price_1TvC3T7lhIablcA6tGJmF8VL",
+            "linkId": "plink_1TvC3T7lhIablcA6Q59BrQw1",
+            "link": "https://buy.stripe.com/test_8x24gtbKv6Hi1ke2RG3AZ3O",
             "amount": 17.95,
             "phone": true
           }
@@ -1272,10 +1272,10 @@
           "compareAt": 32.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2026/02/09/07/7c3761ed-d29c-4954-9d7e-5c6cb3c8fb3d.jpg",
           "stripe": {
-            "productId": "prod_UuePMDR8Li5pRl",
-            "priceId": "price_1Tup6X7lhIablcA6IiO2C6H3",
-            "linkId": "plink_1Tup6X7lhIablcA6YBVR7Nxt",
-            "link": "https://buy.stripe.com/test_6oUeV75m7ghS5AugIw3AZ2W",
+            "productId": "prod_Uv2788LeBUDSEu",
+            "priceId": "price_1TvC3U7lhIablcA6WmrbpKoV",
+            "linkId": "plink_1TvC3U7lhIablcA6GLtIaq5J",
+            "link": "https://buy.stripe.com/test_00w9AN9Cn7Lme70fEs3AZ3P",
             "amount": 23.95,
             "phone": true
           }
@@ -1288,10 +1288,10 @@
           "compareAt": 24.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/06/12/06/f4d274e9-04f0-495a-81a5-9b615f37a55b.jpg",
           "stripe": {
-            "productId": "prod_UuePFQsEBpVpuJ",
-            "priceId": "price_1Tup6X7lhIablcA653xjMDw0",
-            "linkId": "plink_1Tup6Y7lhIablcA6maH1RjmU",
-            "link": "https://buy.stripe.com/test_3cIbIV8yj1mYe704ZO3AZ2X",
+            "productId": "prod_Uv273hu9SUrl2Z",
+            "priceId": "price_1TvC3V7lhIablcA6IvYOq5NE",
+            "linkId": "plink_1TvC3V7lhIablcA63gIEU5Xx",
+            "link": "https://buy.stripe.com/test_3cI14hcOz1mYaUOgIw3AZ3Q",
             "amount": 17.95,
             "phone": true
           }
@@ -1304,10 +1304,10 @@
           "compareAt": 24.95,
           "image": "https://cf.cjdropshipping.com/b61f3560-b7c2-4aab-a57c-1f4ae4d9a313.jpg",
           "stripe": {
-            "productId": "prod_UuePU0pExv35Uz",
-            "priceId": "price_1Tup6Y7lhIablcA6UQRzs12v",
-            "linkId": "plink_1Tup6Z7lhIablcA67zFzgQ9g",
-            "link": "https://buy.stripe.com/test_7sY3cp7uf5De1kegIw3AZ2Y",
+            "productId": "prod_Uv27fFhk0bMJ7g",
+            "priceId": "price_1TvC3W7lhIablcA6n0sVACis",
+            "linkId": "plink_1TvC3W7lhIablcA68ONpHOWL",
+            "link": "https://buy.stripe.com/test_dRm00d4i39Tu3smeAo3AZ3R",
             "amount": 17.95,
             "phone": true
           }
@@ -1320,10 +1320,10 @@
           "compareAt": 24.95,
           "image": "https://cf.cjdropshipping.com/3eacc954-4bcd-4f1a-8cd2-016f2cfc75e3.jpg",
           "stripe": {
-            "productId": "prod_UuePSq6FCvbpfR",
-            "priceId": "price_1Tup6Z7lhIablcA68uO700z5",
-            "linkId": "plink_1Tup6Z7lhIablcA6EAUrRN4N",
-            "link": "https://buy.stripe.com/test_eVq8wJbKvc1C0ga77W3AZ2Z",
+            "productId": "prod_Uv27KpyL7m3Dae",
+            "priceId": "price_1TvC3X7lhIablcA6eb615Dee",
+            "linkId": "plink_1TvC3X7lhIablcA6MrmH8qM2",
+            "link": "https://buy.stripe.com/test_4gM6oB01N3v60ga9g43AZ3S",
             "amount": 17.95,
             "phone": true
           }
@@ -1336,10 +1336,10 @@
           "compareAt": 22.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/02/05/08/f2a52140-717d-460a-bbb3-77f311e24bdf.jpg",
           "stripe": {
-            "productId": "prod_UueP1A8ZiNour4",
-            "priceId": "price_1Tup6a7lhIablcA689aGXT9a",
-            "linkId": "plink_1Tup6a7lhIablcA6mNt7HsZ3",
-            "link": "https://buy.stripe.com/test_4gMeV79Cn3v6e70csg3AZ30",
+            "productId": "prod_Uv27zPx9eOC0WH",
+            "priceId": "price_1TvC3Y7lhIablcA6zf858n4R",
+            "linkId": "plink_1TvC3Y7lhIablcA6vgT59xjr",
+            "link": "https://buy.stripe.com/test_3cIdR3aGrd5GaUOdwk3AZ3T",
             "amount": 16.95,
             "phone": true
           }
@@ -1352,10 +1352,10 @@
           "compareAt": 43.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/04/08/09/af685326-f361-4b1b-aee3-361128796959.jpg",
           "stripe": {
-            "productId": "prod_UuePjsbRfYLn8r",
-            "priceId": "price_1Tup6b7lhIablcA66dbh5V3l",
-            "linkId": "plink_1Tup6b7lhIablcA62ATTYfPJ",
-            "link": "https://buy.stripe.com/test_aFa00d4i3c1C5AugIw3AZ31",
+            "productId": "prod_Uv27fQmpvdLwRi",
+            "priceId": "price_1TvC3Y7lhIablcA6BsnP0lBt",
+            "linkId": "plink_1TvC3Z7lhIablcA6g3ntPTNw",
+            "link": "https://buy.stripe.com/test_bJe14hg0L6Hi0gacsg3AZ3U",
             "amount": 31.95,
             "phone": true
           }
@@ -1368,10 +1368,10 @@
           "compareAt": 62.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2025/04/08/09/4c6845dd-2c1c-44c4-a004-77afd9eaa12c.jpg",
           "stripe": {
-            "productId": "prod_UuePoBxOJI3npr",
-            "priceId": "price_1Tup6c7lhIablcA6OvdFjiPX",
-            "linkId": "plink_1Tup6c7lhIablcA6lxz0NG1Z",
-            "link": "https://buy.stripe.com/test_28EeV7cOz7Lm5Audwk3AZ32",
+            "productId": "prod_Uv27Ud6uJG1vF6",
+            "priceId": "price_1TvC3Z7lhIablcA6GlWPTQz2",
+            "linkId": "plink_1TvC3a7lhIablcA6I96qezob",
+            "link": "https://buy.stripe.com/test_7sY8wJ3dZd5G5Auak83AZ3V",
             "amount": 45.95,
             "phone": true
           }
@@ -1384,10 +1384,10 @@
           "compareAt": 30.95,
           "image": "https://oss-cf.cjdropshipping.com/product/2026/05/13/06/725ee184-b1e0-4f89-bca9-bca3908efd48.jpg",
           "stripe": {
-            "productId": "prod_UueP3HEO22xlXN",
-            "priceId": "price_1Tup6d7lhIablcA6DeELmtig",
-            "linkId": "plink_1Tup6d7lhIablcA6gJZJJaxw",
-            "link": "https://buy.stripe.com/test_dRm3cpcOz4za8MG4ZO3AZ33",
+            "productId": "prod_Uv27pbUUdxU6Lm",
+            "priceId": "price_1TvC3a7lhIablcA6sQMmNfD1",
+            "linkId": "plink_1TvC3b7lhIablcA6kwSsZgXk",
+            "link": "https://buy.stripe.com/test_9B600d6qbaXy4wqgIw3AZ3W",
             "amount": 22.95,
             "phone": true
           }
