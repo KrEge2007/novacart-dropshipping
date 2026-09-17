@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-09-16T09:38:34.405Z",
+    "updatedAt": "2026-09-17T09:47:12.289Z",
     "source": "cjdropshipping",
     "note": "Hand-picked evergreen bestsellers. Images are placeholders until scripts/fetch-products.mjs matches each pick to a live CJdropshipping listing and fills in real supplier photos, prices, and SKUs."
   },
